@@ -1,6 +1,7 @@
 import email
 from imapclient import IMAPClient
 import smtplib
+import csv
 
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 USERNAME = 'stats60' #Mailbox username
@@ -37,8 +38,10 @@ for line in f:
     student_db[str(line.strip())]=i
     i+=1
 #print student_db
-student_group = {82:0} ## key: student unique id, val: 0 (for alias1), 1 (for alias2)
-student_ta = {0:alias1,1:alias2}
+with open('official_randomization.csv', mode='r') as infile:
+    reader = csv.reader(infile)
+    student_group = {rows[1]:rows[2] for rows in reader}
+student_ta = {1:alias1,2:alias1,3:alias2,4:alias2}
 #Loop through message ID, parse the messages and extract the required info
 for messagegId,data in response.iteritems():
         messageString= data['RFC822']
@@ -48,15 +51,14 @@ for messagegId,data in response.iteritems():
         
         sender =  msgStringParsed['From'].split('<')[1][:-1]
         ## if email received from student
-        print sender
         if sender != HEAD_TA:
             print 'Student'
             msg = MIMEMultipart()
             msg['From'] = str(student_db[sender])
             msg['To'] = HEAD_TA
             msg['Subject'] = str(student_db[sender])+'##'+ msgStringParsed['Subject']
-            text = msg.as_string()
-            #server2.sendmail(sender, [HEAD_TA], text)
+            print msg.as_string()
+            #server2.sendmail(sender, [HEAD_TA], msg.as_string())
             ### Send this email
 
         # if email received from HEAD-TA
@@ -67,6 +69,7 @@ for messagegId,data in response.iteritems():
             msg['From'] = student_ta[student_group[student_id]]  # from changed to robota or stats60ta corresponding to the email id that student sent to
             msg['Subject'] = msgStringParsed['Subject'].split('##')[1]
             msg['To'] = student_db.keys()[student_db.values().index(student_id)]
+            print msg.as_string()
             #server2.sendmail(sender, [msg['To']], msg.as_string())
             ### Send this email
 

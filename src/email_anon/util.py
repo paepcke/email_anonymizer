@@ -6,6 +6,8 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 import imaplib
+import sched, time
+import threading
 
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
@@ -57,7 +59,8 @@ def run_script(unread_msg_nums,response):
                     msg['Subject'] = str(student_db[sender])+'##'+ msgStringParsed['Subject']
                     body = get_body(msgStringParsed)
                     msg.attach(MIMEText(body, 'plain'))
-                    server2.sendmail(sender, [HEAD_TA], msg.as_string())
+                    print msg.as_string()
+                    #server2.sendmail(sender, [HEAD_TA], msg.as_string())
                     ### Send this email
 
                 # if email received from HEAD-TA
@@ -77,7 +80,7 @@ def run_script(unread_msg_nums,response):
                     body = get_body(msgStringParsed)
                     msg.attach(MIMEText(body, 'plain'))
                     #print msg.as_string()
-                    server2.sendmail(sender, [msg['To']], msg.as_string())
+                    #server2.sendmail(sender, [msg['To']], msg.as_string())
                     ## Send this email
         return 1
 def get_body(email_msg):

@@ -26,7 +26,7 @@ def setup_servers():
     server.login(USERNAME, PASSWORD)
     server2.login(USERNAME, PASSWORD)
     return server,server2
-server1,server2 = setup_servers()
+
 
 def get_inbox(server1,server2):
     select_info = server1.select('INBOX')
@@ -42,7 +42,7 @@ def get_inbox(server1,server2):
         da.append(response[0][1])
     return unread_msg_nums,da
 
-def run_script(unread_msg_nums,response):
+def run_script(unread_msg_nums,response,server1,server2):
         student_db,student_group,student_ta = parse_student_info()
         #Loop through message ID, parse the messages and extract the required info
         for data in response:

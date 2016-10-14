@@ -2,7 +2,8 @@
 from util import *
 
 def main():
-    threading.Timer(30.0, main).start()
+    #threading.Timer(30.0, main).start()
+    threading.Timer(15.0, main).start()
     server1,server2 = setup_servers()
     unread_msgs,response = get_inbox(server1,server2)
     success=-1

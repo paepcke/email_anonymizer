@@ -50,37 +50,44 @@ def run_script(unread_msg_nums,response):
                 sender =  msgStringParsed['From'].split('<')[1][:-1]
 
                 ## if email received from student
-                print sender
+                #print sender
                 if sender != HEAD_TA:
-                    print 'Student'
+                    if sender not in student_db:
+                        print 'Student not found in database!:',sender
+                        return 0
+                    print 'Student:',sender
                     msg = MIMEMultipart()
                     msg['From'] = 'stats60ta@cs.stanford.edu'
                     msg['To'] = HEAD_TA
                     msg['Subject'] = str(student_db[sender])+'##'+ msgStringParsed['Subject']
                     body = get_body(msgStringParsed)
                     msg.attach(MIMEText(body, 'plain'))
-                    print msg.as_string()
-                    #server2.sendmail(sender, [HEAD_TA], msg.as_string())
+                    #print msg.as_string()
+                    server2.sendmail(sender, [HEAD_TA], msg.as_string())
                     ### Send this email
 
                 # if email received from HEAD-TA
                 else:
-                    print 'TA'
+                    
                     containsId= msgStringParsed['Subject'].split('##')[0]
                     charList = [i for i in containsId.split() if i.isdigit()]
                     student_id = int(''.join(charList))
-                    #print student_id
                     msg = MIMEMultipart()
-                    #print student_db
+
+                    if student_id not in student_db.values(): 
+                        print 'Invalid student id:',student_id
+                        return 0
+
                     student_email =  student_db.keys()[student_db.values().index(student_id)]
-                    print student_email
+                    print 'TA replies to:',student_email
+
                     msg['From'] = student_ta[int(student_group[student_email])]  # from changed to robota or stats60ta corresponding to the email id that student sent to
                     msg['Subject'] = msgStringParsed['Subject'].split('##')[1]
                     msg['To'] = student_email
                     body = get_body(msgStringParsed)
                     msg.attach(MIMEText(body, 'plain'))
                     #print msg.as_string()
-                    #server2.sendmail(sender, [msg['To']], msg.as_string())
+                    server2.sendmail(sender, [msg['To']], msg.as_string())
                     ## Send this email
         return 1
 def get_body(email_msg):

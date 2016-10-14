@@ -5,6 +5,7 @@ import csv
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
+import imaplib
 
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
@@ -16,21 +17,69 @@ alias2 = 'stats60ta@cs.stanford.edu' #stats60TA@cs.stanford.edu
 ssl = False
 
 def setup_servers():
-    server = IMAPClient(HOST, use_uid=True, ssl=ssl)
+    #server = IMAPClient(HOST, use_uid=True, ssl=ssl)
+    server = imaplib.IMAP4_SSL(HOST, 993)
     server2 = smtplib.SMTP(HOST2,587)
     server2.starttls()
     server.login(USERNAME, PASSWORD)
     server2.login(USERNAME, PASSWORD)
     return server,server2
+server1,server2 = setup_servers()
 
-def get_inbox():
-    server1,server2 = setup_servers()
-    select_info = server.select_folder('INBOX')
-    messages = server.search(['ALL'])
+def get_inbox(server1,server2):
+    select_info = server1.select('INBOX')
+    status, response = server1.search(None, 'UnSeen')
+    unread_msg_nums = response[0].split()
+
+    if len(unread_msg_nums)==0: print 'No unread emails!'
     # print 'Messages:[ %d ]'%select_info['EXISTS']
-    response = server.fetch(messages, ['RFC822'])
-    return response
+    unread_msg_nums = response[0].split()
+    da = []
+    for e_id in unread_msg_nums:
+        _, response = server1.fetch(e_id,'(RFC822)')
+        da.append(response[0][1])
+    return unread_msg_nums,da
 
+def run_script(unread_msg_nums,response):
+        student_db,student_group,student_ta = parse_student_info()
+        #Loop through message ID, parse the messages and extract the required info
+        for data in response:
+                msgStringParsed = email.message_from_string(data)
+                sender =  msgStringParsed['From'].split('<')[1][:-1]
+
+                ## if email received from student
+                print sender
+                if sender != HEAD_TA:
+                    print 'Student'
+                    msg = MIMEMultipart()
+                    msg['From'] = 'stats60ta@cs.stanford.edu'
+                    msg['To'] = HEAD_TA
+                    msg['Subject'] = str(student_db[sender])+'##'+ msgStringParsed['Subject']
+                    body = get_body(msgStringParsed)
+                    msg.attach(MIMEText(body, 'plain'))
+                    server2.sendmail(sender, [HEAD_TA], msg.as_string())
+                    ### Send this email
+
+                # if email received from HEAD-TA
+                else:
+                    print 'TA'
+                    containsId= msgStringParsed['Subject'].split('##')[0]
+                    charList = [i for i in containsId.split() if i.isdigit()]
+                    student_id = int(''.join(charList))
+                    #print student_id
+                    msg = MIMEMultipart()
+                    #print student_db
+                    student_email =  student_db.keys()[student_db.values().index(student_id)]
+                    print student_email
+                    msg['From'] = student_ta[int(student_group[student_email])]  # from changed to robota or stats60ta corresponding to the email id that student sent to
+                    msg['Subject'] = msgStringParsed['Subject'].split('##')[1]
+                    msg['To'] = student_email
+                    body = get_body(msgStringParsed)
+                    msg.attach(MIMEText(body, 'plain'))
+                    #print msg.as_string()
+                    server2.sendmail(sender, [msg['To']], msg.as_string())
+                    ## Send this email
+        return 1
 def get_body(email_msg):
     if email_msg.is_multipart():
         for payload in email_msg.get_payload():
@@ -39,16 +88,20 @@ def get_body(email_msg):
     else: return email_msg.get_payload()
 
 def parse_student_info():
-    student_db = {}  ## key: student_email, val: unique id
-    f = open('statsClassEmails.txt')
-    i=0
-    for line in f:
-        student_db[str(line.strip())]=i
-        i+=1
-
     with open('official_randomization.csv', mode='r') as infile:
         reader = csv.reader(infile)
-        student_group = {rows[1]:rows[2] for rows in reader}
+        student_group = {}
+        for rows in reader:
+            student_group[str(rows[1]).strip()] = rows[2]
+
+        #student_group = {str(rows[1]).strip():int(rows[2])for rows in reader}
+
+    student_db = {}  ## key: student_email, val: unique id
+    i=0
+    for email in student_group:
+        student_db[str(email).strip()] = i
+        i+=1
+
     student_ta = {1:alias1,2:alias1,3:alias2,4:alias2}
     return student_db,student_group,student_ta
 

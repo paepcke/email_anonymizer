@@ -13,13 +13,13 @@ HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
-HEAD_TA =  "aashna94@stanford.edu"#'ljanson@stanford.edu'
+#HEAD_TA =  "aashna94@stanford.edu"
+HEAD_TA = 'ljanson@stanford.edu'
 alias1 = 'robota@cs.stanford.edu'
 alias2 = 'stats60ta@cs.stanford.edu' #stats60TA@cs.stanford.edu
 ssl = False
 
 def setup_servers():
-    #server = IMAPClient(HOST, use_uid=True, ssl=ssl)
     server = imaplib.IMAP4_SSL(HOST, 993)
     server2 = smtplib.SMTP(HOST2,587)
     server2.starttls()
@@ -58,11 +58,10 @@ def run_script(unread_msg_nums,response,server1,server2):
                     print 'Student:',sender
                     msg = MIMEMultipart()
                     msg['From'] = 'stats60ta@cs.stanford.edu'
-                    msg['To'] = HEAD_TA
+                    msg['To'] = 'stats60ta@cs.stanford.edu'
                     msg['Subject'] = str(student_db[sender])+'##'+ msgStringParsed['Subject']
                     body = get_body(msgStringParsed)
                     msg.attach(MIMEText(body, 'plain'))
-                    #print msg.as_string()
                     server2.sendmail(sender, [HEAD_TA], msg.as_string())
                     ### Send this email
 
@@ -83,16 +82,18 @@ def run_script(unread_msg_nums,response,server1,server2):
 
                     msg['From'] = student_ta[int(student_group[student_email])]  # from changed to robota or stats60ta corresponding to the email id that student sent to
                     msg['Subject'] = msgStringParsed['Subject'].split('##')[1]
-                    msg['To'] = student_email
+                    msg['To'] = ''
                     body = get_body(msgStringParsed)
                     msg.attach(MIMEText(body, 'plain'))
-                    #print msg.as_string()
-                    server2.sendmail(sender, [msg['To']], msg.as_string())
+                    server2.sendmail(sender, student_email, msg.as_string())
                     ## Send this email
         return 1
 def get_body(email_msg):
     if email_msg.is_multipart():
+        # print email_msg.get_payload(0)
+        # return email_msg.get_payload(0)
         for payload in email_msg.get_payload():
+            #print payload.get_payload()
             if payload.get_content_maintype() == 'text':
                 return payload.get_payload()
     else: return email_msg.get_payload()

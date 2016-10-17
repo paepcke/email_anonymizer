@@ -7,7 +7,6 @@ wr.writerow(['From','To','Date','Subject','Body'])
 server,_=  setup_servers()
 
 def get_inbox():
-    #f = open('email_dump.txt')
     select_info = server.select('INBOX',readonly=True)
     status, response = server.search(None, 'All')
     msg_nums = response[0].split()

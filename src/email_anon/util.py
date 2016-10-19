@@ -1,6 +1,7 @@
 
 import email
 import os
+import re
 from imapclient import IMAPClient
 import smtplib
 import csv
@@ -21,240 +22,290 @@ HEAD_TA = 'paepcke@cs.stanford.edu' #'ljanson@stanford.edu'
 HEAD_TA_NAME = 'Lucas'
 TA_SIG = 'Best, Lucas'
 ROBO_TA_SIG = 'Greetings, RoboTA.'
+
+GUESS_RECORD_FILE = 'taGuessRecord.csv'
+
 robo_ta_alias = 'roboTA@cs.stanford.edu'
 stats60_ta_alias = 'stats60TA@cs.stanford.edu' #stats60TA@cs.stanford.edu
+admin_alias = 'paepcke@cs.stanford.edu'
+
 ssl = False
 
-header_parser = HeaderParser()
 
-logger = None
-
-def setup_servers():
-    server = imaplib.IMAP4_SSL(HOST, 993)
-    server2 = smtplib.SMTP(HOST2,587)
-    server2.starttls()
-    server.login(USERNAME, PASSWORD)
-    server2.login(USERNAME, PASSWORD)    
-    return server,server2
+class EmailChecker(object):
 
 
-def get_inbox(server1, server2, doLog):
-    select_info = server1.select('INBOX')
-    status, response = server1.search(None, 'UnSeen')
-    unread_msg_nums = response[0].split()
+    def __init__(self):
 
-    if len(unread_msg_nums)==0: 
-        if doLog:
-            logInfo('No unread emails!')
-        return([],[])
-            
-    if doLog:
-        logInfo('Retrieving %s msgs from server.' % len(unread_msg_nums))
+        self.header_parser = HeaderParser()
 
-    # print 'Messages:[ %d ]'%select_info['EXISTS']
-    unread_msg_nums = response[0].split()
-    da = []
-    for e_id in unread_msg_nums:
-        _, response = server1.fetch(e_id,'(RFC822)')
-        da.append(response[0][1])
-    return unread_msg_nums,da
+        self.setupLogging(logging.INFO, 'roboTa.log')
 
-def run_script(unread_msg_nums,response,server1,server2):
-        student_db,student_group,student_ta = parse_student_info()
+        self.serverReceiving = imaplib.IMAP4_SSL(HOST, 993)
 
-        #Loop through message ID, parse the messages and extract the required info
-        for data in response:
-            try:
-                msgStringParsed = email.message_from_string(data)
-                sender =  msgStringParsed['From'].split('<')[1][:-1]
+        self.serverSending = smtplib.SMTP(HOST2,587)
+        self.serverSending.starttls()
 
-                ## Email received from student?
-                if sender != HEAD_TA:
-                    # Yes, from student:
-                    if sender not in student_db:
-                        logErr('Student not found in database!: %s' % sender)
-                        continue
-                    logInfo('Msg from student: %s to %s' % (sender, get_ta_email_from_student_email_addr(sender)))
-                    msg = MIMEMultipart()
-                    msg['From'] = 'stats60@cs.stanford.edu'
-                    msg['To'] = 'stats60TA@cs.stanford.edu'
-                    # Stick student ID into msg header:
-                    msg['x-student-id'] = get_sid_from_student_email(sender)
-                    msg['Subject'] = msgStringParsed['Subject']
-                    body = get_body(msgStringParsed)
-                    msg.attach(MIMEText(body, 'plain'))
-                    ### Send this email:
-                    server2.sendmail(sender, [HEAD_TA], msg.as_string())
+        self.serverReceiving.login(USERNAME, PASSWORD)
+        self.serverSending.login(USERNAME, PASSWORD)
+
+        # Regex for start of line being H, R, human, Human, Robot, robot, followed by \n or \r:
+        self.guess_pattern = re.compile(r'(H)[\n\r]|(R)[\n\r]|([hH]uman)[\n\r]|([rR]obot)[\n\r]')
 
 
-                # Email received from HEAD-TA (a reply):
-                else:
+    def get_inbox(self, doLogNumMsgs):
+        select_info = self.serverReceiving.select('INBOX')
+        status, response = self.serverReceiving.search(None, 'UnSeen')
+        unread_msg_nums = response[0].split()
 
-                    body = get_body(msgStringParsed)
+        if len(unread_msg_nums)==0: 
+            if doLogNumMsgs:
+                self.logInfo('No unread emails!')
+            return([],[])
+                
+        self.logInfo('Retrieving %s msg(s) from server.' % len(unread_msg_nums))
 
-                    # Subject should look like this:
-                    #    R#My Question:
-                    # Where 'R' is head TA's guess on whether msg body is robot (R)
-                    # or human (H).
+        # print 'Messages:[ %d ]'%select_info['EXISTS']
+        da = []
+        for e_id in unread_msg_nums:
+            _, response = self.serverReceiving.fetch(e_id,'(RFC822)')
+            da.append(response[0][1])
+        return unread_msg_nums, da
 
-                    # Get array [<guess>, <subjectTxt>]
+    def markSeen(self, unread_msgs):
+        for eid in unread_msgs:
+            self.serverReceiving.store(eid, '+FLAGS', '\Seen')
 
-                    split_subject = msgStringParsed['Subject'].split('##')
-                    if len(split_subject) != 2 or len(split_subject[0]) != 1:
-                        # Could not find the expected guess:
-                        admin_msg_to_ta('noGuess', body, sender=HEAD_TA)
-                        continue
-                                       
-                    # Guess is present as single char, but is it either R or H?
-                    ta_guess = split_subject[0]
-                    if not (ta_guess in ['R', 'H']):
-                        admin_msg_to_ta('badGuessChar', body)
 
-                    
-                    # Did TA accidentally sign his/her name?
-                    if body.find(HEAD_TA_NAME) > -1:
-                        admin_msg_to_ta('lucasFound', body)
-                        continue
+    def run_script (self, unread_msg_nums, response):
 
-                    msg = MIMEMultipart()
+            self.parse_student_info()
 
-                    msgDict = header_parser.parsestr(msg)
+            #***************
+            #print('Response: %s' % str(response))
+            #***************
 
-                    # Recover student id from x-student-id header field:
-                    student_id = msgDict['x-student-id']
+            #Loop through message ID, parse the messages and extract the required info
+            for data in response:
+                try:
+                    msgStringParsed = email.message_from_string(data)
 
-                    if student_id not in student_db.values(): 
-                        logErr('Invalid student id: %s' % student_id)
-                        continue
+                    #*****************
+                    #print('msgStringParsed: %s' % str(msgStringParsed))
+                    #*****************
 
-                    student_email_addr =  get_student_email_addr_from_sid(student_id)
+                    sender =  msgStringParsed['From'].split('<')[1][:-1]
+                    dest   =  msgStringParsed['To']
 
-                    # FROM is changed to robota or stats60ta corresponding to the email id that student sent to
-                    from_addr = get_ta_email_from_student_email_addr(student_email_addr)
+                    #****************
+                    #print('Dest: %s' % dest)
+                    #****************
 
-                    # Sign the return:
-                    if from_addr == robo_ta_alias:
-                        body += '\n\n%s' % ROBO_TA_SIG
+                    ## Email received from student?
+                    if sender != HEAD_TA:
+                        # Yes, from student:
+                        if sender not in self.student_db:
+                            self.logErr('Student not found in database!: %s' % sender)
+                            continue
+                        self.logInfo('Msg from student: %s to %s' % (sender, dest))
+                        msg = MIMEMultipart()
+                        msg['From'] = 'stats60@cs.stanford.edu'
+                        msg['To'] = 'stats60TA@cs.stanford.edu'
+
+                        # Stick destination of student's msg into msg header:
+                        msg['x-student-dest'] = str(dest)
+                        # Same for student's return email:
+                        msg['x-student-email'] = str(sender)
+
+                        #**************
+                        #print('Sender: %s. SID: %s' % (sender, self.get_sid_from_student_email(sender)))
+                        #**************
+
+                        msg['Subject'] = msgStringParsed['Subject']
+                        body = self.get_body(msgStringParsed)
+                        msg.attach(MIMEText(body, 'plain'))
+                        ### Send this email:
+                        self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
+
+
+                    # Email received from HEAD-TA (a reply):
                     else:
-                        body += '\n\n%s' % TA_SIG
 
-                    msg['From'] = from_addr
-                    msg['Subject'] = split_subject[1]
-                    msg['To'] = ''
-                    msg.attach(MIMEText(body, 'plain'))
-                    logInfo('%s replying to: %s' % (msg['From'], student_email_addr))
+                        body    = self.get_body(msgStringParsed)
+                        subject = msgStringParsed['Subject']
+                        date    = msgStringParsed['Date']
+                        msg_id  = msgStringParsed['Message-ID']
 
-                    server2.sendmail(sender, student_email_addr, msg.as_string())
-                    ## Send this email
-            except Exception as e:
-                    logErr('This error in runScript() loop: %s' % `e`)
-                    #**********continue
-                    raise
-        return 1
+                        #*******************
+                        #print("Body: %s" % body)
+                        #*******************
 
-def get_student_email_addr_from_sid(student_id):
-    return student_db.keys()[student_db.values().index(student_id)]                    
+                        # First line of body is to be a line that
+                        # is empty except for the human/robot guess:
 
-def get_sid_from_student_email(email_addr):
-    return str(student_db[email_addr])
+                        match = self.guess_pattern.match(body) 
+                        if match is None:
+                            # Could not find the expected guess:
+                            new_body = 'NO H or R IN FIRST LINE!\n' + self.msg_subj_plus_body(date,subject,body)
+                            self.admin_msg_to_ta('noGuess', new_body)
+                            continue
+                        ta_guess = match.group().strip()
+                            
+                                           
+                        # Did TA accidentally sign his/her name?
+                        if body.find(HEAD_TA_NAME) > -1:
+                            new_body = "Found '%s' in message." % HEAD_TA_NAME + self.msg_subj_plus_body(date,subject,body)
+                            self.admin_msg_to_ta('lucasFound', body)
+                            continue
 
-def get_ta_email_addr_from_sid(group_num):
-    return student_ta[group_num]
+                        # Recover dest of original address from x-student-dest header field:
+                        orig_dest = msgStringParsed['x-student-dest']
 
-def get_group_num_from_email_addr(email):
-    return student_db[str(email).strip()]
+                        # Same for student's return email:
+                        student_email_addr = msgStringParsed['x-student-email']
 
-def get_ta_email_from_student_email_addr(email):
-    return get_ta_email_addr_from_sid(get_group_num_from_email_addr(email))
+                        #*************
+                        print('Recovered orig_dest: %s' % orig_dest)
+                        print('Recovered stud_email: %s' % student_email_addr)
+                        #*************
 
-def get_body(email_msg):
-    if email_msg.is_multipart():
-        # print email_msg.get_payload(0)
-        # return email_msg.get_payload(0)
-        for payload in email_msg.get_payload():
-            #print payload.get_payload()
-            if payload.get_content_maintype() == 'text':
-                return payload.get_payload()
-    else: return email_msg.get_payload()
+                        # FROM is changed to robota or stats60ta corresponding to the 
+                        # address that the student sent to.
+                        
+                        # Record the original destination as the truth the TA was to guess:
+                        self.record_ta_guess(date, msg_id, orig_dest, guess=ta_guess)
 
-def parse_student_info():
-    with open('official_randomization.csv', mode='r') as infile:
-        reader = csv.reader(infile)
-        student_group = {}
-        for rows in reader:
-            student_group[str(rows[1]).strip()] = rows[2]
+                        # Sign the return:
+                        if orig_dest == robo_ta_alias:
+                            body += '\n\n%s' % ROBO_TA_SIG
+                        else:
+                            body += '\n\n%s' % TA_SIG
 
-        #student_group = {str(rows[1]).strip():int(rows[2])for rows in reader}
+                        msg = MIMEMultipart()
 
-    student_db = {}  ## key: student_email, val: unique id
-    i=0
-    for email in student_group:
-        student_db[str(email).strip()] = i
-        i+=1
+                        msg['From'] = orig_dest
+                        msg['Subject'] = subject
+                        msg['To'] = ''
+                        msg.attach(MIMEText(body, 'plain'))
+                        self.logInfo('%s replying to: %s' % (msg['From'], student_email_addr))
 
-    student_ta = {1:robo_ta_alias,
-                  2:robo_ta_alias,
-                  3:stats60_ta_alias,
-                  4:stats60_ta_alias}
-    return student_db,student_group,student_ta
+                        self.serverSending.sendmail(sender, [student_email_addr], msg.as_string())
+                        ## Send this email
+                except Exception as e:
+                        self.logErr('This error in runScript() loop: %s' % `e`)
+                        #**********continue
+                        raise
+            return 1
 
-def admin_msg_to_ta(errorStr, body, sender=''):
+    def record_ta_guess(self, date, msg_id, true_origin, guess='origin'):
+        with open(GUESS_RECORD_FILE, 'a') as fd:
+            fd.write('%s,%s,%s,%s\n' % (date, msg_id, true_origin, guess))
 
-    msg = MIMEMultipart()
-    msg['From'] = 'stats60@cs.stanford.edu'
-    msg['To'] = 'stats60TA@cs.stanford.edu'
-    # Stick student ID into msg header:
-    msg['x-student-id'] = get_sid_from_student_email(sender)
-    msg['Subject'] = 'You Screwed Up, Dude'
-    body += 'Problem: %s\n' % errorStr
-    msg.attach(MIMEText(body, 'plain'))
-    server2.sendmail(sender, [HEAD_TA], msg.as_string())
-        
-def setupLogging(loggingLevel, logFile):
-    '''
-    Set up the standard Python logger.
-    @param logFile: file to log to
-    @type logFile: string
-    '''
-    # Set up logging:
-    this_logger = logging.getLogger(os.path.basename(__file__))
+    def msg_subj_plus_body(self, date, subject, body):
+        return 'On %s: %s\n%s' % (date,subject,body)
 
-    # Create file handler if requested:
-    if logFile is not None:
-        handler = logging.FileHandler(logFile)
-        print('Logging will go to %s' % logFile)
-    else:
-        # Create console handler:
-        handler = logging.StreamHandler()
-    handler.setLevel(loggingLevel)
-    # Create formatter
-    formatter = logging.Formatter("%(name)s: %(asctime)s;%(levelname)s: %(message)s")
-    handler.setFormatter(formatter)
+    def get_student_email_addr_from_sid(self, student_id):
+        return self.student_db.keys()[self.student_db.values().index(student_id)]                    
 
-    # Add the handler to the logger
-    this_logger.addHandler(handler)
-    this_logger.setLevel(loggingLevel)
+    def get_sid_from_student_email(self, email_addr):
+        try:
+            return str(self.student_db[email_addr])
+        except KeyError:
+            return None
 
-    return this_logger
+    def get_ta_email_addr_from_group_num(self, group_num):
+        return self.student_ta[group_num]
 
-def logDebug(msg):
-    logger.debug(msg)
+    def get_group_num_from_email_addr(self, email):
+        return self.student_group[email]
 
-def logWarn(msg):
-    logger.warn(msg)
+    def get_ta_email_from_student_email_addr(self, email):
+        return self.get_ta_email_addr_from_group_num(self.get_group_num_from_email_addr(email))
 
-def logInfo(msg):
-    logger.info(msg)
+    def get_body(self, email_msg):
+        if email_msg.is_multipart():
+            # print email_msg.get_payload(0)
+            # return email_msg.get_payload(0)
+            for payload in email_msg.get_payload():
+                #print payload.get_payload()
+                if payload.get_content_maintype() == 'text':
+                    return payload.get_payload()
+        else: return email_msg.get_payload()
 
-def logErr(msg):
-    logger.error(msg)
+    def parse_student_info(self):
+        with open('official_randomization.csv', mode='r') as infile:
+            reader = csv.reader(infile)
+            self.student_group = {}
+            for rows in reader:
+                self.student_group[str(rows[1]).strip()] = rows[2]
 
-logger = setupLogging(logging.INFO, 'roboTa.log')
+            #self.student_group = {str(rows[1]).strip():int(rows[2])for rows in reader}
+
+        self.student_db = {}  ## key: student_email, val: unique id
+        i=0
+        for email in self.student_group:
+            self.student_db[str(email).strip()] = i
+            i+=1
+
+        self.student_ta = {'1':robo_ta_alias,
+                           '2':robo_ta_alias,
+                           '3':stats60_ta_alias,
+                           '4':stats60_ta_alias}
+
+    def admin_msg_to_ta(self, errorStr, body):
+
+        sender = admin_alias
+        msg = MIMEMultipart()
+        msg['From'] = admin_alias
+        msg['To'] = HEAD_TA
+        # Stick student ID into msg header:
+        msg['x-student-id'] = self.get_sid_from_student_email(sender)
+        msg['Subject'] = 'You Screwed Up, Dude'
+        body += 'Problem: %s\n' % errorStr
+        msg.attach(MIMEText(body, 'plain'))
+        self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
+            
+    def setupLogging(self, loggingLevel, logFile):
+        '''
+        Set up the standard Python logger.
+        @param logFile: file to log to
+        @type logFile: string
+        '''
+        # Set up logging:
+        self.logger = logging.getLogger(os.path.basename(__file__))
+
+        # Create file handler if requested:
+        if logFile is not None:
+            handler = logging.FileHandler(logFile)
+            print('Logging will go to %s' % logFile)
+        else:
+            # Create console handler:
+            handler = logging.StreamHandler()
+        handler.setLevel(loggingLevel)
+        # Create formatter
+        formatter = logging.Formatter("%(name)s: %(asctime)s;%(levelname)s: %(message)s")
+        handler.setFormatter(formatter)
+
+        # Add the handler to the logger
+        self.logger.addHandler(handler)
+        self.logger.setLevel(loggingLevel)
+
+    def logDebug(self, msg):
+        self.logger.debug(msg)
+
+    def logWarn(self, msg):
+        self.logger.warn(msg)
+
+    def logInfo(self, msg):
+        self.logger.info(msg)
+
+    def logErr(self, msg):
+        self.logger.error(msg)
 
 
 # import sys
-# (server1, server2) = setup_servers()
-# (unread_msg_num_arr, unread_msg_arr) = get_inbox(server1,server2)
+# (serverReceiving, serverSending) = setup_servers()
+# (unread_msg_num_arr, unread_msg_arr) = get_inbox(serverReceiving,serverSending)
 # print('Start msgs...')
 # for msg in unread_msg_arr:
 #     print msg

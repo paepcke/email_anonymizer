@@ -1,11 +1,18 @@
 #!/usr/bin/env python
+
 from util import *
 
-def main():
-    #threading.Timer(30.0, main).start()
-    threading.Timer(15.0, main).start()
+def main(num_server_contacts):
+    #threading.Timer(30.0, main, [num_server_contacts]).start()
+    threading.Timer(15.0, main, [num_server_contacts]).start()
     server1,server2 = setup_servers()
-    unread_msgs,response = get_inbox(server1,server2)
+    # Request new msgs from imap server, logging
+    # the visit only every 10th time.
+    num_server_contacts += 1
+    unread_msgs,response = get_inbox(server1, 
+                                     server2, 
+                                     (num_server_contacts % 10) == 0
+                                     )
     success=-1
     if response: success = run_script(unread_msgs,response,server1,server2)
 
@@ -15,4 +22,6 @@ def main():
     # server1.close()
     # server1.logout()
     #server2.quit()
-main()
+
+# Start main with zero-counter:
+main(0)

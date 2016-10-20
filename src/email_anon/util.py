@@ -1,10 +1,8 @@
 
 import csv
 import email
-from email import encoders
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.mime.image import MIMEImage
 from email.parser import HeaderParser
 import imaplib
 import logging
@@ -12,7 +10,6 @@ import os
 import re
 import smtplib
 
-from simplecrypt import encrypt, decrypt
 from mock.mock import self
 
 

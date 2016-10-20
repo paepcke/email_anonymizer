@@ -11,6 +11,18 @@ lock = Lock()
 DONT_BLOCK = False
 
 def main(num_server_contacts, email_checker):
+    '''
+    Called cyclically to check IMAP inbox, and
+    process any messages.
+    
+    :param num_server_contacts: number of times the IMAP server has
+        already been contacted. Incremented on each call. Used to
+        limit the number of "I read the inbox" log messages in calls
+        to get_inbox().
+    :type num_server_contacts: int
+    :param email_checker: instance of EmailChecker, which does the heavy lifting.
+    :type email_checker: EmailChecker
+    '''
 
     # Called one more time:
     num_server_contacts += 1
@@ -28,7 +40,7 @@ def main(num_server_contacts, email_checker):
     try:
         # Request new msgs from imap server, logging
         # the visit only every 10th time.
-        (unread_msg_nums, response) = email_checker.get_inbox((num_server_contacts % 10) == 0)
+        (unread_msg_nums, response) = email_checker.get_inbox((num_server_contacts % 100) == 0)
     
         success=-1
         
@@ -45,6 +57,9 @@ def main(num_server_contacts, email_checker):
     # server1.logout()
     #server2.quit()
 
-# Start main with zero-counter:
+# Single instance of EmailChecker stays alive though
+# all email-checking cycles:
 email_checker = EmailChecker()
+
+# Start main with zero-counter:
 main(0, email_checker)

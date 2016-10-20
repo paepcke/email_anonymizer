@@ -1,18 +1,20 @@
 
-import email
-import os
-import re
-from imapclient import IMAPClient
-import smtplib
 import csv
+import email
+from email import encoders
+from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
-from email.mime.multipart import MIMEMultipart
 from email.parser import HeaderParser
 import imaplib
-import sched, time
-import threading
 import logging
+import os
+import re
+import smtplib
+
+from simplecrypt import encrypt, decrypt
+from mock.mock import self
+
 
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
@@ -23,6 +25,11 @@ HEAD_TA_NAME = 'Lucas'
 TA_SIG = 'Best, Lucas'
 ROBO_TA_SIG = 'Greetings, RoboTA.'
 
+LOG_FILE = 'roboTA.log'
+
+# Where TA's guesses as to the origin
+# of each student question's grp assignment
+# are stored:
 GUESS_RECORD_FILE = 'taGuessRecord.csv'
 
 robo_ta_alias = 'roboTA@cs.stanford.edu'
@@ -31,32 +38,46 @@ admin_alias = 'paepcke@cs.stanford.edu'
 
 ssl = False
 
+TEST = None
+
+destination_addrs = [robo_ta_alias.lower(), stats60_ta_alias.lower()]
+                         
 
 class EmailChecker(object):
 
 
-    def __init__(self):
-
+    def __init__(self, logFile=LOG_FILE):
+        
+        self.log_file = logFile
         self.header_parser = HeaderParser()
-
-        self.setupLogging(logging.INFO, 'roboTa.log')
-
-        self.serverReceiving = imaplib.IMAP4_SSL(HOST, 993)
-
-        self.serverSending = smtplib.SMTP(HOST2,587)
-        self.serverSending.starttls()
-
-        self.serverReceiving.login(USERNAME, PASSWORD)
-        self.serverSending.login(USERNAME, PASSWORD)
-
+        self.setupLogging(logging.INFO, self.log_file)
         # Regex for start of line being H, R, human, Human, Robot, robot, followed by \n or \r:
         self.guess_pattern = re.compile(r'(H)[\n\r]|(R)[\n\r]|([hH]uman)[\n\r]|([rR]obot)[\n\r]')
+        
+        self.login_receiving()
 
+    def login_sending(self):
+        self.serverSending = smtplib.SMTP(HOST2,587)
+        self.serverSending.starttls()
+        self.serverSending.login(USERNAME, PASSWORD)
+        
+    def logout_sending(self):
+        self.serverSending.quit()
+
+    def login_receiving(self):
+        self.serverReceiving = imaplib.IMAP4_SSL(HOST, 993)
+        self.serverReceiving.login(USERNAME, PASSWORD)
+
+    def logout_receiving(self):
+        self.serverReceiving.close()
+        self.serverReceiving.logout()
+        
 
     def get_inbox(self, doLogNumMsgs):
-        select_info = self.serverReceiving.select('INBOX')
-        status, response = self.serverReceiving.search(None, 'UnSeen')
-        unread_msg_nums = response[0].split()
+        
+        num_msgs = self.serverReceiving.select('INBOX') # @UnusedVariable
+        typ, msgnums = self.serverReceiving.search(None, 'UnSeen') #@Unus @UnusedVariable
+        unread_msg_nums = msgnums[0].split()
 
         if len(unread_msg_nums)==0: 
             if doLogNumMsgs:
@@ -68,38 +89,26 @@ class EmailChecker(object):
         # print 'Messages:[ %d ]'%select_info['EXISTS']
         da = []
         for e_id in unread_msg_nums:
-            _, response = self.serverReceiving.fetch(e_id,'(RFC822)')
-            da.append(response[0][1])
+            _, msgnums = self.serverReceiving.fetch(e_id,'(RFC822)')
+            da.append(msgnums[0][1])
         return unread_msg_nums, da
 
-    def markSeen(self, unread_msgs):
+    def mark_seen(self, unread_msgs):
         for eid in unread_msgs:
             self.serverReceiving.store(eid, '+FLAGS', '\Seen')
 
 
-    def run_script (self, unread_msg_nums, response):
+    def pull_msgs (self, unread_msg_nums, response):
 
             self.parse_student_info()
-
-            #***************
-            #print('Response: %s' % str(response))
-            #***************
 
             #Loop through message ID, parse the messages and extract the required info
             for data in response:
                 try:
                     msgStringParsed = email.message_from_string(data)
 
-                    #*****************
-                    #print('msgStringParsed: %s' % str(msgStringParsed))
-                    #*****************
-
                     sender =  msgStringParsed['From'].split('<')[1][:-1]
                     dest   =  msgStringParsed['To']
-
-                    #****************
-                    #print('Dest: %s' % dest)
-                    #****************
 
                     ## Email received from student?
                     if sender != HEAD_TA:
@@ -109,23 +118,27 @@ class EmailChecker(object):
                             continue
                         self.logInfo('Msg from student: %s to %s' % (sender, dest))
                         msg = MIMEMultipart()
-                        msg['From'] = 'stats60@cs.stanford.edu'
-                        msg['To'] = 'stats60TA@cs.stanford.edu'
-
-                        # Stick destination of student's msg into msg header:
-                        msg['x-student-dest'] = str(dest)
-                        # Same for student's return email:
-                        msg['x-student-email'] = str(sender)
-
-                        #**************
-                        #print('Sender: %s. SID: %s' % (sender, self.get_sid_from_student_email(sender)))
-                        #**************
-
-                        msg['Subject'] = msgStringParsed['Subject']
                         body = self.get_body(msgStringParsed)
                         msg.attach(MIMEText(body, 'plain'))
+                        #************
+                        cipher = encrypt(PASSWORD, '%s,%s' % (self.email2Int(dest), sender))
+                        #msg.attach(MIMEText('%s,%s' % (self.email2Int(dest), sender), 'plain'))
+                        part = MIMEImage( "image", "x-other", encoders.encode_noop )
+                        part.set_payload( cipher )
+                        part.add_header( 'Content-Transfer-Encoding', 'binary' )
+                        msg.attach( part )                     
+                        #msg.attach(MIMEText(cipher, 'plain'))
+                        #msg = MIMEMultipart('plain', '===1223454', [MIMEText(body), MIMEText('%s,%s' % (self.email2Int(dest), sender))])
+                        #************                        
+                        msg['From'] = 'stats60ta@cs.stanford.edu'
+                        msg['To'] = 'stats60ta@cs.stanford.edu'
+                        msg['Subject'] = msgStringParsed['Subject']
+                        
                         ### Send this email:
+                        self.login_sending()
+                        #self.serverSending.sendmail('stats60ta@cs.stanford.edu', [HEAD_TA], msg.as_string())
                         self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
+                        #self.serverSending.sendmail('paepcke@cs.stanford.edu', [HEAD_TA], msg.as_string())
 
 
                     # Email received from HEAD-TA (a reply):
@@ -135,10 +148,6 @@ class EmailChecker(object):
                         subject = msgStringParsed['Subject']
                         date    = msgStringParsed['Date']
                         msg_id  = msgStringParsed['Message-ID']
-
-                        #*******************
-                        #print("Body: %s" % body)
-                        #*******************
 
                         # First line of body is to be a line that
                         # is empty except for the human/robot guess:
@@ -164,11 +173,6 @@ class EmailChecker(object):
                         # Same for student's return email:
                         student_email_addr = msgStringParsed['x-student-email']
 
-                        #*************
-                        print('Recovered orig_dest: %s' % orig_dest)
-                        print('Recovered stud_email: %s' % student_email_addr)
-                        #*************
-
                         # FROM is changed to robota or stats60ta corresponding to the 
                         # address that the student sent to.
                         
@@ -189,6 +193,7 @@ class EmailChecker(object):
                         msg.attach(MIMEText(body, 'plain'))
                         self.logInfo('%s replying to: %s' % (msg['From'], student_email_addr))
 
+                        self.login_sending()
                         self.serverSending.sendmail(sender, [student_email_addr], msg.as_string())
                         ## Send this email
                 except Exception as e:
@@ -264,6 +269,15 @@ class EmailChecker(object):
         body += 'Problem: %s\n' % errorStr
         msg.attach(MIMEText(body, 'plain'))
         self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
+        
+    def int2Email(self, an_int):
+        return destination_addrs[an_int]
+
+    def email2Int(self, email_addr):
+        try:
+            return destination_addrs.index(email_addr.lower())
+        except ValueError:
+            return None
             
     def setupLogging(self, loggingLevel, logFile):
         '''
@@ -289,6 +303,9 @@ class EmailChecker(object):
         # Add the handler to the logger
         self.logger.addHandler(handler)
         self.logger.setLevel(loggingLevel)
+    
+    def stop_logging(self):
+        logging.shutdown()
 
     def logDebug(self, msg):
         self.logger.debug(msg)

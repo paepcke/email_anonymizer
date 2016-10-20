@@ -45,7 +45,6 @@ destination_addrs = [robo_ta_alias.lower(), stats60_ta_alias.lower()]
 
 class EmailChecker(object):
 
-
     def __init__(self, logFile=LOG_FILE):
         
         self.log_file = logFile
@@ -53,6 +52,8 @@ class EmailChecker(object):
         self.setupLogging(logging.INFO, self.log_file)
         # Regex for start of line being H, R, human, Human, Robot, robot, followed by \n or \r:
         self.guess_pattern = re.compile(r'(H)[\n\r]|(R)[\n\r]|([hH]uman)[\n\r]|([rR]obot)[\n\r]')
+        
+        self.traffic_record = {}
         
         self.login_receiving()
 
@@ -109,6 +110,7 @@ class EmailChecker(object):
 
                     sender =  msgStringParsed['From'].split('<')[1][:-1]
                     dest   =  msgStringParsed['To']
+                    msg_id =  msgStringParsed['Message-ID']
 
                     ## Email received from student?
                     if sender != HEAD_TA:
@@ -117,29 +119,24 @@ class EmailChecker(object):
                             self.logErr('Student not found in database!: %s' % sender)
                             continue
                         self.logInfo('Msg from student: %s to %s' % (sender, dest))
+                        
+                        # Prepare message to send to TA:
+                        
                         msg = MIMEMultipart()
                         body = self.get_body(msgStringParsed)
                         msg.attach(MIMEText(body, 'plain'))
-                        #************
-                        cipher = encrypt(PASSWORD, '%s,%s' % (self.email2Int(dest), sender))
-                        #msg.attach(MIMEText('%s,%s' % (self.email2Int(dest), sender), 'plain'))
-                        part = MIMEImage( "image", "x-other", encoders.encode_noop )
-                        part.set_payload( cipher )
-                        part.add_header( 'Content-Transfer-Encoding', 'binary' )
-                        msg.attach( part )                     
-                        #msg.attach(MIMEText(cipher, 'plain'))
-                        #msg = MIMEMultipart('plain', '===1223454', [MIMEText(body), MIMEText('%s,%s' % (self.email2Int(dest), sender))])
-                        #************                        
                         msg['From'] = 'stats60ta@cs.stanford.edu'
                         msg['To'] = 'stats60ta@cs.stanford.edu'
-                        msg['Subject'] = msgStringParsed['Subject']
+                        msg['Subject'] = msgStringParsed['Subject'] + '   RouteNo:' + msg_id
+                        
+                        # Remember to whom student sent her msg, and her 
+                        # return addr:
+                        self.traffic_record[msg_id] = (sender, dest) 
                         
                         ### Send this email:
                         self.login_sending()
                         #self.serverSending.sendmail('stats60ta@cs.stanford.edu', [HEAD_TA], msg.as_string())
                         self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
-                        #self.serverSending.sendmail('paepcke@cs.stanford.edu', [HEAD_TA], msg.as_string())
-
 
                     # Email received from HEAD-TA (a reply):
                     else:
@@ -147,7 +144,6 @@ class EmailChecker(object):
                         body    = self.get_body(msgStringParsed)
                         subject = msgStringParsed['Subject']
                         date    = msgStringParsed['Date']
-                        msg_id  = msgStringParsed['Message-ID']
 
                         # First line of body is to be a line that
                         # is empty except for the human/robot guess:
@@ -158,9 +154,12 @@ class EmailChecker(object):
                             new_body = 'NO H or R IN FIRST LINE!\n' + self.msg_subj_plus_body(date,subject,body)
                             self.admin_msg_to_ta('noGuess', new_body)
                             continue
-                        ta_guess = match.group().strip()
+                        else:
+                            ta_guess = match.group().strip()
+                            # Remove the guess from the body before sending
+                            # on to the student:
+                            body = body[len(ta_guess):]                        
                             
-                                           
                         # Did TA accidentally sign his/her name?
                         if body.find(HEAD_TA_NAME) > -1:
                             new_body = "Found '%s' in message." % HEAD_TA_NAME + self.msg_subj_plus_body(date,subject,body)
@@ -168,14 +167,21 @@ class EmailChecker(object):
                             continue
 
                         # Recover dest of original address from x-student-dest header field:
-                        orig_dest = msgStringParsed['x-student-dest']
-
-                        # Same for student's return email:
-                        student_email_addr = msgStringParsed['x-student-email']
-
-                        # FROM is changed to robota or stats60ta corresponding to the 
-                        # address that the student sent to.
+                        (orig_subject, orig_msg_id) = subject.split('RouteNo:')
+                        (student_sender, orig_dest) = self.traffic_record.get(orig_msg_id, (None, None))
                         
+                        subject = orig_subject
+                        
+                        if student_sender is None or orig_dest is None:
+                            self.logErr("Missing msg record: %s" % orig_msg_id)
+                            continue
+                        else:
+                            try:
+                                # Done dealing with this request:
+                                del self.traffic_record[orig_msg_id]
+                            except:
+                                pass
+                         
                         # Record the original destination as the truth the TA was to guess:
                         self.record_ta_guess(date, msg_id, orig_dest, guess=ta_guess)
 
@@ -191,14 +197,14 @@ class EmailChecker(object):
                         msg['Subject'] = subject
                         msg['To'] = ''
                         msg.attach(MIMEText(body, 'plain'))
-                        self.logInfo('%s replying to: %s' % (msg['From'], student_email_addr))
+                        self.logInfo('%s replying to: %s' % (msg['From'], student_sender))
 
                         self.login_sending()
-                        self.serverSending.sendmail(sender, [student_email_addr], msg.as_string())
+                        self.serverSending.sendmail(sender, [student_sender], msg.as_string())
                         ## Send this email
                 except Exception as e:
                         self.logErr('This error in runScript() loop: %s' % `e`)
-                        #**********continue
+                        continue
                         raise
             return 1
 
@@ -268,6 +274,8 @@ class EmailChecker(object):
         msg['Subject'] = 'You Screwed Up, Dude'
         body += 'Problem: %s\n' % errorStr
         msg.attach(MIMEText(body, 'plain'))
+        self.logErr('Lucas screwed up: %s' % errorStr)
+        self.login_sending()
         self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
         
     def int2Email(self, an_int):
@@ -303,6 +311,8 @@ class EmailChecker(object):
         # Add the handler to the logger
         self.logger.addHandler(handler)
         self.logger.setLevel(loggingLevel)
+        
+        self.logInfo('Start logging.')
     
     def stop_logging(self):
         logging.shutdown()
@@ -319,17 +329,3 @@ class EmailChecker(object):
     def logErr(self, msg):
         self.logger.error(msg)
 
-
-# import sys
-# (serverReceiving, serverSending) = setup_servers()
-# (unread_msg_num_arr, unread_msg_arr) = get_inbox(serverReceiving,serverSending)
-# print('Start msgs...')
-# for msg in unread_msg_arr:
-#     print msg
-#     #header_data = msg[1][0][1]
-#     msgDict = header_parser.parsestr(msg)
-#     print('Keys: %s' % msgDict.keys())
-#     print('Vals: %s'  % msgDict.values())
-         
-#     print('SID: %s' % msgDict['x-student-id'])
-# print ("end of msgs")

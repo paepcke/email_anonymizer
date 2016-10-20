@@ -10,7 +10,7 @@ lock = Lock()
 
 DONT_BLOCK = False
 
-def main(num_server_contacts):
+def main(num_server_contacts, email_checker):
 
     # Called one more time:
     num_server_contacts += 1
@@ -20,12 +20,10 @@ def main(num_server_contacts):
     # try again:
     
     #threading.Timer(30.0, main, [num_server_contacts]).start()
-    threading.Timer(15.0, main, [num_server_contacts]).start()
+    threading.Timer(15.0, main, [num_server_contacts, email_checker]).start()
     
     if not lock.acquire(DONT_BLOCK):
         return
-
-    email_checker = EmailChecker()
 
     try:
         # Request new msgs from imap server, logging
@@ -48,4 +46,5 @@ def main(num_server_contacts):
     #server2.quit()
 
 # Start main with zero-counter:
-main(0)
+email_checker = EmailChecker()
+main(0, email_checker)

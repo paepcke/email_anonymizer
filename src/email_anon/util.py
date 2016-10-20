@@ -20,7 +20,7 @@ HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
-HEAD_TA = 'paepcke@cs.stanford.edu' #'ljanson@stanford.edu'
+HEAD_TA = 'ljanson@stanford.edu' #'paepcke@cs.stanford.edu' 
 HEAD_TA_NAME = 'Lucas'
 TA_SIG = 'Best, Lucas'
 ROBO_TA_SIG = 'Greetings, RoboTA.'
@@ -51,7 +51,7 @@ class EmailChecker(object):
         self.header_parser = HeaderParser()
         self.setupLogging(logging.INFO, self.log_file)
         # Regex for start of line being H, R, human, Human, Robot, robot, followed by \n or \r:
-        self.guess_pattern = re.compile(r'(H)[\n\r]|(R)[\n\r]|([hH]uman)[\n\r]|([rR]obot)[\n\r]')
+        self.guess_pattern = re.compile(r'(H)[\n\r]|(R)[\n\r]|(h)[\n\r]|(r)[\n\r]|([hH]uman)[\n\r]|([rR]obot)[\n\r]')
         
         self.traffic_record = {}
         
@@ -209,6 +209,19 @@ class EmailChecker(object):
             return 1
 
     def record_ta_guess(self, date, msg_id, true_origin, guess='origin'):
+        # true_origin is the email of the roboTA or the stats TA.
+        # Normalize that into: 'robot' and 'human'
+        if true_origin == stats60_ta_alias:
+            true_origin = 'human'
+        else:
+            true_origin = 'robot'
+            
+        # Same for the guess: could the h, H, Human, human, R, r, Robot, or robot:
+        if guess[0] in ['R','r']:
+            guess = 'robot'
+        else:
+            guess = 'human'
+        
         with open(GUESS_RECORD_FILE, 'a') as fd:
             fd.write('%s,%s,%s,%s\n' % (date, msg_id, true_origin, guess))
 

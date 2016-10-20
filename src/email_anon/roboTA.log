@@ -1,0 +1,28 @@
+util.py: 2016-10-19 21:00:08,808;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-19 21:00:08,849;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-10-19 21:01:38,806;INFO: No unread emails!
+util.py: 2016-10-19 21:04:08,797;INFO: No unread emails!
+util.py: 2016-10-19 21:06:38,800;INFO: No unread emails!
+util.py: 2016-10-19 21:09:08,823;INFO: No unread emails!
+util.py: 2016-10-19 21:11:38,830;INFO: No unread emails!
+util.py: 2016-10-19 21:14:50,092;INFO: Start logging.
+util.py: 2016-10-19 21:17:05,302;INFO: No unread emails!
+util.py: 2016-10-19 21:17:35,293;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-19 21:17:35,297;ERROR: Lucas screwed up: noGuess
+util.py: 2016-10-19 21:18:50,299;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-19 21:18:50,302;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-10-19 21:19:35,302;INFO: No unread emails!
+util.py: 2016-10-19 21:19:50,300;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-19 21:19:50,342;ERROR: Lucas screwed up: noGuess
+util.py: 2016-10-19 21:22:05,334;INFO: No unread emails!
+util.py: 2016-10-19 21:22:42,345;INFO: Start logging.
+util.py: 2016-10-19 21:24:12,530;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-19 21:24:12,532;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-10-19 21:24:57,530;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-19 21:24:57,573;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-10-19 21:27:12,537;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-19 21:27:12,541;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-10-19 21:27:27,543;INFO: No unread emails!
+util.py: 2016-10-19 21:28:12,541;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-19 21:28:12,581;ERROR: Lucas screwed up: lucasFound
+util.py: 2016-10-19 21:29:57,525;INFO: No unread emails!

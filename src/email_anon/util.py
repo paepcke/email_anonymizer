@@ -20,17 +20,19 @@ HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
-#HEAD_TA = 'ljanson@stanford.edu'
-HEAD_TA = 'paepcke@stanford.edu'
+HEAD_TA = 'ljanson@stanford.edu'
+#HEAD_TA = 'paepcke@stanford.edu'
 HEAD_TA_NAME = 'Lucas'
 TA_SIG = 'Best, Lucas'
 ROBO_TA_SIG = 'Greetings, RoboTA.'
 
+# Will be placed in same dir as this script:
 LOG_FILE = 'roboTA.log'
 
 # Where TA's guesses as to the origin
 # of each student question's grp assignment
-# are stored:
+# are stored. Will be placed in same dir as
+# this script:
 GUESS_RECORD_FILE = 'taGuessRecord.csv'
 
 robo_ta_alias = 'roboTA@cs.stanford.edu'
@@ -48,6 +50,11 @@ class EmailChecker(object):
 
     def __init__(self, logFile=LOG_FILE):
         
+        # Path to this script:
+        self.script_path = os.path.dirname(__file__)
+        if not os.path.isabs(logFile):
+            logFile = os.path.join(self.script_path, logFile)
+        
         self.log_file = logFile
         self.setupLogging(logging.INFO, self.log_file)
 
@@ -59,6 +66,9 @@ class EmailChecker(object):
 
         # Regex for removing [SPAM:####] at start of subject:
         self.sharpSpamPattern = re.compile(r'([^#]*)(\[SPAM:####\])(.*)')
+        
+        # Regex to find 'Best, TA_SIG':
+        self.ta_sig_pattern = re.compile(r'\n\n' + TA_SIG + r'$')
         
         # For remembering which student sent
         # original msg to robot/human, and to
@@ -237,7 +247,7 @@ class EmailChecker(object):
                         body = body[len(ta_guess):]                        
                         
                     # Did TA accidentally sign his/her name?
-                    if body.find(TA_SIG) > -1:
+                    if self.ta_sig_pattern.match(body) is not None:
                         new_body = "Found '%s' in message." % HEAD_TA_NAME + self.msg_subj_plus_body(date,subject,body)
                         self.admin_msg_to_ta('lucasFound', body)
                         continue
@@ -318,7 +328,7 @@ class EmailChecker(object):
         else:
             guess = 'human'
         
-        with open(GUESS_RECORD_FILE, 'a') as fd:
+        with open(os.path.join(self.script_path, GUESS_RECORD_FILE), 'a') as fd:
             fd.write('%s,%s,%s,%s\n' % (date, msg_id, true_origin, guess))
 
     def msg_subj_plus_body(self, date, subject, body):

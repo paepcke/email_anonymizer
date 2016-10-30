@@ -53,3 +53,25 @@ util.py: 2016-10-20 17:06:28,096;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-10-20 17:06:28,108;ERROR: Lucas screwed up: noGuess
 util.py: 2016-10-20 17:09:43,135;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-10-20 17:09:43,147;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-10-29 16:45:47,320;INFO: Start logging.
+util.py: 2016-10-29 16:47:47,630;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-29 16:47:47,637;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-10-29 16:47:47,637;ERROR: This error in runScript() loop: NameError("global name 'lucas_greeting' is not defined",)
+util.py: 2016-10-29 16:49:40,784;INFO: Start logging.
+util.py: 2016-10-29 16:49:41,080;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-29 16:49:41,085;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-10-29 16:51:11,092;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-29 16:51:11,100;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-10-29 16:51:56,120;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-29 16:51:56,129;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-10-29 16:53:41,164;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-29 16:53:41,169;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-10-29 17:00:26,209;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-29 17:00:26,216;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-10-29 17:08:56,297;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-29 17:08:56,303;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-10-29 17:14:26,354;INFO: No unread emails!
+util.py: 2016-10-29 17:39:26,658;INFO: No unread emails!
+util.py: 2016-10-29 17:44:26,730;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-29 17:44:26,738;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-10-29 18:04:26,987;INFO: No unread emails!

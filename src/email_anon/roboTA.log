@@ -53,3 +53,575 @@ util.py: 2016-10-20 17:06:28,096;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-10-20 17:06:28,108;ERROR: Lucas screwed up: noGuess
 util.py: 2016-10-20 17:09:43,135;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-10-20 17:09:43,147;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-10-20 17:14:37,659;INFO: Start logging.
+util.py: 2016-10-20 17:19:52,821;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-20 17:19:52,861;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-10-20 17:39:22,877;INFO: No unread emails!
+util.py: 2016-10-20 17:44:37,884;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-20 17:44:37,889;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-10-20 17:46:22,890;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-20 17:46:22,894;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-10-20 17:59:22,917;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-20 17:59:22,923;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-10-20 18:04:07,925;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-20 18:04:07,930;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-10-20 18:04:22,929;INFO: No unread emails!
+util.py: 2016-10-20 18:07:52,929;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-20 18:07:52,937;ERROR: Lucas screwed up: noGuess
+util.py: 2016-10-20 18:29:22,962;INFO: No unread emails!
+util.py: 2016-10-20 18:54:23,001;INFO: No unread emails!
+util.py: 2016-10-20 19:19:23,068;INFO: No unread emails!
+util.py: 2016-10-20 19:44:23,105;INFO: No unread emails!
+util.py: 2016-10-20 20:09:23,148;INFO: No unread emails!
+util.py: 2016-10-20 20:34:23,190;INFO: No unread emails!
+util.py: 2016-10-20 20:59:23,243;INFO: No unread emails!
+util.py: 2016-10-20 21:24:23,292;INFO: No unread emails!
+util.py: 2016-10-20 21:49:23,334;INFO: No unread emails!
+util.py: 2016-10-20 22:14:24,265;INFO: No unread emails!
+util.py: 2016-10-20 22:39:23,429;INFO: No unread emails!
+util.py: 2016-10-20 23:04:23,494;INFO: No unread emails!
+util.py: 2016-10-20 23:29:23,523;INFO: No unread emails!
+util.py: 2016-10-20 23:54:23,576;INFO: No unread emails!
+util.py: 2016-10-21 00:19:23,628;INFO: No unread emails!
+util.py: 2016-10-21 00:44:23,658;INFO: No unread emails!
+util.py: 2016-10-21 01:09:24,619;INFO: No unread emails!
+util.py: 2016-10-21 01:59:23,835;INFO: No unread emails!
+util.py: 2016-10-21 02:49:23,916;INFO: No unread emails!
+util.py: 2016-10-21 03:14:23,942;INFO: No unread emails!
+util.py: 2016-10-21 03:39:23,996;INFO: No unread emails!
+util.py: 2016-10-21 04:04:24,045;INFO: No unread emails!
+util.py: 2016-10-21 04:29:24,105;INFO: No unread emails!
+util.py: 2016-10-21 04:54:24,134;INFO: No unread emails!
+util.py: 2016-10-21 05:19:24,182;INFO: No unread emails!
+util.py: 2016-10-21 05:44:24,215;INFO: No unread emails!
+util.py: 2016-10-21 06:09:24,267;INFO: No unread emails!
+util.py: 2016-10-21 06:34:24,311;INFO: No unread emails!
+util.py: 2016-10-21 06:59:24,384;INFO: No unread emails!
+util.py: 2016-10-21 07:24:24,464;INFO: No unread emails!
+util.py: 2016-10-21 07:49:24,454;INFO: No unread emails!
+util.py: 2016-10-21 08:14:24,502;INFO: No unread emails!
+util.py: 2016-10-21 08:39:24,567;INFO: No unread emails!
+util.py: 2016-10-21 09:04:24,601;INFO: No unread emails!
+util.py: 2016-10-21 09:29:24,645;INFO: No unread emails!
+util.py: 2016-10-21 09:54:24,700;INFO: No unread emails!
+util.py: 2016-10-21 10:19:24,736;INFO: No unread emails!
+util.py: 2016-10-21 10:44:24,781;INFO: No unread emails!
+util.py: 2016-10-21 11:09:24,846;INFO: No unread emails!
+util.py: 2016-10-21 11:34:24,902;INFO: No unread emails!
+util.py: 2016-10-21 11:59:24,920;INFO: No unread emails!
+util.py: 2016-10-21 12:24:25,000;INFO: No unread emails!
+util.py: 2016-10-21 12:49:25,001;INFO: No unread emails!
+util.py: 2016-10-21 13:14:25,074;INFO: No unread emails!
+util.py: 2016-10-21 13:39:25,113;INFO: No unread emails!
+util.py: 2016-10-21 14:04:25,144;INFO: No unread emails!
+util.py: 2016-10-21 14:29:25,583;INFO: No unread emails!
+util.py: 2016-10-21 14:54:25,243;INFO: No unread emails!
+util.py: 2016-10-21 15:19:25,290;INFO: No unread emails!
+util.py: 2016-10-21 15:44:25,349;INFO: No unread emails!
+util.py: 2016-10-21 16:09:25,387;INFO: No unread emails!
+util.py: 2016-10-21 16:34:25,481;INFO: No unread emails!
+util.py: 2016-10-21 16:59:25,485;INFO: No unread emails!
+util.py: 2016-10-21 17:24:25,534;INFO: No unread emails!
+util.py: 2016-10-21 17:49:25,585;INFO: No unread emails!
+util.py: 2016-10-21 18:14:25,628;INFO: No unread emails!
+util.py: 2016-10-21 18:17:55,640;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-21 18:17:55,644;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-10-21 18:19:10,626;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-21 18:19:10,628;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-10-21 18:39:25,678;INFO: No unread emails!
+util.py: 2016-10-21 19:04:25,718;INFO: No unread emails!
+util.py: 2016-10-21 19:29:25,776;INFO: No unread emails!
+util.py: 2016-10-21 19:54:25,843;INFO: No unread emails!
+util.py: 2016-10-21 20:19:25,870;INFO: No unread emails!
+util.py: 2016-10-21 20:44:25,925;INFO: No unread emails!
+util.py: 2016-10-21 21:09:25,962;INFO: No unread emails!
+util.py: 2016-10-21 21:34:26,005;INFO: No unread emails!
+util.py: 2016-10-21 21:59:26,050;INFO: No unread emails!
+util.py: 2016-10-21 22:24:26,096;INFO: No unread emails!
+util.py: 2016-10-21 22:49:26,130;INFO: No unread emails!
+util.py: 2016-10-21 23:14:26,208;INFO: No unread emails!
+util.py: 2016-10-21 23:39:26,215;INFO: No unread emails!
+util.py: 2016-10-22 00:04:26,259;INFO: No unread emails!
+util.py: 2016-10-22 00:29:26,309;INFO: No unread emails!
+util.py: 2016-10-22 00:54:26,373;INFO: No unread emails!
+util.py: 2016-10-22 01:19:26,395;INFO: No unread emails!
+util.py: 2016-10-22 01:44:26,442;INFO: No unread emails!
+util.py: 2016-10-22 02:09:26,496;INFO: No unread emails!
+util.py: 2016-10-22 02:34:26,539;INFO: No unread emails!
+util.py: 2016-10-22 02:59:26,591;INFO: No unread emails!
+util.py: 2016-10-22 03:24:26,636;INFO: No unread emails!
+util.py: 2016-10-22 03:49:26,678;INFO: No unread emails!
+util.py: 2016-10-22 04:14:26,726;INFO: No unread emails!
+util.py: 2016-10-22 04:39:26,768;INFO: No unread emails!
+util.py: 2016-10-22 05:04:26,819;INFO: No unread emails!
+util.py: 2016-10-22 05:29:26,878;INFO: No unread emails!
+util.py: 2016-10-22 05:54:26,911;INFO: No unread emails!
+util.py: 2016-10-22 06:19:27,171;INFO: No unread emails!
+util.py: 2016-10-22 06:44:27,001;INFO: No unread emails!
+util.py: 2016-10-22 07:09:27,045;INFO: No unread emails!
+util.py: 2016-10-22 07:34:27,087;INFO: No unread emails!
+util.py: 2016-10-22 07:59:27,139;INFO: No unread emails!
+util.py: 2016-10-22 08:24:27,174;INFO: No unread emails!
+util.py: 2016-10-22 08:49:27,225;INFO: No unread emails!
+util.py: 2016-10-22 09:14:27,262;INFO: No unread emails!
+util.py: 2016-10-22 09:39:27,309;INFO: No unread emails!
+util.py: 2016-10-22 10:04:27,351;INFO: No unread emails!
+util.py: 2016-10-22 10:29:27,401;INFO: No unread emails!
+util.py: 2016-10-22 10:54:27,446;INFO: No unread emails!
+util.py: 2016-10-22 11:19:27,488;INFO: No unread emails!
+util.py: 2016-10-22 11:44:27,547;INFO: No unread emails!
+util.py: 2016-10-22 12:09:27,589;INFO: No unread emails!
+util.py: 2016-10-22 12:34:27,653;INFO: No unread emails!
+util.py: 2016-10-22 12:59:27,682;INFO: No unread emails!
+util.py: 2016-10-22 13:17:57,708;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-22 13:17:57,713;INFO: roboTA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-10-22 13:18:12,728;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-22 13:18:12,733;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-10-22 13:24:27,723;INFO: No unread emails!
+util.py: 2016-10-22 13:49:27,772;INFO: No unread emails!
+util.py: 2016-10-22 14:14:27,809;INFO: No unread emails!
+util.py: 2016-10-22 14:39:27,872;INFO: No unread emails!
+util.py: 2016-10-22 15:04:27,906;INFO: No unread emails!
+util.py: 2016-10-22 15:29:27,958;INFO: No unread emails!
+util.py: 2016-10-22 15:54:28,003;INFO: No unread emails!
+util.py: 2016-10-22 16:19:28,042;INFO: No unread emails!
+util.py: 2016-10-22 16:44:28,097;INFO: No unread emails!
+util.py: 2016-10-22 17:09:28,137;INFO: No unread emails!
+util.py: 2016-10-22 17:34:28,172;INFO: No unread emails!
+util.py: 2016-10-22 17:59:28,232;INFO: No unread emails!
+util.py: 2016-10-22 18:24:28,266;INFO: No unread emails!
+util.py: 2016-10-22 18:49:28,325;INFO: No unread emails!
+util.py: 2016-10-22 19:14:28,367;INFO: No unread emails!
+util.py: 2016-10-22 19:39:28,418;INFO: No unread emails!
+util.py: 2016-10-22 20:04:28,464;INFO: No unread emails!
+util.py: 2016-10-22 20:29:28,519;INFO: No unread emails!
+util.py: 2016-10-22 20:54:28,568;INFO: No unread emails!
+util.py: 2016-10-22 21:19:28,621;INFO: No unread emails!
+util.py: 2016-10-22 21:44:28,654;INFO: No unread emails!
+util.py: 2016-10-22 22:09:28,706;INFO: No unread emails!
+util.py: 2016-10-22 22:34:28,751;INFO: No unread emails!
+util.py: 2016-10-22 22:59:28,802;INFO: No unread emails!
+util.py: 2016-10-22 23:24:28,854;INFO: No unread emails!
+util.py: 2016-10-22 23:49:28,898;INFO: No unread emails!
+util.py: 2016-10-23 00:14:29,042;INFO: No unread emails!
+util.py: 2016-10-23 00:39:29,104;INFO: No unread emails!
+util.py: 2016-10-23 01:04:29,039;INFO: No unread emails!
+util.py: 2016-10-23 01:29:29,073;INFO: No unread emails!
+util.py: 2016-10-23 01:54:29,121;INFO: No unread emails!
+util.py: 2016-10-23 02:19:29,162;INFO: No unread emails!
+util.py: 2016-10-23 02:44:29,207;INFO: No unread emails!
+util.py: 2016-10-23 03:09:29,257;INFO: No unread emails!
+util.py: 2016-10-23 03:34:29,933;INFO: No unread emails!
+util.py: 2016-10-23 03:59:29,345;INFO: No unread emails!
+util.py: 2016-10-23 04:24:30,096;INFO: No unread emails!
+util.py: 2016-10-23 04:49:30,849;INFO: No unread emails!
+util.py: 2016-10-23 05:14:30,092;INFO: No unread emails!
+util.py: 2016-10-23 05:39:30,104;INFO: No unread emails!
+util.py: 2016-10-23 06:04:29,582;INFO: No unread emails!
+util.py: 2016-10-23 06:29:30,286;INFO: No unread emails!
+util.py: 2016-10-23 06:54:30,185;INFO: No unread emails!
+util.py: 2016-10-23 07:19:29,733;INFO: No unread emails!
+util.py: 2016-10-23 07:44:29,783;INFO: No unread emails!
+util.py: 2016-10-23 08:09:29,826;INFO: No unread emails!
+util.py: 2016-10-23 08:34:29,889;INFO: No unread emails!
+util.py: 2016-10-23 08:59:29,933;INFO: No unread emails!
+util.py: 2016-10-23 09:24:29,996;INFO: No unread emails!
+util.py: 2016-10-23 09:49:30,012;INFO: No unread emails!
+util.py: 2016-10-23 10:14:30,061;INFO: No unread emails!
+util.py: 2016-10-23 10:39:30,106;INFO: No unread emails!
+util.py: 2016-10-23 11:04:30,177;INFO: No unread emails!
+util.py: 2016-10-23 11:29:30,211;INFO: No unread emails!
+util.py: 2016-10-23 11:54:30,248;INFO: No unread emails!
+util.py: 2016-10-23 12:19:30,298;INFO: No unread emails!
+util.py: 2016-10-23 12:44:30,340;INFO: No unread emails!
+util.py: 2016-10-23 13:09:30,393;INFO: No unread emails!
+util.py: 2016-10-23 13:34:30,442;INFO: No unread emails!
+util.py: 2016-10-23 13:59:30,490;INFO: No unread emails!
+util.py: 2016-10-23 14:24:30,525;INFO: No unread emails!
+util.py: 2016-10-23 14:49:30,585;INFO: No unread emails!
+util.py: 2016-10-23 15:14:30,629;INFO: No unread emails!
+util.py: 2016-10-23 15:39:30,670;INFO: No unread emails!
+util.py: 2016-10-23 16:04:30,714;INFO: No unread emails!
+util.py: 2016-10-23 16:29:30,762;INFO: No unread emails!
+util.py: 2016-10-23 16:54:30,812;INFO: No unread emails!
+util.py: 2016-10-23 17:19:30,869;INFO: No unread emails!
+util.py: 2016-10-23 17:44:30,912;INFO: No unread emails!
+util.py: 2016-10-23 18:09:30,957;INFO: No unread emails!
+util.py: 2016-10-23 18:34:30,998;INFO: No unread emails!
+util.py: 2016-10-23 18:59:31,027;INFO: No unread emails!
+util.py: 2016-10-23 19:24:31,082;INFO: No unread emails!
+util.py: 2016-10-23 19:49:31,127;INFO: No unread emails!
+util.py: 2016-10-23 20:14:31,155;INFO: No unread emails!
+util.py: 2016-10-23 20:39:31,204;INFO: No unread emails!
+util.py: 2016-10-23 21:04:31,257;INFO: No unread emails!
+util.py: 2016-10-23 21:29:31,319;INFO: No unread emails!
+util.py: 2016-10-23 21:54:31,349;INFO: No unread emails!
+util.py: 2016-10-23 22:19:31,385;INFO: No unread emails!
+util.py: 2016-10-23 22:44:31,441;INFO: No unread emails!
+util.py: 2016-10-23 23:09:31,493;INFO: No unread emails!
+util.py: 2016-10-23 23:34:31,544;INFO: No unread emails!
+util.py: 2016-10-23 23:59:31,624;INFO: No unread emails!
+util.py: 2016-10-24 00:24:31,637;INFO: No unread emails!
+util.py: 2016-10-24 00:49:31,670;INFO: No unread emails!
+util.py: 2016-10-24 01:14:31,729;INFO: No unread emails!
+util.py: 2016-10-24 01:39:37,494;INFO: No unread emails!
+util.py: 2016-10-24 02:04:31,824;INFO: No unread emails!
+util.py: 2016-10-24 02:29:31,864;INFO: No unread emails!
+util.py: 2016-10-24 02:54:31,915;INFO: No unread emails!
+util.py: 2016-10-24 03:19:31,977;INFO: No unread emails!
+util.py: 2016-10-24 03:44:32,019;INFO: No unread emails!
+util.py: 2016-10-24 04:09:32,058;INFO: No unread emails!
+util.py: 2016-10-24 04:34:32,103;INFO: No unread emails!
+util.py: 2016-10-24 04:59:32,142;INFO: No unread emails!
+util.py: 2016-10-24 05:24:32,194;INFO: No unread emails!
+util.py: 2016-10-24 05:49:32,238;INFO: No unread emails!
+util.py: 2016-10-24 06:14:32,280;INFO: No unread emails!
+util.py: 2016-10-24 06:39:32,320;INFO: No unread emails!
+util.py: 2016-10-24 07:04:32,348;INFO: No unread emails!
+util.py: 2016-10-24 07:29:32,415;INFO: No unread emails!
+util.py: 2016-10-24 07:54:32,463;INFO: No unread emails!
+util.py: 2016-10-24 08:19:32,509;INFO: No unread emails!
+util.py: 2016-10-24 08:44:32,541;INFO: No unread emails!
+util.py: 2016-10-24 09:09:32,608;INFO: No unread emails!
+util.py: 2016-10-24 09:34:32,698;INFO: No unread emails!
+util.py: 2016-10-24 09:59:32,673;INFO: No unread emails!
+util.py: 2016-10-24 10:24:32,779;INFO: No unread emails!
+util.py: 2016-10-24 10:49:32,779;INFO: No unread emails!
+util.py: 2016-10-24 11:14:32,844;INFO: No unread emails!
+util.py: 2016-10-24 11:39:32,910;INFO: No unread emails!
+util.py: 2016-10-24 12:04:32,940;INFO: No unread emails!
+util.py: 2016-10-24 12:29:33,114;INFO: No unread emails!
+util.py: 2016-10-24 12:54:33,008;INFO: No unread emails!
+util.py: 2016-10-24 13:19:33,034;INFO: No unread emails!
+util.py: 2016-10-24 13:44:33,085;INFO: No unread emails!
+util.py: 2016-10-24 14:09:33,144;INFO: No unread emails!
+util.py: 2016-10-24 14:34:33,175;INFO: No unread emails!
+util.py: 2016-10-24 14:59:33,220;INFO: No unread emails!
+util.py: 2016-10-24 15:24:33,272;INFO: No unread emails!
+util.py: 2016-10-24 15:49:33,312;INFO: No unread emails!
+util.py: 2016-10-24 16:14:33,344;INFO: No unread emails!
+util.py: 2016-10-24 16:39:33,412;INFO: No unread emails!
+util.py: 2016-10-24 17:04:33,439;INFO: No unread emails!
+util.py: 2016-10-24 17:29:33,503;INFO: No unread emails!
+util.py: 2016-10-24 17:54:33,556;INFO: No unread emails!
+util.py: 2016-10-24 18:19:33,606;INFO: No unread emails!
+util.py: 2016-10-24 18:44:33,646;INFO: No unread emails!
+util.py: 2016-10-24 19:09:33,684;INFO: No unread emails!
+util.py: 2016-10-24 19:34:33,732;INFO: No unread emails!
+util.py: 2016-10-24 19:59:33,778;INFO: No unread emails!
+util.py: 2016-10-24 20:24:33,820;INFO: No unread emails!
+util.py: 2016-10-24 20:49:33,873;INFO: No unread emails!
+util.py: 2016-10-24 21:14:33,924;INFO: No unread emails!
+util.py: 2016-10-24 21:39:33,964;INFO: No unread emails!
+util.py: 2016-10-24 22:04:34,005;INFO: No unread emails!
+util.py: 2016-10-24 22:29:34,041;INFO: No unread emails!
+util.py: 2016-10-24 22:54:34,075;INFO: No unread emails!
+util.py: 2016-10-24 23:19:34,144;INFO: No unread emails!
+util.py: 2016-10-24 23:44:34,183;INFO: No unread emails!
+util.py: 2016-10-25 00:09:34,220;INFO: No unread emails!
+util.py: 2016-10-25 00:34:34,285;INFO: No unread emails!
+util.py: 2016-10-25 00:59:34,320;INFO: No unread emails!
+util.py: 2016-10-25 01:24:34,366;INFO: No unread emails!
+util.py: 2016-10-25 01:49:34,411;INFO: No unread emails!
+util.py: 2016-10-25 02:14:34,872;INFO: No unread emails!
+util.py: 2016-10-25 02:39:34,504;INFO: No unread emails!
+util.py: 2016-10-25 03:04:34,553;INFO: No unread emails!
+util.py: 2016-10-25 03:29:34,590;INFO: No unread emails!
+util.py: 2016-10-25 03:54:34,653;INFO: No unread emails!
+util.py: 2016-10-25 04:19:34,682;INFO: No unread emails!
+util.py: 2016-10-25 04:44:34,730;INFO: No unread emails!
+util.py: 2016-10-25 05:09:34,779;INFO: No unread emails!
+util.py: 2016-10-25 05:34:34,822;INFO: No unread emails!
+util.py: 2016-10-25 05:59:34,860;INFO: No unread emails!
+util.py: 2016-10-25 06:24:34,924;INFO: No unread emails!
+util.py: 2016-10-25 06:49:34,974;INFO: No unread emails!
+util.py: 2016-10-25 07:14:35,019;INFO: No unread emails!
+util.py: 2016-10-25 07:39:35,058;INFO: No unread emails!
+util.py: 2016-10-25 08:04:35,097;INFO: No unread emails!
+util.py: 2016-10-25 08:29:35,188;INFO: No unread emails!
+util.py: 2016-10-25 08:54:35,178;INFO: No unread emails!
+util.py: 2016-10-25 09:19:35,292;INFO: No unread emails!
+util.py: 2016-10-25 09:44:35,350;INFO: No unread emails!
+util.py: 2016-10-25 10:09:35,384;INFO: No unread emails!
+util.py: 2016-10-25 10:34:35,412;INFO: No unread emails!
+util.py: 2016-10-25 10:59:35,398;INFO: No unread emails!
+util.py: 2016-10-25 11:24:35,527;INFO: No unread emails!
+util.py: 2016-10-25 11:49:35,510;INFO: No unread emails!
+util.py: 2016-10-25 12:14:36,028;INFO: No unread emails!
+util.py: 2016-10-25 12:39:35,640;INFO: No unread emails!
+util.py: 2016-10-25 13:04:35,679;INFO: No unread emails!
+util.py: 2016-10-25 13:29:35,687;INFO: No unread emails!
+util.py: 2016-10-25 13:54:35,750;INFO: No unread emails!
+util.py: 2016-10-25 14:19:35,762;INFO: No unread emails!
+util.py: 2016-10-25 14:44:35,821;INFO: No unread emails!
+util.py: 2016-10-25 15:09:35,871;INFO: No unread emails!
+util.py: 2016-10-25 15:34:35,917;INFO: No unread emails!
+util.py: 2016-10-25 15:59:35,957;INFO: No unread emails!
+util.py: 2016-10-25 16:24:35,999;INFO: No unread emails!
+util.py: 2016-10-25 16:49:36,034;INFO: No unread emails!
+util.py: 2016-10-25 17:14:36,084;INFO: No unread emails!
+util.py: 2016-10-25 17:39:36,285;INFO: No unread emails!
+util.py: 2016-10-25 18:04:36,195;INFO: No unread emails!
+util.py: 2016-10-25 18:29:36,271;INFO: No unread emails!
+util.py: 2016-10-25 18:54:36,253;INFO: No unread emails!
+util.py: 2016-10-25 19:19:36,301;INFO: No unread emails!
+util.py: 2016-10-25 19:44:36,398;INFO: No unread emails!
+util.py: 2016-10-25 20:09:36,408;INFO: No unread emails!
+util.py: 2016-10-25 20:34:36,455;INFO: No unread emails!
+util.py: 2016-10-25 20:59:36,509;INFO: No unread emails!
+util.py: 2016-10-25 21:24:36,551;INFO: No unread emails!
+util.py: 2016-10-25 21:49:36,593;INFO: No unread emails!
+util.py: 2016-10-25 22:14:36,651;INFO: No unread emails!
+util.py: 2016-10-25 22:39:36,690;INFO: No unread emails!
+util.py: 2016-10-25 23:04:36,735;INFO: No unread emails!
+util.py: 2016-10-25 23:29:36,776;INFO: No unread emails!
+util.py: 2016-10-25 23:54:36,814;INFO: No unread emails!
+util.py: 2016-10-26 00:19:36,887;INFO: No unread emails!
+util.py: 2016-10-26 00:44:36,926;INFO: No unread emails!
+util.py: 2016-10-26 01:09:37,001;INFO: No unread emails!
+util.py: 2016-10-26 01:34:37,003;INFO: No unread emails!
+util.py: 2016-10-26 01:59:37,039;INFO: No unread emails!
+util.py: 2016-10-26 02:24:37,092;INFO: No unread emails!
+util.py: 2016-10-26 02:49:37,143;INFO: No unread emails!
+util.py: 2016-10-26 03:14:37,185;INFO: No unread emails!
+util.py: 2016-10-26 03:39:37,215;INFO: No unread emails!
+util.py: 2016-10-26 04:04:37,266;INFO: No unread emails!
+util.py: 2016-10-26 04:29:37,308;INFO: No unread emails!
+util.py: 2016-10-26 04:54:37,362;INFO: No unread emails!
+util.py: 2016-10-26 05:19:37,409;INFO: No unread emails!
+util.py: 2016-10-26 05:44:37,456;INFO: No unread emails!
+util.py: 2016-10-26 06:09:37,508;INFO: No unread emails!
+util.py: 2016-10-26 06:34:37,568;INFO: No unread emails!
+util.py: 2016-10-26 06:59:37,612;INFO: No unread emails!
+util.py: 2016-10-26 07:24:37,645;INFO: No unread emails!
+util.py: 2016-10-26 07:49:37,676;INFO: No unread emails!
+util.py: 2016-10-26 08:14:37,726;INFO: No unread emails!
+util.py: 2016-10-26 08:39:37,776;INFO: No unread emails!
+util.py: 2016-10-26 09:04:37,821;INFO: No unread emails!
+util.py: 2016-10-26 09:29:37,867;INFO: No unread emails!
+util.py: 2016-10-26 09:54:37,926;INFO: No unread emails!
+util.py: 2016-10-26 10:19:37,948;INFO: No unread emails!
+util.py: 2016-10-26 10:44:37,995;INFO: No unread emails!
+util.py: 2016-10-26 11:09:38,037;INFO: No unread emails!
+util.py: 2016-10-26 11:34:38,098;INFO: No unread emails!
+util.py: 2016-10-26 11:59:38,148;INFO: No unread emails!
+util.py: 2016-10-26 12:24:38,231;INFO: No unread emails!
+util.py: 2016-10-26 12:49:38,236;INFO: No unread emails!
+util.py: 2016-10-26 13:14:38,274;INFO: No unread emails!
+util.py: 2016-10-26 13:39:38,317;INFO: No unread emails!
+util.py: 2016-10-26 14:04:38,367;INFO: No unread emails!
+util.py: 2016-10-26 14:29:38,419;INFO: No unread emails!
+util.py: 2016-10-26 14:54:38,454;INFO: No unread emails!
+util.py: 2016-10-26 15:19:38,513;INFO: No unread emails!
+util.py: 2016-10-26 15:44:38,561;INFO: No unread emails!
+util.py: 2016-10-26 16:09:38,641;INFO: No unread emails!
+util.py: 2016-10-26 16:34:38,673;INFO: No unread emails!
+util.py: 2016-10-26 16:59:38,698;INFO: No unread emails!
+util.py: 2016-10-26 17:24:38,747;INFO: No unread emails!
+util.py: 2016-10-26 17:49:38,776;INFO: No unread emails!
+util.py: 2016-10-26 18:14:38,829;INFO: No unread emails!
+util.py: 2016-10-26 18:39:38,888;INFO: No unread emails!
+util.py: 2016-10-26 19:04:38,929;INFO: No unread emails!
+util.py: 2016-10-26 19:29:38,973;INFO: No unread emails!
+util.py: 2016-10-26 19:54:39,015;INFO: No unread emails!
+util.py: 2016-10-26 20:13:39,055;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-26 20:13:39,059;INFO: Msg from student: sarah31@stanford.edu to roboTA@cs.stanford.edu
+util.py: 2016-10-26 20:19:39,049;INFO: No unread emails!
+util.py: 2016-10-26 20:44:39,095;INFO: No unread emails!
+util.py: 2016-10-26 21:09:39,158;INFO: No unread emails!
+util.py: 2016-10-26 21:11:54,160;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-26 21:11:54,165;INFO: Msg from student: amitp25@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-10-26 21:34:39,191;INFO: No unread emails!
+util.py: 2016-10-26 21:59:39,227;INFO: No unread emails!
+util.py: 2016-10-26 22:24:41,713;INFO: No unread emails!
+util.py: 2016-10-26 22:49:39,345;INFO: No unread emails!
+util.py: 2016-10-26 22:58:24,357;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-26 22:58:24,361;INFO: Msg from student: arochat@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-10-26 23:14:39,410;INFO: No unread emails!
+util.py: 2016-10-26 23:39:39,436;INFO: No unread emails!
+util.py: 2016-10-27 00:04:39,491;INFO: No unread emails!
+util.py: 2016-10-27 00:29:39,545;INFO: No unread emails!
+util.py: 2016-10-27 00:54:39,596;INFO: No unread emails!
+util.py: 2016-10-27 01:19:39,638;INFO: No unread emails!
+util.py: 2016-10-27 01:44:39,675;INFO: No unread emails!
+util.py: 2016-10-27 02:09:39,711;INFO: No unread emails!
+util.py: 2016-10-27 02:34:39,771;INFO: No unread emails!
+util.py: 2016-10-27 02:59:39,821;INFO: No unread emails!
+util.py: 2016-10-27 03:24:39,871;INFO: No unread emails!
+util.py: 2016-10-27 03:49:39,923;INFO: No unread emails!
+util.py: 2016-10-27 04:14:39,970;INFO: No unread emails!
+util.py: 2016-10-27 04:39:40,001;INFO: No unread emails!
+util.py: 2016-10-27 05:04:40,053;INFO: No unread emails!
+util.py: 2016-10-27 05:29:40,099;INFO: No unread emails!
+util.py: 2016-10-27 05:54:40,142;INFO: No unread emails!
+util.py: 2016-10-27 06:19:40,206;INFO: No unread emails!
+util.py: 2016-10-27 06:44:40,245;INFO: No unread emails!
+util.py: 2016-10-27 07:09:40,281;INFO: No unread emails!
+util.py: 2016-10-27 07:34:40,325;INFO: No unread emails!
+util.py: 2016-10-27 07:59:40,376;INFO: No unread emails!
+util.py: 2016-10-27 08:24:40,416;INFO: No unread emails!
+util.py: 2016-10-27 08:49:40,488;INFO: No unread emails!
+util.py: 2016-10-27 09:14:40,777;INFO: No unread emails!
+util.py: 2016-10-27 09:39:41,884;INFO: No unread emails!
+util.py: 2016-10-27 10:04:40,759;INFO: No unread emails!
+util.py: 2016-10-27 10:16:55,746;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 10:16:55,751;INFO: roboTA@cs.stanford.edu replying to: sarah31@stanford.edu
+util.py: 2016-10-27 10:20:40,656;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 10:20:40,661;INFO: stats60TA@cs.stanford.edu replying to: amitp25@stanford.edu
+util.py: 2016-10-27 10:27:55,647;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 10:27:55,652;INFO: stats60TA@cs.stanford.edu replying to: arochat@stanford.edu
+util.py: 2016-10-27 10:29:40,693;INFO: No unread emails!
+util.py: 2016-10-27 10:54:40,696;INFO: No unread emails!
+util.py: 2016-10-27 11:19:40,740;INFO: No unread emails!
+util.py: 2016-10-27 11:44:40,825;INFO: No unread emails!
+util.py: 2016-10-27 12:09:40,844;INFO: No unread emails!
+util.py: 2016-10-27 12:34:40,973;INFO: No unread emails!
+util.py: 2016-10-27 12:41:55,901;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 12:41:55,906;INFO: Msg from student: ecollier@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-10-27 12:59:40,939;INFO: No unread emails!
+util.py: 2016-10-27 13:07:55,944;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 13:07:55,948;INFO: Msg from student: arochat@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-10-27 13:24:40,982;INFO: No unread emails!
+util.py: 2016-10-27 13:49:41,044;INFO: No unread emails!
+util.py: 2016-10-27 14:08:56,058;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 14:08:56,062;INFO: Msg from student: roycew@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-10-27 14:14:26,070;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 14:14:26,113;INFO: Msg from student: roycew@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-10-27 14:14:41,066;INFO: No unread emails!
+util.py: 2016-10-27 14:39:41,121;INFO: No unread emails!
+util.py: 2016-10-27 15:04:41,158;INFO: No unread emails!
+util.py: 2016-10-27 15:09:56,173;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 15:09:56,178;INFO: stats60TA@cs.stanford.edu replying to: ecollier@stanford.edu
+util.py: 2016-10-27 15:12:26,173;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 15:12:26,179;INFO: stats60TA@cs.stanford.edu replying to: arochat@stanford.edu
+util.py: 2016-10-27 15:17:56,188;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 15:17:56,193;INFO: stats60TA@cs.stanford.edu replying to: roycew@stanford.edu
+util.py: 2016-10-27 15:18:11,227;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 15:18:11,232;INFO: stats60TA@cs.stanford.edu replying to: roycew@stanford.edu
+util.py: 2016-10-27 15:24:11,196;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 15:24:11,200;INFO: Msg from student: angela8@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-10-27 15:29:41,189;INFO: No unread emails!
+util.py: 2016-10-27 15:37:41,218;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 15:37:41,222;INFO: Msg from student: ecollier@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-10-27 15:54:41,314;INFO: No unread emails!
+util.py: 2016-10-27 16:19:41,287;INFO: No unread emails!
+util.py: 2016-10-27 16:44:41,391;INFO: No unread emails!
+util.py: 2016-10-27 16:58:11,408;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 16:58:11,414;INFO: stats60TA@cs.stanford.edu replying to: ecollier@stanford.edu
+util.py: 2016-10-27 17:03:11,531;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 17:03:11,538;INFO: stats60TA@cs.stanford.edu replying to: angela8@stanford.edu
+util.py: 2016-10-27 17:09:41,389;INFO: No unread emails!
+util.py: 2016-10-27 17:34:41,450;INFO: No unread emails!
+util.py: 2016-10-27 17:59:41,517;INFO: No unread emails!
+util.py: 2016-10-27 18:24:41,627;INFO: No unread emails!
+util.py: 2016-10-27 18:49:41,690;INFO: No unread emails!
+util.py: 2016-10-27 19:14:41,636;INFO: No unread emails!
+util.py: 2016-10-27 19:39:41,702;INFO: No unread emails!
+util.py: 2016-10-27 20:04:41,731;INFO: No unread emails!
+util.py: 2016-10-27 20:29:41,761;INFO: No unread emails!
+util.py: 2016-10-27 20:54:41,817;INFO: No unread emails!
+util.py: 2016-10-27 21:19:41,877;INFO: No unread emails!
+util.py: 2016-10-27 21:44:41,925;INFO: No unread emails!
+util.py: 2016-10-27 22:09:41,959;INFO: No unread emails!
+util.py: 2016-10-27 22:34:42,005;INFO: No unread emails!
+util.py: 2016-10-27 22:59:42,053;INFO: No unread emails!
+util.py: 2016-10-27 23:24:42,137;INFO: No unread emails!
+util.py: 2016-10-27 23:34:12,113;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-27 23:34:12,117;INFO: Msg from student: kaylamg@stanford.edu to robotTA@cs.stanford.edu, roboTA@cs.stanford.edu
+util.py: 2016-10-27 23:49:42,138;INFO: No unread emails!
+util.py: 2016-10-28 00:14:50,274;INFO: No unread emails!
+util.py: 2016-10-28 00:39:42,224;INFO: No unread emails!
+util.py: 2016-10-28 01:04:42,276;INFO: No unread emails!
+util.py: 2016-10-28 01:29:42,330;INFO: No unread emails!
+util.py: 2016-10-28 01:54:42,363;INFO: No unread emails!
+util.py: 2016-10-28 02:19:42,416;INFO: No unread emails!
+util.py: 2016-10-28 02:44:42,498;INFO: No unread emails!
+util.py: 2016-10-28 03:09:42,519;INFO: No unread emails!
+util.py: 2016-10-28 03:34:42,567;INFO: No unread emails!
+util.py: 2016-10-28 03:59:42,612;INFO: No unread emails!
+util.py: 2016-10-28 04:24:42,678;INFO: No unread emails!
+util.py: 2016-10-28 04:49:42,693;INFO: No unread emails!
+util.py: 2016-10-28 05:14:42,743;INFO: No unread emails!
+util.py: 2016-10-28 05:39:42,784;INFO: No unread emails!
+util.py: 2016-10-28 06:04:42,838;INFO: No unread emails!
+util.py: 2016-10-28 06:29:42,880;INFO: No unread emails!
+util.py: 2016-10-28 06:54:42,952;INFO: No unread emails!
+util.py: 2016-10-28 07:19:42,966;INFO: No unread emails!
+util.py: 2016-10-28 07:44:43,015;INFO: No unread emails!
+util.py: 2016-10-28 08:09:43,057;INFO: No unread emails!
+util.py: 2016-10-28 08:34:43,109;INFO: No unread emails!
+util.py: 2016-10-28 08:59:43,165;INFO: No unread emails!
+util.py: 2016-10-28 09:02:58,153;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-10-28 09:02:58,158;INFO: robotTA@cs.stanford.edu, roboTA@cs.stanford.edu replying to: kaylamg@stanford.edu
+util.py: 2016-10-28 09:24:43,204;INFO: No unread emails!
+util.py: 2016-10-28 09:49:43,252;INFO: No unread emails!
+util.py: 2016-10-28 10:14:43,293;INFO: No unread emails!
+util.py: 2016-10-28 10:39:43,393;INFO: No unread emails!
+util.py: 2016-10-28 11:04:43,407;INFO: No unread emails!
+util.py: 2016-10-28 11:29:43,486;INFO: No unread emails!
+util.py: 2016-10-28 11:54:43,490;INFO: No unread emails!
+util.py: 2016-10-28 12:19:43,541;INFO: No unread emails!
+util.py: 2016-10-28 12:44:43,589;INFO: No unread emails!
+util.py: 2016-10-28 13:09:43,640;INFO: No unread emails!
+util.py: 2016-10-28 13:34:43,672;INFO: No unread emails!
+util.py: 2016-10-28 13:59:43,739;INFO: No unread emails!
+util.py: 2016-10-28 14:24:43,768;INFO: No unread emails!
+util.py: 2016-10-28 14:49:43,819;INFO: No unread emails!
+util.py: 2016-10-28 15:14:43,871;INFO: No unread emails!
+util.py: 2016-10-28 15:39:43,914;INFO: No unread emails!
+util.py: 2016-10-28 16:04:43,963;INFO: No unread emails!
+util.py: 2016-10-28 16:29:44,024;INFO: No unread emails!
+util.py: 2016-10-28 16:54:44,032;INFO: No unread emails!
+util.py: 2016-10-28 17:19:44,084;INFO: No unread emails!
+util.py: 2016-10-28 17:44:44,138;INFO: No unread emails!
+util.py: 2016-10-28 18:09:44,181;INFO: No unread emails!
+util.py: 2016-10-28 18:34:44,213;INFO: No unread emails!
+util.py: 2016-10-28 18:59:44,285;INFO: No unread emails!
+util.py: 2016-10-28 19:24:44,339;INFO: No unread emails!
+util.py: 2016-10-28 19:49:44,368;INFO: No unread emails!
+util.py: 2016-10-28 20:14:44,418;INFO: No unread emails!
+util.py: 2016-10-28 20:39:44,475;INFO: No unread emails!
+util.py: 2016-10-28 21:04:44,520;INFO: No unread emails!
+util.py: 2016-10-28 21:29:44,564;INFO: No unread emails!
+util.py: 2016-10-28 21:54:44,617;INFO: No unread emails!
+util.py: 2016-10-28 22:19:44,656;INFO: No unread emails!
+util.py: 2016-10-28 22:44:44,704;INFO: No unread emails!
+util.py: 2016-10-28 23:09:44,754;INFO: No unread emails!
+util.py: 2016-10-28 23:34:44,802;INFO: No unread emails!
+util.py: 2016-10-28 23:59:44,851;INFO: No unread emails!
+util.py: 2016-10-29 00:24:44,907;INFO: No unread emails!
+util.py: 2016-10-29 00:49:44,940;INFO: No unread emails!
+util.py: 2016-10-29 01:14:44,998;INFO: No unread emails!
+util.py: 2016-10-29 01:39:45,033;INFO: No unread emails!
+util.py: 2016-10-29 02:04:45,088;INFO: No unread emails!
+util.py: 2016-10-29 02:29:45,134;INFO: No unread emails!
+util.py: 2016-10-29 02:54:45,184;INFO: No unread emails!
+util.py: 2016-10-29 03:19:45,225;INFO: No unread emails!
+util.py: 2016-10-29 03:44:45,274;INFO: No unread emails!
+util.py: 2016-10-29 04:09:45,313;INFO: No unread emails!
+util.py: 2016-10-29 04:34:45,381;INFO: No unread emails!
+util.py: 2016-10-29 04:59:45,428;INFO: No unread emails!
+util.py: 2016-10-29 05:24:45,460;INFO: No unread emails!
+util.py: 2016-10-29 05:49:45,534;INFO: No unread emails!
+util.py: 2016-10-29 06:14:45,581;INFO: No unread emails!
+util.py: 2016-10-29 06:39:45,632;INFO: No unread emails!
+util.py: 2016-10-29 07:04:45,648;INFO: No unread emails!
+util.py: 2016-10-29 07:29:45,713;INFO: No unread emails!
+util.py: 2016-10-29 07:54:45,753;INFO: No unread emails!
+util.py: 2016-10-29 08:19:45,793;INFO: No unread emails!
+util.py: 2016-10-29 08:44:45,843;INFO: No unread emails!
+util.py: 2016-10-29 09:09:45,893;INFO: No unread emails!
+util.py: 2016-10-29 09:34:45,939;INFO: No unread emails!
+util.py: 2016-10-29 09:59:45,988;INFO: No unread emails!
+util.py: 2016-10-29 10:24:46,013;INFO: No unread emails!
+util.py: 2016-10-29 10:49:46,055;INFO: No unread emails!
+util.py: 2016-10-29 11:14:46,121;INFO: No unread emails!
+util.py: 2016-10-29 11:39:46,155;INFO: No unread emails!
+util.py: 2016-10-29 12:04:46,206;INFO: No unread emails!
+util.py: 2016-10-29 12:29:46,254;INFO: No unread emails!
+util.py: 2016-10-29 12:54:46,282;INFO: No unread emails!
+util.py: 2016-10-29 13:19:46,333;INFO: No unread emails!
+util.py: 2016-10-29 13:44:46,401;INFO: No unread emails!
+util.py: 2016-10-29 14:09:46,457;INFO: No unread emails!
+util.py: 2016-10-29 14:34:46,480;INFO: No unread emails!
+util.py: 2016-10-29 14:59:46,531;INFO: No unread emails!

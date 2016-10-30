@@ -216,7 +216,7 @@ class EmailChecker(object):
                     body = self.lucas_greeting.sub('TA',body)
                     body = self.robo_greeting.sub('',body)
                     subject = self.cleanSubjectOfSpamNotice(msgStringParsed['Subject'])
-                    subject = self.lucas_greeting.sub('TA',body)
+                    subject = self.lucas_greeting.sub('TA',subject)
                     subject = self.robo_greeting.sub('',subject)
                     
                     msg.attach(MIMEText(body, 'plain'))

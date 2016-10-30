@@ -69,6 +69,10 @@ class EmailChecker(object):
         
         # Regex to find 'Best, TA_SIG':
         self.ta_sig_pattern = re.compile(r'\n\n' + TA_SIG + r'$')
+
+        # Regex to match TA greeting
+        self.robo_greeting = re.compile(r'([rR]obo)[\n\r]{0,1}',flags=re.IGNORECASE)
+        self.lucas_greeting = re.compile(r'([lL]ucas)[\n\r]{0,1}',flags=re.IGNORECASE)
         
         # For remembering which student sent
         # original msg to robot/human, and to
@@ -208,7 +212,12 @@ class EmailChecker(object):
                     
                     msg = MIMEMultipart()
                     body = self.get_body(msgStringParsed)
+
+                    body = self.lucas_greeting.sub('TA',body)
+                    body = self.robo_greeting.sub('',body)
                     subject = self.cleanSubjectOfSpamNotice(msgStringParsed['Subject'])
+                    subject = self.lucas_greeting.sub('TA',body)
+                    subject = self.robo_greeting.sub('',subject)
                     
                     msg.attach(MIMEText(body, 'plain'))
                     msg['From'] = 'stats60ta@cs.stanford.edu'

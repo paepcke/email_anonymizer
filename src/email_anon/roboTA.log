@@ -53,6 +53,7 @@ util.py: 2016-10-20 17:06:28,096;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-10-20 17:06:28,108;ERROR: Lucas screwed up: noGuess
 util.py: 2016-10-20 17:09:43,135;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-10-20 17:09:43,147;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+<<<<<<< HEAD
 util.py: 2016-10-20 17:14:37,659;INFO: Start logging.
 util.py: 2016-10-20 17:19:52,821;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-10-20 17:19:52,861;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu

@@ -76,14 +76,14 @@ def parse_emails(response):
                 subject = msgStringParsed['Subject']
                 body = get_body2(msgStringParsed)
                 date= msgStringParsed['Date']
-                msg = MIMEMultipart("alternative")
-                msg['From'] = frm
-                msg['Subject'] = subject
-                msg['To'] = ''
-                print MIMEText(body.encode('utf-8'), 'plain','utf-8')
-                msg.attach(MIMEText(body.encode('utf-8'), 'plain','utf-8'))
+                # msg = MIMEMultipart("alternative")
+                # msg['From'] = frm
+                # msg['Subject'] = subject
+                # msg['To'] = ''
+                # print MIMEText(body.encode('utf-8'), 'plain','utf-8')
+                # msg.attach(MIMEText(body.encode('utf-8'), 'plain','utf-8'))
                 #print msg.as_string().encode('ascii')
-                #wr.writerow([frm,to,date,subject,body])
+                wr.writerow([frm,to,date,subject,body])
 
 data = get_inbox()
 parse_emails(data)

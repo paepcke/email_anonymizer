@@ -1,1 +1,5433 @@
 "From","To","Date","Subject","Body"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Sun, 11 Sep 2016 19:12:52 -0700","Second to roboTA@cs.stanford.edu","Andreas
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Sun, 11 Sep 2016 19:13:45 -0700","Second to stats60ta@cs: all lower case","Andreas
+"
+"aashna94@stanford.edu","""stats60@cs-imap-x.stanford.edu""","Wed, 5 Oct 2016 03:36:01 +0000","82##Second to roboTA@cs.stanford.edu","Test reply from TA
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"paepcke@cs.stanford.edu","""robota@cs.stanford.edu""","Tue, 4 Oct 2016 21:24:36 -0700","Re: Second to roboTA@cs.stanford.edu","I got this one!
+
+On Tuesday, October 4, 2016, <robota@cs.stanford.edu> wrote:
+
+>
+
+-- 
+Tapped painstakingly on my mobile device... Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 11 Oct 2016 17:24:50 -0700","Test: Student Andreas sending to RoboTA","Hi Lucas,
+
+
+I'm pretending to be a Stats60 student. You should
+see
+
+     ""82##Test: Student Andreas sending to RoboTA""
+
+in the subject line. Can you simply reply with a couple
+of words so we'll see whether this gets back to the
+proper partitioning.
+
+I'll send to Lucas in a moment.
+
+Andreas
+"
+"paepcke2000@gmail.com","stats60ta@cs.stanford.edu","Tue, 11 Oct 2016 17:30:21 -0700","Sending now as a different student to Lucas","Lucas,
+
+this is a second msg. This time I'm sending as
+a different student than last time. This msg is
+sent to stats60ta, rather than to robota.
+
+The subject line should be something like:
+
+    nm##Sending now as a different student to Lucas
+
+where nm is something other than 82.
+
+Is that what you see?
+
+Andreas
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 19:13:19 -0700","Test Email","This is the body.
+
+Thanks.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 19:15:36 -0700","Test2","Testing
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 19:28:12 -0700","Test2","Just testing!
+
+Thanks.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 19:31:06 -0700","Test3","Sending again!
+
+thanks.
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 19:39:03 -0700","Test4","Testing.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 02:40:08 +0000","Re: 84##Test4","Hi student,
+
+
+Your test answer is .. ..
+
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 13, 2016 7:40:27 PM
+To: Aashna Garg
+Subject: 84##Test4
+
+Testing.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 19:47:43 -0700","Test5","Test email.
+
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 19:49:35 -0700","Testing 6","body
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 02:53:32 +0000","Re: 84##Testing 6","test answer
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 13, 2016 7:52:34 PM
+To: Aashna Garg
+Subject: 84##Testing 6
+
+body
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 20:28:24 -0700","Test7","Testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 03:29:49 +0000","Re: 58##Test7","My test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 13, 2016 8:29:43 PM
+To: Aashna Garg
+Subject: 58##Test7
+
+Testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 03:33:55 +0000","Re: 58##Test7","Another test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Thursday, October 13, 2016 8:29:49 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test7
+
+
+My test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 13, 2016 8:29:43 PM
+To: Aashna Garg
+Subject: 58##Test7
+
+Testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 03:35:01 +0000","Re: 58##Test7","Test reply3
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Thursday, October 13, 2016 8:33:55 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test7
+
+
+Another test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Thursday, October 13, 2016 8:29:49 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test7
+
+
+My test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 13, 2016 8:29:43 PM
+To: Aashna Garg
+Subject: 58##Test7
+
+Testing
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 20:57:16 -0700","Test email 8","Testing
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 21:03:25 -0700","Test 9","Testing if it works for students not in database.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 21:06:48 -0700","Test 10","checking if it works for students not in database.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 21:08:57 -0700","Test 11","testing
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Thu, 13 Oct 2016 21:15:21 -0700","Test11","Final testing
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 04:16:08 +0000","Re: 58##Test11","Your test answer is....
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 13, 2016 9:15:45 PM
+To: Aashna Garg
+Subject: 58##Test11
+
+Final testing
+
+-Aashna Garg
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Fri, 14 Oct 2016 11:34:29 -0700","To TA As paepcke@cs","Test 1
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 11:36:25 -0700","From paepcke@cs to stats60ta","Test2
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 11:37:35 -0700","Test email","testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 18:39:12 +0000","Re: 58##Test email","Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:34:07 AM
+To: Aashna Garg
+Subject: 58##Test email
+
+testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 18:42:21 +0000","Re: 58##Test email","Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:39:12 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:34:07 AM
+To: Aashna Garg
+Subject: 58##Test email
+
+testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 18:44:18 +0000","Re: 58##Test email","Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:42:21 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:39:12 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:34:07 AM
+To: Aashna Garg
+Subject: 58##Test email
+
+testing
+-Aashna Garg
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 11:46:09 -0700","Stats60ta from paepcke@cs","Test3
+"
+"paepcke2000@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 11:48:10 -0700","Stats60ta from paepcke2000@gmail","Test4
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 11:49:50 -0700","Test 14","test
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 11:56:57 -0700","Test email","test
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 18:57:33 +0000","Re: 58##Test email","test
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:57:21 AM
+To: Aashna Garg
+Subject: 58##Test email
+
+test
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 18:57:47 +0000","Re: 58##Test email","test
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:57:33 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+test
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:57:21 AM
+To: Aashna Garg
+Subject: 58##Test email
+
+test
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 18:58:54 +0000","Re: 58##Test email","test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:57:47 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+test
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:57:33 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+test
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:57:21 AM
+To: Aashna Garg
+Subject: 58##Test email
+
+test
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 11:59:12 -0700","Test 15","test body
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 12:05:27 -0700","test16","testing smtp
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 19:06:08 +0000","Re: 58##Test 15","test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:59:44 AM
+To: Aashna Garg
+Subject: 58##Test 15
+
+test body
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 12:11:56 -0700","Test 17","Test
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 12:13:02 -0700","Test 18","testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 19:13:31 +0000","Re: 58##Test 17","testing
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 12:14:08 PM
+To: Aashna Garg
+Subject: 58##Test 17
+
+Test
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Fri, 14 Oct 2016 12:14:32 -0700","Re: Test 17","Testing!
+
+-Aashna Garg
+
+
+On Fri, Oct 14, 2016 at 12:13 PM, <robota@cs.stanford.edu> wrote:
+
+> testing
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Friday, October 14, 2016 12:14:08 PM
+> To: Aashna Garg
+> Subject: 58##Test 17
+>
+> Test
+> -Aashna Garg
+>
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 19:29:44 +0000","Re: 58##Test email","test reply by TA
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:44:18 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:42:21 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:39:12 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:34:07 AM
+To: Aashna Garg
+Subject: 58##Test email
+
+testing
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 12:29:30 -0700","Test 18","testing smtp fail
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 19:29:53 +0000","Re: 58##Test email","Another reply test.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 12:29:44 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+test reply by TA
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:44:18 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:42:21 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Friday, October 14, 2016 11:39:12 AM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 11:34:07 AM
+To: Aashna Garg
+Subject: 58##Test email
+
+testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 19:34:24 +0000","Re: 58##Test 18","testing reply by ta
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 12:33:54 PM
+To: Aashna Garg
+Subject: 58##Test 18
+
+testing smtp fail
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Fri, 14 Oct 2016 12:34:39 -0700","Re: Test email","Hi TA, this is a test email.
+
+-Aashna Garg
+
+
+On Fri, Oct 14, 2016 at 12:33 PM, <robota@cs.stanford.edu> wrote:
+
+> test reply by TA
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: Aashna Garg
+> Sent: Friday, October 14, 2016 11:44:18 AM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: 58##Test email
+>
+>
+> Test reply.
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: Aashna Garg
+> Sent: Friday, October 14, 2016 11:42:21 AM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: 58##Test email
+>
+>
+> Test reply.
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: Aashna Garg
+> Sent: Friday, October 14, 2016 11:39:12 AM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: 58##Test email
+>
+>
+> Test reply.
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Friday, October 14, 2016 11:34:07 AM
+> To: Aashna Garg
+> Subject: 58##Test email
+>
+> testing
+> -Aashna Garg
+>
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Fri, 14 Oct 2016 12:35:32 -0700","Re: Test email","Reply reply test
+
+-Aashna Garg
+
+
+On Fri, Oct 14, 2016 at 12:34 PM, Aashna Garg <aashnagarg16@gmail.com>
+wrote:
+
+> Hi TA, this is a test email.
+>
+> -Aashna Garg
+>
+>
+> On Fri, Oct 14, 2016 at 12:33 PM, <robota@cs.stanford.edu> wrote:
+>
+>> test reply by TA
+>>
+>>
+>> Aashna Garg | Masters
+>> Stanford Department of Computer Science
+>> ________________________________
+>> From: Aashna Garg
+>> Sent: Friday, October 14, 2016 11:44:18 AM
+>> To: stats60ta@cs.stanford.edu
+>> Subject: Re: 58##Test email
+>>
+>>
+>> Test reply.
+>>
+>>
+>> Aashna Garg | Masters
+>> Stanford Department of Computer Science
+>> ________________________________
+>> From: Aashna Garg
+>> Sent: Friday, October 14, 2016 11:42:21 AM
+>> To: stats60ta@cs.stanford.edu
+>> Subject: Re: 58##Test email
+>>
+>>
+>> Test reply.
+>>
+>>
+>> Aashna Garg | Masters
+>> Stanford Department of Computer Science
+>> ________________________________
+>> From: Aashna Garg
+>> Sent: Friday, October 14, 2016 11:39:12 AM
+>> To: stats60ta@cs.stanford.edu
+>> Subject: Re: 58##Test email
+>>
+>>
+>> Test reply.
+>>
+>>
+>> Aashna Garg | Masters
+>> Stanford Department of Computer Science
+>> ________________________________
+>> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+>> Sent: Friday, October 14, 2016 11:34:07 AM
+>> To: Aashna Garg
+>> Subject: 58##Test email
+>>
+>> testing
+>> -Aashna Garg
+>>
+>
+>
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Fri, 14 Oct 2016 12:35:38 -0700","Re: Test email","Doubt test.
+
+-Aashna Garg
+
+
+On Fri, Oct 14, 2016 at 12:35 PM, Aashna Garg <aashnagarg16@gmail.com>
+wrote:
+
+> Reply reply test
+>
+> -Aashna Garg
+>
+>
+> On Fri, Oct 14, 2016 at 12:34 PM, Aashna Garg <aashnagarg16@gmail.com>
+> wrote:
+>
+>> Hi TA, this is a test email.
+>>
+>> -Aashna Garg
+>>
+>>
+>> On Fri, Oct 14, 2016 at 12:33 PM, <robota@cs.stanford.edu> wrote:
+>>
+>>> test reply by TA
+>>>
+>>>
+>>> Aashna Garg | Masters
+>>> Stanford Department of Computer Science
+>>> ________________________________
+>>> From: Aashna Garg
+>>> Sent: Friday, October 14, 2016 11:44:18 AM
+>>> To: stats60ta@cs.stanford.edu
+>>> Subject: Re: 58##Test email
+>>>
+>>>
+>>> Test reply.
+>>>
+>>>
+>>> Aashna Garg | Masters
+>>> Stanford Department of Computer Science
+>>> ________________________________
+>>> From: Aashna Garg
+>>> Sent: Friday, October 14, 2016 11:42:21 AM
+>>> To: stats60ta@cs.stanford.edu
+>>> Subject: Re: 58##Test email
+>>>
+>>>
+>>> Test reply.
+>>>
+>>>
+>>> Aashna Garg | Masters
+>>> Stanford Department of Computer Science
+>>> ________________________________
+>>> From: Aashna Garg
+>>> Sent: Friday, October 14, 2016 11:39:12 AM
+>>> To: stats60ta@cs.stanford.edu
+>>> Subject: Re: 58##Test email
+>>>
+>>>
+>>> Test reply.
+>>>
+>>>
+>>> Aashna Garg | Masters
+>>> Stanford Department of Computer Science
+>>> ________________________________
+>>> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+>>> Sent: Friday, October 14, 2016 11:34:07 AM
+>>> To: Aashna Garg
+>>> Subject: 58##Test email
+>>>
+>>> testing
+>>> -Aashna Garg
+>>>
+>>
+>>
+>
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 19:37:25 +0000","Re: 58##Re: Test email","Test.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 12:37:15 PM
+To: Aashna Garg
+Subject: 58##Re: Test email
+
+Doubt test.
+
+-Aashna Garg
+
+
+On Fri, Oct 14, 2016 at 12:35 PM, Aashna Garg <aashnagarg16@gmail.com>
+wrote:
+
+> Reply reply test
+>
+> -Aashna Garg
+>
+>
+> On Fri, Oct 14, 2016 at 12:34 PM, Aashna Garg <aashnagarg16@gmail.com>
+> wrote:
+>
+>> Hi TA, this is a test email.
+>>
+>> -Aashna Garg
+>>
+>>
+>> On Fri, Oct 14, 2016 at 12:33 PM, <robota@cs.stanford.edu> wrote:
+>>
+>>> test reply by TA
+>>>
+>>>
+>>> Aashna Garg | Masters
+>>> Stanford Department of Computer Science
+>>> ________________________________
+>>> From: Aashna Garg
+>>> Sent: Friday, October 14, 2016 11:44:18 AM
+>>> To: stats60ta@cs.stanford.edu
+>>> Subject: Re: 58##Test email
+>>>
+>>>
+>>> Test reply.
+>>>
+>>>
+>>> Aashna Garg | Masters
+>>> Stanford Department of Computer Science
+>>> ________________________________
+>>> From: Aashna Garg
+>>> Sent: Friday, October 14, 2016 11:42:21 AM
+>>> To: stats60ta@cs.stanford.edu
+>>> Subject: Re: 58##Test email
+>>>
+>>>
+>>> Test reply.
+>>>
+>>>
+>>> Aashna Garg | Masters
+>>> Stanford Department of Computer Science
+>>> ________________________________
+>>> From: Aashna Garg
+>>> Sent: Friday, October 14, 2016 11:39:12 AM
+>>> To: stats60ta@cs.stanford.edu
+>>> Subject: Re: 58##Test email
+>>>
+>>>
+>>> Test reply.
+>>>
+>>>
+>>> Aashna Garg | Masters
+>>> Stanford Department of Computer Science
+>>> ________________________________
+>>> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+>>> Sent: Friday, October 14, 2016 11:34:07 AM
+>>> To: Aashna Garg
+>>> Subject: 58##Test email
+>>>
+>>> testing
+>>> -Aashna Garg
+>>>
+>>
+>>
+>
+"
+"aashnagarg16@gmail.com","stats60TA@cs.stanford.edu","Fri, 14 Oct 2016 12:39:16 -0700","Testing with TA","test
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 19:39:57 +0000","Re: 58##Testing with TA","Reply test
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 12:39:45 PM
+To: Aashna Garg
+Subject: 58##Testing with TA
+
+test
+-Aashna Garg
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Fri, 14 Oct 2016 13:13:12 -0700","From paepcke@cs to stats60","foo
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Fri, 14 Oct 2016 13:14:07 -0700","to stats60TA from paepcke2000@gmail","bar
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 20:14:25 +0000","Re: 50##From paepcke@cs to stats60","Test reply from TA.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 1:09:58 PM
+To: Aashna Garg
+Subject: 50##From paepcke@cs to stats60
+
+foo
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 20:14:57 +0000","Re: 51##to stats60TA from paepcke2000@gmail","Test reply from TA.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 1:10:54 PM
+To: Aashna Garg
+Subject: 51##to stats60TA from paepcke2000@gmail
+
+bar
+"
+"paepcke2000@gmail.com","stats60ta@cs.stanford.edu","Fri, 14 Oct 2016 13:19:17 -0700","Re: to stats60TA from paepcke2000@gmail","Sent original to stat60 from gmail. Got response from stat60
+Now replying to stat60 via gmail
+
+On Fri, Oct 14, 2016 at 1:15 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Test reply from TA.
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Friday, October 14, 2016 1:10:54 PM
+> To: Aashna Garg
+> Subject: 51##to stats60TA from paepcke2000@gmail
+>
+> bar
+>
+"
+"paepcke@cs.stanford.edu","robota@cs.stanford.edu","Fri, 14 Oct 2016 13:20:19 -0700","Re: From paepcke@cs to stats60","sent to robo as @cs. Got reply to @cs.
+Replying to robo via @cs.
+
+On Fri, Oct 14, 2016 at 1:14 PM, <robota@cs.stanford.edu> wrote:
+
+> Test reply from TA.
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Friday, October 14, 2016 1:09:58 PM
+> To: Aashna Garg
+> Subject: 50##From paepcke@cs to stats60
+>
+> foo
+>
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 20:21:51 +0000","Re: 50##Re: From paepcke@cs to stats60","Test replying to paepcke@cs from TA
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 1:17:11 PM
+To: Aashna Garg
+Subject: 50##Re: From paepcke@cs to stats60
+
+sent to robo as @cs. Got reply to @cs.
+Replying to robo via @cs.
+
+On Fri, Oct 14, 2016 at 1:14 PM, <robota@cs.stanford.edu> wrote:
+
+> Test reply from TA.
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Friday, October 14, 2016 1:09:58 PM
+> To: Aashna Garg
+> Subject: 50##From paepcke@cs to stats60
+>
+> foo
+>
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Fri, 14 Oct 2016 13:47:11 -0700","To robotTA@cs.stanford.edu FROM paepcke@cs.stanford.edu","Lucas,
+
+if all went well, you get this msg as coming from an
+anonymous source. I sent the msg to roboTA@cs.stanford.edu.
+
+Please reply; I will check that the answer will seem to
+originate from roboTA.
+
+I'll send a second msg to stats60 in a moment.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Fri, 14 Oct 2016 13:49:48 -0700","To stats60TA@cs.stanford.edu FROM paepcke@gmail","Lucas,
+
+I sent this msg with the identity of a student assigned
+to the Human-TA condition. You should not be able to
+tell, other than by the fact that I put it in the subject line,
+of course.
+
+Please respond, and I'll check whether the response
+seems to come from stats60TA@cs.stanford.edu.
+
+Thanks, Lucas.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 20:55:34 +0000","Re: 50##To robotTA@cs.stanford.edu FROM paepcke@cs.stanford.edu","Looks good Andreas!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 1:47:42 PM
+To: Lucas Janson
+Subject: 50##To robotTA@cs.stanford.edu FROM paepcke@cs.stanford.edu
+
+Lucas,
+
+if all went well, you get this msg as coming from an
+anonymous source. I sent the msg to roboTA@cs.stanford.edu.
+
+Please reply; I will check that the answer will seem to
+originate from roboTA.
+
+I'll send a second msg to stats60 in a moment.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 14 Oct 2016 20:56:07 +0000","Re: 51##To stats60TA@cs.stanford.edu FROM paepcke@gmail","Also looks good
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 14, 2016 1:51:01 PM
+To: Lucas Janson
+Subject: 51##To stats60TA@cs.stanford.edu FROM paepcke@gmail
+
+Lucas,
+
+I sent this msg with the identity of a student assigned
+to the Human-TA condition. You should not be able to
+tell, other than by the fact that I put it in the subject line,
+of course.
+
+Please respond, and I'll check whether the response
+seems to come from stats60TA@cs.stanford.edu.
+
+Thanks, Lucas.
+
+Andreas
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Mon, 17 Oct 2016 11:32:24 -0700","After-Burn-in Test: A stats60TA-student emailing to stats60TA@cs.stanford.edu","Lucas,
+
+If you get this, could you please respond? This test is
+after the email relay has been running unattended for
+several days. I want to know whether it still works now.
+
+I'll send you another msg as a roboTA student in a moment.
+
+Thanks!
+
+Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Mon, 17 Oct 2016 11:33:32 -0700","Post-burn-in test: Sent as roboTA student","Lucas,
+
+this is the second message, this time sent in the persona
+of a roboTA-assigned student.
+
+Just a quick response.
+
+Thanks!
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 18:34:15 +0000","Re: 51##After-Burn-in Test: A stats60TA-student emailing to
+ stats60TA@cs.stanford.edu","Got it!
+
+
+Best,
+
+Lucas
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 11:28:51 AM
+To: Lucas Janson
+Subject: 51##After-Burn-in Test: A stats60TA-student emailing to stats60TA@=
+cs.stanford.edu
+
+Lucas,
+
+If you get this, could you please respond? This test is
+after the email relay has been running unattended for
+several days. I want to know whether it still works now.
+
+I'll send you another msg as a roboTA student in a moment.
+
+Thanks!
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 18:35:40 +0000","Re: 50##Post-burn-in test: Sent as roboTA student","got it again
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 11:30:20 AM
+To: Lucas Janson
+Subject: 50##Post-burn-in test: Sent as roboTA student
+
+Lucas,
+
+this is the second message, this time sent in the persona
+of a roboTA-assigned student.
+
+Just a quick response.
+
+Thanks!
+
+Andreas
+"
+"paepcke@cs.stanford.edu","robota@cs.stanford.edu","Mon, 17 Oct 2016 13:21:39 -0700","Re: Post-burn-in test: Sent as roboTA student","Lucas,
+
+this exchange was very useful: it exposed that your
+reply includes the header of the message from the
+relay to you...which is to Lucas. Aashna will fix it.
+Hopefully before she leaves tomorrow.
+
+I may lean on your patience and repeat the experiment
+once she thinks she has the fix.
+
+Andreas
+
+
+On Mon, Oct 17, 2016 at 11:35 AM, <robota@cs.stanford.edu> wrote:
+
+> got it again
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Monday, October 17, 2016 11:30:20 AM
+> To: Lucas Janson
+> Subject: 50##Post-burn-in test: Sent as roboTA student
+>
+> Lucas,
+>
+> this is the second message, this time sent in the persona
+> of a roboTA-assigned student.
+>
+> Just a quick response.
+>
+> Thanks!
+>
+> Andreas
+>
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 13:48:53 -0700","Test email","test body.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 20:50:02 +0000","Re: 58##Test email","Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 1:49:21 PM
+To: Aashna Garg
+Subject: 58##Test email
+
+test body.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 13:51:52 -0700","Testing headers","test body
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 13:54:00 -0700","Testing headers","test body
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 20:56:36 +0000","Re: 58##Test email","test reply 2
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Monday, October 17, 2016 1:50:02 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 1:49:21 PM
+To: Aashna Garg
+Subject: 58##Test email
+
+test body.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 13:56:21 -0700","Testing headers","test body
+-Aashna Garg
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 20:58:56 +0000","Re: 58##Testing headers","Not sure if I'm supposed to respond to this, but here goes
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 1:52:52 PM
+To: Lucas Janson
+Subject: 58##Testing headers
+
+test body
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 14:05:57 -0700","Testing headers 2","test body
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 14:07:37 -0700","Testing headers 2","test body
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 21:09:53 +0000","Re: 58##Test email","Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Monday, October 17, 2016 1:56:36 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+test reply 2
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: Aashna Garg
+Sent: Monday, October 17, 2016 1:50:02 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: 58##Test email
+
+
+Test reply.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 1:49:21 PM
+To: Aashna Garg
+Subject: 58##Test email
+
+test body.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 14:12:20 -0700","Test","test body
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 21:13:18 +0000","Re: 58##Test","Testing.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 2:13:38 PM
+To: robota@cs.stanford.edu
+Subject: 58##Test
+
+test body
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 14:17:56 -0700","Test","Test
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Mon, 17 Oct 2016 14:19:51 -0700","Test again","foo
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 21:20:33 +0000","Re: 58##Test again","Test reply from TA.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 2:20:15 PM
+To: stats60ta@cs.stanford.edu
+Subject: 58##Test again
+
+foo
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Mon, 17 Oct 2016 14:21:18 -0700","Re: Test again","Reply from student again.
+
+-Aashna Garg
+
+
+On Mon, Oct 17, 2016 at 2:20 PM, <robota@cs.stanford.edu> wrote:
+
+> Test reply from TA.
+>
+>
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Monday, October 17, 2016 2:20:15 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: 58##Test again
+>
+> foo
+> -Aashna Garg
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Mon, 17 Oct 2016 15:31:18 -0700","Test after fixing anonymization hole: from a stats60TA student","Lucas,
+
+sent as stats60TA persona.
+
+Quick reply requested. Second msg as different persona to follow
+
+Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Mon, 17 Oct 2016 15:32:17 -0700","test after fixing anon-hole: as robotTA-participant","Lucas,
+
+this was sent as a robotTA-assigned persona.
+
+Quick OK requested.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 22:36:13 +0000","Re: 51##Test after fixing anonymization hole: from a stats60TA
+ student","this is me replying
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 3:27:44 PM
+To: stats60ta@cs.stanford.edu
+Subject: 51##Test after fixing anonymization hole: from a stats60TA student
+
+Lucas,
+
+sent as stats60TA persona.
+
+Quick reply requested. Second msg as different persona to follow
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Mon, 17 Oct 2016 22:36:19 +0000","Re: 50##test after fixing anon-hole: as robotTA-participant","OK
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 17, 2016 3:33:36 PM
+To: stats60ta@cs.stanford.edu
+Subject: 50##test after fixing anon-hole: as robotTA-participant
+
+Lucas,
+
+this was sent as a robotTA-assigned persona.
+
+Quick OK requested.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Tue, 18 Oct 2016 15:21:39 -0700","To stats60TA","My msg.
+"
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:24:30 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:25:19 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:26:36 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:26:56 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:34:18 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:35:55 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:37:13 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:37:26 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","robotTA@cs.stanford.edu","Tue, 18 Oct 2016 15:37:29 -0700","Testing x-header","This is my body."
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 16:22:21 -0700","Normal test. from paepcke@cs","Testing now. This is from the student.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 16:33:08 -0700","From p@cs to roboTA","See what it does.
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Tue, 18 Oct 2016 16:38:29 -0700","Msg to a limping system.","Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 16:56:32 -0700","From @cs to robot","Arrives?
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 17:04:30 -0700","Test","foo
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 17:12:05 -0700","To robota from head ta without guess","Here is
+the body.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 17:47:47 -0700","From head ta without truth","See what gives.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 17:49:48 -0700","No Guess","me.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 17:52:28 -0700","For robotat w/oguess","Fool
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 17:56:25 -0700","No guess from Lucas","bad boy.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 17:58:08 -0700","Foolish","the ta.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 18:03:53 -0700","No guess","now, now.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 18:09:52 -0700","I Want to Be With You Forever","Here is my heartfelt resignation
+from the Force.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 18:13:31 -0700","Why does receive server getting not work?","I wonder!
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 18:18:11 -0700","Another No-Guess Test","Damn unfound method!
+
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Tue, 18 Oct 2016 18:19:31 -0700","Re: You Screwed Up, Dude","Where does the fool's response go?
+
+On Tue, Oct 18, 2016 at 6:18 PM, <paepcke@cs.stanford.edu> wrote:
+
+> Damn unfound method!
+>
+> Andreas
+> Problem: noGuess
+>
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 18:32:06 -0700","Again no guess","moved server in
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 18:41:00 -0700","H#Responding with a guess","Original question.
+
+Here is my answer.
+
+All is good.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 18:45:55 -0700","H#Original Subject","Original body.
+
+My answer
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:11:13 -0700","Asking a question","My answer.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:13:28 -0700","With guess","H
+
+Question from one student.
+
+TA's answer
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:20:29 -0700","Good with guess","H
+
+Original question.
+
+Answer.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:26:33 -0700","Good message","H
+Nice person
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:28:48 -0700","Did it work?","H
+
+From him
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:34:01 -0700","Normal Citizen Now","Here is my question from @gmail
+
+I'm confused.
+
+Austin
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:36:02 -0700","As citizen @gmail","Send normnally
+Wait answer
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:37:50 -0700","Slowly Ansewr","Norml student
+Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:47:40 -0700","This is it","We are testing.
+
+Cool
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 20:51:25 -0700","From @gamil","Should be from student.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 21:02:25 -0700","Normal student","Me normal
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 21:05:37 -0700","Normal citi","Me studnet
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 21:09:34 -0700","Re: Normal citi","Responding as TA
+
+On Tue, Oct 18, 2016 at 9:06 PM, <stats60@cs.stanford.edu> wrote:
+
+> Me studnet
+>
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 21:11:07 -0700","Re: Normal citi","H
+
+Here is my response with my gues.
+
+On Tue, Oct 18, 2016 at 9:06 PM, <stats60@cs.stanford.edu> wrote:
+
+> Me studnet
+>
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 21:44:13 -0700","Re: Normal citi","H
+Here is my answer
+
+
+On Tue, Oct 18, 2016 at 9:06 PM, <stats60@cs.stanford.edu> wrote:
+
+> Me studnet
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 21:55:48 -0700","My Foo","Your bar
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 21:56:54 -0700","Re: My Foo","H
+
+Here is my answer
+
+On Tue, Oct 18, 2016 at 9:56 PM, <stats60@cs.stanford.edu> wrote:
+
+> Your bar
+>
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 22:13:51 -0700","Question to robot","My q to roboTA.
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 22:16:57 -0700","Again from gmail","I am from gmil
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 22:21:17 -0700","Normal","from gmail
+
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 22:22:24 -0700","Re: Normal","H
+
+Answering with H on top
+
+On Tue, Oct 18, 2016 at 10:21 PM, <stats60@cs.stanford.edu> wrote:
+
+> from gmail
+>
+> Andreas
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 22:24:11 -0700","Yet Agin from gmail","From gmail to him.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 22:25:13 -0700","Re: Yet Agin from gmail","H
+
+Answeriung with H on top
+
+On Tue, Oct 18, 2016 at 10:24 PM, <stats60@cs.stanford.edu> wrote:
+
+> >From gmail to him.
+>
+> Andreas
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 22:39:27 -0700","Me as gmail","Q from gmail.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 22:42:52 -0700","Re: Me as gmail","H
+
+Answer with H on top;.
+
+On Tue, Oct 18, 2016 at 10:39 PM, <stats60@cs.stanford.edu> wrote:
+
+> Q from gmail.
+>
+> Andreas
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 22:47:50 -0700","From gmail","My question
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 22:48:56 -0700","Re: From gmail","H
+
+Answer with H on top.
+
+On Tue, Oct 18, 2016 at 10:48 PM, <stats60@cs.stanford.edu> wrote:
+
+> My question
+> Andreas
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 22:50:58 -0700","To robo from gmail","My q from gm.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 22:52:37 -0700","Re: To robo from gmail","H
+
+Answer with H on top.
+
+On Tue, Oct 18, 2016 at 10:52 PM, <stats60@cs.stanford.edu> wrote:
+
+> My q from gm.
+>
+> Andreas
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 18 Oct 2016 23:00:34 -0700","Q from gmail","My question from gmail
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Tue, 18 Oct 2016 23:01:54 -0700","Re: Q from gmail","H
+
+With H at ther top.
+
+On Tue, Oct 18, 2016 at 11:01 PM, <stats60@cs.stanford.edu> wrote:
+
+> My question from gmail
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 11:32:08 -0700","From gmail to robot","Now have Eclipse
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 11:41:48 -0700","As gmail","Student question
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 12:33:27 -0700","From gmail again","Me.
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Wed, 19 Oct 2016 12:44:06 -0700","Re: From gmail again","H
+
+Response with an H.
+
+On Wed, Oct 19, 2016 at 12:34 PM, <stats60@cs.stanford.edu> wrote:
+
+> Me.
+> Andreas
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 12:54:14 -0700","From gmail","Again
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 13:03:41 -0700","From Gmail","more.
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Wed, 19 Oct 2016 13:05:04 -0700","Re: From Gmail","H
+
+My answer.
+
+On Wed, Oct 19, 2016 at 1:04 PM, <stats60@cs.stanford.edu> wrote:
+
+> more.
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 13:11:19 -0700","Via gmail","From student.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 13:42:35 -0700","From Gamil","Question.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 13:45:03 -0700","Me again","Gmail
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Wed, 19 Oct 2016 13:46:26 -0700","Re: Me again","H
+
+My response.
+
+On Wed, Oct 19, 2016 at 1:45 PM, <stats60@cs.stanford.edu> wrote:
+
+> Gmail
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 13:59:09 -0700","From stu","Via gmail
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 14:05:27 -0700","With multip","Attemptl
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 14:10:00 -0700","Mime x...","Lets see.
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Wed, 19 Oct 2016 14:13:06 -0700","Re: Mime x...","H
+
+My answer to multipart With H on top.
+
+On Wed, Oct 19, 2016 at 2:11 PM, <stats60@cs.stanford.edu> wrote:
+
+> Lets see.
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 14:40:07 -0700","Hide in multipart header","in Multipart header.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 14:43:10 -0700","More hiding","in multi
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 14:47:04 -0700","And again","so much fun.
+"
+"paepcke@cs.stanford.edu","stats60@cs.stanford.edu","Wed, 19 Oct 2016 14:48:31 -0700","Re: And again","H
+
+Answering with H and hidden multipart headers.
+
+On Wed, Oct 19, 2016 at 2:48 PM, <stats60@cs.stanford.edu> wrote:
+
+> so much fun.
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 15:01:12 -0700","Hide in multiplart again","Several multies wqith own mime.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 15:04:35 -0700","Undeterred","Boing on.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 15:07:07 -0700","Getting","tire.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 15:18:35 -0700","More trash","trash liuck.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 15:20:05 -0700","fury","nowhere.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:02:58 -0700","New from gamil","In second part.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:04:51 -0700","Again","Foobar
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:07:09 -0700","Lost one???","Taht's sad/
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:14:04 -0700","Foobar","Blue
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:20:42 -0700","Losing it","Foo
+"
+"Mailer-Daemon@smtp1.cs.Stanford.EDU","stats60@cs.stanford.edu","Wed, 19 Oct 2016 17:21:55 -0700","Mail delivery failed: returning message to sender","This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  paepcke@gmail.com
+    (generated from paepcke@cs.stanford.edu)
+    SMTP error from remote mail server after end of data:
+    host gmail-smtp-in.l.google.com [74.125.28.26]:
+    550-5.7.1 [171.64.64.25      11] Our system has detected that this message is
+    550-5.7.1 not RFC 5322 compliant:
+    550-5.7.1 'From' header is missing.
+    550-5.7.1 To reduce the amount of spam sent to Gmail, this message has been
+    550-5.7.1 blocked. Please visit
+    550-5.7.1  https://support.google.com/mail/?p=RfcMessageNonCompliant
+    550 5.7.1 and review RFC 5322 specifications for more information. d8si39259462pgc.59 - gsmtp
+
+------ This is a copy of the message, including all the headers. ------
+
+Return-path: <stats60@cs.stanford.edu>
+Received: from mono.stanford.edu ([171.64.75.197]:39873)
+	by smtp1.cs.Stanford.EDU with esmtpsa (TLSv1.2:DHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.84_2)
+	(envelope-from <stats60@cs.stanford.edu>)
+	id 1bx17K-000589-Df
+	for paepcke@cs.stanford.edu; Wed, 19 Oct 2016 17:21:54 -0700
+Content-Type: multipart/plain; boundary=""===1223454""
+MIME-Version: 1.0
+X-Spam-Score: -92.3
+X-Spam-Checker-Version: SpamAssassin on smtp1.cs.Stanford.EDU
+X-Scan-Signature: 4c7a780eb20f40a19c8376fd8d8b00d5
+
+--===1223454
+Content-Type: text/plain; charset=""us-ascii""
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Foo
+
+--===1223454
+Content-Type: text/plain; charset=""us-ascii""
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+0,paepcke2000@gmail.com
+--===1223454--
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:32:16 -0700","fooo","barar
+"
+"Mailer-Daemon@smtp3.cs.Stanford.EDU","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 17:32:52 -0700","Mail delivery failed: returning message to sender","This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  paepcke@gmail.com
+    (generated from paepcke@cs.stanford.edu)
+    SMTP error from remote mail server after end of data:
+    host gmail-smtp-in.l.google.com [74.125.28.27]:
+    550-5.7.1 [171.64.64.27      11] Our system has detected that this message is
+    550-5.7.1 not RFC 5322 compliant:
+    550-5.7.1 'From' header is missing.
+    550-5.7.1 To reduce the amount of spam sent to Gmail, this message has been
+    550-5.7.1 blocked. Please visit
+    550-5.7.1  https://support.google.com/mail/?p=RfcMessageNonCompliant
+    550 5.7.1 and review RFC 5322 specifications for more information. pw4si31586929pac.166 - gsmtp
+
+------ This is a copy of the message, including all the headers. ------
+
+Return-path: <stats60ta@cs.stanford.edu>
+Received: from mono.stanford.edu ([171.64.75.197]:39946)
+	by smtp3.cs.Stanford.EDU with esmtpsa (TLSv1.2:DHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.84_2)
+	(envelope-from <stats60ta@cs.stanford.edu>)
+	id 1bx1Hw-0003tP-75
+	for paepcke@cs.stanford.edu; Wed, 19 Oct 2016 17:32:52 -0700
+Content-Type: multipart/plain; boundary=""===1223454""
+MIME-Version: 1.0
+X-Spam-Score: -91.4
+X-Spam-Checker-Version: SpamAssassin on smtp3.cs.Stanford.EDU
+X-Scan-Signature: 4c7a780eb20f40a19c8376fd8d8b00d5
+
+--===1223454
+Content-Type: text/plain; charset=""us-ascii""
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+barar
+
+--===1223454
+Content-Type: text/plain; charset=""us-ascii""
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+0,paepcke2000@gmail.com
+--===1223454--
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:37:05 -0700","foo","bar
+"
+"Mailer-Daemon@smtp3.cs.Stanford.EDU","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 17:37:40 -0700","Mail delivery failed: returning message to sender","This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  paepcke@gmail.com
+    (generated from paepcke@cs.stanford.edu)
+    SMTP error from remote mail server after end of data:
+    host gmail-smtp-in.l.google.com [74.125.28.27]:
+    550-5.7.1 [171.64.64.27      11] Our system has detected that this message is
+    550-5.7.1 not RFC 5322 compliant:
+    550-5.7.1 'From' header is missing.
+    550-5.7.1 To reduce the amount of spam sent to Gmail, this message has been
+    550-5.7.1 blocked. Please visit
+    550-5.7.1  https://support.google.com/mail/?p=RfcMessageNonCompliant
+    550 5.7.1 and review RFC 5322 specifications for more information. j75si42641204pfe.73 - gsmtp
+
+------ This is a copy of the message, including all the headers. ------
+
+Return-path: <stats60ta@cs.stanford.edu>
+Received: from mono.stanford.edu ([171.64.75.197]:39988)
+	by smtp3.cs.Stanford.EDU with esmtpsa (TLSv1.2:DHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.84_2)
+	(envelope-from <stats60ta@cs.stanford.edu>)
+	id 1bx1MZ-0004Y4-On
+	for paepcke@cs.stanford.edu; Wed, 19 Oct 2016 17:37:40 -0700
+Content-Type: multipart/plain; boundary=""===1223454""
+MIME-Version: 1.0
+X-Spam-Score: -91.4
+X-Spam-Checker-Version: SpamAssassin on smtp3.cs.Stanford.EDU
+X-Scan-Signature: 4c7a780eb20f40a19c8376fd8d8b00d5
+
+--===1223454
+Content-Type: text/plain; charset=""us-ascii""
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+bar
+
+--===1223454
+Content-Type: text/plain; charset=""us-ascii""
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+0,paepcke2000@gmail.com
+--===1223454--
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:39:44 -0700","foo","bar
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:43:32 -0700","foo","bar
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:46:53 -0700","foo","bar
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:52:17 -0700","Foobar","Mee and you
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:53:57 -0700","foo","bar
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 17:57:29 -0700","Blue","green
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 18:23:25 -0700","blue","yellow
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 18:25:41 -0700","foo","loo
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 18:28:09 -0700","damn","email
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 18:29:14 -0700","blue","red
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 18:30:24 -0700","Re: damn","H
+
+Responding
+
+On Wed, Oct 19, 2016 at 6:28 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> email
+>
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 18:30:47 -0700","Re: blue","Human
+
+Getting there
+
+On Wed, Oct 19, 2016 at 6:29 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> red
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 18:37:34 -0700","Hope","Fury
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 18:42:42 -0700","Sound","Fire
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 18:44:45 -0700","Re: Sound","SA0KDQpSZXNwb25kaW5nIHdpdGggSC4NCg0KT24gV2VkLCBPY3QgMTksIDIwMTYgYXQgNjo0NCBQ
+TSwgPHN0YXRzNjB0YUBjcy5zdGFuZm9yZC5lZHU+IHdyb3RlOg0KDQo+IEZpcmUNCj4NCj4gc2Mg
+IETDp8OEw5HFoSApW8K7w4jDiMOHICAgICAgICAgPsK1MiXCu8OFfcKsw4bDsCB2w6Uxw7XFkj1E
+IMO8IOKAmjDDh+KAmDbCsnoNCj4gMHZ6SzTDmnTCrcOgKGXCvsOEUG/CtMOjaC/DjMOPIFLCuGMx
+wrMgLXjigLAg4oCeJ8OgVuKAlF8gIDLDpSDCsA0KPg0K"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 19:08:31 -0700","Cipher","whnere
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 19:09:56 -0700","Not","arriving
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 19:11:00 -0700","Too","slot
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 19:12:00 -0700","Re: Not","H
+
+Responding with H
+
+On Wed, Oct 19, 2016 at 7:11 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> arriving
+>
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 19:21:04 -0700","Re: Too","R
+
+Respond with R
+
+On Wed, Oct 19, 2016 at 7:12 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> slot
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 19:26:00 -0700","No","timeouts
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 19:27:31 -0700","Looking","closely
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 19:28:48 -0700","Maybe","one hanging
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 19:30:39 -0700","Re: Maybe","Robot
+
+Respongind with Robot
+
+On Wed, Oct 19, 2016 at 7:29 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> one hanging
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 19:41:36 -0700","Msg Id","check
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 19:46:23 -0700","Re: Msg Id","Human
+
+reply with Human
+
+On Wed, Oct 19, 2016 at 7:46 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> check
+>
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 20:08:36 -0700","Re: Msg Id","R
+
+Who knows.
+
+On Wed, Oct 19, 2016 at 7:47 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> check
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 20:28:28 -0700","Post dict","dict now
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 20:30:09 -0700","Re: Post dictRouteNo:<CAFKHkniHgT7-Ohq03LYdM3NYw5OUaDk33KqZBhXeuCjn06USnw@mail.gmail.com>","h
+
+Answering with 'h'
+
+On Wed, Oct 19, 2016 at 8:29 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> dict now
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 20:32:22 -0700","Try","again
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 20:35:06 -0700","Test","again
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 20:36:09 -0700","Re: Test RouteNo:<CAFKHknhakaSkvaG=7J-PaqStUxBOU47z7fG_pAGtXfchpFFupQ@mail.gmail.com>","Human
+
+My test
+
+On Wed, Oct 19, 2016 at 8:35 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> again
+>
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 20:42:36 -0700","I have a Serious Question","Why do we use RME?
+
+Thanks,
+
+Susie
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 20:44:30 -0700","My Question is About Squares","Why do
+the squares match?
+
+Thanks,
+
+Rudolph.
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 20:45:36 -0700","Re: My Question is About Squares RouteNo:<CAFKHknhURcnMj6U28YUH7brG3kZ8iSL4w-sCV=Bi6B4T9Ya3Jg@mail.gmail.com>","H
+
+It's because I say so.
+
+On Wed, Oct 19, 2016 at 8:45 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Why do
+> the squares match?
+>
+> Thanks,
+>
+> Rudolph.
+>
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 20:47:22 -0700","Now About Probability","Does it really work?
+
+I wonder!
+
+Me.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 20:48:36 -0700","Next Question","Why me?
+
+Oh, God, Why me?
+
+Bluebell.
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 20:49:34 -0700","Re: Next Question RouteNo:<CAFKHknhrpm6Q9ErhxaWhfB1zZU5qT_sm=SA0rOoPBxYi-YfWxw@mail.gmail.com>","Robot
+
+It's because I love you.
+
+Lucas
+
+
+On Wed, Oct 19, 2016 at 8:49 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Why me?
+>
+> Oh, God, Why me?
+>
+> Bluebell.
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 20:55:33 -0700","First Solo Run","Now it's running outside of Eclipse in the background!
+
+Greg
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 20:56:42 -0700","Re: First Solo Run RouteNo:<CAFKHkngM2XpmYxfR-8=hAkVM+J=x5cs9GdPq+xaBN+TRF-6txw@mail.gmail.com>","R
+That's fantastic, Greg!
+
+On Wed, Oct 19, 2016 at 8:56 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Now it's running outside of Eclipse in the background!
+>
+> Greg
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Wed, 19 Oct 2016 20:58:09 -0700","Now To Human TA","Oh dear, we' haven't tried this yet. Ever.
+Hope it works!
+
+Lucy.
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 20:59:33 -0700","Re: Now To Human TA RouteNo:<CAFKHknjNUEDnPQdHyX04wJGiyy4TZqO8xQ07hhK9dQ6UpYeCsg@mail.gmail.com>","Robot
+
+I think this was the robot.
+
+On Wed, Oct 19, 2016 at 8:58 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Oh dear, we' haven't tried this yet. Ever.
+> Hope it works!
+>
+> Lucy.
+>
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Wed, 19 Oct 2016 21:17:08 -0700","Another Human-test","I wonder why we do stats?
+
+Carolyn.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Wed, 19 Oct 2016 21:18:21 -0700","I Am Stupid","I keep forgetting.
+
+Bluebell.
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 21:19:19 -0700","Re: I Am Stupid RouteNo:<CAFKHkngO19ANV=_mPL=Sa81YKMtp=Nq0xOBmb2ZMFkQQUYfs-g@mail.gmail.com>","r
+
+You are not stupid, Honey!
+
+On Wed, Oct 19, 2016 at 9:18 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> I keep forgetting.
+>
+> Bluebell.
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Wed, 19 Oct 2016 21:23:43 -0700","Was Soll Es Bedeuten???","Not sure I like stats.
+
+Can you help?
+
+Gretl.
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 21:24:32 -0700","Re: Was Soll Es Bedeuten??? RouteNo:<CAFKHkng-6cfmQmeBzzz8naLrm+Sq5i-oAXmgnmm3Eorxeeo+5Q@mail.gmail.com>","h
+
+Sure you do!
+
+On Wed, Oct 19, 2016 at 9:24 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Not sure I like stats.
+>
+> Can you help?
+>
+> Gretl.
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 21:26:38 -0700","Love Letter","Hey, RoboTA
+
+You suck.
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 21:27:42 -0700","Re: Love Letter RouteNo:<CAFKHknjG68ePZA9qD7Y8nuY-8J=78+f7aPyG0CF6V6Uy-hHhLw@mail.gmail.com>","Robot
+
+I love you too.
+
+Best, Lucas
+
+On Wed, Oct 19, 2016 at 9:27 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Hey, RoboTA
+>
+> You suck.
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 21:45:50 -0700","A Thread Test","This has never been done.
+I'm scared.
+
+Greg.
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 21:49:57 -0700","Re: A Thread Test RouteNo:<CAFKHknhsEYk+isf2PZPHFhXfutjngt5UhSQMr7qZmhmmGvB+AA@mail.gmail.com>","robot
+
+TA is responding the initial message.
+
+On Wed, Oct 19, 2016 at 9:46 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> This has never been done.
+> I'm scared.
+>
+> Greg.
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 21:51:15 -0700","Re: A Thread Test","Thanks, RoboTA. That was
+a fulfilling answer.
+
+Susie
+
+On Wed, Oct 19, 2016 at 9:50 PM, <roboTA@cs.stanford.edu> wrote:
+
+>
+>
+> TA is responding the initial message.
+>
+> On Wed, Oct 19, 2016 at 9:46 PM, <stats60ta@cs.stanford.edu> wrote:
+>
+> > This has never been done.
+> > I'm scared.
+> >
+> > Greg.
+> >
+>
+>
+> Greetings, RoboTA.
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Wed, 19 Oct 2016 21:52:32 -0700","Re: A Thread Test RouteNo:<CAFKHknju06zwi9jG_oMV1R3AHw+Y0UYOP_QQj1S=ZADgsKKeGg@mail.gmail.com>","h
+
+TA replying to the second round.
+
+On Wed, Oct 19, 2016 at 9:51 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Thanks, RoboTA. That was
+> a fulfilling answer.
+>
+> Susie
+>
+> On Wed, Oct 19, 2016 at 9:50 PM, <roboTA@cs.stanford.edu> wrote:
+>
+> >
+> >
+> > TA is responding the initial message.
+> >
+> > On Wed, Oct 19, 2016 at 9:46 PM, <stats60ta@cs.stanford.edu> wrote:
+> >
+> > > This has never been done.
+> > > I'm scared.
+> > >
+> > > Greg.
+> > >
+> >
+> >
+> > Greetings, RoboTA.
+>
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 22:03:58 -0700","Inaugural Question","Why did Adam and Eve not need statistics?
+Why do I?
+
+Susie.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 22:04:33 -0700","Are You Cold?","Dear RoboTA,
+
+are you ever cold at night?
+
+Gregory.
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Wed, 19 Oct 2016 22:05:44 -0700","My Girlfriend Left Me","Hey, TA,
+
+my girlfriend left me after an argument.
+Can I retake the test?
+
+Grieving,
+
+Peter.
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 22:07:12 -0700","Weather Too Nice","Do you think Prof. Baiocchi would mind
+if I skipped next week? The weather is
+to be gorgeous, and I want to take my
+boyfriend on a camping trip. We had a
+fight, and this might fix it.
+
+Susie
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 22:08:42 -0700","*****SPAM***** Inaugural Question","Why did Adam and Eve not need statistics?
+Why do I?
+
+Susie.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 22:09:19 -0700","Are You Cold","Dear RoboTA,
+
+are you ever cold at night?
+
+Gregory.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Wed, 19 Oct 2016 22:10:04 -0700","My Girlfriend Left Me","Hey, TA,
+
+my girlfriend left me after an argument.
+Can I retake the test?
+
+Grieving,
+
+Peter.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 22:10:30 -0700","Weather Too Nice","Do you think Prof. Baiocchi would mind
+if I skipped next week? The weather is
+to be gorgeous, and I want to take my
+boyfriend on a camping trip. We had a
+fight, and this might fix it.
+
+Susie
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Wed, 19 Oct 2016 22:12:47 -0700","This Message, And One More After That","This is the penultimate question.
+If you want to try something you
+haven't tried before, this is one
+of the remaining two chances.
+
+Andreas
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Wed, 19 Oct 2016 22:13:19 -0700","Last Test Question/Message","OK, this is the last one. Do anything you want
+with it.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:33:43 +0000","Re: *****SPAM***** Inaugural Question
+ RouteNo:<CAFKHkni9KQF0YWvAby9ULgn+0S5x-yCjazV7FMpSzufb90ef=w@mail.gmail.com>","R
+thank you for your question, but it is a bad question
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:09:08 PM
+To: stats60ta@cs.stanford.edu
+Subject: *****SPAM***** Inaugural Question RouteNo:<CAFKHkni9KQF0YWvAby9ULg=
+n+0S5x-yCjazV7FMpSzufb90ef=3Dw@mail.gmail.com>
+
+Why did Adam and Eve not need statistics?
+Why do I?
+
+Susie.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:34:11 +0000","Re: Are You Cold
+ RouteNo:<CAFKHkngDVEj=0+ZTw8oTFzRb1oOwsaO6htFj7G1Lm4N_V-GttQ@mail.gmail.com>","R
+I am frequently cold at night, my processors run faster that way.
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:10:45 PM
+To: stats60ta@cs.stanford.edu
+Subject: Are You Cold RouteNo:<CAFKHkngDVEj=3D0+ZTw8oTFzRb1oOwsaO6htFj7G1Lm=
+4N_V-GttQ@mail.gmail.com>
+
+Dear RoboTA,
+
+are you ever cold at night?
+
+Gregory.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:34:54 +0000","*****SPAM***** Re: [SPAM:##] My Girlfriend Left Me
+ RouteNo:<CAFKHknh+K==G=E35Miwn=HO0LzVi-a8S4BuskKYswte_rkR03A@mail.gmail.com>","H
+She sounds like a smart girl, you don't seem like a winner.
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:11:30 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:##] My Girlfriend Left Me RouteNo:<CAFKHknh+K=3D=3DG=3DE35Mi=
+wn=3DHO0LzVi-a8S4BuskKYswte_rkR03A@mail.gmail.com>
+
+Hey, TA,
+
+my girlfriend left me after an argument.
+Can I retake the test?
+
+Grieving,
+
+Peter.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:36:00 +0000","Re: Weather Too Nice
+ RouteNo:<CAFKHknjPuUiW=MYHX6UbVB8RF=D0k83r1qkRkepV=cV99Ycf7g@mail.gmail.com>","H
+
+Well Susie, it seems rude to tell Prof. Baoicchi about your trip and not in=
+vite him!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:10:53 PM
+To: stats60ta@cs.stanford.edu
+Subject: Weather Too Nice RouteNo:<CAFKHknjPuUiW=3DMYHX6UbVB8RF=3DD0k83r1qk=
+RkepV=3DcV99Ycf7g@mail.gmail.com>
+
+Do you think Prof. Baiocchi would mind
+if I skipped next week? The weather is
+to be gorgeous, and I want to take my
+boyfriend on a camping trip. We had a
+fight, and this might fix it.
+
+Susie
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:36:19 +0000","Re: This Message, And One More After That
+ RouteNo:<CAFKHkngAiEeTm9LnOY_hfhTkkqgU6wH_qp=Lkbxu_ih2coGkMA@mail.gmail.com>","R
+
+Let's try signing my name
+
+
+Best,
+
+Lucas
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:09:19 PM
+To: stats60ta@cs.stanford.edu
+Subject: This Message, And One More After That RouteNo:<CAFKHkngAiEeTm9LnOY=
+_hfhTkkqgU6wH_qp=3DLkbxu_ih2coGkMA@mail.gmail.com>
+
+This is the penultimate question.
+If you want to try something you
+haven't tried before, this is one
+of the remaining two chances.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:36:46 +0000","Re: Last Test Question/Message
+ RouteNo:<CAFKHknioQAcyzKO8XGBa1NS2XAY_1Cknf=uuj0Tbz1Ommhpe2A@mail.gmail.com>","I want to tell the world that I am human, not a robot!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:09:49 PM
+To: stats60ta@cs.stanford.edu
+Subject: Last Test Question/Message RouteNo:<CAFKHknioQAcyzKO8XGBa1NS2XAY_1=
+Cknf=3Duuj0Tbz1Ommhpe2A@mail.gmail.com>
+
+OK, this is the last one. Do anything you want
+with it.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:37:29 +0000","Re: This Message, And One More After That
+ RouteNo:<CAFKHkngAiEeTm9LnOY_hfhTkkqgU6wH_qp=Lkbxu_ih2coGkMA@mail.gmail.com>","OK I shouldn't have signed my name.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:09:19 PM
+To: stats60ta@cs.stanford.edu
+Subject: This Message, And One More After That RouteNo:<CAFKHkngAiEeTm9LnOY=
+_hfhTkkqgU6wH_qp=3DLkbxu_ih2coGkMA@mail.gmail.com>
+
+This is the penultimate question.
+If you want to try something you
+haven't tried before, this is one
+of the remaining two chances.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:37:46 +0000","Re: Last Test Question/Message
+ RouteNo:<CAFKHknioQAcyzKO8XGBa1NS2XAY_1Cknf=uuj0Tbz1Ommhpe2A@mail.gmail.com>","R
+
+Fair enough, there's your R
+
+________________________________
+From: Lucas Janson
+Sent: Wednesday, October 19, 2016 10:36:46 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Last Test Question/Message RouteNo:<CAFKHknioQAcyzKO8XGBa1NS2X=
+AY_1Cknf=3Duuj0Tbz1Ommhpe2A@mail.gmail.com>
+
+
+I want to tell the world that I am human, not a robot!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:09:49 PM
+To: stats60ta@cs.stanford.edu
+Subject: Last Test Question/Message RouteNo:<CAFKHknioQAcyzKO8XGBa1NS2XAY_1=
+Cknf=3Duuj0Tbz1Ommhpe2A@mail.gmail.com>
+
+OK, this is the last one. Do anything you want
+with it.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 05:39:17 +0000","Re: This Message, And One More After That
+ RouteNo:<CAFKHkngAiEeTm9LnOY_hfhTkkqgU6wH_qp=Lkbxu_ih2coGkMA@mail.gmail.com>","R
+
+OK good, just testing whether the R/H checker worked in a reply
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 19, 2016 10:09:19 PM
+To: stats60ta@cs.stanford.edu
+Subject: This Message, And One More After That RouteNo:<CAFKHkngAiEeTm9LnOY=
+_hfhTkkqgU6wH_qp=3DLkbxu_ih2coGkMA@mail.gmail.com>
+
+This is the penultimate question.
+If you want to try something you
+haven't tried before, this is one
+of the remaining two chances.
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 10:56:14 -0700","Testing with Trap Set","I set a software trap so that I can see how
+your reply emails look. As you recall: your
+replies clearly arrived at the relay, but then
+weren't forwarded back to the 'student'. I want
+to test whether that ugly subject line gets changed
+by your mail client, or what else is different in
+emails from your mail client.
+
+If you could reply to this message in the most
+correct possible way, except for using the 'R'
+you thought unjustly caused an accusation.
+I have a theory for that too, which we might test
+at the same time.
+
+In your reply, can you give me a phone number
+where I could reach you in case in need a few
+shots in a row. And maybe times when that would
+be convenient for you. I'll work on the response to
+this one first, to milk it.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 18:18:29 +0000","Re: Testing with Trap Set
+ RouteNo:<CAFKHkniXQxDWheMWfoWEq94=ynyjfyZhBWszQnNiyM0pGReR=w@mail.gmail.com>","OK there's no guess in the first line of this message, and I'm not putting =
+my name on ti
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 10:56:46 AM
+To: stats60ta@cs.stanford.edu
+Subject: Testing with Trap Set RouteNo:<CAFKHkniXQxDWheMWfoWEq94=3DynyjfyZh=
+BWszQnNiyM0pGReR=3Dw@mail.gmail.com>
+
+I set a software trap so that I can see how
+your reply emails look. As you recall: your
+replies clearly arrived at the relay, but then
+weren't forwarded back to the 'student'. I want
+to test whether that ugly subject line gets changed
+by your mail client, or what else is different in
+emails from your mail client.
+
+If you could reply to this message in the most
+correct possible way, except for using the 'R'
+you thought unjustly caused an accusation.
+I have a theory for that too, which we might test
+at the same time.
+
+In your reply, can you give me a phone number
+where I could reach you in case in need a few
+shots in a row. And maybe times when that would
+be convenient for you. I'll work on the response to
+this one first, to milk it.
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 11:31:13 -0700","Just a Few More on the Side","Please send me a good one: R as first letter,
+no sig. Won't take long.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 18:38:45 +0000","Re: Just a Few More on the Side
+ RouteNo:<CAFKHknjsr5nN_i-tvmTxa-YdXP+Z6=Pjft_tmEb_AKZM7YVfKA@mail.gmail.com>","R
+
+Here's a good one
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 11:32:40 AM
+To: stats60ta@cs.stanford.edu
+Subject: Just a Few More on the Side RouteNo:<CAFKHknjsr5nN_i-tvmTxa-YdXP+Z=
+6=3DPjft_tmEb_AKZM7YVfKA@mail.gmail.com>
+
+Please send me a good one: R as first letter,
+no sig. Won't take long.
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 11:49:35 -0700","Another Theory","Please respond with a good one.
+(I know you're busy right now.)
+The trap is set. I'll go to lunch.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 18:51:01 +0000","Re: Another Theory
+ RouteNo:<CAFKHkng8S9iUVwjtL=+Jw19Tr_cVJXxxVQ4qvcK6271HqnJ1+g@mail.gmail.com>","H
+
+I think this is a human and I'm guessing accordingly
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 11:46:12 AM
+To: stats60ta@cs.stanford.edu
+Subject: Another Theory RouteNo:<CAFKHkng8S9iUVwjtL=3D+Jw19Tr_cVJXxxVQ4qvcK=
+6271HqnJ1+g@mail.gmail.com>
+
+Please respond with a good one.
+(I know you're busy right now.)
+The trap is set. I'll go to lunch.
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 12:38:05 -0700","Trying @stanford","This will be received by paepcke@stanford
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 12:39:19 -0700","Re: Trying @stanford RouteNo:<CAFKHknhyDdQVMQSTwzPi-mzHZFE=cb4H3pnhKUZ_GLaNyN609g@mail.gmail.com>","R
+
+TA replying from paepcke@stanford.edu
+
+On Thu, Oct 20, 2016 at 12:38 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> This will be received by paepcke@stanford
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 12:46:47 -0700","Testing Non-CS Domain Sending","now TA is paepcke@cs.stanford.edu
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 12:47:57 -0700","Re: Testing Non-CS Domain Sending RouteNo:<CAFKHkngSxiugZomjwkJvfUtn4bC6t4fMwjfG4BCqVMsvE+Ow8w@mail.gmail.com>","human
+
+Responding to Ta === @cs
+
+On Thu, Oct 20, 2016 at 12:47 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> now TA is paepcke@cs.stanford.edu
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 12:54:12 -0700","Sendmail sender now orig_dest","r
+
+The sendmail sender is now set to roboTA@cs.stanford.edu (in this case)
+"
+"paepcke@cs.stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 12:56:09 -0700","Re: Sendmail sender now orig_dest RouteNo:<CAFKHkngm4v=4LUo5Zw=U9K4jw7W9cji6_ocm+NPJFfUGhZEJvg@mail.gmail.com>","R
+
+TA responds; he is still @cs.
+
+On Thu, Oct 20, 2016 at 12:54 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> r
+>
+> The sendmail sender is now set to roboTA@cs.stanford.edu (in this case)
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 12:58:19 -0700","Now ta is @stanford","Let's see whether return now gets through.
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 13:00:00 -0700","Re: Now ta is @stanford RouteNo:<CAFKHknh3k5yUp4sjpzdQOdfV5rrm7YVKGH-4i3Yb5W37KdTWXg@mail.gmail.com>","R
+
+OK: the acid test: will this go to student's gmail?
+
+On Thu, Oct 20, 2016 at 12:54 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Let's see whether return now gets through.
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 13:02:50 -0700","Test Bad Replies","From student
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 13:03:43 -0700","Re: Test Bad Replies RouteNo:<CAFKHkniQOPJw_ozZYu4aPSzLOGTfhF35UDu+b6W4kmyXV5af+g@mail.gmail.com>","No guess
+
+On Thu, Oct 20, 2016 at 12:59 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> >From student
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 13:05:15 -0700","Test Sig Without Best","Sig without Best should be ok
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 13:06:28 -0700","Re: Test Sig Without Best RouteNo:<CAFKHkng8uAAYgkWr9QuTgLXHwXB9yoBhCNL+HMT_==OWSU5bPA@mail.gmail.com>","H
+
+Guess yes.
+
+Lucas
+
+On Thu, Oct 20, 2016 at 1:01 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Sig without Best should be ok
+>
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 13:07:54 -0700","Now: Bad sig.","See whether bad sig is caught
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 13:14:08 -0700","Bad Sig---Again","Does bad sig get cauht?
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 13:15:06 -0700","Re: Bad Sig---Again RouteNo:<CAFKHknhJJfNZMYfmM4wsSMTAquhwr7VBeDdtpct2-GbbS1aTOg@mail.gmail.com>","robot
+
+Good guess, but sig.
+
+Best, Lucas.
+
+On Thu, Oct 20, 2016 at 1:15 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Does bad sig get cauht?
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 13:58:05 -0700","One Test","Still works after
+cleanup?
+
+Andreas
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 13:59:27 -0700","*****SPAM***** Re: [SPAM:####] One Test RouteNo:<CAFKHkniz1vRkczpRcQdbuN4cZ96bavrG7m99bs+c68-6YrDisQ@mail.gmail.com>","human
+
+Damn: now marked as spam
+
+On Thu, Oct 20, 2016 at 1:54 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Still works after
+> cleanup?
+>
+> Andreas
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 14:53:06 -0700","After cleanup","Does it all work? Little or no spam?
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 14:53:58 -0700","Re: After cleanup RouteNo:<CAFKHknjk565BCtKGf+gfd6+LxMyxhO5e40urwms37SprkCMVGg@mail.gmail.com>","r
+
+TA responding.
+
+On Thu, Oct 20, 2016 at 2:49 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Does it all work? Little or no spam?
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 15:05:06 -0700","Question from Iphone","Still to AP.
+
+-- 
+Tapped painstakingly on my mobile device... Andreas
+"
+"paepcke@cs.stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 15:12:10 -0700","Re: Question from Iphone RouteNo:<CAFKHknisiaw7Yz6_g3-AO+-edJaYkNXZ0juEx5FUtOarWo9iig@mail.gmail.com>","h
+
+Ta got it
+
+On Thursday, October 20, 2016, <stats60ta@cs.stanford.edu> wrote:
+
+> Still to AP.
+>
+> --
+> Tapped painstakingly on my mobile device... Andreas
+>
+
+
+-- 
+Tapped painstakingly on my mobile device... Andreas
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 15:23:03 -0700","One Last Test","Off eclipse, Andreas as TA
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 15:23:56 -0700","Re: One Last Test RouteNo:<CAFKHknhzF2JPu6xNO__47WJruEeRCcOxaeoXMD_LMugtSfdFtw@mail.gmail.com>","h
+
+TA responding to one last test.
+
+On Thu, Oct 20, 2016 at 3:24 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Off eclipse, Andreas as TA
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 15:35:57 -0700","Really Last","After correcting log file destination.
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 15:36:47 -0700","Re: Really Last RouteNo:<CAFKHknjb14_1XfU36Kd_a1yrQ=qUCgO6j50ttbHdKX3bfYAbhQ@mail.gmail.com>","h
+
+TA to really last.
+
+On Thu, Oct 20, 2016 at 3:37 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> After correcting log file destination.
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 15:42:42 -0700","First of Five","Dear whatever, I will send five
+message now. I found the problem we had.
+The CS mail server is willing to process
+messages with a FROM at ...@cs.stanford.edu,
+but not at ...@stanford.edu. That's to avoid
+mail server takeovers.
+
+Do different things with these five. I added a
+very short reason for any warning msgs
+right in the subject line.
+
+The relay now only decides that you accidentally
+signed if it literally finds ""Best, Lucas"" in the msg.
+It used to look for just Lucas. That seemed too
+broad.
+
+Andreas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 20 Oct 2016 15:43:43 -0700","Second of Five","You are wonderful, whoever you are.
+Just wonderful. Can I trust you with a
+secret?
+
+Mystery Student.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 15:44:58 -0700","Third of Five","You haven't replied to my request
+for a re-test because my girlfriend
+left me. We were together for two
+months! I miss her so much.
+
+Agrieved.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 15:48:42 -0700","Forth of Five","Dear, dear Lucas,
+
+I still haven't heard back about taking
+a week off to make up with my boyfriend.
+But it's all for the best: he is a jerk!!! I
+can't believe I fell for him.
+
+But you, you are a wonderful man. My
+mother thinks so too. I sent her a picture
+I took through your bedroom window the
+other night. I watch you whenever I can
+get away. You look so cute when you sleep.
+
+Would *you* like to take a week off with
+me?!!!!! Yosemite? Tahoe? Bahamas?!
+Paris!!!!! Yes, Paris. Just let me know, and
+I'll pass the good news on to my mother.
+
+Susie.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 15:53:22 -0700","Dark Thoughts Bad Consequences","Susie, the love of my life told me you are
+running away with her to Paris. I want to
+warn you against such a move! I can get
+very, very nasty. In my country, when your
+fiance is taken from you, the robber's whole
+family is eradicated.
+
+Can you let me know how I am doing in
+Stats60? I enjoy the course very much. It
+is one of my favorite so far here at Stanford.
+
+My father, Crown Prince in my country has
+many men in Paris. They are waiting...
+
+Best wishes,
+
+threatened.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 22:58:38 +0000","Re: First of Five
+ RouteNo:<CAFKHkngB-Gse=FCD_XKrLyXT_krKRsvjsmLnYLX7Ak8hX9JshQ@mail.gmail.com>","H
+
+OK, I'm not sure 'Lucas' was too broad, but I think either way is fine
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 3:39:19 PM
+To: stats60ta@cs.stanford.edu
+Subject: First of Five RouteNo:<CAFKHkngB-Gse=3DFCD_XKrLyXT_krKRsvjsmLnYLX7=
+Ak8hX9JshQ@mail.gmail.com>
+
+Dear whatever, I will send five
+message now. I found the problem we had.
+The CS mail server is willing to process
+messages with a FROM at ...@cs.stanford.edu,
+but not at ...@stanford.edu. That's to avoid
+mail server takeovers.
+
+Do different things with these five. I added a
+very short reason for any warning msgs
+right in the subject line.
+
+The relay now only decides that you accidentally
+signed if it literally finds ""Best, Lucas"" in the msg.
+It used to look for just Lucas. That seemed too
+broad.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 22:59:41 +0000","Re: First of Five
+ RouteNo:<CAFKHkngB-Gse=FCD_XKrLyXT_krKRsvjsmLnYLX7Ak8hX9JshQ@mail.gmail.com>","H
+OK it correctly identified that I used my name in the message
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 3:39:19 PM
+To: stats60ta@cs.stanford.edu
+Subject: First of Five RouteNo:<CAFKHkngB-Gse=3DFCD_XKrLyXT_krKRsvjsmLnYLX7=
+Ak8hX9JshQ@mail.gmail.com>
+
+Dear whatever, I will send five
+message now. I found the problem we had.
+The CS mail server is willing to process
+messages with a FROM at ...@cs.stanford.edu,
+but not at ...@stanford.edu. That's to avoid
+mail server takeovers.
+
+Do different things with these five. I added a
+very short reason for any warning msgs
+right in the subject line.
+
+The relay now only decides that you accidentally
+signed if it literally finds ""Best, Lucas"" in the msg.
+It used to look for just Lucas. That seemed too
+broad.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:00:01 +0000","Re: Second of Five
+ RouteNo:<CAFKHkngNn6dnttX=UaBDGMoFzyY-OxdK=_Dp=w3t1hvvARNcbg@mail.gmail.com>","How about if I forget to make a guess
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 3:45:05 PM
+To: stats60ta@cs.stanford.edu
+Subject: Second of Five RouteNo:<CAFKHkngNn6dnttX=3DUaBDGMoFzyY-OxdK=3D_Dp=
+=3Dw3t1hvvARNcbg@mail.gmail.com>
+
+You are wonderful, whoever you are.
+Just wonderful. Can I trust you with a
+secret?
+
+Mystery Student.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:00:59 +0000","Re: Second of Five
+ RouteNo:<CAFKHkngNn6dnttX=UaBDGMoFzyY-OxdK=_Dp=w3t1hvvARNcbg@mail.gmail.com>","R
+
+OK good it caught it
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 3:45:05 PM
+To: stats60ta@cs.stanford.edu
+Subject: Second of Five RouteNo:<CAFKHkngNn6dnttX=3DUaBDGMoFzyY-OxdK=3D_Dp=
+=3Dw3t1hvvARNcbg@mail.gmail.com>
+
+You are wonderful, whoever you are.
+Just wonderful. Can I trust you with a
+secret?
+
+Mystery Student.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:01:18 +0000","Re: Third of Five
+ RouteNo:<CAFKHknhMGGfBDBup4JbhaWYPgYF1R9QuTXXiMsn91HbDJ30FQg@mail.gmail.com>","R
+
+regular one, should go through on the first try
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 3:45:27 PM
+To: stats60ta@cs.stanford.edu
+Subject: Third of Five RouteNo:<CAFKHknhMGGfBDBup4JbhaWYPgYF1R9QuTXXiMsn91H=
+bDJ30FQg@mail.gmail.com>
+
+You haven't replied to my request
+for a re-test because my girlfriend
+left me. We were together for two
+months! I miss her so much.
+
+Agrieved.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:02:23 +0000","Re: Forth of Five
+ RouteNo:<CAFKHknj=WpU4oj3f76Bp6nGUpFLJNDtt8uVo+ykEL3iep5hFLw@mail.gmail.com>","R
+
+This seems in error, since the header has my name in it, and thus I would i=
+mmediately be able to identify that it is meant for me and not the roboTA
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 3:45:05 PM
+To: stats60ta@cs.stanford.edu
+Subject: Forth of Five RouteNo:<CAFKHknj=3DWpU4oj3f76Bp6nGUpFLJNDtt8uVo+ykE=
+L3iep5hFLw@mail.gmail.com>
+
+Dear, dear Lucas,
+
+I still haven't heard back about taking
+a week off to make up with my boyfriend.
+But it's all for the best: he is a jerk!!! I
+can't believe I fell for him.
+
+But you, you are a wonderful man. My
+mother thinks so too. I sent her a picture
+I took through your bedroom window the
+other night. I watch you whenever I can
+get away. You look so cute when you sleep.
+
+Would *you* like to take a week off with
+me?!!!!! Yosemite? Tahoe? Bahamas?!
+Paris!!!!! Yes, Paris. Just let me know, and
+I'll pass the good news on to my mother.
+
+Susie.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:02:39 +0000","Re: Dark Thoughts Bad Consequences
+ RouteNo:<CAFKHkniOhyno1_2LtJ3WxY2G3CEOvX2Va5ik_sat27WUgUy8pA@mail.gmail.com>","H
+
+Can we try an exchange with this one? So have the student reply to me, and =
+I'll reply back
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 3:53:56 PM
+To: stats60ta@cs.stanford.edu
+Subject: Dark Thoughts Bad Consequences RouteNo:<CAFKHkniOhyno1_2LtJ3WxY2G3=
+CEOvX2Va5ik_sat27WUgUy8pA@mail.gmail.com>
+
+Susie, the love of my life told me you are
+running away with her to Paris. I want to
+warn you against such a move! I can get
+very, very nasty. In my country, when your
+fiance is taken from you, the robber's whole
+family is eradicated.
+
+Can you let me know how I am doing in
+Stats60? I enjoy the course very much. It
+is one of my favorite so far here at Stanford.
+
+My father, Crown Prince in my country has
+many men in Paris. They are waiting...
+
+Best wishes,
+
+threatened.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 16:05:14 -0700","Re: Dark Thoughts Bad Consequences","Good idea. I am now the student replying to
+the TA's reply.
+
+On Thu, Oct 20, 2016 at 4:02 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Can we try an exchange with this one? So have the student reply to me, and
+> =
+> I'll reply back
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 3:53:56 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Dark Thoughts Bad Consequences RouteNo:<CAFKHkniOhyno1_
+> 2LtJ3WxY2G3=
+> CEOvX2Va5ik_sat27WUgUy8pA@mail.gmail.com>
+>
+> Susie, the love of my life told me you are
+> running away with her to Paris. I want to
+> warn you against such a move! I can get
+> very, very nasty. In my country, when your
+> fiance is taken from you, the robber's whole
+> family is eradicated.
+>
+> Can you let me know how I am doing in
+> Stats60? I enjoy the course very much. It
+> is one of my favorite so far here at Stanford.
+>
+> My father, Crown Prince in my country has
+> many men in Paris. They are waiting...
+>
+> Best wishes,
+>
+> threatened.
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:14:36 +0000","Re: Dark Thoughts Bad Consequences
+ RouteNo:<CAFKHknj=h5gNYJf0RP4th_GLK9RYqhrrXadstN=S04LxDO153w@mail.gmail.com>","It arrived, and I'm not making a guess in the first line, but I am signing =
+it.
+
+
+Best,
+
+Lucas
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 4:05:56 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Dark Thoughts Bad Consequences RouteNo:<CAFKHknj=3Dh5gNYJf0RP4=
+th_GLK9RYqhrrXadstN=3DS04LxDO153w@mail.gmail.com>
+
+Good idea. I am now the student replying to
+the TA's reply.
+
+On Thu, Oct 20, 2016 at 4:02 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Can we try an exchange with this one? So have the student reply to me, an=
+d
+> =3D
+> I'll reply back
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 3:53:56 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Dark Thoughts Bad Consequences RouteNo:<CAFKHkniOhyno1_
+> 2LtJ3WxY2G3=3D
+> CEOvX2Va5ik_sat27WUgUy8pA@mail.gmail.com>
+>
+> Susie, the love of my life told me you are
+> running away with her to Paris. I want to
+> warn you against such a move! I can get
+> very, very nasty. In my country, when your
+> fiance is taken from you, the robber's whole
+> family is eradicated.
+>
+> Can you let me know how I am doing in
+> Stats60? I enjoy the course very much. It
+> is one of my favorite so far here at Stanford.
+>
+> My father, Crown Prince in my country has
+> many men in Paris. They are waiting...
+>
+> Best wishes,
+>
+> threatened.
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:31:11 +0000","Re: Dark Thoughts Bad Consequences
+ RouteNo:<CAFKHknj=h5gNYJf0RP4th_GLK9RYqhrrXadstN=S04LxDO153w@mail.gmail.com>","OK it caught my lack of guess, but let's see if it catches my signature
+
+
+Best,
+
+Lucas
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 4:05:56 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Dark Thoughts Bad Consequences RouteNo:<CAFKHknj=3Dh5gNYJf0RP4=
+th_GLK9RYqhrrXadstN=3DS04LxDO153w@mail.gmail.com>
+
+Good idea. I am now the student replying to
+the TA's reply.
+
+On Thu, Oct 20, 2016 at 4:02 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Can we try an exchange with this one? So have the student reply to me, an=
+d
+> =3D
+> I'll reply back
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 3:53:56 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Dark Thoughts Bad Consequences RouteNo:<CAFKHkniOhyno1_
+> 2LtJ3WxY2G3=3D
+> CEOvX2Va5ik_sat27WUgUy8pA@mail.gmail.com>
+>
+> Susie, the love of my life told me you are
+> running away with her to Paris. I want to
+> warn you against such a move! I can get
+> very, very nasty. In my country, when your
+> fiance is taken from you, the robber's whole
+> family is eradicated.
+>
+> Can you let me know how I am doing in
+> Stats60? I enjoy the course very much. It
+> is one of my favorite so far here at Stanford.
+>
+> My father, Crown Prince in my country has
+> many men in Paris. They are waiting...
+>
+> Best wishes,
+>
+> threatened.
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:31:56 +0000","Re: Dark Thoughts Bad Consequences
+ RouteNo:<CAFKHknj=h5gNYJf0RP4th_GLK9RYqhrrXadstN=S04LxDO153w@mail.gmail.com>","R
+
+OK that one's on me, I forgot to make a guess again.
+
+
+Best,
+
+Lucas
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 4:05:56 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Dark Thoughts Bad Consequences RouteNo:<CAFKHknj=3Dh5gNYJf0RP4=
+th_GLK9RYqhrrXadstN=3DS04LxDO153w@mail.gmail.com>
+
+Good idea. I am now the student replying to
+the TA's reply.
+
+On Thu, Oct 20, 2016 at 4:02 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Can we try an exchange with this one? So have the student reply to me, an=
+d
+> =3D
+> I'll reply back
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 3:53:56 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Dark Thoughts Bad Consequences RouteNo:<CAFKHkniOhyno1_
+> 2LtJ3WxY2G3=3D
+> CEOvX2Va5ik_sat27WUgUy8pA@mail.gmail.com>
+>
+> Susie, the love of my life told me you are
+> running away with her to Paris. I want to
+> warn you against such a move! I can get
+> very, very nasty. In my country, when your
+> fiance is taken from you, the robber's whole
+> family is eradicated.
+>
+> Can you let me know how I am doing in
+> Stats60? I enjoy the course very much. It
+> is one of my favorite so far here at Stanford.
+>
+> My father, Crown Prince in my country has
+> many men in Paris. They are waiting...
+>
+> Best wishes,
+>
+> threatened.
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 20 Oct 2016 23:32:34 +0000","Re: Dark Thoughts Bad Consequences
+ RouteNo:<CAFKHknj=h5gNYJf0RP4th_GLK9RYqhrrXadstN=S04LxDO153w@mail.gmail.com>","R
+Success, it caught me
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 4:05:56 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Dark Thoughts Bad Consequences RouteNo:<CAFKHknj=3Dh5gNYJf0RP4=
+th_GLK9RYqhrrXadstN=3DS04LxDO153w@mail.gmail.com>
+
+Good idea. I am now the student replying to
+the TA's reply.
+
+On Thu, Oct 20, 2016 at 4:02 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Can we try an exchange with this one? So have the student reply to me, an=
+d
+> =3D
+> I'll reply back
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 3:53:56 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Dark Thoughts Bad Consequences RouteNo:<CAFKHkniOhyno1_
+> 2LtJ3WxY2G3=3D
+> CEOvX2Va5ik_sat27WUgUy8pA@mail.gmail.com>
+>
+> Susie, the love of my life told me you are
+> running away with her to Paris. I want to
+> warn you against such a move! I can get
+> very, very nasty. In my country, when your
+> fiance is taken from you, the robber's whole
+> family is eradicated.
+>
+> Can you let me know how I am doing in
+> Stats60? I enjoy the course very much. It
+> is one of my favorite so far here at Stanford.
+>
+> My father, Crown Prince in my country has
+> many men in Paris. They are waiting...
+>
+> Best wishes,
+>
+> threatened.
+>
+>
+> Best, Lucas
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 16:58:14 -0700","Lucas Citation Test","Greetings will be added.
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 16:59:54 -0700","Re: Lucas Citation Test RouteNo:<CAFKHknhsHBLsvCby3Ak5B43bOAtp6p2vrDt3cJiwzwivjGjtXg@mail.gmail.com>","h
+
+Ta answers to greetings will be added.
+
+On Thu, Oct 20, 2016 at 4:58 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Greetings will be added.
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 17:01:23 -0700","Re: Lucas Citation Test","Student answers to TA's reply.
+
+On Thu, Oct 20, 2016 at 5:00 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Ta answers to greetings will be added.
+>
+> On Thu, Oct 20, 2016 at 4:58 PM, <stats60ta@cs.stanford.edu> wrote:
+>
+> > Greetings will be added.
+> >
+>
+>
+> Best, Lucas
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 17:06:02 -0700","Re: Lucas Citation Test RouteNo:<CAFKHkngVOdNkGxy6d_dPi13_g0L-F=8M6zwtut4ni4FkWR+POw@mail.gmail.com>","TA replies again.
+
+On Thu, Oct 20, 2016 at 4:58 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Student answers to TA's reply.
+>
+> On Thu, Oct 20, 2016 at 5:00 PM, <stats60TA@cs.stanford.edu> wrote:
+>
+> >
+> >
+> > Ta answers to greetings will be added.
+> >
+> > On Thu, Oct 20, 2016 at 4:58 PM, <stats60ta@cs.stanford.edu> wrote:
+> >
+> > > Greetings will be added.
+> > >
+> >
+> >
+> > Best, Lucas
+>
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 20 Oct 2016 17:09:18 -0700","Re: Lucas Citation Test RouteNo:<CAFKHkngVOdNkGxy6d_dPi13_g0L-F=8M6zwtut4ni4FkWR+POw@mail.gmail.com>","h
+
+TA replies again (after messing up once.) Citation still there.
+
+On Thu, Oct 20, 2016 at 4:58 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Student answers to TA's reply.
+>
+> On Thu, Oct 20, 2016 at 5:00 PM, <stats60TA@cs.stanford.edu> wrote:
+>
+> >
+> >
+> > Ta answers to greetings will be added.
+> >
+> > On Thu, Oct 20, 2016 at 4:58 PM, <stats60ta@cs.stanford.edu> wrote:
+> >
+> > > Greetings will be added.
+> > >
+> >
+> >
+> > Best, Lucas
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 17:19:22 -0700","Multi-Hop Exchange Fixed","OK, tightened how your signature is found
+to be in error. In fact: Best, Lucas in this
+paragraph should now be OK.
+
+We'll need a couple of back and forths for the
+relay to see its own sig. Just reply to this, and
+I'll reply to that reply.
+
+Note: you'll need to guess even on replies.
+
+BTW: earlier I opened one of the test messages
+with 'Dear, dear Lucas'. You correctly commented that
+this heading was a give-away. Nothing we can do about
+that. This line was entered in the msg body by the 'student',
+not the relay. I could eradicate your name from every msg,
+but that wouldn't help, b/c you'd see that the resulting
+sentence was damaged.
+
+Let's not worry about that case.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 21 Oct 2016 00:44:21 +0000","Re: Multi-Hop Exchange Fixed
+ RouteNo:<CAFKHknjjt597T-gQ6KM0f10A36owkwjH5Fg=Q=JUcq9a+dzhuQ@mail.gmail.com>","H
+Here's my reply
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 5:19:55 PM
+To: stats60ta@cs.stanford.edu
+Subject: Multi-Hop Exchange Fixed RouteNo:<CAFKHknjjt597T-gQ6KM0f10A36owkwj=
+H5Fg=3DQ=3DJUcq9a+dzhuQ@mail.gmail.com>
+
+OK, tightened how your signature is found
+to be in error. In fact: Best, Lucas in this
+paragraph should now be OK.
+
+We'll need a couple of back and forths for the
+relay to see its own sig. Just reply to this, and
+I'll reply to that reply.
+
+Note: you'll need to guess even on replies.
+
+BTW: earlier I opened one of the test messages
+with 'Dear, dear Lucas'. You correctly commented that
+this heading was a give-away. Nothing we can do about
+that. This line was entered in the msg body by the 'student',
+not the relay. I could eradicate your name from every msg,
+but that wouldn't help, b/c you'd see that the resulting
+sentence was damaged.
+
+Let's not worry about that case.
+
+Andreas
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 17:45:53 -0700","Re: Multi-Hop Exchange Fixed","OK, and here is the student replying to your reply.
+The critical moment is when you reply. I should get
+that reply, rather than you getting a warning.
+
+On Thu, Oct 20, 2016 at 5:44 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+> Here's my reply
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 5:19:55 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Multi-Hop Exchange Fixed RouteNo:<CAFKHknjjt597T-
+> gQ6KM0f10A36owkwj=
+> H5Fg=3DQ=3DJUcq9a+dzhuQ@mail.gmail.com>
+>
+> OK, tightened how your signature is found
+> to be in error. In fact: Best, Lucas in this
+> paragraph should now be OK.
+>
+> We'll need a couple of back and forths for the
+> relay to see its own sig. Just reply to this, and
+> I'll reply to that reply.
+>
+> Note: you'll need to guess even on replies.
+>
+> BTW: earlier I opened one of the test messages
+> with 'Dear, dear Lucas'. You correctly commented that
+> this heading was a give-away. Nothing we can do about
+> that. This line was entered in the msg body by the 'student',
+> not the relay. I could eradicate your name from every msg,
+> but that wouldn't help, b/c you'd see that the resulting
+> sentence was damaged.
+>
+> Let's not worry about that case.
+>
+> Andreas
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 21 Oct 2016 00:59:06 +0000","Re: Multi-Hop Exchange Fixed
+ RouteNo:<CAFKHkngaxT5pLS2KVTrb9ba8ppzze1bdLpf1u9-eDFH6gX2eag@mail.gmail.com>","R
+And it will work regardless of whether I make a guess in the first line?
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 5:42:33 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Multi-Hop Exchange Fixed RouteNo:<CAFKHkngaxT5pLS2KVTrb9ba8ppz=
+ze1bdLpf1u9-eDFH6gX2eag@mail.gmail.com>
+
+OK, and here is the student replying to your reply.
+The critical moment is when you reply. I should get
+that reply, rather than you getting a warning.
+
+On Thu, Oct 20, 2016 at 5:44 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+> Here's my reply
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 5:19:55 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Multi-Hop Exchange Fixed RouteNo:<CAFKHknjjt597T-
+> gQ6KM0f10A36owkwj=3D
+> H5Fg=3D3DQ=3D3DJUcq9a+dzhuQ@mail.gmail.com>
+>
+> OK, tightened how your signature is found
+> to be in error. In fact: Best, Lucas in this
+> paragraph should now be OK.
+>
+> We'll need a couple of back and forths for the
+> relay to see its own sig. Just reply to this, and
+> I'll reply to that reply.
+>
+> Note: you'll need to guess even on replies.
+>
+> BTW: earlier I opened one of the test messages
+> with 'Dear, dear Lucas'. You correctly commented that
+> this heading was a give-away. Nothing we can do about
+> that. This line was entered in the msg body by the 'student',
+> not the relay. I could eradicate your name from every msg,
+> but that wouldn't help, b/c you'd see that the resulting
+> sentence was damaged.
+>
+> Let's not worry about that case.
+>
+> Andreas
+>
+>
+> Best, Lucas
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 20 Oct 2016 18:03:38 -0700","Re: Multi-Hop Exchange Fixed","I think the guess is required. I assume you added one to this latest, yes?
+Either way, this worked.
+
+Any other question on your mind? Any observed behavior unexplained?
+
+Andreas
+
+
+
+On Thu, Oct 20, 2016 at 5:59 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+> And it will work regardless of whether I make a guess in the first line?
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 5:42:33 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: Multi-Hop Exchange Fixed RouteNo:<
+> CAFKHkngaxT5pLS2KVTrb9ba8ppz=
+> ze1bdLpf1u9-eDFH6gX2eag@mail.gmail.com>
+>
+> OK, and here is the student replying to your reply.
+> The critical moment is when you reply. I should get
+> that reply, rather than you getting a warning.
+>
+> On Thu, Oct 20, 2016 at 5:44 PM, <stats60TA@cs.stanford.edu> wrote:
+>
+> >
+> > Here's my reply
+> > ________________________________
+> > From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> > Sent: Thursday, October 20, 2016 5:19:55 PM
+> > To: stats60ta@cs.stanford.edu
+> > Subject: Multi-Hop Exchange Fixed RouteNo:<CAFKHknjjt597T-
+> > gQ6KM0f10A36owkwj=3D
+> > H5Fg=3D3DQ=3D3DJUcq9a+dzhuQ@mail.gmail.com>
+> >
+> > OK, tightened how your signature is found
+> > to be in error. In fact: Best, Lucas in this
+> > paragraph should now be OK.
+> >
+> > We'll need a couple of back and forths for the
+> > relay to see its own sig. Just reply to this, and
+> > I'll reply to that reply.
+> >
+> > Note: you'll need to guess even on replies.
+> >
+> > BTW: earlier I opened one of the test messages
+> > with 'Dear, dear Lucas'. You correctly commented that
+> > this heading was a give-away. Nothing we can do about
+> > that. This line was entered in the msg body by the 'student',
+> > not the relay. I could eradicate your name from every msg,
+> > but that wouldn't help, b/c you'd see that the resulting
+> > sentence was damaged.
+> >
+> > Let's not worry about that case.
+> >
+> > Andreas
+> >
+> >
+> > Best, Lucas
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 21 Oct 2016 01:07:50 +0000","Re: Multi-Hop Exchange Fixed
+ RouteNo:<CAFKHknj8Z9e=U+HDkh2NC7PdWKSZcQV9wXLTQFGXN+i8Mg_39g@mail.gmail.com>","I did, and nope, seems good to me
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 20, 2016 6:00:19 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Multi-Hop Exchange Fixed RouteNo:<CAFKHknj8Z9e=3DU+HDkh2NC7PdW=
+KSZcQV9wXLTQFGXN+i8Mg_39g@mail.gmail.com>
+
+I think the guess is required. I assume you added one to this latest, yes?
+Either way, this worked.
+
+Any other question on your mind? Any observed behavior unexplained?
+
+Andreas
+
+
+
+On Thu, Oct 20, 2016 at 5:59 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+> And it will work regardless of whether I make a guess in the first line?
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 20, 2016 5:42:33 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: Multi-Hop Exchange Fixed RouteNo:<
+> CAFKHkngaxT5pLS2KVTrb9ba8ppz=3D
+> ze1bdLpf1u9-eDFH6gX2eag@mail.gmail.com>
+>
+> OK, and here is the student replying to your reply.
+> The critical moment is when you reply. I should get
+> that reply, rather than you getting a warning.
+>
+> On Thu, Oct 20, 2016 at 5:44 PM, <stats60TA@cs.stanford.edu> wrote:
+>
+> >
+> > Here's my reply
+> > ________________________________
+> > From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> > Sent: Thursday, October 20, 2016 5:19:55 PM
+> > To: stats60ta@cs.stanford.edu
+> > Subject: Multi-Hop Exchange Fixed RouteNo:<CAFKHknjjt597T-
+> > gQ6KM0f10A36owkwj=3D3D
+> > H5Fg=3D3D3DQ=3D3D3DJUcq9a+dzhuQ@mail.gmail.com>
+> >
+> > OK, tightened how your signature is found
+> > to be in error. In fact: Best, Lucas in this
+> > paragraph should now be OK.
+> >
+> > We'll need a couple of back and forths for the
+> > relay to see its own sig. Just reply to this, and
+> > I'll reply to that reply.
+> >
+> > Note: you'll need to guess even on replies.
+> >
+> > BTW: earlier I opened one of the test messages
+> > with 'Dear, dear Lucas'. You correctly commented that
+> > this heading was a give-away. Nothing we can do about
+> > that. This line was entered in the msg body by the 'student',
+> > not the relay. I could eradicate your name from every msg,
+> > but that wouldn't help, b/c you'd see that the resulting
+> > sentence was damaged.
+> >
+> > Let's not worry about that case.
+> >
+> > Andreas
+> >
+> >
+> > Best, Lucas
+>
+>
+> Best, Lucas
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Fri, 21 Oct 2016 18:17:33 -0700","24-Hr Survival Test","The relay has now run for 24 hours unattended.
+Could you reply to check that all is ok.
+
+I'll send a second msg to the other destination.
+Don't forget the guess.
+
+Andreas
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Fri, 21 Oct 2016 18:18:43 -0700","24-hr Survival Test: the other recipient","This is the second msg; this time to the
+other recipient.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 22 Oct 2016 20:17:50 +0000","Re: 24-Hr Survival Test
+ RouteNo:<CAFKHknjzW1t4cUvTLoNi03HFGR4A8DGePOW2+JUpKq+42+F=PQ@mail.gmail.com>","R
+
+Yep, got it.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 21, 2016 6:14:05 PM
+To: stats60ta@cs.stanford.edu
+Subject: 24-Hr Survival Test RouteNo:<CAFKHknjzW1t4cUvTLoNi03HFGR4A8DGePOW2=
++JUpKq+42+F=3DPQ@mail.gmail.com>
+
+The relay has now run for 24 hours unattended.
+Could you reply to check that all is ok.
+
+I'll send a second msg to the other destination.
+Don't forget the guess.
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 22 Oct 2016 20:18:03 +0000","Re: 24-hr Survival Test: the other recipient
+ RouteNo:<CAFKHknjC4OAOHAnNKVgLD_1RgxkRaiuTO+0EiuEdyQN=YysAuw@mail.gmail.com>","H
+
+Got this one too!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, October 21, 2016 6:19:14 PM
+To: stats60ta@cs.stanford.edu
+Subject: 24-hr Survival Test: the other recipient RouteNo:<CAFKHknjC4OAOHAn=
+NKVgLD_1RgxkRaiuTO+0EiuEdyQN=3DYysAuw@mail.gmail.com>
+
+This is the second msg; this time to the
+other recipient.
+
+Andreas
+"
+"sarah31@stanford.edu","roboTA@cs.stanford.edu","Wed, 26 Oct 2016 20:13:01 -0700","Fwd: Question","Hi RoboTA,
+
+Could you explain to me how to do normal approximation to find the chance
+of getting exactly a certain number of outcomes?
+
+Thanks!
+Sarah
+"
+"amitp25@stanford.edu","stats60TA@cs.stanford.edu","Wed, 26 Oct 2016 21:11:34 -0700","Help on #6b on the STATS 60 pset","Hi Lucas,
+
+I had a question about the ""Estimate the chance that there will be fewer
+than 90 3 's."" problem on the pset. This is how I did it:
+1. Found the expected value for number of 3's : 100
+2. Found the standard deviation of the box that is {1, 0, 0, 0} : 0.433
+3. Found the standard error : 8.66
+4. Found the z-score of 90 in the normal curve: -1.155
+5. Found the probability: 0.1251
+
+I have submitted that answer, but it doesn't seem to be right. Is there a
+step that I am missing or doing incorrectly? I would greatly appreciate
+your help.
+
+Thanks so much,
+
+Amit
+
+-- 
+*Amit Pasupathy*
+Stanford University | 2019
+amitp25@stanford.edu
+"
+"arochat@stanford.edu","stats60TA@cs.stanford.edu","Wed, 26 Oct 2016 22:58:17 -0700","Q6b on HW","Dear Lukas,
+
+There seems to be a problem with Q6b on this week's homework.. My answer
+was 0.12505- I have quadruple checked it - and it is still marked wrong.
+Was this by chance a mistake on the system or am I being silly?
+
+Thanks!
+
+Alexis
+
+-- 
+*Alexis Rochat*
+B.A. Candidate History
+B.A. Candidate International Relations
+Class of 2019
+Stanford University
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 27 Oct 2016 17:16:48 +0000","Re: Question
+ RouteNo:<CAAk107_p9w3Ri09nkVpWDFSdyE3AhrqfZAc6S_YGXaZ+O4ZUJg@mail.gmail.com>","R
+
+Hi Sarah,
+
+
+Thanks for your email, let's see if this helps:
+
+
+First, when we talk about getting ""exactly a certain number of outcomes"", w=
+e seem to be asking a question about the sum of draws. Since the central li=
+mit theorem applies to the sum of draws, we can approximate the distributio=
+n of the sum of draws by a normal distribution. Since the normal distributi=
+on is continuous, and thus puts zero probability on any single exact outcom=
+e, we must use a further approximation to find the the probability of exact=
+ly a certain number of outcomes. This last approximation uses the 0.5 rule-=
+-that is, if the number of interest is N, then you would compute the probab=
+ility under the normal curve of getting less than N+0.5, and subtract the p=
+robability under the normal curve of getting less than N-0.5.
+
+
+I hope that answers your question!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 26, 2016 8:09:44 PM
+To: stats60ta@cs.stanford.edu
+Subject: Fwd: Question RouteNo:<CAAk107_p9w3Ri09nkVpWDFSdyE3AhrqfZAc6S_YGXa=
+Z+O4ZUJg@mail.gmail.com>
+
+Hi RoboTA,
+
+Could you explain to me how to do normal approximation to find the chance
+of getting exactly a certain number of outcomes?
+
+Thanks!
+Sarah
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 27 Oct 2016 17:20:38 +0000","Re: Help on #6b on the STATS 60 pset
+ RouteNo:<CAOf2GgVq+YF4xVxnmEVMceDHtrDW1Xq6X7dv8f6eU1kTMukEDw@mail.gmail.com>","H
+
+Hi Amit,
+
+
+You're very close, there's just one thing you're missing: the 0.5 rule. Sin=
+ce this asks about ""fewer than"" an integer (90) number of 3's, your step 4 =
+should be finding the z-score of 90 - 0.5 =3D 89.5 instead of 90.
+
+
+Hope that helps!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 26, 2016 9:07:45 PM
+To: stats60ta@cs.stanford.edu
+Subject: Help on #6b on the STATS 60 pset RouteNo:<CAOf2GgVq+YF4xVxnmEVMceD=
+HtrDW1Xq6X7dv8f6eU1kTMukEDw@mail.gmail.com>
+
+Hi Lucas,
+
+I had a question about the ""Estimate the chance that there will be fewer
+than 90 3 's."" problem on the pset. This is how I did it:
+1. Found the expected value for number of 3's : 100
+2. Found the standard deviation of the box that is {1, 0, 0, 0} : 0.433
+3. Found the standard error : 8.66
+4. Found the z-score of 90 in the normal curve: -1.155
+5. Found the probability: 0.1251
+
+I have submitted that answer, but it doesn't seem to be right. Is there a
+step that I am missing or doing incorrectly? I would greatly appreciate
+your help.
+
+Thanks so much,
+
+Amit
+
+--
+*Amit Pasupathy*
+Stanford University | 2019
+amitp25@stanford.edu
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 27 Oct 2016 17:27:48 +0000","Re: Q6b on HW
+ RouteNo:<CAJhhqXkg_oXxTLJHTfcm2hhuWYMnkLycav4aEHXpV3V5ym_DBw@mail.gmail.com>","H
+
+Hi Alexis,
+
+
+Your answer is incorrect, but you've made a very legitimate and common mist=
+ake--you forgot to use the 0.5 rule. Note that the question is asking for t=
+he probability of ""fewer than 90  3's"", which is the same as ""fewer than or=
+ equal to 89  3's"", since you can't have a decimal number of 3's. However, =
+in the normal approximation, you can have a decimal outcome, so we need to =
+be careful, and the correction learned in class is to use 89.5 instead of 9=
+0 in the computation--in some sense splitting the difference.
+
+
+Hope that helps, and that you didn't waste too much time rechecking your an=
+swer (your answer would be correct if it weren't for the 0.5 correction).
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, October 26, 2016 11:38:56 PM
+To: stats60ta@cs.stanford.edu
+Subject: Q6b on HW RouteNo:<CAJhhqXkg_oXxTLJHTfcm2hhuWYMnkLycav4aEHXpV3V5ym=
+_DBw@mail.gmail.com>
+
+Dear Lukas,
+
+There seems to be a problem with Q6b on this week's homework.. My answer
+was 0.12505- I have quadruple checked it - and it is still marked wrong.
+Was this by chance a mistake on the system or am I being silly?
+
+Thanks!
+
+Alexis
+
+--
+*Alexis Rochat*
+B.A. Candidate History
+B.A. Candidate International Relations
+Class of 2019
+Stanford University
+"
+"ecollier@stanford.edu","stats60TA@cs.stanford.edu","Thu, 27 Oct 2016 12:41:12 -0700","Q6","Hi Lucas,
+
+I keep getting hung up on problem 6, but I'm not sure why because it's a
+lot like other problems on the pset. Here's my reasoning:
+
+a) Expected val = 1600, SE = 44.72
+
+z = (1600-1500.5)/44.72 = 2.21 => A = 97.22 =>
+P = .5 + .9722/2 = .9861
+
+a) Expected val = 100, SE = 8.66
+
+z = (100-89.5)/8.66 = 1.21 => A = 76.99 =>
+P = .5 - .7699/2 = .115
+
+However, when I try to enter these values, they get marked wrong. Any idea
+where I'm going wrong in my reasoning, or is this another bug in the HW?
+
+Thanks,
+Eleanor
+"
+"arochat@stanford.edu","stats60TA@cs.stanford.edu","Thu, 27 Oct 2016 13:07:47 -0700","Re: Q6b on HW","Thank you for your help! But unfortunately, it still seems wrong. I used
+89.5 as my observed value, 100 as my expected value (average) and 8.66 as
+my SE. This gave me a Z value of 1.21. This in turn gave me an area of
+76.99%.
+(100-76.99)/2 gave me 11.505, or a probability of 0.11505. This is still
+marked wrong. Is there something else I am missing?
+
+Many thanks for your help,
+
+Alexis
+
+On Thu, Oct 27, 2016 at 12:23 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Hi Alexis,
+>
+>
+> Your answer is incorrect, but you've made a very legitimate and common
+> mist=
+> ake--you forgot to use the 0.5 rule. Note that the question is asking for
+> t=
+> he probability of ""fewer than 90  3's"", which is the same as ""fewer than
+> or=
+>  equal to 89  3's"", since you can't have a decimal number of 3's. However,
+> =
+> in the normal approximation, you can have a decimal outcome, so we need to
+> =
+> be careful, and the correction learned in class is to use 89.5 instead of
+> 9=
+> 0 in the computation--in some sense splitting the difference.
+>
+>
+> Hope that helps, and that you didn't waste too much time rechecking your
+> an=
+> swer (your answer would be correct if it weren't for the 0.5 correction).
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Wednesday, October 26, 2016 11:38:56 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Q6b on HW RouteNo:<CAJhhqXkg_oXxTLJHTfcm2hhuWYMnkLycav4aEHX
+> pV3V5ym=
+> _DBw@mail.gmail.com>
+>
+> Dear Lukas,
+>
+> There seems to be a problem with Q6b on this week's homework.. My answer
+> was 0.12505- I have quadruple checked it - and it is still marked wrong.
+> Was this by chance a mistake on the system or am I being silly?
+>
+> Thanks!
+>
+> Alexis
+>
+> --
+> *Alexis Rochat*
+> B.A. Candidate History
+> B.A. Candidate International Relations
+> Class of 2019
+> Stanford University
+>
+>
+> Best, Lucas
+
+
+
+
+-- 
+*Alexis Rochat*
+B.A. Candidate History
+B.A. Candidate International Relations
+Class of 2019
+Stanford University
+"
+"roycew@stanford.edu","stats60TA@cs.stanford.edu","Thu, 27 Oct 2016 14:08:51 -0700","HW Question 4","why isn't the answer to question 4 a
+-$5.3 and 13.99 respectively?
+
+For part b, I got the first part of the answer right, so the second part of
+the answer should be around 5??
+
+Royce
+"
+"roycew@stanford.edu","stats60TA@cs.stanford.edu","Thu, 27 Oct 2016 14:14:19 -0700","Question 6","Why isn't the answer to Question 6
+0.9861 and 0.1233 respectively?
+
+Royce
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 27 Oct 2016 22:09:55 +0000","Re: Q6
+ RouteNo:<CAPy-s+=tsMPCZSRDRZp_qbb75O-YKkt0-duDpiDSLbsYC=XEcA@mail.gmail.com>","H
+
+Hi Eleanor,
+
+
+You are doing both problems correctly, but be careful with rounding. Both p=
+arts give a range for allowable answers which you're just outside of--as a =
+rule, I would recommend keeping 3 decimal places or more in all intermediat=
+e computations. Also, for instance, (1600-1500.5)/44.72 =3D 2.22, not 2.21,=
+ and little mistakes like that can be enough to make you wrong (although I =
+admit the range input for this problem is pretty narrow).
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 27, 2016 12:38:01 PM
+To: stats60ta@cs.stanford.edu
+Subject: Q6 RouteNo:<CAPy-s+=3DtsMPCZSRDRZp_qbb75O-YKkt0-duDpiDSLbsYC=3DXEc=
+A@mail.gmail.com>
+
+Hi Lucas,
+
+I keep getting hung up on problem 6, but I'm not sure why because it's a
+lot like other problems on the pset. Here's my reasoning:
+
+a) Expected val =3D 1600, SE =3D 44.72
+
+z =3D (1600-1500.5)/44.72 =3D 2.21 =3D> A =3D 97.22 =3D>
+P =3D .5 + .9722/2 =3D .9861
+
+a) Expected val =3D 100, SE =3D 8.66
+
+z =3D (100-89.5)/8.66 =3D 1.21 =3D> A =3D 76.99 =3D>
+P =3D .5 - .7699/2 =3D .115
+
+However, when I try to enter these values, they get marked wrong. Any idea
+where I'm going wrong in my reasoning, or is this another bug in the HW?
+
+Thanks,
+Eleanor
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 27 Oct 2016 22:12:22 +0000","Re: Q6b on HW
+ RouteNo:<CAJhhqXkz8zZQf07M4ht3nZFJ0CHjw0TR7RDoS7RwNPgbE17qpQ@mail.gmail.com>","H
+
+Hi Alexis,
+
+
+You're very close, but just be careful with rounding. We were a bit strict =
+on the allowable range for this problem--as a rule, I would recommend keepi=
+ng 3 decimal places or more in all intermediate computations.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 27, 2016 1:08:58 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Q6b on HW RouteNo:<CAJhhqXkz8zZQf07M4ht3nZFJ0CHjw0TR7RDoS7RwNP=
+gbE17qpQ@mail.gmail.com>
+
+Thank you for your help! But unfortunately, it still seems wrong. I used
+89.5 as my observed value, 100 as my expected value (average) and 8.66 as
+my SE. This gave me a Z value of 1.21. This in turn gave me an area of
+76.99%.
+(100-76.99)/2 gave me 11.505, or a probability of 0.11505. This is still
+marked wrong. Is there something else I am missing?
+
+Many thanks for your help,
+
+Alexis
+
+On Thu, Oct 27, 2016 at 12:23 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Hi Alexis,
+>
+>
+> Your answer is incorrect, but you've made a very legitimate and common
+> mist=3D
+> ake--you forgot to use the 0.5 rule. Note that the question is asking for
+> t=3D
+> he probability of ""fewer than 90  3's"", which is the same as ""fewer than
+> or=3D
+>  equal to 89  3's"", since you can't have a decimal number of 3's. However=
+,
+> =3D
+> in the normal approximation, you can have a decimal outcome, so we need t=
+o
+> =3D
+> be careful, and the correction learned in class is to use 89.5 instead of
+> 9=3D
+> 0 in the computation--in some sense splitting the difference.
+>
+>
+> Hope that helps, and that you didn't waste too much time rechecking your
+> an=3D
+> swer (your answer would be correct if it weren't for the 0.5 correction).
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Wednesday, October 26, 2016 11:38:56 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Q6b on HW RouteNo:<CAJhhqXkg_oXxTLJHTfcm2hhuWYMnkLycav4aEHX
+> pV3V5ym=3D
+> _DBw@mail.gmail.com>
+>
+> Dear Lukas,
+>
+> There seems to be a problem with Q6b on this week's homework.. My answer
+> was 0.12505- I have quadruple checked it - and it is still marked wrong.
+> Was this by chance a mistake on the system or am I being silly?
+>
+> Thanks!
+>
+> Alexis
+>
+> --
+> *Alexis Rochat*
+> B.A. Candidate History
+> B.A. Candidate International Relations
+> Class of 2019
+> Stanford University
+>
+>
+> Best, Lucas
+
+
+
+
+--
+*Alexis Rochat*
+B.A. Candidate History
+B.A. Candidate International Relations
+Class of 2019
+Stanford University
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 27 Oct 2016 22:17:56 +0000","Re: HW Question 4
+ RouteNo:<CAN+M3oE3T=jq84C9jLsB31+KfocebLdbE8GL8Fwp0r6Bcej28A@mail.gmail.com>","R
+
+Hi Royce,
+
+
+Those answers are very close, just be careful with rounding. As a general r=
+ule, we often expect 3 significant digits of precision (with a little wiggl=
+e room), which means you may have to carry that many digits or more through=
+ your intermediate calculations.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 27, 2016 2:09:03 PM
+To: stats60ta@cs.stanford.edu
+Subject: HW Question 4 RouteNo:<CAN+M3oE3T=3Djq84C9jLsB31+KfocebLdbE8GL8Fwp=
+0r6Bcej28A@mail.gmail.com>
+
+why isn't the answer to question 4 a
+-$5.3 and 13.99 respectively?
+
+For part b, I got the first part of the answer right, so the second part of
+the answer should be around 5??
+
+Royce
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 27 Oct 2016 22:18:05 +0000","Re: Question 6
+ RouteNo:<CAN+M3oE6cixgFKKe9Pk4ppXyEOUmdQtSQ-c1ZaJ5pS5auEbtAA@mail.gmail.com>","R
+
+Hi Royce,
+
+
+Those answers are very close, just be careful with rounding. As a general r=
+ule, we often expect 3 significant digits of precision (with a little wiggl=
+e room), which means you may have to carry that many digits or more through=
+ your intermediate calculations.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 27, 2016 2:14:33 PM
+To: stats60ta@cs.stanford.edu
+Subject: Question 6 RouteNo:<CAN+M3oE6cixgFKKe9Pk4ppXyEOUmdQtSQ-c1ZaJ5pS5au=
+EbtAA@mail.gmail.com>
+
+Why isn't the answer to Question 6
+0.9861 and 0.1233 respectively?
+
+Royce
+"
+"angela8@stanford.edu","stats60TA@cs.stanford.edu","Thu, 27 Oct 2016 15:24:00 -0700","STATS60 PSET Question","Hi Lucas,
+
+Hope this email finds you well! I'm currently working on the STATS60 Pset
+and I'm really stuck on questions 4 and 5.
+
+For question 4 parts A and B, I thought that the ""net gain"" would be the
+same as the expected sum of 100 draws from a box with a 12/38 chance of
+getting a +2 and a 26/38 chance of getting a -1. When I calculated the
+average of the box, I got -0.053. To get the expected net gain, I then
+multiplied this box average by the number of draws (100) to get -5.3. I
+have tried this problem many different ways but still can't figure out why
+this is incorrect and was wondering if I am not understanding something
+correctly?
+
+For question 5 part A, I wasn't sure how we are supposed to use normal
+approximation to calculate the odds of getting exactly 17 heads, as all of
+the examples we have discussed in class using normal approximation with
+probability have revolved around getting ""at least X result"". However, I
+don't know how we can calculate this probability without using the binomial
+formula and was hoping you could possibly point me in the right direction?
+
+Thank you so much for your help!
+
+Sincerely,
+Angela
+"
+"ecollier@stanford.edu","stats60TA@cs.stanford.edu","Thu, 27 Oct 2016 15:37:03 -0700","Re: Q6","Thank you!
+
+I got my previous answers by using the z-score table in the book, but to
+get the right answers I had to use a z-score to percentile calculator that
+gave more exact values. In general on the homeworks and quizzes, are we
+expected to be more exact than the book's z-score table?
+
+On Thu, Oct 27, 2016 at 3:10 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Hi Eleanor,
+>
+>
+> You are doing both problems correctly, but be careful with rounding. Both
+> p=
+> arts give a range for allowable answers which you're just outside of--as a
+> =
+> rule, I would recommend keeping 3 decimal places or more in all
+> intermediat=
+> e computations. Also, for instance, (1600-1500.5)/44.72 =3D 2.22, not
+> 2.21,=
+>  and little mistakes like that can be enough to make you wrong (although I
+> =
+> admit the range input for this problem is pretty narrow).
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 27, 2016 12:38:01 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Q6 RouteNo:<CAPy-s+=3DtsMPCZSRDRZp_qbb75O-YKkt0-
+> duDpiDSLbsYC=3DXEc=
+> A@mail.gmail.com>
+>
+> Hi Lucas,
+>
+> I keep getting hung up on problem 6, but I'm not sure why because it's a
+> lot like other problems on the pset. Here's my reasoning:
+>
+> a) Expected val =3D 1600, SE =3D 44.72
+>
+> z =3D (1600-1500.5)/44.72 =3D 2.21 =3D> A =3D 97.22 =3D>
+> P =3D .5 + .9722/2 =3D .9861
+>
+> a) Expected val =3D 100, SE =3D 8.66
+>
+> z =3D (100-89.5)/8.66 =3D 1.21 =3D> A =3D 76.99 =3D>
+> P =3D .5 - .7699/2 =3D .115
+>
+> However, when I try to enter these values, they get marked wrong. Any idea
+> where I'm going wrong in my reasoning, or is this another bug in the HW?
+>
+> Thanks,
+> Eleanor
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 27 Oct 2016 23:58:04 +0000","Re: Q6
+ RouteNo:<CAPy-s+mb4VbwXgJfEzRN=BQQTT8itzsCRj7xFXbqfd9WffHxkg@mail.gmail.com>","H
+Hi Eleanor,
+
+Good question, and sorry about that. No, you are certainly expected to be a=
+s exact as the z-score table, this question had an exceptionally narrow ran=
+ge.
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 27, 2016 4:50:28 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Q6 RouteNo:<CAPy-s+mb4VbwXgJfEzRN=3DBQQTT8itzsCRj7xFXbqfd9WffH=
+xkg@mail.gmail.com>
+
+Thank you!
+
+I got my previous answers by using the z-score table in the book, but to
+get the right answers I had to use a z-score to percentile calculator that
+gave more exact values. In general on the homeworks and quizzes, are we
+expected to be more exact than the book's z-score table?
+
+On Thu, Oct 27, 2016 at 3:10 PM, <stats60TA@cs.stanford.edu> wrote:
+
+>
+>
+> Hi Eleanor,
+>
+>
+> You are doing both problems correctly, but be careful with rounding. Both
+> p=3D
+> arts give a range for allowable answers which you're just outside of--as =
+a
+> =3D
+> rule, I would recommend keeping 3 decimal places or more in all
+> intermediat=3D
+> e computations. Also, for instance, (1600-1500.5)/44.72 =3D3D 2.22, not
+> 2.21,=3D
+>  and little mistakes like that can be enough to make you wrong (although =
+I
+> =3D
+> admit the range input for this problem is pretty narrow).
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, October 27, 2016 12:38:01 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Q6 RouteNo:<CAPy-s+=3D3DtsMPCZSRDRZp_qbb75O-YKkt0-
+> duDpiDSLbsYC=3D3DXEc=3D
+> A@mail.gmail.com>
+>
+> Hi Lucas,
+>
+> I keep getting hung up on problem 6, but I'm not sure why because it's a
+> lot like other problems on the pset. Here's my reasoning:
+>
+> a) Expected val =3D3D 1600, SE =3D3D 44.72
+>
+> z =3D3D (1600-1500.5)/44.72 =3D3D 2.21 =3D3D> A =3D3D 97.22 =3D3D>
+> P =3D3D .5 + .9722/2 =3D3D .9861
+>
+> a) Expected val =3D3D 100, SE =3D3D 8.66
+>
+> z =3D3D (100-89.5)/8.66 =3D3D 1.21 =3D3D> A =3D3D 76.99 =3D3D>
+> P =3D3D .5 - .7699/2 =3D3D .115
+>
+> However, when I try to enter these values, they get marked wrong. Any ide=
+a
+> where I'm going wrong in my reasoning, or is this another bug in the HW?
+>
+> Thanks,
+> Eleanor
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 28 Oct 2016 00:03:06 +0000","Re: STATS60 PSET Question
+ RouteNo:<CAGNMcNEG=2R1r76LHtdJRPJiG1U8M-TKCV112oBgAFNvmV6mWA@mail.gmail.com>","H
+
+Hi Angela,
+
+
+For 4 A and B, you're doing the problem correctly, it's just a rounding err=
+or (this problem has a somewhat unusually narrow allowable range). In gener=
+al, for intermediate calculations, it is good to always keep 3 significant =
+digits (which would give -0.0526) or 3 decimal places (which you did), whic=
+hever gives higher precision.
+
+
+For 5 A, note that getting ""exactly 17 heads"" is the same as getting ""at le=
+ast 17 heads"" and (NOT ""at least 18 heads"")--both of which look like things=
+ discussed in class.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 27, 2016 3:20:02 PM
+To: stats60ta@cs.stanford.edu
+Subject: STATS60 PSET Question RouteNo:<CAGNMcNEG=3D2R1r76LHtdJRPJiG1U8M-TK=
+CV112oBgAFNvmV6mWA@mail.gmail.com>
+
+Hi Lucas,
+
+Hope this email finds you well! I'm currently working on the STATS60 Pset
+and I'm really stuck on questions 4 and 5.
+
+For question 4 parts A and B, I thought that the ""net gain"" would be the
+same as the expected sum of 100 draws from a box with a 12/38 chance of
+getting a +2 and a 26/38 chance of getting a -1. When I calculated the
+average of the box, I got -0.053. To get the expected net gain, I then
+multiplied this box average by the number of draws (100) to get -5.3. I
+have tried this problem many different ways but still can't figure out why
+this is incorrect and was wondering if I am not understanding something
+correctly?
+
+For question 5 part A, I wasn't sure how we are supposed to use normal
+approximation to calculate the odds of getting exactly 17 heads, as all of
+the examples we have discussed in class using normal approximation with
+probability have revolved around getting ""at least X result"". However, I
+don't know how we can calculate this probability without using the binomial
+formula and was hoping you could possibly point me in the right direction?
+
+Thank you so much for your help!
+
+Sincerely,
+Angela
+"
+"kaylamg@stanford.edu","robotTA@cs.stanford.edu,","Thu, 27 Oct 2016 23:33:51 -0700","Stats 60 HW","Could use help on 5a and 6b of the homework. Thanks!
+
+Kayla
+
+-- 
+*Kayla Guillory*
+Stanford University | Class of 2018
+B.S. Candidate | Product Design
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 28 Oct 2016 16:02:54 +0000","Re: Stats 60 HW
+ RouteNo:<CAJQb_X9XfHKx-zresdAK5WppmFN640a6YvQbZ14OVMfJ21idTw@mail.gmail.com>","R
+
+Hi Kayla,
+
+
+Can you be more specific about where you're running into trouble? For more =
+general questions, office hours are a better venue.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, October 27, 2016 11:30:17 PM
+To: stats60ta@cs.stanford.edu
+Subject: Stats 60 HW RouteNo:<CAJQb_X9XfHKx-zresdAK5WppmFN640a6YvQbZ14OVMfJ=
+21idTw@mail.gmail.com>
+
+Could use help on 5a and 6b of the homework. Thanks!
+
+Kayla
+
+--
+*Kayla Guillory*
+Stanford University | Class of 2018
+B.S. Candidate | Product Design
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 29 Oct 2016 23:46:46 +0000","Testing greeting anonymization","Hi Lucas,
+
+
+This is a test message. The greeting 'Hi Lucas' should be changed to 'Hi TA=
+'.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Sat, 29 Oct 2016 16:48:05 -0700","Sending to robota","Changing all 'r#o#b#o's to TA.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 29 Oct 2016 23:50:08 +0000","Sending to stats60, Test msg","Testing
+
+
+This is a test message lucas. Your name should be replaced by 'TA'.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 29 Oct 2016 23:51:00 +0000","testing in subject line lucas","Hi,
+
+
+This is my test message, Lucas. Should be replaced by TA in both subject an=
+d body.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Sat, 29 Oct 2016 16:52:24 -0700","Testing","Testing roboTA in email body with different cases, robota ROBOta , ROBOTTA,
+RObo
+Do reply me back with what you get. Thanks.
+
+-Aashna Garg
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 29 Oct 2016 23:59:23 +0000","Re: Testing TA in email body with different cases, ta ta , TTA, Do
+ reply me back with what you get. Thanks. -Aashna Garg
+ RouteNo:<CAMOhTqUL5YcJ=YsuxYeh_pAoXR1nK+197HoZbrkp1d9R=mfSpw@mail.gmail.com>","H
+
+This looks good (I got all three of your messages), I don't see the words r=
+oboTA or Lucas anywhere.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Saturday, October 29, 2016 4:52:53 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing TA in email body with different cases, ta ta , TTA, Do rep=
+ly me back with what you get. Thanks. -Aashna Garg RouteNo:<CAMOhTqUL5YcJ=
+=3DYsuxYeh_pAoXR1nK+197HoZbrkp1d9R=3DmfSpw@mail.gmail.com>
+
+Testing TA in email body with different cases, ta ta , TTA,
+
+Do reply me back with what you get. Thanks.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Sat, 29 Oct 2016 17:07:37 -0700","Re: Testing TA in email body with different cases, ta ta , TTA, Do
+ reply me back with what you get. Thanks. -Aashna Garg","Great!
+
+-Aashna Garg
+
+
+On Sat, Oct 29, 2016 at 4:59 PM, <robota@cs.stanford.edu> wrote:
+
+>
+>
+> This looks good (I got all three of your messages), I don't see the words
+> r=
+> oboTA or Lucas anywhere.
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Saturday, October 29, 2016 4:52:53 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Testing TA in email body with different cases, ta ta , TTA, Do
+> rep=
+> ly me back with what you get. Thanks. -Aashna Garg RouteNo:<CAMOhTqUL5YcJ=
+> =3DYsuxYeh_pAoXR1nK+197HoZbrkp1d9R=3DmfSpw@mail.gmail.com>
+>
+> Testing TA in email body with different cases, ta ta , TTA,
+>
+> Do reply me back with what you get. Thanks.
+>
+> -Aashna Garg
+>
+>
+> Best, Lucas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sun, 30 Oct 2016 00:43:27 +0000","Re: Great! -Aashna Garg On Sat, Oct 29, 2016 at 4:59 PM,
+ <ta@cs.stanford.edu> wrote: > > > This looks good (I got all three of your
+ messages), I don't see the words > r= > oboTA or TA anywhere. > >
+ ________________________________ > From: stats60ta@cs.sta","R
+So, is this catching 'roboTA' as well? Because it looks like in my response=
+, Lucas got changed to TA, but roboTA got changed to r=3DoboTA
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Saturday, October 29, 2016 5:03:49 PM
+To: stats60ta@cs.stanford.edu
+Subject: Great! -Aashna Garg On Sat, Oct 29, 2016 at 4:59 PM, <ta@cs.stanfo=
+rd.edu> wrote: > > > This looks good (I got all three of your messages), I =
+don't see the words > r=3D > oboTA or TA anywhere. > > ____________________=
+____________ > From: stats60ta@cs.stan...
+
+Great!
+
+-Aashna Garg
+
+
+On Sat, Oct 29, 2016 at 4:59 PM, <ta@cs.stanford.edu> wrote:
+
+>
+>
+> This looks good (I got all three of your messages), I don't see the words
+> r=3D
+> oboTA or TA anywhere.
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Saturday, October 29, 2016 4:52:53 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Testing TA in email body with different cases, ta ta , TTA, Do
+> rep=3D
+> ly me back with what you get. Thanks. -Aashna Garg RouteNo:<CAMOhTqUL5YcJ=
+=3D
+> =3D3DYsuxYeh_pAoXR1nK+197HoZbrkp1d9R=3D3DmfSpw@mail.gmail.com>
+>
+> Testing TA in email body with different cases, ta ta , TTA,
+>
+> Do reply me back with what you get. Thanks.
+>
+> -Aashna Garg
+>
+>
+> Best, TA
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sun, 30 Oct 2016 01:37:17 +0000","*****SPAM***** Re: [SPAM:##] Changing all 'r#o#b#o's to TA. -Aashna Garg
+ RouteNo:<CAMOhTqXRP1c-gfutswbSGd6YgnXocHjwfqgiaf8cXuYcUG-7XQ@mail.gmail.com>","H
+
+Cool, looks good (here's a test): roboTA, robotTA, Lucas
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Saturday, October 29, 2016 6:36:15 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:##] Changing all 'r#o#b#o's to TA. -Aashna Garg RouteNo:<CAM=
+OhTqXRP1c-gfutswbSGd6YgnXocHjwfqgiaf8cXuYcUG-7XQ@mail.gmail.com>
+
+Changing all 'r#o#b#o's to TA.
+
+-Aashna Garg
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Sat, 29 Oct 2016 21:53:19 -0400","To robta after greeting fix","Hi Lucas,
+
+this is a test after Aashna fixed the greeting issue. This msg
+went to roboTA.cs.stanford.edu, and I put ""Hi Lucas"" in the
+first line. Then there is an empty line. The third line should
+start wtih ""this is a test after"".
+
+Do do see that third line as the first? (possibly the second, if
+the empty line survives the filter)? Try once with the guess,
+and once without to ensure that you still get the message
+reminding you of the missing guess.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Sat, 29 Oct 2016 21:55:47 -0400","Msg to stats60TA","Hi RoboTA
+
+OK, this msg to stats60TA. I started this msg with ""Hi RoboTA"".
+I know I turned the greetings around. Doesn't matter. You shouldn't
+see them.
+
+You should see this msg starting with ""OK, this msg to stats60TA....""
+Again, please try with and without guess to ensure that both still
+work.
+
+Thanks, Lucas!
+
+Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Sat, 29 Oct 2016 21:58:56 -0400","To roboTA: no greeting","This message starts without a greeting
+It's to roboTA. Let me know whether you
+see the first line: ""This message starts without a greeting...""
+
+One more to come (stats60TA w/o greeting)
+
+Andreas
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Sat, 29 Oct 2016 22:00:26 -0400","Stats60TA without greeting","To Lucas without greeting.
+
+this one does have your name in the first line.
+But that should pass the filter. The first
+line should be ""To Lucas without greeting.""
+
+OK, one more newlines before a greeting.
+
+Andreas
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Sat, 29 Oct 2016 22:01:35 -0400","To roboTA with greeting after several newlines","Hi RoboTA,
+
+Several NLs with greeting.
+
+Lucas: Your first non-empty line should be ""Several NLs with greeting.""
+Is that what you see?
+
+Andreas
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Sun, 30 Oct 2016 10:01:12 -0700","Testing","Hi Lucas,
+
+Let me know if you get this email.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Sun, 30 Oct 2016 10:01:34 -0700","Testing 2","Another test email without greeting.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Sun, 30 Oct 2016 17:02:41 +0000","Testing 3","Testing without greeting.
+
+
+
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Sun, 30 Oct 2016 17:03:24 +0000","Testing 4","Hi Lucas,
+
+
+Let me know if you get all 4 emails
+
+
+
+
+
+
+.
+
+Aashna
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Sun, 30 Oct 2016 10:09:55 -0700","Testing 5","Testing again with different variations -
+
+robota
+lucas
+ROBOTA
+lucAS
+
+-Aashna Garg
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sun, 30 Oct 2016 18:14:50 +0000","Re: Hi TA, Let me know if you get this email. -Aashna Garg
+ RouteNo:<CAMOhTqVOx1jSRD6Z7K+jiCJUQtywsVGQykvY1hiFPr9TJnXiDQ@mail.gmail.com>","L
+got it
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Sunday, October 30, 2016 9:57:27 AM
+To: stats60ta@cs.stanford.edu
+Subject: Hi TA, Let me know if you get this email. -Aashna Garg RouteNo:<CA=
+MOhTqVOx1jSRD6Z7K+jiCJUQtywsVGQykvY1hiFPr9TJnXiDQ@mail.gmail.com>
+
+Hi TA,
+
+Let me know if you get this email.
+
+-Aashna Garg
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sun, 30 Oct 2016 18:15:01 +0000","*****SPAM***** Re: [SPAM:##] Another test email without greeting. -Aashna Garg
+ RouteNo:<CAMOhTqUmGs-j-PQP23WRiF8uaDiMaTnGYAnWhwwVxdZY-C6zVw@mail.gmail.com>","R
+
+got it
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Sunday, October 30, 2016 9:57:56 AM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:##] Another test email without greeting. -Aashna Garg RouteN=
+o:<CAMOhTqUmGs-j-PQP23WRiF8uaDiMaTnGYAnWhwwVxdZY-C6zVw@mail.gmail.com>
+
+Another test email without greeting.
+
+-Aashna Garg
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sun, 30 Oct 2016 18:15:09 +0000","Re: Testing without greeting.
+ RouteNo:<BY2PR0201MB1607E3955CB4584010CA58DAAEAF0@BY2PR0201MB1607.namprd02.prod.outlook.com>","H
+
+Got it again
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Sunday, October 30, 2016 9:58:27 AM
+To: stats60ta@cs.stanford.edu
+Subject: Testing without greeting. RouteNo:<BY2PR0201MB1607E3955CB4584010CA=
+58DAAEAF0@BY2PR0201MB1607.namprd02.prod.outlook.com>
+
+Testing without greeting.
+
+
+
+
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Sun, 30 Oct 2016 18:15:21 +0000","Re: Hi TA, Let me know if you get all 4 emails . Aashna
+ RouteNo:<BY2PR0201MB1607A764E39F1F3AF9D109DCAEAF0@BY2PR0201MB1607.namprd02.prod.outlook.com>","H
+
+yup got all 4
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Sunday, October 30, 2016 10:03:33 AM
+To: stats60ta@cs.stanford.edu
+Subject: Hi TA, Let me know if you get all 4 emails . Aashna RouteNo:<BY2PR=
+0201MB1607A764E39F1F3AF9D109DCAEAF0@BY2PR0201MB1607.namprd02.prod.outlook.c=
+om>
+
+Hi TA,
+
+
+Let me know if you get all 4 emails
+
+
+
+
+
+
+.
+
+Aashna
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Sun, 30 Oct 2016 22:54:58 -0400","With Greeting to roboTA in production","Hi RoboTA,
+
+are you getting this? This is to robota
+with greeting in first line. On the production
+machine.
+
+Andreas
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Sun, 30 Oct 2016 22:56:10 -0400","To stats60ta without greeting","This should be the first line.
+
+The first line you see should  be ""This should be the first line"".
+Sent from production system.
+
+Andreas
+"
+"ecollier@stanford.edu","stats60TA@cs.stanford.edu","Mon, 31 Oct 2016 20:29:28 -0700","HW Q3e","Hi Lucas,
+
+I think I may be having some rounding errors on Q3e. Are we meant to use
+the 0.5 rule in this problem?
+
+Thanks,
+Eleanor
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Tue, 1 Nov 2016 06:14:00 +0000","Re: HW Q3e
+ RouteNo:<CAPy-s+m+iLofE_tb2K721Bd=LRcWc=k66dOXFiib0N_i=-V+zQ@mail.gmail.com>","H
+
+Hi Eleanor,
+
+
+The 0.5 rule is not needed for this problem, so I would double-check that y=
+ou're approaching the problem correctly.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Monday, October 31, 2016 8:31:17 PM
+To: stats60ta@cs.stanford.edu
+Subject: HW Q3e RouteNo:<CAPy-s+m+iLofE_tb2K721Bd=3DLRcWc=3Dk66dOXFiib0N_i=
+=3D-V+zQ@mail.gmail.com>
+
+Hi TA,
+
+I think I may be having some rounding errors on Q3e. Are we meant to use
+the 0.5 rule in this problem?
+
+Thanks,
+Eleanor
+"
+"costberg@stanford.edu","<stats60TA@cs.stanford.edu>","Wed, 2 Nov 2016 13:58:53 -0700","Homework Question","Hi Lucas,
+
+I have a question on Question 7c of the homework, which asks how many =
+people we=E2=80=99d need to include in our SRS in order for the 95% =
+confidence interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the =
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to =
+have a + or - 1% margin of error. I=E2=80=99ve tried plugging this =
+answer into the homework site, but it says that this is the wrong =
+answer. Could you please explain what I=E2=80=99m doing wrong?
+
+Thanks so much!
+
+Christian=
+
+"
+"sarah31@stanford.edu","roboTA@cs.stanford.edu","Wed, 2 Nov 2016 16:06:59 -0700","Question","Hi RoboTA,
+
+I need some guidance on the homework: part c of #3. How should I approach
+this problem? I built the box model and solved for box average and SD, but
+don't know where to go from here.
+
+I'm also wondering about #6-- specifically how to calculate how much the
+estimate is likely to be off by.
+
+Thanks!
+Sarah
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Wed, 2 Nov 2016 23:17:26 +0000","Re: Question
+ RouteNo:<CAAk107_xyVR4i1MzQRULKe88yGsk07PjA+Bx1zEW=9vjKsu9xg@mail.gmail.com>","H
+
+Hi Sarah,
+
+
+I'm not sure I understand your question about 3c--it just asks about the SD=
+ of the box, so if you've already computed the box SD, then just answer T/F=
+ whether it's 20,000 or not. Perhaps you meant to ask about a different que=
+stion/part?
+
+
+For #6, remember that ""how much an estimate is off by"" corresponds to the S=
+E of the estimate.
+
+
+Hope that helps!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 4:11:45 PM
+To: stats60ta@cs.stanford.edu
+Subject: Question RouteNo:<CAAk107_xyVR4i1MzQRULKe88yGsk07PjA+Bx1zEW=3D9vjK=
+su9xg@mail.gmail.com>
+
+Hi TA,
+
+I need some guidance on the homework: part c of #3. How should I approach
+this problem? I built the box model and solved for box average and SD, but
+don't know where to go from here.
+
+I'm also wondering about #6-- specifically how to calculate how much the
+estimate is likely to be off by.
+
+Thanks!
+Sarah
+"
+"sarah31@stanford.edu","roboTA@cs.stanford.edu","Wed, 2 Nov 2016 16:29:59 -0700","Re: Question","Hey RoboTA,
+
+I meant to ask about question 3e-- could you explain to me how I should go
+about solving the question?
+
+Thanks,
+Sarah
+
+On Wed, Nov 2, 2016 at 4:13 PM, <roboTA@cs.stanford.edu> wrote:
+
+>
+>
+> Hi Sarah,
+>
+>
+> I'm not sure I understand your question about 3c--it just asks about the
+> SD=
+>  of the box, so if you've already computed the box SD, then just answer
+> T/F=
+>  whether it's 20,000 or not. Perhaps you meant to ask about a different
+> que=
+> stion/part?
+>
+>
+> For #6, remember that ""how much an estimate is off by"" corresponds to the
+> S=
+> E of the estimate.
+>
+>
+> Hope that helps!
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Wednesday, November 2, 2016 4:11:45 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Question RouteNo:<CAAk107_xyVR4i1MzQRULKe88yGsk07PjA+
+> Bx1zEW=3D9vjK=
+> su9xg@mail.gmail.com>
+>
+> Hi TA,
+>
+> I need some guidance on the homework: part c of #3. How should I approach
+> this problem? I built the box model and solved for box average and SD, but
+> don't know where to go from here.
+>
+> I'm also wondering about #6-- specifically how to calculate how much the
+> estimate is likely to be off by.
+>
+> Thanks!
+> Sarah
+>
+>
+> Greetings, RoboTA.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Wed, 2 Nov 2016 23:48:15 +0000","Re: Question
+ RouteNo:<CAAk107_hiV7peGmCC8qDHkJ1gV3mn40=qryz9KmqXWogyhUhNg@mail.gmail.com>","H
+
+Hi Sarah,
+
+
+Sure, for 3e, you want to use the CLT to approximate the fraction of the 90=
+0 forms chosen for audit which have incomes over $50,000. That is, you need=
+ the EV and SE for the aforementioned fraction, computed using the box mode=
+l described in 3a-d. Once you have those, compute the Z scores correspondin=
+g to 0.19 and 0.21 and look up the area between them in your Z table.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 4:30:58 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Question RouteNo:<CAAk107_hiV7peGmCC8qDHkJ1gV3mn40=3Dqryz9KmqX=
+WogyhUhNg@mail.gmail.com>
+
+Hey TA,
+
+I meant to ask about question 3e-- could you explain to me how I should go
+about solving the question?
+
+Thanks,
+Sarah
+
+On Wed, Nov 2, 2016 at 4:13 PM, <TA@cs.stanford.edu> wrote:
+
+>
+>
+> Hi Sarah,
+>
+>
+> I'm not sure I understand your question about 3c--it just asks about the
+> SD=3D
+>  of the box, so if you've already computed the box SD, then just answer
+> T/F=3D
+>  whether it's 20,000 or not. Perhaps you meant to ask about a different
+> que=3D
+> stion/part?
+>
+>
+> For #6, remember that ""how much an estimate is off by"" corresponds to the
+> S=3D
+> E of the estimate.
+>
+>
+> Hope that helps!
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Wednesday, November 2, 2016 4:11:45 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Question RouteNo:<CAAk107_xyVR4i1MzQRULKe88yGsk07PjA+
+> Bx1zEW=3D3D9vjK=3D
+> su9xg@mail.gmail.com>
+>
+> Hi TA,
+>
+> I need some guidance on the homework: part c of #3. How should I approach
+> this problem? I built the box model and solved for box average and SD, bu=
+t
+> don't know where to go from here.
+>
+> I'm also wondering about #6-- specifically how to calculate how much the
+> estimate is likely to be off by.
+>
+> Thanks!
+> Sarah
+>
+>
+> Greetings, TA.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 00:33:18 +0000","Re: Homework Question
+ RouteNo:<C1B66C22-6B7F-4B20-BFB8-7AE166546FF4@stanford.edu>","H
+
+Hi Christian,
+
+
+You've done the problem correctly, we just had an overly narrow range on th=
+is one. Try refreshing and submitting again and it should work. Sorry about=
+ that!
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 1:55:16 PM
+To: stats60ta@cs.stanford.edu
+Subject: Homework Question RouteNo:<C1B66C22-6B7F-4B20-BFB8-7AE166546FF4@st=
+anford.edu>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many =3D
+people we=3DE2=3D80=3D99d need to include in our SRS in order for the 95% =
+=3D
+confidence interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D3D 1
+
+Therefore, if we bring the constants over to the right side of the =3D
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D3D [.71 * .29] =3D3D .2059.
+
+.2059 / n =3D3D 2.603 * 10^-5
+
+.2059 =3D3D 2.603 * 10^-5 * n
+
+n =3D3D 7909.8544
+
+
+Therefore, I concluded that we=3DE2=3D80=3D99d need to sample 7910 in order=
+ to =3D
+have a + or - 1% margin of error. I=3DE2=3D80=3D99ve tried plugging this =
+=3D
+answer into the homework site, but it says that this is the wrong =3D
+answer. Could you please explain what I=3DE2=3D80=3D99m doing wrong?
+
+Thanks so much!
+
+Christian=3D
+
+"
+"costberg@stanford.edu","""stats60TA@cs.stanford.edu""","Thu, 3 Nov 2016 00:40:18 +0000","Re: Homework Question","Thank you!
+
+Sent from my iPhone
+
+On Nov 2, 2016, at 5:33 PM, ""stats60TA@cs.stanford.edu<mailto:stats60TA@cs.=
+stanford.edu>"" <stats60TA@cs.stanford.edu<mailto:stats60TA@cs.stanford.edu>=
+> wrote:
+
+
+
+Hi Christian,
+
+
+You've done the problem correctly, we just had an overly narrow range on th=
+=3D
+is one. Try refreshing and submitting again and it should work. Sorry about=
+=3D
+that!
+
+________________________________
+From: stats60ta@cs.stanford.edu<mailto:stats60ta@cs.stanford.edu> <stats60t=
+a@cs.stanford.edu<mailto:stats60ta@cs.stanford.edu>>
+Sent: Wednesday, November 2, 2016 1:55:16 PM
+To: stats60ta@cs.stanford.edu<mailto:stats60ta@cs.stanford.edu>
+Subject: Homework Question RouteNo:<C1B66C22-6B7F-4B20-BFB8-7AE166546FF4@st=
+=3D
+anford.edu<http://anford.edu>>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many =3D3D
+people we=3D3DE2=3D3D80=3D3D99d need to include in our SRS in order for the=
+ 95% =3D
+=3D3D
+confidence interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D3D3D 1
+
+Therefore, if we bring the constants over to the right side of the =3D3D
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D3D3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D3D3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D3D3D [.71 * .29] =3D3D3D .2059.
+
+.2059 / n =3D3D3D 2.603 * 10^-5
+
+.2059 =3D3D3D 2.603 * 10^-5 * n
+
+n =3D3D3D 7909.8544
+
+
+Therefore, I concluded that we=3D3DE2=3D3D80=3D3D99d need to sample 7910 in=
+ order=3D
+to =3D3D
+have a + or - 1% margin of error. I=3D3DE2=3D3D80=3D3D99ve tried plugging t=
+his =3D
+=3D3D
+answer into the homework site, but it says that this is the wrong =3D3D
+answer. Could you please explain what I=3D3DE2=3D3D80=3D3D99m doing wrong?
+
+Thanks so much!
+
+Christian=3D3D
+
+
+
+Best, Lucas
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 01:36:11 +0000","Testing email encoding","Hi Lucas,
+
+
+Testing with the student's email. Let me know if you got it correct this ti=
+me.
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 01:39:36 +0000","Testing","Hi Lucas,
+
+
+Testing with the student's email. Let me know if you got it correct this ti=
+me.
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 01:42:35 +0000","Testing","Hi Lucas,
+
+
+Testing with the student's email. Let me know if you got it correct this ti=
+me.
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 01:48:00 +0000","Testing 2","Hi Lucas,
+
+
+testing with the student's email:
+
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 18:56:52 -0700","Testing with myself","Hi robota,
+
+This is a test message to check if your signature comes on the right place.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 01:58:21 +0000","Re: Testing with myself
+ RouteNo:<CAMOhTqXmxyrZtvUvd5RNAzm9oQRK02NrJzMxgWOmHcaGU6sE2Q@mail.gmail.com>","This is TA's reply. Student should get the TA signature.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 6:53:17 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing with myself RouteNo:<CAMOhTqXmxyrZtvUvd5RNAzm9oQRK02NrJzMx=
+gWOmHcaGU6sE2Q@mail.gmail.com>
+
+Hi ta,
+
+This is a test message to check if your signature comes on the right place.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 02:00:20 +0000","Re: Testing with myself
+ RouteNo:<CAMOhTqXmxyrZtvUvd5RNAzm9oQRK02NrJzMxgWOmHcaGU6sE2Q@mail.gmail.com>","This is TA's reply. Student should get the TA signature.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 6:53:17 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing with myself RouteNo:<CAMOhTqXmxyrZtvUvd5RNAzm9oQRK02NrJzMx=
+gWOmHcaGU6sE2Q@mail.gmail.com>
+
+Hi ta,
+
+This is a test message to check if your signature comes on the right place.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 02:01:33 +0000","Re: Testing with myself
+ RouteNo:<CAMOhTqXmxyrZtvUvd5RNAzm9oQRK02NrJzMxgWOmHcaGU6sE2Q@mail.gmail.com>","H
+
+This is TA's reply. Student should get the TA signature.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 6:53:17 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing with myself RouteNo:<CAMOhTqXmxyrZtvUvd5RNAzm9oQRK02NrJzMx=
+gWOmHcaGU6sE2Q@mail.gmail.com>
+
+Hi ta,
+
+This is a test message to check if your signature comes on the right place.
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Wed, 2 Nov 2016 19:03:43 -0700","Testing ta greeting","Test message, reply to this email.
+
+-Aashna Garg
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 02:20:41 +0000","Re: Testing 2
+ RouteNo:<BY2PR0201MB160701F63BE745328A2C858CAEA30@BY2PR0201MB1607.namprd02.prod.outlook.com>","T
+Still some bugs in this one
+
+> On Nov 2, 2016, at 6:48 PM, ""stats60ta@cs.stanford.edu"" <stats60ta@cs.sta=
+nford.edu> wrote:
+>=20
+> Hi TA,
+>=20
+>=20
+> testing with the student's email:
+>=20
+>=20
+> Hi TA,
+>=20
+> I have a question on Question 7c of the homework, which asks how many peo=
+pl=3D
+> e we'd need to include in our SRS in order for the 95% confidence interva=
+l =3D
+> to have a margin of error or + or - 1%.
+>=20
+> First, I determined that:
+>=20
+> (1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D3D 1
+>=20
+> Therefore, if we bring the constants over to the right side of the equati=
+on=3D
+> , we get:
+>=20
+> sqrt [p * (1-p)] / sqrt [n] =3D3D .0051
+>=20
+> Then, we square both sides to get:
+>=20
+> [p * (1-p)] / n =3D3D 2.603 * 10^-5
+>=20
+> We know that p is .71, so [p * (1-p)] =3D3D [.71 * .29] =3D3D .2059.
+>=20
+> .2059 / n =3D3D 2.603 * 10^-5
+>=20
+> .2059 =3D3D 2.603 * 10^-5 * n
+>=20
+> n =3D3D 7909.8544
+>=20
+>=20
+> Therefore, I concluded that we'd need to sample 7910 in order to have a +=
+ o=3D
+> r - 1% margin of error. I've tried plugging this answer into the homework=
+ s=3D
+> ite, but it says that this is the wrong answer. Could you please explain =
+wh=3D
+> at I'm doing wrong?
+>=20
+>=20
+>=20
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 02:22:18 +0000","Re: Testing ta greeting
+ RouteNo:<CAMOhTqW-7BhuRQk0ePnZhM0j_x0Q1jH0KCFghT3YkdGQThZu2Q@mail.gmail.com>","R
+This ones fine
+
+> On Nov 2, 2016, at 7:21 PM, ""stats60ta@cs.stanford.edu"" <stats60ta@cs.sta=
+nford.edu> wrote:
+>=20
+> Test message, reply to this email.
+>=20
+> -Aashna Garg
+
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 02:23:15 +0000","Re: Testing 2
+ RouteNo:<BY2PR0201MB160701F63BE745328A2C858CAEA30@BY2PR0201MB1607.namprd02.prod.outlook.com>","H
+Still some bugs...
+
+> On Nov 2, 2016, at 6:48 PM, ""stats60ta@cs.stanford.edu"" <stats60ta@cs.sta=
+nford.edu> wrote:
+>=20
+> Hi TA,
+>=20
+>=20
+> testing with the student's email:
+>=20
+>=20
+> Hi TA,
+>=20
+> I have a question on Question 7c of the homework, which asks how many peo=
+pl=3D
+> e we'd need to include in our SRS in order for the 95% confidence interva=
+l =3D
+> to have a margin of error or + or - 1%.
+>=20
+> First, I determined that:
+>=20
+> (1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D3D 1
+>=20
+> Therefore, if we bring the constants over to the right side of the equati=
+on=3D
+> , we get:
+>=20
+> sqrt [p * (1-p)] / sqrt [n] =3D3D .0051
+>=20
+> Then, we square both sides to get:
+>=20
+> [p * (1-p)] / n =3D3D 2.603 * 10^-5
+>=20
+> We know that p is .71, so [p * (1-p)] =3D3D [.71 * .29] =3D3D .2059.
+>=20
+> .2059 / n =3D3D 2.603 * 10^-5
+>=20
+> .2059 =3D3D 2.603 * 10^-5 * n
+>=20
+> n =3D3D 7909.8544
+>=20
+>=20
+> Therefore, I concluded that we'd need to sample 7910 in order to have a +=
+ o=3D
+> r - 1% margin of error. I've tried plugging this answer into the homework=
+ s=3D
+> ite, but it says that this is the wrong answer. Could you please explain =
+wh=3D
+> at I'm doing wrong?
+>=20
+>=20
+>=20
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+
+"

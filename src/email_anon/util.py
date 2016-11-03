@@ -20,7 +20,8 @@ HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
-HEAD_TA = 'ljanson@stanford.edu'
+#HEAD_TA = 'ljanson@stanford.edu'
+HEAD_TA = 'aashna94@stanford.edu'
 #HEAD_TA = 'paepcke@stanford.edu'
 HEAD_TA_NAME = 'Lucas'
 TA_SIG = 'Best, Lucas'
@@ -69,6 +70,7 @@ class EmailChecker(object):
         
         # Regex to find 'Best, TA_SIG':
         self.ta_sig_pattern = re.compile(r'\n\n' + TA_SIG + r'$')
+        self.robo_sig_pattern = re.compile(r'\n\n' + ROBO_TA_SIG + r'$')
 
         # Regex to match TA greeting
         self.robo_greeting = re.compile(r'([rR]obo)[\n\r]{0,1}',flags=re.IGNORECASE)
@@ -210,16 +212,19 @@ class EmailChecker(object):
                     
                     # Prepare message to send to TA:
                     
-                    msg = MIMEMultipart()
-                    body = self.get_body(msgStringParsed)
-
+                    msg = MIMEMultipart('alternative')
+                    
+                    body,_ = self.get_body2(msgStringParsed,False)
                     body = self.lucas_greeting.sub('TA',body)
                     body = self.robo_greeting.sub('',body)
+                    #body = self.robo_sig_pattern.sub('',body)
                     subject = self.cleanSubjectOfSpamNotice(msgStringParsed['Subject'])
                     subject = self.lucas_greeting.sub('TA',subject)
                     subject = self.robo_greeting.sub('',subject)
+
+
                     
-                    msg.attach(MIMEText(body, 'plain'))
+                    msg.attach(MIMEText(body, 'html','utf-8'))
                     msg['From'] = 'stats60ta@cs.stanford.edu'
                     msg['To'] = 'stats60ta@cs.stanford.edu'
                     msg['Subject'] = subject + '   RouteNo:' + msg_id
@@ -236,9 +241,14 @@ class EmailChecker(object):
                 # Email received from HEAD-TA (a reply):
                 else:
 
-                    body    = self.get_body(msgStringParsed)
+                    body1,charset    = self.get_body2(msgStringParsed,True)
+                    #print 'charset = ',charset
                     subject = self.cleanSubjectOfSpamNotice(msgStringParsed['Subject'])
                     date    = msgStringParsed['Date']
+
+                    #print body1.get_payload()
+                    body=body1.get_payload()
+                    #print 'body = ',body
 
                     # First line of body is to be a line that
                     # is empty except for the human/robot guess:
@@ -253,17 +263,21 @@ class EmailChecker(object):
                         ta_guess = match.group().strip()
                         # Remove the guess from the body before sending
                         # on to the student:
-                        body = body[len(ta_guess):]                        
-                        
+                        body = body[len(ta_guess):]   
+                        #print body                     
+   
                     # Did TA accidentally sign his/her name?
                     if self.ta_sig_pattern.match(body) is not None:
                         new_body = "Found '%s' in message." % HEAD_TA_NAME + self.msg_subj_plus_body(date,subject,body)
                         self.admin_msg_to_ta('lucasFound', body)
                         continue
-
                     # Recover dest of original address from x-student-dest header field:
                     (orig_subject, orig_msg_id) = subject.split('RouteNo:')
+                    # print 'orig_subject = ',orig_subject
+                    # print 'orig_msg_id=',orig_msg_id
                     (student_sender, orig_dest) = self.traffic_record.get(orig_msg_id, (None, None))
+                    # print 'student_sender=',student_sender
+                    # print 'orig_dest = ',orig_dest
                     
                     subject = orig_subject
                     
@@ -286,11 +300,12 @@ class EmailChecker(object):
                     else:
                         body += '\n\n%s' % TA_SIG
 
-                    msg = MIMEMultipart()
+                    msg = MIMEMultipart('alternative')
 
                     msg['From'] = orig_dest
                     msg['Subject'] = subject
                     msg['To'] = ''
+                    # body =  body.encode('utf8', 'replace')
                     msg.attach(MIMEText(body, 'plain'))
                     self.logInfo('%s replying to: %s' % (msg['From'], student_sender))
 
@@ -343,7 +358,7 @@ class EmailChecker(object):
     def msg_subj_plus_body(self, date, subject, body):
         return 'On %s: %s\n%s' % (date,subject,body)
 
-    def get_body2(self, email_msg):
+    def get_body(self, email_msg):
         '''
         Dig body out of a raw email string.
         
@@ -358,10 +373,38 @@ class EmailChecker(object):
             for payload in email_msg.get_payload():
                 #print payload.get_payload()
                 if payload.get_content_maintype() == 'text':
-                    return payload.get_payload()
-        else: return email_msg.get_payload()
-    
-    def get_body(self,email_msg):
+                    text = payload.get_payload()
+                    #print text
+                    if(self.contains_non_ascii_characters(text)):
+                        return MIMEText(text.encode('utf-8'),'plain','utf-8') 
+                    else:
+                        return MIMEText(text,'plain')
+                else:
+                    html = payload.get_payload()
+                    #print html
+                    if self.contains_non_ascii_characters(html):
+                            return MIMEText(html.encode('utf-8'), 'html','utf-8')
+                    else:
+                            return MIMEText(html, 'html')  
+
+        else: 
+            #email_msg = email_msg.get_payload()
+            #print 'email msg = ',email_msg
+            if email_msg.get_content_maintype() == 'text':
+                text = email_msg.get_payload()
+                #print text
+                if(self.contains_non_ascii_characters(text)):
+                    return MIMEText(text.encode('utf-8'),'plain','utf-8') 
+                else:
+                    return MIMEText(text,'plain')
+            else:
+                    html = email_msg.get_payload()
+                    #print html
+                    if self.contains_non_ascii_characters(html):
+                            return MIMEText(html.encode('utf-8'), 'html','utf-8')
+                    else:
+                            return MIMEText(html, 'html')  
+    def get_body2(self,email_msg,flag=False):
         '''
         Dig body out of a raw email string.
         
@@ -371,6 +414,7 @@ class EmailChecker(object):
         '''
         text = ""
         if email_msg.is_multipart():
+
             html = None
             for payload in email_msg.get_payload():
                 if payload.get_content_charset() is None:
@@ -380,18 +424,27 @@ class EmailChecker(object):
                     continue
                 charset = payload.get_content_charset()
                 if payload.get_content_maintype() == 'text':
-                    text = unicode(payload.get_payload(decode=True), str(charset), "ignore").encode('utf8', 'replace')
-                
-            if text is not None:
+                    if flag: return payload,charset
+                    else: text = unicode(payload.get_payload(decode=True), str(charset), "ignore").encode('utf8', 'replace')
+
+            if not flag:
+             if text:
               if '________________________________' in text: text = text.split('________________________________')[0]
-              return text.strip() 
+              return text.strip(),charset
+            else: return text,charset
 
         else:
+            if flag: 
+                print 'XYZ'
+                return email_msg,email_msg.get_content_charset()
             if email_msg.get_content_charset() is not None:
-              text = unicode(email_msg.get_payload(decode=True), email_msg.get_content_charset(), 'ignore').encode('utf8', 'replace')
-            else: text = email_msg.get_payload(decode=True)
+               text = unicode(email_msg.get_payload(decode=True), email_msg.get_content_charset(), 'ignore').encode('utf8', 'replace')
+            else: 
+                text = email_msg.get_payload(decode=True)
             if '________________________________' in text: text = text.split('________________________________')[0]
-            return text.strip()
+            return text.strip(),charset
+    def contains_non_ascii_characters(self,str):
+      return not all(ord(c) < 128 for c in str)  
 
     def parse_student_info(self):
         '''
@@ -433,18 +486,21 @@ class EmailChecker(object):
         :param body: body of msg to send
         :type body: string
         '''
-
+        print 'ADMIN replying'
         sender = admin_alias
-        msg = MIMEMultipart()
+        msg = MIMEMultipart('alternative')
         msg['From'] = admin_alias
         msg['To'] = HEAD_TA
         # Stick student ID into msg header:
         msg['Subject'] = 'You Screwed Up, Dude: %s' % errorStr
         body += 'Problem: %s\n' % errorStr
-        msg.attach(MIMEText(body, 'plain'))
+        msg.attach(MIMEText(body, 'html','utf-8'))
+        print 'ADMIN stuck?'
         self.logErr('Lucas screwed up: %s' % errorStr)
+        print 'ADMIN STUCK??'
         self.login_sending()
         self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
+
         
     def cleanSubjectOfSpamNotice(self, subject):
         '''

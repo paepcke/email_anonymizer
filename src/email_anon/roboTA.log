@@ -833,3 +833,236 @@ util.pyc: 2016-11-02 17:33:17,033;INFO: <stats60TA@cs.stanford.edu> replying to:
 util.pyc: 2016-11-02 17:40:17,040;INFO: Retrieving 1 msg(s) from server.
 util.pyc: 2016-11-02 17:40:17,045;INFO: Msg from student: costberg@stanford.edu to "stats60TA@cs.stanford.edu" <stats60TA@cs.stanford.edu>
 util.pyc: 2016-11-02 17:53:02,051;INFO: No unread emails!
+util.py: 2016-11-02 18:34:51,797;INFO: Start logging.
+util.py: 2016-11-02 18:37:22,054;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 18:37:22,063;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-11-02 18:39:57,642;INFO: Start logging.
+util.py: 2016-11-02 18:40:42,858;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 18:40:42,867;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-11-02 18:42:59,570;INFO: Start logging.
+util.py: 2016-11-02 18:43:44,766;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 18:43:44,774;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-11-02 18:47:29,549;INFO: Start logging.
+util.py: 2016-11-02 18:49:14,869;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 18:49:14,878;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-11-02 18:56:42,956;INFO: Start logging.
+util.py: 2016-11-02 18:58:28,155;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 18:58:28,159;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 18:59:28,171;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 18:59:28,178;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-11-02 19:01:05,050;INFO: Start logging.
+util.py: 2016-11-02 19:01:50,211;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 19:01:50,219;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 19:02:50,220;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 19:02:50,227;ERROR: Missing msg record: <CAMOhTqXmxyrZtvUvd5RNAzm9oQRK02NrJzMxgWOmHcaGU6sE2Q@mail.gmail.com>
+util.py: 2016-11-02 19:22:30,887;INFO: Start logging.
+util.py: 2016-11-02 19:22:31,130;INFO: Retrieving 2 msg(s) from server.
+util.py: 2016-11-02 19:22:31,139;INFO: Msg from student: aashnagarg16@gmail.com to stats60ta@cs.stanford.edu
+util.py: 2016-11-02 19:22:31,668;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 19:23:31,165;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 19:23:31,171;INFO: stats60ta@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-02 19:24:31,165;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 19:24:31,170;ERROR: Missing msg record: <BY2PR0201MB160701F63BE745328A2C858CAEA30@BY2PR0201MB1607.namprd02.prod.outlook.com>
+util.py: 2016-11-02 19:41:01,322;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 19:41:01,333;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-11-02 19:43:01,337;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 19:43:01,345;INFO: "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu> replying to: aashna94@stanford.edu
+util.py: 2016-11-02 19:47:16,380;INFO: No unread emails!
+util.py: 2016-11-02 19:57:59,010;INFO: Start logging.
+util.py: 2016-11-02 19:58:44,610;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 19:58:44,624;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 19:59:59,596;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 19:59:59,602;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:02:04,918;INFO: Start logging.
+util.py: 2016-11-02 20:02:50,185;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:02:50,191;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:03:54,885;INFO: Start logging.
+util.py: 2016-11-02 20:04:55,185;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:04:55,191;INFO: Msg from student: aashnagarg16@gmail.com to stats60ta@cs.stanford.edu
+util.py: 2016-11-02 20:07:02,384;INFO: Start logging.
+util.py: 2016-11-02 20:07:47,590;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:07:47,598;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:09:23,003;INFO: Start logging.
+util.py: 2016-11-02 20:10:08,210;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:10:08,218;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:13:34,950;INFO: Start logging.
+util.py: 2016-11-02 20:14:20,146;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:14:20,152;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:15:53,261;INFO: Start logging.
+util.py: 2016-11-02 20:16:38,555;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:16:38,562;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:17:30,183;INFO: Start logging.
+util.py: 2016-11-02 20:18:15,342;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:18:15,348;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:30:31,024;INFO: Start logging.
+util.py: 2016-11-02 20:31:16,874;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:31:16,882;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:31:16,882;ERROR: This error in runScript() loop: NameError("global name 'contains_non_ascii_characters' is not defined",)
+util.py: 2016-11-02 20:31:48,376;INFO: Start logging.
+util.py: 2016-11-02 20:31:48,583;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:31:48,589;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:31:48,589;ERROR: This error in runScript() loop: NameError("global name 'contains_non_ascii_characters' is not defined",)
+util.py: 2016-11-02 20:33:05,465;INFO: Start logging.
+util.py: 2016-11-02 20:35:20,787;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:35:20,795;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.pyc: 2016-11-02 20:37:22,886;INFO: Start logging.
+util.pyc: 2016-11-02 20:38:08,163;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-02 20:38:08,171;INFO: Msg from student: aashnagarg16@gmail.com to stats60ta@cs.stanford.edu
+util.py: 2016-11-02 20:39:36,372;INFO: Start logging.
+util.py: 2016-11-02 20:40:36,692;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:40:36,699;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:40:36,699;ERROR: This error in runScript() loop: AttributeError("'int' object has no attribute 'lower'",)
+util.py: 2016-11-02 20:42:21,349;INFO: Start logging.
+util.py: 2016-11-02 20:43:21,528;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:43:21,537;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:43:21,538;ERROR: This error in runScript() loop: AttributeError("'int' object has no attribute 'lower'",)
+util.pyc: 2016-11-02 20:45:31,623;INFO: Start logging.
+util.pyc: 2016-11-02 20:46:16,905;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-02 20:46:16,914;INFO: Msg from student: aashnagarg16@gmail.com to stats60ta@cs.stanford.edu
+util.pyc: 2016-11-02 20:46:16,914;ERROR: This error in runScript() loop: AttributeError("'int' object has no attribute 'lower'",)
+util.py: 2016-11-02 20:46:43,762;INFO: Start logging.
+util.py: 2016-11-02 20:46:43,998;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:46:44,006;INFO: Msg from student: aashnagarg16@gmail.com to stats60ta@cs.stanford.edu
+util.py: 2016-11-02 20:55:07,064;INFO: Start logging.
+util.py: 2016-11-02 20:56:07,345;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 20:56:07,353;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 20:56:07,417;ERROR: This error in runScript() loop: AttributeError("'NoneType' object has no attribute 'get_content_maintype'",)
+util.py: 2016-11-02 20:57:12,570;INFO: Start logging.
+util.py: 2016-11-02 21:00:12,770;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:00:12,778;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 21:00:12,835;ERROR: This error in runScript() loop: AttributeError("'NoneType' object has no attribute 'get_content_maintype'",)
+util.py: 2016-11-02 21:01:58,909;INFO: Start logging.
+util.py: 2016-11-02 21:02:00,415;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:02:00,422;INFO: Msg from student: pevd@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-11-02 21:02:00,491;ERROR: This error in runScript() loop: AttributeError("'NoneType' object has no attribute 'get_content_maintype'",)
+util.py: 2016-11-02 21:02:15,434;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:02:15,442;INFO: Msg from student: lizj657@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-11-02 21:02:15,503;ERROR: This error in runScript() loop: AttributeError("'NoneType' object has no attribute 'get_content_maintype'",)
+util.py: 2016-11-02 21:02:45,452;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:02:45,460;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 21:02:45,522;ERROR: This error in runScript() loop: AttributeError("'NoneType' object has no attribute 'get_content_maintype'",)
+util.pyc: 2016-11-02 21:03:22,269;INFO: Start logging.
+util.py: 2016-11-02 21:06:15,720;INFO: Start logging.
+util.py: 2016-11-02 21:07:15,890;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:07:15,896;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 21:07:16,773;ERROR: This error in runScript() loop: AttributeError("'NoneType' object has no attribute 'get_content_maintype'",)
+util.py: 2016-11-02 21:11:40,538;INFO: Start logging.
+util.py: 2016-11-02 21:12:25,741;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:12:25,748;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 21:27:18,829;INFO: Start logging.
+util.py: 2016-11-02 21:27:19,020;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:27:19,028;INFO: Msg from student: dfeddoes@stanford.edu to roboTA@cs.stanford.edu
+util.py: 2016-11-02 21:28:49,056;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:28:49,063;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 21:29:16,258;INFO: Start logging.
+util.py: 2016-11-02 21:30:01,570;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:30:01,579;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 21:31:13,135;INFO: Start logging.
+util.py: 2016-11-02 21:32:28,413;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:32:28,420;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 21:37:13,463;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:37:13,473;ERROR: This error in runScript() loop: TypeError('expected string or buffer',)
+util.py: 2016-11-02 21:39:11,561;INFO: Start logging.
+util.py: 2016-11-02 21:39:42,186;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:39:42,196;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 21:40:12,181;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:40:12,192;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 21:45:57,630;INFO: Start logging.
+util.py: 2016-11-02 21:46:27,968;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 21:46:27,985;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 22:03:08,636;INFO: Start logging.
+util.py: 2016-11-02 22:04:08,807;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:04:08,819;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 22:07:05,180;INFO: Start logging.
+util.py: 2016-11-02 22:07:35,893;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:07:35,905;ERROR: This error in runScript() loop: AttributeError("Message instance has no attribute 'strip'",)
+util.py: 2016-11-02 22:08:57,638;INFO: Start logging.
+util.py: 2016-11-02 22:11:12,891;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:11:12,901;ERROR: This error in runScript() loop: AttributeError("Message instance has no attribute 'strip'",)
+util.py: 2016-11-02 22:12:53,956;INFO: Start logging.
+util.py: 2016-11-02 22:13:24,520;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:13:24,530;ERROR: This error in runScript() loop: AttributeError("'int' object has no attribute 'lower'",)
+util.py: 2016-11-02 22:15:09,283;INFO: Start logging.
+util.py: 2016-11-02 22:15:24,496;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:15:24,506;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 22:19:54,266;INFO: Start logging.
+util.py: 2016-11-02 22:20:24,493;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:20:24,509;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 22:22:15,276;INFO: Start logging.
+util.py: 2016-11-02 22:22:45,477;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:22:45,488;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 22:24:54,148;INFO: Start logging.
+util.py: 2016-11-02 22:24:54,382;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:24:54,395;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 22:25:39,415;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:25:39,427;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 22:30:03,325;INFO: Start logging.
+util.py: 2016-11-02 22:30:33,526;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:30:33,537;ERROR: This error in runScript() loop: AttributeError("'int' object has no attribute 'lower'",)
+util.py: 2016-11-02 22:34:42,310;INFO: Start logging.
+util.py: 2016-11-02 22:35:12,499;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:35:12,508;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-02 22:37:45,831;INFO: Start logging.
+util.py: 2016-11-02 22:37:46,027;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:37:46,037;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-02 22:39:53,202;INFO: Start logging.
+util.py: 2016-11-02 22:39:53,505;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:39:53,516;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-02 22:41:11,578;INFO: Start logging.
+util.py: 2016-11-02 22:41:56,814;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:41:56,825;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-02 22:43:11,125;INFO: Start logging.
+util.py: 2016-11-02 22:43:41,800;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:43:41,812;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-02 22:47:41,451;INFO: Start logging.
+util.py: 2016-11-02 22:47:41,717;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:47:41,729;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.pyc: 2016-11-02 22:48:07,269;INFO: Start logging.
+util.pyc: 2016-11-02 22:48:07,480;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-02 22:48:07,490;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.pyc: 2016-11-02 22:49:07,509;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-02 22:49:07,517;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.pyc: 2016-11-02 22:49:37,515;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-02 22:49:37,526;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-02 22:52:40,824;INFO: Start logging.
+util.py: 2016-11-02 22:53:41,104;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:53:41,110;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 22:54:26,116;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:54:26,126;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-02 22:56:05,311;INFO: Start logging.
+util.py: 2016-11-02 22:56:50,592;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:56:50,599;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 22:57:20,599;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:57:20,611;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-02 22:59:12,660;INFO: Start logging.
+util.py: 2016-11-02 22:59:42,922;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 22:59:42,933;ERROR: Missing msg record: <CAMOhTqVjUyam75OTFG0LdMGqLJwswctGWQsjFwUhnvXXHNyL1w@mail.gmail.com>
+util.pyc: 2016-11-02 23:00:19,329;INFO: Start logging.
+util.pyc: 2016-11-02 23:01:04,577;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-02 23:01:04,580;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.pyc: 2016-11-02 23:01:34,593;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-02 23:01:34,604;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.pyc: 2016-11-02 23:04:04,628;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-02 23:04:04,635;ERROR: Missing msg record: <CAMOhTqWPnHEtzT=P7AhWVSDGq3OGbHxQf_pOeZoGFQwXWWZtjg@mail.gmail.com>
+util.py: 2016-11-02 23:07:46,328;INFO: Start logging.
+util.py: 2016-11-02 23:08:31,652;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:08:31,656;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 23:09:01,676;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:09:01,683;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-02 23:10:01,675;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:10:01,684;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 23:10:31,682;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:10:31,690;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-02 23:13:39,263;INFO: Start logging.
+util.py: 2016-11-02 23:14:09,860;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:14:09,869;ERROR: Missing msg record: <CAMOhTqUHNLsToikZmweNo=0phoh64Zb9gCy66fAOdM7X=D1xTw@mail.gmail.com>
+util.py: 2016-11-02 23:18:04,781;INFO: Start logging.
+util.py: 2016-11-02 23:18:50,055;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:18:50,060;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 23:19:35,062;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:19:35,070;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-02 23:21:52,491;INFO: Start logging.
+util.py: 2016-11-02 23:22:37,684;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:22:37,691;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-02 23:23:07,695;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-02 23:23:07,702;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com

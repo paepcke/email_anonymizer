@@ -343,7 +343,7 @@ class EmailChecker(object):
     def msg_subj_plus_body(self, date, subject, body):
         return 'On %s: %s\n%s' % (date,subject,body)
 
-    def get_body(self, email_msg):
+    def get_body2(self, email_msg):
         '''
         Dig body out of a raw email string.
         
@@ -360,6 +360,38 @@ class EmailChecker(object):
                 if payload.get_content_maintype() == 'text':
                     return payload.get_payload()
         else: return email_msg.get_payload()
+    
+    def get_body(self,email_msg):
+        '''
+        Dig body out of a raw email string.
+        
+        :param email_msg: raw email
+        :type email_msg: string
+        :return just the message body
+        '''
+        text = ""
+        if email_msg.is_multipart():
+            html = None
+            for payload in email_msg.get_payload():
+                if payload.get_content_charset() is None:
+                # We cannot know the character set, so return decoded "something"
+                    text = payload.get_payload(decode=True)
+                    if '________________________________' in text: text = text.split('________________________________')[0]
+                    continue
+                charset = payload.get_content_charset()
+                if payload.get_content_maintype() == 'text':
+                    text = unicode(payload.get_payload(decode=True), str(charset), "ignore").encode('utf8', 'replace')
+                
+            if text is not None:
+              if '________________________________' in text: text = text.split('________________________________')[0]
+              return text.strip() 
+
+        else:
+            if email_msg.get_content_charset() is not None:
+              text = unicode(email_msg.get_payload(decode=True), email_msg.get_content_charset(), 'ignore').encode('utf8', 'replace')
+            else: text = email_msg.get_payload(decode=True)
+            if '________________________________' in text: text = text.split('________________________________')[0]
+            return text.strip()
 
     def parse_student_info(self):
         '''

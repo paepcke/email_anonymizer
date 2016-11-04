@@ -22,8 +22,8 @@ HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
 #HEAD_TA = 'ljanson@stanford.edu'
-#HEAD_TA = 'aashna94@stanford.edu'
-HEAD_TA = 'paepcke@stanford.edu'
+HEAD_TA = 'aashna94@stanford.edu'
+#HEAD_TA = 'paepcke@stanford.edu'
 HEAD_TA_NAME = 'Lucas'
 TA_SIG = 'Best, Lucas'
 ROBO_TA_SIG = 'Greetings, RoboTA.'
@@ -302,19 +302,26 @@ class EmailChecker(object):
                     else:
                         try:
                             # Done dealing with this request:
-                            del self.traffic_record[orig_msg_id]
+                          #  del self.traffic_record[orig_msg_id]
                             self.traffic_record.sync()
                         except:
                             pass
                      
                     # Record the original destination as the truth the TA was to guess:
                     self.record_ta_guess(date, msg_id, orig_dest, guess=ta_guess)
+                   # print body
+
 
                     # Sign the return:
-                    if orig_dest == robo_ta_alias:
-                        body += '\n\n%s' % ROBO_TA_SIG
+                    if orig_dest == robo_ta_alias.lower():
+                        if '________________________________' in body:
+                          body = body.split('________________________________')[0] + '\n%s' % ROBO_TA_SIG +'\n________________________________'+ body.split('________________________________')[1] 
+                        else: body += '\n\n%s' % ROBO_TA_SIG
+
                     else:
-                        body += '\n\n%s' % TA_SIG
+                        if '________________________________' in body:
+                          body = body.split('________________________________')[0] + '\n%s' % ROBO_TA_SIG + '\n________________________________'+ body.split('________________________________')[1] 
+                        else: body += '\n\n%s' % TA_SIG
 
                     msg = MIMEMultipart('alternative')
 
@@ -435,8 +442,6 @@ class EmailChecker(object):
                 if payload.get_content_charset() is None:
                 # We cannot know the character set, so return decoded "something"
                     text = payload.get_payload(decode=True)
-                    if '________________________________' in text: 
-                        text = text.split('________________________________')[0]
                     continue
                 charset = payload.get_content_charset()
                 if payload.get_content_maintype() == 'text':
@@ -498,7 +503,6 @@ class EmailChecker(object):
         :param body: body of msg to send
         :type body: string
         '''
-        print 'ADMIN replying'
         sender = admin_alias
         msg = MIMEMultipart('alternative')
         msg['From'] = admin_alias
@@ -507,9 +511,7 @@ class EmailChecker(object):
         msg['Subject'] = 'You Screwed Up, Dude: %s' % errorStr
         body += 'Problem: %s\n' % errorStr
         msg.attach(MIMEText(body, 'html','utf-8'))
-        print 'ADMIN stuck?'
         self.logErr('Lucas screwed up: %s' % errorStr)
-        print 'ADMIN STUCK??'
         self.login_sending()
         self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
 

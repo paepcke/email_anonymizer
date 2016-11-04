@@ -1205,3 +1205,88 @@ util.py: 2016-11-03 18:21:27,494;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-11-03 18:21:27,504;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
 util.py: 2016-11-03 18:22:27,521;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-11-03 18:22:32,770;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-11-03 20:59:56,609;INFO: Start logging.
+util.py: 2016-11-03 20:59:56,969;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 20:59:56,977;INFO: Msg from student: klee23@stanford.edu to roboTA@cs.stanford.edu
+util.py: 2016-11-03 21:03:12,033;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:03:12,041;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:03:42,019;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:03:42,047;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-03 21:04:12,039;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:04:12,049;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:05:12,050;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:05:12,065;ERROR: Missing msg record: <CAMOhTqWq=EOfTKm6jM4BQmELZu1R=yNaR+S6Xp3PNQv11z9nCA@mail.gmail.com>
+util.py: 2016-11-03 21:06:12,063;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:06:12,070;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:06:57,068;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:06:57,078;ERROR: This error in runScript() loop: ValueError('need more than 1 value to unpack',)
+util.py: 2016-11-03 21:07:57,078;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:07:57,083;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:08:27,083;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:08:27,092;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:09:12,100;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:09:12,108;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:10:12,119;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:10:12,128;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:11:57,138;INFO: Retrieving 2 msg(s) from server.
+util.py: 2016-11-03 21:11:57,151;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:11:57,754;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:12:57,129;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:12:57,138;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:13:12,146;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:13:12,155;ERROR: Missing msg record: <CAMOhTqWLEMPapRfzX-JkpFUne=crpGQE7Dgw1c1G7NcoYEHLGA@mail.gmail.com>
+util.py: 2016-11-03 21:14:42,166;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:14:42,173;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:26:40,811;INFO: Start logging.
+util.py: 2016-11-03 21:27:26,020;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:27:26,026;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:27:56,021;INFO: Retrieving 2 msg(s) from server.
+util.py: 2016-11-03 21:27:56,035;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:27:56,596;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-03 21:31:06,019;INFO: Start logging.
+util.py: 2016-11-03 21:31:51,266;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:31:51,270;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:32:21,289;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:32:21,298;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:33:23,708;INFO: Start logging.
+util.py: 2016-11-03 21:33:53,959;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:33:53,967;ERROR: Missing msg record: <CAMOhTqXN-_NypFq83snjG+1sht8NTA=mDkFSeixM9bxapRUr9Q@mail.gmail.com>
+util.pyc: 2016-11-03 21:34:19,798;INFO: Start logging.
+util.pyc: 2016-11-03 21:35:05,080;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-03 21:35:05,086;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.pyc: 2016-11-03 21:35:35,024;INFO: Retrieving 2 msg(s) from server.
+util.pyc: 2016-11-03 21:35:35,037;ERROR: Lucas screwed up: noGuess
+util.pyc: 2016-11-03 21:35:35,603;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:37:21,287;INFO: Start logging.
+util.py: 2016-11-03 21:38:06,482;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:38:06,488;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:38:36,487;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:38:36,497;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:44:20,266;INFO: Start logging.
+util.py: 2016-11-03 21:45:05,574;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:45:05,579;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:45:35,578;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:45:35,588;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:48:45,428;INFO: Start logging.
+util.py: 2016-11-03 21:49:30,732;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:49:30,736;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:50:00,741;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:50:00,749;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:50:33,998;INFO: Start logging.
+util.py: 2016-11-03 21:50:34,180;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:50:34,188;ERROR: Missing msg record: <CAMOhTqXr_a-25K08vtK9kNY_mNaYgtTXL-ud3pmGYd+nn2MUbw@mail.gmail.com>
+util.py: 2016-11-03 21:51:19,521;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:51:19,528;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:53:19,231;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:53:19,241;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:57:14,801;INFO: Start logging.
+util.py: 2016-11-03 21:58:00,389;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:58:00,395;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-03 21:58:47,098;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:58:47,107;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:59:00,420;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:59:00,429;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-03 21:59:45,424;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 21:59:45,432;ERROR: Lucas screwed up: noGuess
+util.py: 2016-11-03 22:00:15,430;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 22:00:15,438;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com

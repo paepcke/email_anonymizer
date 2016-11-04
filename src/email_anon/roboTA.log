@@ -1290,3 +1290,13 @@ util.py: 2016-11-03 21:59:45,424;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-11-03 21:59:45,432;ERROR: Lucas screwed up: noGuess
 util.py: 2016-11-03 22:00:15,430;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-11-03 22:00:15,438;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.pyc: 2016-11-04 08:18:42,671;INFO: Start logging.
+util.pyc: 2016-11-04 08:18:43,281;INFO: Retrieving 2 msg(s) from server.
+util.pyc: 2016-11-04 08:18:43,328;INFO: Msg from student: joesunde@stanford.edu to roboTA@cs.stanford.edu
+util.pyc: 2016-11-04 08:18:43,833;INFO: Msg from student: angela8@stanford.edu to stats60TA@cs.stanford.edu
+util.pyc: 2016-11-04 08:19:43,080;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-04 08:19:43,083;ERROR: Student not found in database!: paepcke@cs.stanford.edu
+util.pyc: 2016-11-04 08:21:58,370;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-04 08:21:58,373;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.pyc: 2016-11-04 08:24:28,103;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-04 08:24:28,108;INFO: roboTA@cs.stanford.edu replying to: paepcke2000@gmail.com

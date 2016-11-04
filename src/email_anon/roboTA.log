@@ -1150,3 +1150,58 @@ util.py: 2016-11-03 14:30:38,270;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-11-03 14:30:43,357;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
 util.py: 2016-11-03 14:32:23,278;INFO: Retrieving 1 msg(s) from server.
 util.py: 2016-11-03 14:34:35,340;INFO: roboTA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-11-03 16:04:33,542;INFO: Start logging.
+util.py: 2016-11-03 16:04:33,880;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 16:04:39,421;INFO: Msg from student: srea@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-11-03 16:11:48,917;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 16:11:52,850;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.pyc: 2016-11-03 16:16:19,462;INFO: Start logging.
+util.pyc: 2016-11-03 16:16:19,644;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-03 16:16:24,943;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-11-03 16:21:11,046;INFO: Start logging.
+util.py: 2016-11-03 16:22:41,296;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 16:25:31,434;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-11-03 16:42:56,358;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 16:42:56,366;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.pyc: 2016-11-03 16:43:13,950;INFO: Start logging.
+util.pyc: 2016-11-03 16:44:29,169;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-03 16:44:29,178;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-11-03 16:46:46,251;INFO: Start logging.
+util.py: 2016-11-03 16:48:01,473;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 16:48:01,482;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-11-03 16:49:01,422;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 16:49:01,435;INFO: Msg from student: sunhees@stanford.edu to stats60TA@cs.stanford.edu
+util.py: 2016-11-03 16:56:02,605;INFO: Start logging.
+util.py: 2016-11-03 16:57:24,192;INFO: Start logging.
+util.py: 2016-11-03 17:01:28,708;INFO: Start logging.
+util.py: 2016-11-03 17:04:13,960;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 17:04:14,001;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-11-03 17:11:26,384;INFO: Start logging.
+util.py: 2016-11-03 17:15:41,709;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 17:15:41,749;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-11-03 17:17:26,736;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 17:17:26,741;ERROR: This error in runScript() loop: TypeError("'_sre.SRE_Pattern' object is not callable",)
+util.py: 2016-11-03 17:36:11,760;INFO: No unread emails!
+util.py: 2016-11-03 17:40:24,171;INFO: Start logging.
+util.py: 2016-11-03 17:51:52,142;INFO: Start logging.
+util.py: 2016-11-03 17:52:52,351;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 17:52:52,360;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-11-03 17:54:26,780;INFO: Start logging.
+util.py: 2016-11-03 17:55:11,980;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 17:55:12,030;INFO: roboTA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-11-03 17:57:41,975;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 17:57:41,983;ERROR: Student not found in database!: paepcke@cs.stanford.edu
+util.py: 2016-11-03 17:58:41,983;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 17:58:41,991;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-11-03 17:59:41,993;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 17:59:42,041;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-11-03 18:03:12,005;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 18:03:12,015;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-11-03 18:03:57,012;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 18:07:57,111;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-11-03 18:19:12,057;INFO: No unread emails!
+util.py: 2016-11-03 18:20:12,225;INFO: Start logging.
+util.py: 2016-11-03 18:21:27,494;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 18:21:27,504;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-11-03 18:22:27,521;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-03 18:22:32,770;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com

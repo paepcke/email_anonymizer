@@ -1332,3 +1332,15 @@ util.py: 2016-11-04 16:33:14,540;INFO: No unread emails!
 util.py: 2016-11-04 16:58:14,578;INFO: No unread emails!
 util.py: 2016-11-04 17:23:14,618;INFO: No unread emails!
 util.py: 2016-11-04 17:48:14,665;INFO: No unread emails!
+util.py: 2016-11-04 20:08:06,747;INFO: Start logging.
+util.py: 2016-11-04 20:08:52,509;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 20:08:52,514;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-04 20:09:22,523;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 20:09:22,532;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.pyc: 2016-11-04 20:09:46,962;INFO: Start logging.
+util.pyc: 2016-11-04 20:10:32,342;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-04 20:10:32,347;INFO: Msg from student: aashnagarg16@gmail.com to stats60ta@cs.stanford.edu
+util.pyc: 2016-11-04 20:11:02,221;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-04 20:11:02,230;ERROR: Lucas screwed up: noGuess
+util.pyc: 2016-11-04 20:11:32,245;INFO: Retrieving 1 msg(s) from server.
+util.pyc: 2016-11-04 20:11:32,255;INFO: stats60ta@cs.stanford.edu replying to: aashnagarg16@gmail.com

@@ -320,7 +320,7 @@ class EmailChecker(object):
 
                     else:
                         if '________________________________' in body:
-                          body = body.split('________________________________')[0] + '\n%s' % ROBO_TA_SIG + '\n________________________________'+ body.split('________________________________')[1] 
+                          body = body.split('________________________________')[0] + '\n%s' % TA_SIG + '\n________________________________'+ body.split('________________________________')[1] 
                         else: body += '\n\n%s' % TA_SIG
 
                     msg = MIMEMultipart('alternative')

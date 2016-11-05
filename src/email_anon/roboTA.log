@@ -1300,3 +1300,35 @@ util.pyc: 2016-11-04 08:21:58,370;INFO: Retrieving 1 msg(s) from server.
 util.pyc: 2016-11-04 08:21:58,373;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
 util.pyc: 2016-11-04 08:24:28,103;INFO: Retrieving 1 msg(s) from server.
 util.pyc: 2016-11-04 08:24:28,108;INFO: roboTA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-11-04 11:33:28,595;INFO: Start logging.
+util.py: 2016-11-04 11:42:58,965;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 11:42:59,005;INFO: Msg from student: paepcke2000@gmail.com to roboTA@cs.stanford.edu
+util.py: 2016-11-04 11:44:44,007;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 11:44:44,009;INFO: Msg from student: paepcke2000@gmail.com to stats60TA@cs.stanford.edu
+util.py: 2016-11-04 11:58:14,015;INFO: No unread emails!
+util.py: 2016-11-04 12:03:59,036;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 12:03:59,041;INFO: roboTA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-11-04 12:04:59,070;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 12:04:59,075;INFO: stats60TA@cs.stanford.edu replying to: paepcke2000@gmail.com
+util.py: 2016-11-04 12:23:14,044;INFO: No unread emails!
+util.py: 2016-11-04 12:48:14,158;INFO: No unread emails!
+util.py: 2016-11-04 13:13:14,198;INFO: No unread emails!
+util.py: 2016-11-04 13:38:15,211;INFO: No unread emails!
+util.py: 2016-11-04 13:50:59,201;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 13:50:59,205;INFO: Msg from student: aashna94@stanford.edu to "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu>
+util.py: 2016-11-04 13:51:14,208;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 13:51:14,211;INFO: Msg from student: aashnagarg16@gmail.com to robota@cs.stanford.edu
+util.py: 2016-11-04 13:54:44,214;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 13:54:44,219;INFO: "stats60ta@cs.stanford.edu" <stats60ta@cs.stanford.edu> replying to: aashna94@stanford.edu
+util.py: 2016-11-04 13:54:59,217;INFO: Retrieving 1 msg(s) from server.
+util.py: 2016-11-04 13:54:59,222;INFO: robota@cs.stanford.edu replying to: aashnagarg16@gmail.com
+util.py: 2016-11-04 14:03:14,226;INFO: No unread emails!
+util.py: 2016-11-04 14:28:14,285;INFO: No unread emails!
+util.py: 2016-11-04 14:53:14,483;INFO: No unread emails!
+util.py: 2016-11-04 15:18:14,589;INFO: No unread emails!
+util.py: 2016-11-04 15:43:14,444;INFO: No unread emails!
+util.py: 2016-11-04 16:08:14,510;INFO: No unread emails!
+util.py: 2016-11-04 16:33:14,540;INFO: No unread emails!
+util.py: 2016-11-04 16:58:14,578;INFO: No unread emails!
+util.py: 2016-11-04 17:23:14,618;INFO: No unread emails!
+util.py: 2016-11-04 17:48:14,665;INFO: No unread emails!

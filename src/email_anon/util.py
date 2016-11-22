@@ -25,6 +25,7 @@ HEAD_TA = 'ljanson@stanford.edu'
 #HEAD_TA = 'aashna94@stanford.edu'
 #HEAD_TA = 'paepcke@stanford.edu'
 HEAD_TA_NAME = 'Lucas'
+HEAD_TA_NAME_ALT = 'Lukas'
 TA_SIG = 'Best, Lucas'
 ROBO_TA_SIG = 'Greetings, RoboTA.'
 
@@ -82,7 +83,7 @@ class EmailChecker(object):
 
         # Regex to match TA greeting
         self.robo_greeting = re.compile(r'([rR]obo)[\n\r]{0,1}',flags=re.IGNORECASE)
-        self.lucas_greeting = re.compile(r'([lL]ucas)[\n\r]{0,1}',flags=re.IGNORECASE)
+        self.lucas_greeting = re.compile(r'([lL]u[ck]as)[\n\r]{0,1}',flags=re.IGNORECASE)
         
         # For remembering which student sent
         # original msg to robot/human, and to
@@ -225,7 +226,10 @@ class EmailChecker(object):
                     
                     msg = MIMEMultipart('alternative')
                     
-                    body,_ = self.get_body2(msgStringParsed)
+                    if(msgStringParsed['Content-Transfer-Encoding']=='base64'):
+                        body = msgStringParsed.get_payload().decode('base64')
+                    else:                    
+                        body,_ = self.get_body2(msgStringParsed)                  
                     body = self.lucas_greeting.sub('',body)
                     body = self.robo_greeting.sub('',body)
                     #body = self.robo_sig_pattern.sub('',body)

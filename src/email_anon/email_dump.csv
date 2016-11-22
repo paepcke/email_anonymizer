@@ -5431,3 +5431,3909 @@ wh=3D
 > Stanford Department of Computer Science
 
 "
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 02:39:43 +0000","Testing 3","I didn't get your reply, the code broke somehow.
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+
+
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 02:41:47 +0000","Re: Testing 3
+ RouteNo:<BY2PR0201MB1607407458F410D8C29C434EAEA30@BY2PR0201MB1607.namprd02.prod.outlook.com>","H
+Still bugs
+
+> On Nov 2, 2016, at 7:40 PM, ""stats60ta@cs.stanford.edu"" <stats60ta@cs.sta=
+nford.edu> wrote:
+>=20
+> I didn't get your reply, the code broke somehow.
+>=20
+> Hi TA,
+>=20
+> I have a question on Question 7c of the homework, which asks how many peo=
+pl=3D
+> e we'd need to include in our SRS in order for the 95% confidence interva=
+l =3D
+> to have a margin of error or + or - 1%.
+>=20
+> First, I determined that:
+>=20
+> (1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D3D 1
+>=20
+> Therefore, if we bring the constants over to the right side of the equati=
+on=3D
+> , we get:
+>=20
+> sqrt [p * (1-p)] / sqrt [n] =3D3D .0051
+>=20
+> Then, we square both sides to get:
+>=20
+> [p * (1-p)] / n =3D3D 2.603 * 10^-5
+>=20
+> We know that p is .71, so [p * (1-p)] =3D3D [.71 * .29] =3D3D .2059.
+>=20
+> .2059 / n =3D3D 2.603 * 10^-5
+>=20
+> .2059 =3D3D 2.603 * 10^-5 * n
+>=20
+> n =3D3D 7909.8544
+>=20
+>=20
+> Therefore, I concluded that we'd need to sample 7910 in order to have a +=
+ o=3D
+> r - 1% margin of error. I've tried plugging this answer into the homework=
+ s=3D
+> ite, but it says that this is the wrong answer. Could you please explain =
+wh=3D
+> at I'm doing wrong?
+>=20
+>=20
+>=20
+>=20
+> Aashna Garg | Masters
+> Stanford Department of Computer Science
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 02:57:36 +0000","Testing with myself","Hi Lucas,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+
+
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 19:58:32 -0700","Testing with myself 2","Hi roboTA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:01:21 -0700","Testing with myself 3","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Wed, 2 Nov 2016 20:03:24 -0700","Testing with myself 4","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:06:23 -0700","Testing with myself 5","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:08:45 -0700","Testing with myself 6","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:12:48 -0700","Testing with myself 7","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:15:09 -0700","Testing with myself 8","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:16:45 -0700","Testing with myself 9","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:29:51 -0700","Testing with myself 10","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:33:57 -0700","Testing with myself 11","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Wed, 2 Nov 2016 20:36:36 -0700","Testing with myself 12","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:39:01 -0700","Testing with myself 13","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:41:48 -0700","Testing with myself 14","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Wed, 2 Nov 2016 20:44:52 -0700","Testing with myself 15","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:54:30 -0700","Testing with myself 16","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 20:58:48 -0700","Testing with myself 17","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"pevd@stanford.edu","stats60TA@cs.stanford.edu","Wed, 2 Nov 2016 20:59:45 -0700","Question 3 on pset","Hi Lucas,
+
+I am having some trouble with question 3e. I created a box model with
+10,000 (1's) and 40,000 (0)'s. The SD of the box = (1-0) sqrt
+((1/5)*(4/5))=.4. The Average is .2, the EV=900 (# of draws)*.2=180. The
+SE=sqrt(900)*.4=12. Then I went on to calculate the chance that of a
+success (drawing a ticket with a 1) occurred between 19-20% of the time.
+Using the .5 rule, I calculated that 18.5% of 900 was 166.5 and 21.5% of
+900 was 193.5. I calculated the z score for each of these number of tickets
+using the EV and the SE and found that the z score was -1.125 and 1.125. I
+think found that the area between those z scores was 75%. I inputed .75 as
+my answer. Where am I going wrong?
+
+Thank you very much!
+Pascale
+"
+"lizj657@stanford.edu","stats60TA@cs.stanford.edu","Wed, 2 Nov 2016 21:01:08 -0700","Question about Q8","Dear Lucas,
+
+I'm having trouble identifying the nuances of question 8B and 8C. I got
+that 8A was 75% +/- 7.1445, but why would the chance of interval
+[67.9%,82.1%], which covers the same range, not be 90%? Additionally, in
+8C, do we act as though we are drawing from a box made up of the 100 people
+we just sampled, and, if yes, how can we take into account the chance error
+of that box?
+
+Thank you!
+
+Liz
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 21:01:23 -0700","Testing with myself 18","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 21:05:44 -0700","Testing with myself 19","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 21:10:57 -0700","Testing with myself 20","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"dfeddoes@stanford.edu","roboTA@cs.stanford.edu","Wed, 2 Nov 2016 21:15:21 -0700","Question 3?","For question 3 e of week 6's homework, are we supposed to solve it by using
+normal approximation?
+
+Thanks,
+
+Daisy Elise Feddoes
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 21:27:15 -0700","Testing with myself 21","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 21:28:36 -0700","Testing with myself 22","Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 21:31:03 -0700","Testing with myself 24","Hi roboTA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 04:36:04 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 04:38:25 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","TA replies.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 04:39:05 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 04:45:13 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:03:02 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:06:23 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:10:01 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:12:06 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:14:20 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:19:09 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:21:33 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+Testing.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:24:31 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+Testing
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:29:28 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+Testing
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:33:58 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+Testing.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:40:46 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:42:26 +0000","*****SPAM***** Re: [SPAM:#] Testing with myself 24
+ RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 9:27:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing with myself 24 RouteNo:<CAMOhTqVa-64eGU3GSKhEPgZQ=
+1a33y8uW0rxmunhZjHGoTpKpMw@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 22:47:44 -0700","Testing 28","Hi roboTA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:48:31 +0000","*****SPAM***** Re: [SPAM:#] Testing 28
+ RouteNo:<CAMOhTqWXPjHzac6SXLE+kLaEMufBknt7vfcmpAbs6ObD6b+zzA@mail.gmail.com>","H
+
+This is correct.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 10:49:05 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:#] Testing 28 RouteNo:<CAMOhTqWXPjHzac6SXLE+kLaEMufBknt7vfcm=
+pAbs6ObD6b+zzA@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 22:52:19 -0700","Test 28","Hi roboTA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:53:09 +0000","*****SPAM***** Re: [SPAM:###] Test 28
+ RouteNo:<CAMOhTqUGokg599+xdBKqCTxqF-rhUQazzktXh8npSvNd1m0aQg@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 10:48:31 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:###] Test 28 RouteNo:<CAMOhTqUGokg599+xdBKqCTxqF-rhUQazzktXh=
+8npSvNd1m0aQg@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 22:55:26 -0700","Testing 30","Hi roboTA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:56:10 +0000","*****SPAM***** Re: [SPAM:###] Testing 30
+ RouteNo:<CAMOhTqVjUyam75OTFG0LdMGqLJwswctGWQsjFwUhnvXXHNyL1w@mail.gmail.com>","H
+
+Test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 10:56:47 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:###] Testing 30 RouteNo:<CAMOhTqVjUyam75OTFG0LdMGqLJwswctGWQ=
+sjFwUhnvXXHNyL1w@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 05:58:29 +0000","*****SPAM***** Re: [SPAM:###] Testing 30
+ RouteNo:<CAMOhTqVjUyam75OTFG0LdMGqLJwswctGWQsjFwUhnvXXHNyL1w@mail.gmail.com>","H
+
+Test teply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 10:56:47 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:###] Testing 30 RouteNo:<CAMOhTqVjUyam75OTFG0LdMGqLJwswctGWQ=
+sjFwUhnvXXHNyL1w@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many peopl=
+e we'd need to include in our SRS in order for the 95% confidence interval =
+to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the equation=
+, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we'd need to sample 7910 in order to have a + o=
+r - 1% margin of error. I've tried plugging this answer into the homework s=
+ite, but it says that this is the wrong answer. Could you please explain wh=
+at I'm doing wrong?
+-Aashna Garg
+
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 22:59:35 -0700","Testing 31","Testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 06:00:22 +0000","Re: Testing 31
+ RouteNo:<CAMOhTqWPnHEtzT=P7AhWVSDGq3OGbHxQf_pOeZoGFQwXWWZtjg@mail.gmail.com>","H
+
+Test reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 11:00:07 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing 31 RouteNo:<CAMOhTqWPnHEtzT=3DP7AhWVSDGq3OGbHxQf_pOeZoGFQw=
+XWWZtjg@mail.gmail.com>
+
+Testing
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 06:02:50 +0000","Re: Testing 31
+ RouteNo:<CAMOhTqWPnHEtzT=P7AhWVSDGq3OGbHxQf_pOeZoGFQwXWWZtjg@mail.gmail.com>","H
+
+More text
+
+blah blah
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 11:00:07 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing 31 RouteNo:<CAMOhTqWPnHEtzT=3DP7AhWVSDGq3OGbHxQf_pOeZoGFQw=
+XWWZtjg@mail.gmail.com>
+
+Testing
+-Aashna Garg
+
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 23:06:59 -0700","Testing 31","Testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 06:07:53 +0000","Re: Testing 31
+ RouteNo:<CAMOhTqW92GvrmmxiGppHmFAxG=rkJzg1N_VCu767wi4aF9c4jQ@mail.gmail.com>","Test reply from TA
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 11:08:29 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing 31 RouteNo:<CAMOhTqW92GvrmmxiGppHmFAxG=3DrkJzg1N_VCu767wi4=
+aF9c4jQ@mail.gmail.com>
+
+Testing
+-Aashna Garg
+
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 23:08:35 -0700","Test 33","Testing.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 06:09:18 +0000","Re: Test 33
+ RouteNo:<CAMOhTqUHNLsToikZmweNo=0phoh64Zb9gCy66fAOdM7X=D1xTw@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 11:04:36 PM
+To: stats60ta@cs.stanford.edu
+Subject: Test 33 RouteNo:<CAMOhTqUHNLsToikZmweNo=3D0phoh64Zb9gCy66fAOdM7X=
+=3DD1xTw@mail.gmail.com>
+
+Testing.
+
+-Aashna Garg
+
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 06:13:02 +0000","Re: Test 33
+ RouteNo:<CAMOhTqUHNLsToikZmweNo=0phoh64Zb9gCy66fAOdM7X=D1xTw@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 11:04:36 PM
+To: stats60ta@cs.stanford.edu
+Subject: Test 33 RouteNo:<CAMOhTqUHNLsToikZmweNo=3D0phoh64Zb9gCy66fAOdM7X=
+=3DD1xTw@mail.gmail.com>
+
+Testing.
+
+-Aashna Garg
+
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 23:17:23 -0700","Testing 33","Testing email to TA.
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 06:18:15 +0000","Re: Testing 33
+ RouteNo:<CAMOhTqXDm=0A3iGT06DBV2Eo86w2jiCPwXPpLAZ+DutzwpTnRw@mail.gmail.com>","R
+
+Test TA reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 11:13:25 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing 33 RouteNo:<CAMOhTqXDm=3D0A3iGT06DBV2Eo86w2jiCPwXPpLAZ+Dut=
+zwpTnRw@mail.gmail.com>
+
+Testing email to TA.
+
+-Aashna Garg
+
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Wed, 2 Nov 2016 23:21:10 -0700","Testing 35","Test
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Thu, 3 Nov 2016 06:21:55 +0000","Re: Testing 35
+ RouteNo:<CAMOhTqVwfWrJpBUWnaby5Yz5e27krksNm5Ux=Sr5F_SaZqG89A@mail.gmail.com>","H
+
+Test ta reply
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Wednesday, November 2, 2016 11:21:39 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing 35 RouteNo:<CAMOhTqVwfWrJpBUWnaby5Yz5e27krksNm5Ux=3DSr5F_S=
+aZqG89A@mail.gmail.com>
+
+Test
+
+-Aashna Garg
+
+"
+"roycew@stanford.edu","stats60TA@cs.stanford.edu","Wed, 2 Nov 2016 23:49:27 -0700","Question 1","Is there a problem missing with Question 1?
+It keeps on saying 3/4
+
+Royce
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 09:45:58 -0700","Test Non-Ascii","foo =C3=A4tzend
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 09:47:34 -0700","*****SPAM***** Re: [SPAM:####] Test Non-Ascii RouteNo:<CAFKHkngpFaWuiyNdDmqdJ5nmDGHM2pRJ=ZHxE6ZWRGQeXmF6Gw@mail.gmail.com>","h
+I think =C3=BCber it.
+
+On Thu, Nov 3, 2016 at 9:47 AM, <stats60ta@cs.stanford.edu> wrote:
+
+> foo =C3=A4tzend
+>
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 09:50:34 -0700","Umlaut 1","Fr=C3=BCh
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 09:51:42 -0700","*****SPAM***** Re: [SPAM:####] Umlaut 1 RouteNo:<CAFKHknhzjMtgdugcjB=evSeTTFusee5cV_Zv7Df7KO0rkHj5=g@mail.gmail.com>","h
+
+Sp=C3=A4t
+
+
+On Thu, Nov 3, 2016 at 9:52 AM, <stats60ta@cs.stanford.edu> wrote:
+
+> Fr=C3=BCh
+>
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 10:37:46 -0700","Umlaut 2","RnLDvGhlcg0K"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 10:38:44 -0700","*****SPAM***** Re: [SPAM:#####] Umlaut 2 RouteNo:<CAFKHknj+BawPouBYWsbgcJ88yUuHc0_KMx4qpEE8iOhXxDpcPw@mail.gmail.com>","h
+Sp=C3=A4ter
+
+
+On Thu, Nov 3, 2016 at 10:39 AM, <stats60ta@cs.stanford.edu> wrote:
+
+> Fr=C3=BCher
+>
+>
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 11:00:27 -0700","Umlaut 3","Fr=C3=BChest
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 11:15:25 -0700","Umlaut 4","Gr=C3=B6sser
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 11:18:18 -0700","Umlaut 5","TMOkbmdlcg0K"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 11:27:56 -0700","Umlaut 7","TMOkbmdlcg0K"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 11:30:09 -0700","*****SPAM***** Re: [SPAM:##] Umlaut 7 RouteNo:<CAFKHkniWrKVBJ3_7QiQKjU8e2fFp_FMDwh=yjLowkXXvgNE9Zw@mail.gmail.com>","h
+Am l=C3=A4ngsten
+
+
+On Thu, Nov 3, 2016 at 11:25 AM, <stats60ta@cs.stanford.edu> wrote:
+
+> L=C3=A4nger
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 12:13:11 -0700","Umlaut 7","SMO2aGVyDQo="
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 12:14:48 -0700","*****SPAM***** Re: [SPAM:###] Umlaut 7 RouteNo:<CAFKHkngqSLioCnGHwLi0XNhiubC3ZSxA0tG7ufuH0QxX=JUfuw@mail.gmail.com>","H
+
+H=C3=B6chest
+
+
+On Thu, Nov 3, 2016 at 12:14 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> H=C3=B6her
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 12:21:22 -0700","Umlaut 8","Q3LDpG1pZw0K"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 12:22:30 -0700","*****SPAM***** Re: [SPAM:####] Umlaut 8 RouteNo:<CAFKHkniEDiBQvFbE8NJzSDfnJeZRQ1ij4G-32x3xVAGYu1D4_Q@mail.gmail.com>","h
+
+Kr=C3=A4miger
+
+
+On Thu, Nov 3, 2016 at 12:17 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Cr=C3=A4mig
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 12:27:57 -0700","Umlaut 9","S2zDtm5lbg0K"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 12:28:48 -0700","*****SPAM***** Re: [SPAM:#####] Umlaut 9 RouteNo:<CAFKHkngvsdSAkt0O6nQ6TaCo_ZH5sTaFiHkfD2MkhfPM_pRxDA@mail.gmail.com>","h
+Kl=C3=B6niger
+
+
+On Thu, Nov 3, 2016 at 12:24 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Kl=C3=B6nen
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 12:32:55 -0700","Umlaut 10","TMOkdWZpZw0K"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 12:33:55 -0700","*****SPAM***** Re: [SPAM:##] Umlaut 10 RouteNo:<CAFKHknh+6j_E6OkcGmD1=3Da7E+2qMqxnae5QtHFtOoRJaWuCA@mail.gmail.com>","h
+l=C3=A4ufiger
+
+
+On Thu, Nov 3, 2016 at 12:33 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> L=C3=A4ufig
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 12:37:02 -0700","True Msg","Hi Lucas,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+"
+"angela8@stanford.edu","stats60TA@cs.stanford.edu","Thu, 3 Nov 2016 13:35:27 -0700","STATS60 Slides and Grades","Hi Lucas,
+
+I was wondering when the STATS60 slides for Wednesday and Thursday's
+lectures will be posted? I'm having a hard time with the homework and would
+really like to look back on the slides for help.
+
+I was also wondering if the grades for the last 2 homeworks/quizzes will be
+posted soon? Thanks so much!
+
+Sincerely,
+Angela
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 13:46:37 -0700","Test CRs","Here is a
+multiline msg.
+It has
+multiple lines.
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 13:49:59 -0700","Re: Test CRs RouteNo:<CAFKHknhEa=MAVFfGSba5cJjvCFfq=zsmp4hgWwD-f+kYrymHyQ@mail.gmail.com>","h
+We have indeed
+lost all
+the newlines
+from student to TA
+
+On Thu, Nov 3, 2016 at 1:48 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> Here is a multiline msg. It has multiple lines.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 13:57:37 -0700","Multiline 2","Why does
+multiline msg
+get put
+into one line?
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 14:03:07 -0700","Multiline 3","More multi
+line experiment
+msg.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 14:07:57 -0700","Multiline 5","More
+multiline gargabe
+to test.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 14:12:09 -0700","Multiline 6","More Multiline
+idiocy
+b/c of unicode?
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 14:14:40 -0700","Multline7","More
+multi
+with hope
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 14:21:17 -0700","Multiline 7","More
+Multiline
+Daman
+it
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 14:30:16 -0700","Multipart 8","More terrible
+multi
+lines
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 14:32:02 -0700","Re: Multipart 8 RouteNo:<CAFKHkniDjbu0kOcXZ5vfM7hT-A3qHvsBZEQ0HchZFcEkAUQOpw@mail.gmail.com>","h
+This
+time the message
+came OK
+
+On Thu, Nov 3, 2016 at 2:31 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> More terrible
+> multi
+> lines
+>
+"
+"srea@stanford.edu","stats60TA@cs.stanford.edu","Thu, 3 Nov 2016 15:53:28 -0700","","When will lecture slides from today and yesterday (lectures 19 and 20) be
+posted?
+
+-- 
+Sheridan Rea
+Stanford University | Biology 2019
+Photographer at The Stanford Daily
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 16:11:34 -0700","Multiline 11","Multi line
+after several
+changes.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 16:15:44 -0700","Multiline 11","Why does
+sendmail keep
+failing???
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 16:22:23 -0700","Multiline 12","I can't
+figure out
+why sendmail
+fails.
+This with HTML mime
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 16:42:33 -0700","Multiline 12","No break
+points
+this time.
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 16:44:04 -0700","Multiline 13","Why
+does this
+not work?
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 16:47:37 -0700","Multiline 14","With debug
+on sendmail
+this time.
+"
+"sunhees@stanford.edu","stats60TA@cs.stanford.edu","Thu, 3 Nov 2016 16:48:58 -0700","Homework 4","Hello,
+
+I looked at my grades and saw I got 0 credit for homework 4. I also believe
+my score for homework 4 went to homework 5 instead. I'm reaching out
+because I did both. with homework 5 being partially done--but consciously
+so based on the time stamp for the homework.
+
+I do also recognize that the grades were just put in, I just wanted to
+address it now rather than later.
+
+Thank you very much,
+*SunHee Simon*
+*Stanford University*
+B.A. Candidate '19 | African & African American Studies
+Stanford Debate Society E-Board | James Logan High School Forensics Coach
+*M +1-201-283-6850*
+*E* sunhees@stanford.edu
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 17:03:50 -0700","Test 1","Aashna,
+
+It's Andreas. I'm having some vexing issues with
+sendmail silently not sending. Yet sometimes it
+does.
+
+In the above paragraph you should see three
+lines, respectively ending with ""with,"" ""it,"" and
+""does.""
+
+Is this what you see?
+
+Also do you see ""=C3=A4rgerlich"" as a word starting
+with an 'a' that has two dots on top of it?
+
+I might send more tests.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 3 Nov 2016 17:15:17 -0700","Now With a 'Hello Lucas'","Hello Lucas,
+
+Again, here are multiple
+lines of text. We need
+to preserve them.
+
+Here some unicode: =C3=A4=C3=B6=C3=BC
+
+You should see three lines in the
+first paragraph: respectively ending
+in ""multiple,"", ""need,"", and ""them.
+
+The next line should have a,o, and u,
+each with two dots on top.
+
+Also: You should just see:
+  In the subject: ""Now With a 'Hello'
+  In the body:    ""Hello,""
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 00:17:32 +0000","Re: Now With a 'Hello '
+ RouteNo:<CAFKHkni9Q=SE8oQa+ffTB8YmnyT=n-b4i9XDDn=S5Q=QtuSchA@mail.gmail.com>","That's exactly what I got except for ""Hello  ,"" instead of ""Hello,"".
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 5:11:26 PM
+To: stats60ta@cs.stanford.edu
+Subject: Now With a 'Hello ' RouteNo:<CAFKHkni9Q=3DSE8oQa+ffTB8YmnyT=3Dn-b4=
+i9XDDn=3DS5Q=3DQtuSchA@mail.gmail.com>
+
+Hello  ,
+
+Again, here are multiple
+lines of text. We need
+to preserve them.
+
+Here some unicode: =E4=F6=FC
+
+You should see three lines in the
+first paragraph: respectively ending
+in ""multiple,"", ""need,"", and ""them.
+
+The next line should have a,o, and u,
+each with two dots on top.
+
+Also: You should just see:
+  In the subject: ""Now With a 'Hello'
+  In the body:    ""Hello,""
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 17:52:40 -0700","Test1","To robo
+
+get it?
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 17:54:56 -0700","Re: Test1 RouteNo:<CAFKHkngYZyzJNB7mbtdh6aPhkqS5DtRraew0kUrCVaDQUq3rmA@mail.gmail.com>","h
+
+Answering it
+
+On Thu, Nov 3, 2016 at 5:53 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> To
+>
+> get it?
+>
+"
+"paepcke@cs.stanford.edu","stats60TA@cs.stanford.edu","Thu, 3 Nov 2016 17:57:19 -0700","Test2","To TA
+what the
+hell?
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 3 Nov 2016 17:58:19 -0700","Test 3","To TA
+does
+this now
+work?
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 17:59:21 -0700","Re: Test 3 RouteNo:<CAFKHknhopF9XbA04Yy-=0A2LQrUxd2gyNFmgGyaCC2_-2EN=Xw@mail.gmail.com>","r
+Yes it does.
+With two
+lines.
+
+On Thu, Nov 3, 2016 at 5:59 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> To TA
+> does
+> this now
+> work?
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 3 Nov 2016 18:02:51 -0700","Test 3","With a
+breakpoint
+yes.
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 18:03:44 -0700","*****SPAM***** Re: [SPAM:#] Test 3 RouteNo:<CAFKHkngjPUtyGzt75ojXJ+p-71cKxTKQUjAxzdMR1h-DWpoqnw@mail.gmail.com>","h
+This is
+a response.
+
+
+On Thu, Nov 3, 2016 at 5:59 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> With a
+> breakpoint
+> yes.
+>
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Thu, 3 Nov 2016 18:21:03 -0700","With Sendmail Debug","This is
+my
+question
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Thu, 3 Nov 2016 18:22:08 -0700","Re: With Sendmail Debug RouteNo:<CAFKHknjFf5s0an6gVZWNBwykRH-=_Q9ZvCjwyuZuR1O5uh8ipw@mail.gmail.com>","h
+This is
+my response
+now.
+
+On Thu, Nov 3, 2016 at 6:22 PM, <stats60ta@cs.stanford.edu> wrote:
+
+> This is
+> my
+> question
+>
+"
+"klee23@stanford.edu","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 19:59:29 -0700","Homework Question #4","Hi RoboTA,
+
+If you get this in time, I'm confused about #4 on the homework. Why is the
+SD for the weight of a package of butter not 4 times the SD of one stick of
+butter?
+
+Thanks,
+Kristen
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:01:38 -0700","Testing email","Hi roboTA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=E2=80=99d need to include in our SRS in order for the 95% confide=
+nce
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:02:36 +0000","Re: Testing email
+ RouteNo:<CAMOhTqWq=EOfTKm6jM4BQmELZu1R=yNaR+S6Xp3PNQv11z9nCA@mail.gmail.com>","TA replies this.
+
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 8:57:42 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing email RouteNo:<CAMOhTqWq=3DEOfTKm6jM4BQmELZu1R=3DyNaR+S6Xp=
+3PNQv11z9nCA@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=92d need to include in our SRS in order for the 95% confidence
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=92d need to sample 7910 in order to have a +
+or - 1% margin of error. I=92ve tried plugging this answer into the homewor=
+k
+site, but it says that this is the wrong answer. Could you please explain
+what I=92m doing wrong?
+
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:02:55 +0000","Re: Testing email
+ RouteNo:<CAMOhTqWq=EOfTKm6jM4BQmELZu1R=yNaR+S6Xp3PNQv11z9nCA@mail.gmail.com>","H
+
+TA replies this.
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 8:57:42 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing email RouteNo:<CAMOhTqWq=3DEOfTKm6jM4BQmELZu1R=3DyNaR+S6Xp=
+3PNQv11z9nCA@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=92d need to include in our SRS in order for the 95% confidence
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=92d need to sample 7910 in order to have a +
+or - 1% margin of error. I=92ve tried plugging this answer into the homewor=
+k
+site, but it says that this is the wrong answer. Could you please explain
+what I=92m doing wrong?
+
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:04:03 +0000","Re: Testing email
+ RouteNo:<CAMOhTqWq=EOfTKm6jM4BQmELZu1R=yNaR+S6Xp3PNQv11z9nCA@mail.gmail.com>","H
+
+TA REPLIES
+
+Hi TA, I have a question on Question 7c of the homework, which asks how man=
+y people we=92d need to include in our SRS in order for the 95% confidence =
+interval to have a margin of error or + or - 1%. First, I determined that: =
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring t=
+he constants over to the right side of the equation, we get: sqrt [p * (1-p=
+)] / sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =
+=3D 2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D=
+ .2059. .2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.=
+8544 Therefore, I concluded that we=92d need to sample 7910 in order to hav=
+e a + or - 1% margin of error. I=92ve tried plugging this answer into the h=
+omework site, but it says that this is the wrong answer. Could you please e=
+xplain what I=92m doing wrong? -Aashna Garg Problem: noGuess
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 8:57:42 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing email RouteNo:<CAMOhTqWq=3DEOfTKm6jM4BQmELZu1R=3DyNaR+S6Xp=
+3PNQv11z9nCA@mail.gmail.com>
+
+Hi TA,
+
+I have a question on Question 7c of the homework, which asks how many
+people we=92d need to include in our SRS in order for the 95% confidence
+interval to have a margin of error or + or - 1%.
+
+First, I determined that:
+
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1
+
+Therefore, if we bring the constants over to the right side of the
+equation, we get:
+
+sqrt [p * (1-p)] / sqrt [n] =3D .0051
+
+Then, we square both sides to get:
+
+[p * (1-p)] / n =3D 2.603 * 10^-5
+
+We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .2059.
+
+.2059 / n =3D 2.603 * 10^-5
+
+.2059 =3D 2.603 * 10^-5 * n
+
+n =3D 7909.8544
+
+
+Therefore, I concluded that we=92d need to sample 7910 in order to have a +
+or - 1% margin of error. I=92ve tried plugging this answer into the homewor=
+k
+site, but it says that this is the wrong answer. Could you please explain
+what I=92m doing wrong?
+
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:04:44 -0700","Test2","Hi TA, I have a question on Question 7c of the homework, which asks how
+many people we=E2=80=99d need to include in our SRS in order for the 95% co=
+nfidence
+interval to have a margin of error or + or - 1%. First, I determined that:
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring t=
+he
+constants over to the right side of the equation, we get: sqrt [p * (1-p)]
+/ sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =3D
+2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .20=
+59.
+.2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.8544
+Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to ha=
+ve a +
+or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the h=
+omework
+site, but it says that this is the wrong answer. Could you please explain
+what I=E2=80=99m doing wrong?
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:05:42 +0000","Re: [SPAM:##] Test2
+ RouteNo:<CAMOhTqWt_szPiF7Nmdyz6X85ed8cWf5a2kzaEzbnG7qiVda69Q@mail.gmail.com>","R
+
+TA replies
+
+Hi TA, I have a question on Question 7c of the homework, which asks how man=
+y people we=92d need to include in our SRS in order for the 95% confidence =
+interval to have a margin of error or + or - 1%. First, I determined that: =
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring t=
+he constants over to the right side of the equation, we get: sqrt [p * (1-p=
+)] / sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =
+=3D 2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D=
+ .2059. .2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.=
+8544 Therefore, I concluded that we=92d need to sample 7910 in order to hav=
+e a + or - 1% margin of error. I=92ve tried plugging this answer into the h=
+omework site, but it says that this is the wrong answer. Could you please e=
+xplain what I=92m doing wrong? -Aashna Garg
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:00:42 PM
+To: stats60ta@cs.stanford.edu
+Subject: [SPAM:##] Test2 RouteNo:<CAMOhTqWt_szPiF7Nmdyz6X85ed8cWf5a2kzaEzbn=
+G7qiVda69Q@mail.gmail.com>
+
+Hi TA, I have a question on Question 7c of the homework, which asks how
+many people we=92d need to include in our SRS in order for the 95% confiden=
+ce
+interval to have a margin of error or + or - 1%. First, I determined that:
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring t=
+he
+constants over to the right side of the equation, we get: sqrt [p * (1-p)]
+/ sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =3D
+2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .20=
+59.
+.2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.8544
+Therefore, I concluded that we=92d need to sample 7910 in order to have a +
+or - 1% margin of error. I=92ve tried plugging this answer into the homewor=
+k
+site, but it says that this is the wrong answer. Could you please explain
+what I=92m doing wrong?
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:06:20 -0700","Testing 4","Test email
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:07:13 +0000","Re: Testing 4
+ RouteNo:<CAMOhTqVWbXkQ1_NKs72rtmE5pquKQbwC5=Nmc3Mhw=cHAXoMTA@mail.gmail.com>","H
+
+TA replies.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:02:42 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing 4 RouteNo:<CAMOhTqVWbXkQ1_NKs72rtmE5pquKQbwC5=3DNmc3Mhw=3D=
+cHAXoMTA@mail.gmail.com>
+
+Test email
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:07:42 -0700","Re: Testing 4","My reply test
+
+-Aashna Garg
+
+
+On Thu, Nov 3, 2016 at 9:07 PM, <robota@cs.stanford.edu> wrote:
+
+>
+>
+> TA replies.
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, November 3, 2016 9:02:42 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Testing 4 RouteNo:<CAMOhTqVWbXkQ1_NKs72rtmE5pquKQbwC5=Nmc3Mhw=cH
+> AXoMTA@mail.gmail.com>
+>
+> Test email
+> -Aashna Garg
+>
+>
+> Best, Lucas
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:08:58 +0000","Re: Testing 4
+ RouteNo:<CAMOhTqX594e6vVx0NK6hyE+PX=HRnB2c2xEjhAVpzZ1_qCaLVA@mail.gmail.com>","R
+
+TA replies
+
+Hi TA, I have a question on Question 7c of the homework, which asks how man=
+y people we=92d need to include in our SRS in order for the 95% confidence =
+interval to have a margin of error or + or - 1%. First, I determined that: =
+(1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring t=
+he constants over to the right side of the equation, we get: sqrt [p * (1-p=
+)] / sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =
+=3D 2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D=
+ .2059. .2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.=
+8544 Therefore, I concluded that we=92d need to sample 7910 in order to hav=
+e a + or - 1% margin of error. I=92ve tried plugging this answer into the h=
+omework site, but it says that this is the wrong answer. Could you please e=
+xplain what I=92m doing wrong?e
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:08:10 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Testing 4 RouteNo:<CAMOhTqX594e6vVx0NK6hyE+PX=3DHRnB2c2xEjhAVp=
+zZ1_qCaLVA@mail.gmail.com>
+
+My reply test
+
+-Aashna Garg
+
+
+On Thu, Nov 3, 2016 at 9:07 PM, <ta@cs.stanford.edu> wrote:
+
+>
+>
+> TA replies.
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, November 3, 2016 9:02:42 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Testing 4 RouteNo:<CAMOhTqVWbXkQ1_NKs72rtmE5pquKQbwC5=3DNmc3Mhw=
+=3DcH
+> AXoMTA@mail.gmail.com>
+>
+> Test email
+> -Aashna Garg
+>
+>
+> Best,
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:10:22 -0700","Re: Testing 4","Something.
+
+-Aashna Garg
+
+
+On Thu, Nov 3, 2016 at 9:09 PM, <robota@cs.stanford.edu> wrote:
+
+>
+>
+> TA replies
+>
+> Hi TA, I have a question on Question 7c of the homework, which asks how
+> many people we=E2=80=99d need to include in our SRS in order for the 95% =
+confidence
+> interval to have a margin of error or + or - 1%. First, I determined that=
+:
+> (1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring=
+ the
+> constants over to the right side of the equation, we get: sqrt [p * (1-p)=
+]
+> / sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =
+=3D
+> 2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .=
+2059.
+> .2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.8544
+> Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to =
+have a +
+> or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the=
+ homework
+> site, but it says that this is the wrong answer. Could you please explain
+> what I=E2=80=99m doing wrong?e
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, November 3, 2016 9:08:10 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: Testing 4 RouteNo:<CAMOhTqX594e6vVx0NK6hyE+PX=3DHRn
+> B2c2xEjhAVpzZ1_qCaLVA@mail.gmail.com>
+>
+> My reply test
+>
+> -Aashna Garg
+>
+>
+> On Thu, Nov 3, 2016 at 9:07 PM, <ta@cs.stanford.edu> wrote:
+>
+> >
+> >
+> > TA replies.
+> >
+> > ________________________________
+> > From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> > Sent: Thursday, November 3, 2016 9:02:42 PM
+> > To: stats60ta@cs.stanford.edu
+> > Subject: Testing 4 RouteNo:<CAMOhTqVWbXkQ1_
+> NKs72rtmE5pquKQbwC5=3DNmc3Mhw=3DcH
+> > AXoMTA@mail.gmail.com>
+> >
+> > Test email
+> > -Aashna Garg
+> >
+> >
+> > Best,
+>
+>
+> Best, Lucas
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:10:30 -0700","Re: Testing 4","Something 2
+
+-Aashna Garg
+
+
+On Thu, Nov 3, 2016 at 9:09 PM, <robota@cs.stanford.edu> wrote:
+
+>
+>
+> TA replies
+>
+> Hi TA, I have a question on Question 7c of the homework, which asks how
+> many people we=E2=80=99d need to include in our SRS in order for the 95% =
+confidence
+> interval to have a margin of error or + or - 1%. First, I determined that=
+:
+> (1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring=
+ the
+> constants over to the right side of the equation, we get: sqrt [p * (1-p)=
+]
+> / sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =
+=3D
+> 2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .=
+2059.
+> .2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.8544
+> Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to =
+have a +
+> or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the=
+ homework
+> site, but it says that this is the wrong answer. Could you please explain
+> what I=E2=80=99m doing wrong?e
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, November 3, 2016 9:08:10 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: Testing 4 RouteNo:<CAMOhTqX594e6vVx0NK6hyE+PX=3DHRn
+> B2c2xEjhAVpzZ1_qCaLVA@mail.gmail.com>
+>
+> My reply test
+>
+> -Aashna Garg
+>
+>
+> On Thu, Nov 3, 2016 at 9:07 PM, <ta@cs.stanford.edu> wrote:
+>
+> >
+> >
+> > TA replies.
+> >
+> > ________________________________
+> > From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> > Sent: Thursday, November 3, 2016 9:02:42 PM
+> > To: stats60ta@cs.stanford.edu
+> > Subject: Testing 4 RouteNo:<CAMOhTqVWbXkQ1_
+> NKs72rtmE5pquKQbwC5=3DNmc3Mhw=3DcH
+> > AXoMTA@mail.gmail.com>
+> >
+> > Test email
+> > -Aashna Garg
+> >
+> >
+> > Best,
+>
+>
+> Best, Lucas
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:11:45 +0000","Re: Testing 4
+ RouteNo:<CAMOhTqWLEMPapRfzX-JkpFUne=crpGQE7Dgw1c1G7NcoYEHLGA@mail.gmail.com>","H
+
+TA replies 1.
+
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:06:42 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Testing 4 RouteNo:<CAMOhTqWLEMPapRfzX-JkpFUne=3DcrpGQE7Dgw1c1G=
+7NcoYEHLGA@mail.gmail.com>
+
+Something.
+
+-Aashna Garg
+
+
+On Thu, Nov 3, 2016 at 9:09 PM, <ta@cs.stanford.edu> wrote:
+
+>
+>
+> TA replies
+>
+> Hi TA, I have a question on Question 7c of the homework, which asks how
+> many people we=92d need to include in our SRS in order for the 95% confid=
+ence
+> interval to have a margin of error or + or - 1%. First, I determined that=
+:
+> (1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring=
+ the
+> constants over to the right side of the equation, we get: sqrt [p * (1-p)=
+]
+> / sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =
+=3D
+> 2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .=
+2059.
+> .2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.8544
+> Therefore, I concluded that we=92d need to sample 7910 in order to have a=
+ +
+> or - 1% margin of error. I=92ve tried plugging this answer into the homew=
+ork
+> site, but it says that this is the wrong answer. Could you please explain
+> what I=92m doing wrong?e
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, November 3, 2016 9:08:10 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: Testing 4 RouteNo:<CAMOhTqX594e6vVx0NK6hyE+PX=3DHRn
+> B2c2xEjhAVpzZ1_qCaLVA@mail.gmail.com>
+>
+> My reply test
+>
+> -Aashna Garg
+>
+>
+> On Thu, Nov 3, 2016 at 9:07 PM, <ta@cs.stanford.edu> wrote:
+>
+> >
+> >
+> > TA replies.
+> >
+> > ________________________________
+> > From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> > Sent: Thursday, November 3, 2016 9:02:42 PM
+> > To: stats60ta@cs.stanford.edu
+> > Subject: Testing 4 RouteNo:<CAMOhTqVWbXkQ1_
+> NKs72rtmE5pquKQbwC5=3DNmc3Mhw=3DcH
+> > AXoMTA@mail.gmail.com>
+> >
+> > Test email
+> > -Aashna Garg
+> >
+> >
+> > Best,
+>
+>
+> Best,
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:11:55 +0000","Re: Testing 4
+ RouteNo:<CAMOhTqWLEMPapRfzX-JkpFUne=crpGQE7Dgw1c1G7NcoYEHLGA@mail.gmail.com>","H
+
+TA replies 2
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:06:42 PM
+To: stats60ta@cs.stanford.edu
+Subject: Re: Testing 4 RouteNo:<CAMOhTqWLEMPapRfzX-JkpFUne=3DcrpGQE7Dgw1c1G=
+7NcoYEHLGA@mail.gmail.com>
+
+Something.
+
+-Aashna Garg
+
+
+On Thu, Nov 3, 2016 at 9:09 PM, <ta@cs.stanford.edu> wrote:
+
+>
+>
+> TA replies
+>
+> Hi TA, I have a question on Question 7c of the homework, which asks how
+> many people we=92d need to include in our SRS in order for the 95% confid=
+ence
+> interval to have a margin of error or + or - 1%. First, I determined that=
+:
+> (1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring=
+ the
+> constants over to the right side of the equation, we get: sqrt [p * (1-p)=
+]
+> / sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =
+=3D
+> 2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .=
+2059.
+> .2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.8544
+> Therefore, I concluded that we=92d need to sample 7910 in order to have a=
+ +
+> or - 1% margin of error. I=92ve tried plugging this answer into the homew=
+ork
+> site, but it says that this is the wrong answer. Could you please explain
+> what I=92m doing wrong?e
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, November 3, 2016 9:08:10 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: Testing 4 RouteNo:<CAMOhTqX594e6vVx0NK6hyE+PX=3DHRn
+> B2c2xEjhAVpzZ1_qCaLVA@mail.gmail.com>
+>
+> My reply test
+>
+> -Aashna Garg
+>
+>
+> On Thu, Nov 3, 2016 at 9:07 PM, <ta@cs.stanford.edu> wrote:
+>
+> >
+> >
+> > TA replies.
+> >
+> > ________________________________
+> > From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> > Sent: Thursday, November 3, 2016 9:02:42 PM
+> > To: stats60ta@cs.stanford.edu
+> > Subject: Testing 4 RouteNo:<CAMOhTqVWbXkQ1_
+> NKs72rtmE5pquKQbwC5=3DNmc3Mhw=3DcH
+> > AXoMTA@mail.gmail.com>
+> >
+> > Test email
+> > -Aashna Garg
+> >
+> >
+> > Best,
+>
+>
+> Best,
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:13:07 -0700","Re: Testing 4","Student reply 2 test.
+
+-Aashna Garg
+
+
+On Thu, Nov 3, 2016 at 9:09 PM, <robota@cs.stanford.edu> wrote:
+
+>
+>
+> TA replies
+>
+> Hi TA, I have a question on Question 7c of the homework, which asks how
+> many people we=E2=80=99d need to include in our SRS in order for the 95% =
+confidence
+> interval to have a margin of error or + or - 1%. First, I determined that=
+:
+> (1.96) * (100) * sqrt [p * (1-p)] / sqrt [n] =3D 1 Therefore, if we bring=
+ the
+> constants over to the right side of the equation, we get: sqrt [p * (1-p)=
+]
+> / sqrt [n] =3D .0051 Then, we square both sides to get: [p * (1-p)] / n =
+=3D
+> 2.603 * 10^-5 We know that p is .71, so [p * (1-p)] =3D [.71 * .29] =3D .=
+2059.
+> .2059 / n =3D 2.603 * 10^-5 .2059 =3D 2.603 * 10^-5 * n n =3D 7909.8544
+> Therefore, I concluded that we=E2=80=99d need to sample 7910 in order to =
+have a +
+> or - 1% margin of error. I=E2=80=99ve tried plugging this answer into the=
+ homework
+> site, but it says that this is the wrong answer. Could you please explain
+> what I=E2=80=99m doing wrong?e
+>
+> ________________________________
+> From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> Sent: Thursday, November 3, 2016 9:08:10 PM
+> To: stats60ta@cs.stanford.edu
+> Subject: Re: Testing 4 RouteNo:<CAMOhTqX594e6vVx0NK6hyE+PX=3DHRn
+> B2c2xEjhAVpzZ1_qCaLVA@mail.gmail.com>
+>
+> My reply test
+>
+> -Aashna Garg
+>
+>
+> On Thu, Nov 3, 2016 at 9:07 PM, <ta@cs.stanford.edu> wrote:
+>
+> >
+> >
+> > TA replies.
+> >
+> > ________________________________
+> > From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+> > Sent: Thursday, November 3, 2016 9:02:42 PM
+> > To: stats60ta@cs.stanford.edu
+> > Subject: Testing 4 RouteNo:<CAMOhTqVWbXkQ1_
+> NKs72rtmE5pquKQbwC5=3DNmc3Mhw=3DcH
+> > AXoMTA@mail.gmail.com>
+> >
+> > Test email
+> > -Aashna Garg
+> >
+> >
+> > Best,
+>
+>
+> Best, Lucas
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:25:53 -0700","Testing","testing
+1
+2
+3
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:26:46 +0000","Re: Testing
+ RouteNo:<CAMOhTqX2zmK-Rfvb1+eHu93Vk7hMt7itQ_KAP9XFUzZ=hUeCrQ@mail.gmail.com>","H
+
+TA replies
+
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:27:20 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing RouteNo:<CAMOhTqX2zmK-Rfvb1+eHu93Vk7hMt7itQ_KAP9XFUzZ=3DhU=
+eCrQ@mail.gmail.com>
+
+testing
+1
+2
+3
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:26:36 +0000","Re: Testing
+ RouteNo:<CAMOhTqX2zmK-Rfvb1+eHu93Vk7hMt7itQ_KAP9XFUzZ=hUeCrQ@mail.gmail.com>","TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:27:20 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing RouteNo:<CAMOhTqX2zmK-Rfvb1+eHu93Vk7hMt7itQ_KAP9XFUzZ=3DhU=
+eCrQ@mail.gmail.com>
+
+testing
+1
+2
+3
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:30:21 -0700","Test","Test message
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:31:12 +0000","Re: Test
+ RouteNo:<CAMOhTqXN-_NypFq83snjG+1sht8NTA=mDkFSeixM9bxapRUr9Q@mail.gmail.com>","H
+
+Lucas replies
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:30:49 PM
+To: stats60ta@cs.stanford.edu
+Subject: Test RouteNo:<CAMOhTqXN-_NypFq83snjG+1sht8NTA=3DmDkFSeixM9bxapRUr9=
+Q@mail.gmail.com>
+
+Test message
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:32:42 +0000","Re: Test
+ RouteNo:<CAMOhTqXN-_NypFq83snjG+1sht8NTA=mDkFSeixM9bxapRUr9Q@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:30:49 PM
+To: stats60ta@cs.stanford.edu
+Subject: Test RouteNo:<CAMOhTqXN-_NypFq83snjG+1sht8NTA=3DmDkFSeixM9bxapRUr9=
+Q@mail.gmail.com>
+
+Test message
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:33:27 -0700","Testing","Test
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:34:15 +0000","Re: Testing
+ RouteNo:<CAMOhTqVVcsm+_KsY4zXxpSs-q9J3n3wL0wW02OxWzGPdgn=Zww@mail.gmail.com>","TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:29:35 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing RouteNo:<CAMOhTqVVcsm+_KsY4zXxpSs-q9J3n3wL0wW02OxWzGPdgn=
+=3DZww@mail.gmail.com>
+
+Test
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:34:25 +0000","Re: Testing
+ RouteNo:<CAMOhTqVVcsm+_KsY4zXxpSs-q9J3n3wL0wW02OxWzGPdgn=Zww@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:29:35 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing RouteNo:<CAMOhTqVVcsm+_KsY4zXxpSs-q9J3n3wL0wW02OxWzGPdgn=
+=3DZww@mail.gmail.com>
+
+Test
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:36:32 -0700","Testing","test email
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:37:17 +0000","Re: Testing
+ RouteNo:<CAMOhTqV21_c0F5yuBLpV=n5MqyK8p6v2OkQM6f8Zn1tFy7ozuA@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:37:05 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing RouteNo:<CAMOhTqV21_c0F5yuBLpV=3Dn5MqyK8p6v2OkQM6f8Zn1tFy7=
+ozuA@mail.gmail.com>
+
+test email
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:43:30 -0700","Testing","Testing with robota
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:44:21 +0000","Re: Testing
+ RouteNo:<CAMOhTqXHwJKiVuze32SfO4P_6r3DzQwETC0=SBMxH6qgWvsUwQ@mail.gmail.com>","H
+
+TA replies.
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:39:50 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing RouteNo:<CAMOhTqXHwJKiVuze32SfO4P_6r3DzQwETC0=3DSBMxH6qgWv=
+sUwQ@mail.gmail.com>
+
+Testing with ta
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:47:55 -0700","Testing TA signature","Test
+test
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:48:52 +0000","Re: Testing TA signature
+ RouteNo:<CAMOhTqXr_a-25K08vtK9kNY_mNaYgtTXL-ud3pmGYd+nn2MUbw@mail.gmail.com>","H
+
+TA replies
+
+till here
+
+
+blah blah
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:44:16 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing TA signature RouteNo:<CAMOhTqXr_a-25K08vtK9kNY_mNaYgtTXL-u=
+d3pmGYd+nn2MUbw@mail.gmail.com>
+
+Test
+test
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:49:50 -0700","Testing","testing
+test
+test
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:51:58 +0000","Re: Testing
+ RouteNo:<CAMOhTqVR_x8d60Zamx8uAxV1yANbbE-8_L8LER6MoVp6KGT0cQ@mail.gmail.com>","R
+
+TA replies
+
+here
+
+here
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:50:18 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing RouteNo:<CAMOhTqVR_x8d60Zamx8uAxV1yANbbE-8_L8LER6MoVp6KGT0=
+cQ@mail.gmail.com>
+
+testing
+test
+test
+
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Thu, 3 Nov 2016 21:56:33 -0700","test","testing
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:57:29 +0000","Re: test
+ RouteNo:<CAMOhTqWbWz8iD6VPeU7V2Xg8nVVmf=wj0L-2iDO+zM_CcpF4fw@mail.gmail.com>","H
+
+Ta replies
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:56:59 PM
+To: stats60ta@cs.stanford.edu
+Subject: test RouteNo:<CAMOhTqWbWz8iD6VPeU7V2Xg8nVVmf=3Dwj0L-2iDO+zM_CcpF4f=
+w@mail.gmail.com>
+
+testing
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:57:51 +0000","Re: test
+ RouteNo:<CAMOhTqWbWz8iD6VPeU7V2Xg8nVVmf=wj0L-2iDO+zM_CcpF4fw@mail.gmail.com>","R
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:56:59 PM
+To: stats60ta@cs.stanford.edu
+Subject: test RouteNo:<CAMOhTqWbWz8iD6VPeU7V2Xg8nVVmf=3Dwj0L-2iDO+zM_CcpF4f=
+w@mail.gmail.com>
+
+testing
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:58:37 +0000","Re: test
+ RouteNo:<CAMOhTqWbWz8iD6VPeU7V2Xg8nVVmf=wj0L-2iDO+zM_CcpF4fw@mail.gmail.com>","TA replies 3
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:56:59 PM
+To: stats60ta@cs.stanford.edu
+Subject: test RouteNo:<CAMOhTqWbWz8iD6VPeU7V2Xg8nVVmf=3Dwj0L-2iDO+zM_CcpF4f=
+w@mail.gmail.com>
+
+testing
+
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 04:59:08 +0000","Re: test
+ RouteNo:<CAMOhTqWbWz8iD6VPeU7V2Xg8nVVmf=wj0L-2iDO+zM_CcpF4fw@mail.gmail.com>","H
+
+TA replies 3
+
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Thursday, November 3, 2016 9:56:59 PM
+To: stats60ta@cs.stanford.edu
+Subject: test RouteNo:<CAMOhTqWbWz8iD6VPeU7V2Xg8nVVmf=3Dwj0L-2iDO+zM_CcpF4f=
+w@mail.gmail.com>
+
+testing
+
+-Aashna Garg
+"
+"joesunde@stanford.edu","roboTA@cs.stanford.edu","Thu, 3 Nov 2016 22:40:54 -0700","stats 60 question","What chapters cover this week's homework?
+
+
+-- 
+Joe Sunde
+Stanford University | Class of 2017
+B.S. Candidate | Architectural Design
+joesunde@stanford.edu | (831) 402-2255
+"
+"angela8@stanford.edu","stats60TA@cs.stanford.edu","Fri, 4 Nov 2016 00:10:05 -0700","Question on STATS60 HW","Hi Lucas,
+
+I'm so sorry for how late this email is but I'm having some technical
+problems with the STATS60 homework. For the first problem, I'm currently
+marked as having 3/4 points even though there are only three questions and
+three parts. For question 6, part d (ii), I don't understand how the answer
+isn't either 0 or 2.4 If the expected percentage is 1.4 and the SE is 0.5,
+I don't understand how the answer is not 2.4. I'm so sorry again for how
+late this is. Thanks so much!
+
+Sincerely,
+Angela
+"
+"paepcke@cs.stanford.edu","roboTA@cs.stanford.edu","Fri, 4 Nov 2016 08:19:24 -0700","Test1","This is
+a multi
+line
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Fri, 4 Nov 2016 08:21:33 -0700","Test1","This is
+a multi
+line
+"
+"paepcke@stanford.edu","stats60ta@cs.stanford.edu","Fri, 4 Nov 2016 08:24:11 -0700","*****SPAM***** Re: [SPAM:#] Test1 RouteNo:<CAFKHknijojFXUJqfCssBQaU12WmiWMqfkhm1QayYMSYyZcRQUg@mail.gmail.com>","h
+My
+response Now.
+
+
+On Fri, Nov 4, 2016 at 8:17 AM, <stats60ta@cs.stanford.edu> wrote:
+
+> This is
+> a multi
+> line
+>
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Fri, 4 Nov 2016 11:42:33 -0700","Lucas: Test to roboTA","Lucas,
+
+fingers crossed: do you get this?
+The msg has multiple
+lines.
+
+The first line should end with ""this?""
+The second with ""multiple""
+and the third with ""lines.""
+
+Plus you should see the letters
+a,o, and u with two dots on
+top: =C3=A4=C3=B6=C3=BC
+
+See them?
+
+Don't forget the guess.
+"
+"paepcke2000@gmail.com","stats60TA@cs.stanford.edu","Fri, 4 Nov 2016 11:44:18 -0700","This one to StatsTA","Hello Lucas,
+
+You should only see 'Hello' up above, not ""Hello Lucas""
+(i.e. not ""Hello <your_first_name>"")
+
+Not sure whether we catch signatures. We may
+not. Do you see mine below?
+
+Andreas
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 19:03:52 +0000","Re: Test to TA
+ RouteNo:<CAFKHkngqDeWvQGDGpcJMmBeMxP9WvVyQpX3BVu_5sobRNTKDug@mail.gmail.com>","H
+
+I see all those things, although the beginning is a bit weird--before the ""=
+first"" line ending in 'this?', there seems to be a blank line, then a line =
+that's just a comma, then another blank line
+
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, November 4, 2016 11:38 AM
+To: stats60ta@cs.stanford.edu
+Subject: : Test to TA RouteNo:<CAFKHkngqDeWvQGDGpcJMmBeMxP9WvVyQpX3BVu_5sob=
+RNTKDug@mail.gmail.com>
+
+,
+
+fingers crossed: do you get this?
+The msg has multiple
+lines.
+
+The first line should end with ""this?""
+The second with ""multiple""
+and the third with ""lines.""
+
+Plus you should see the letters
+a,o, and u with two dots on
+top: =E4=F6=FC
+
+See them?
+
+Don't forget the guess.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 19:04:41 +0000","Re: This one to StatsTA
+ RouteNo:<CAFKHkniZ487jVi=-HSKc8uVg_-Y=9wTEP7i81Fma8+vdqiKuOQ@mail.gmail.com>","R
+My name isn't up there, which is good, although there's a space before the =
+comma which should probably be removed. And I do see your signature at the =
+bottom.
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, November 4, 2016 11:44:56 AM
+To: stats60ta@cs.stanford.edu
+Subject: This one to StatsTA RouteNo:<CAFKHkniZ487jVi=3D-HSKc8uVg_-Y=3D9wTE=
+P7i81Fma8+vdqiKuOQ@mail.gmail.com>
+
+Hello ,
+
+You should only see 'Hello' up above, not ""Hello ""
+(i.e. not ""Hello <your_first_name>"")
+
+Not sure whether we catch signatures. We may
+not. Do you see mine below?
+
+Andreas
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 20:50:54 +0000","Test 1","Testing. Reply to this.
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Fri, 4 Nov 2016 13:51:19 -0700","Test 2","Testing. Reply.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 20:54:43 +0000","Re: Test 1
+ RouteNo:<BY2PR0201MB160760D75C2BE7BB8E83D875AEA20@BY2PR0201MB1607.namprd02.prod.outlook.com>","H
+
+Here's my reply
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, November 4, 2016 1:51:12 PM
+To: stats60ta@cs.stanford.edu
+Subject: Test 1 RouteNo:<BY2PR0201MB160760D75C2BE7BB8E83D875AEA20@BY2PR0201=
+MB1607.namprd02.prod.outlook.com>
+
+Testing. Reply to this.
+"
+"ljanson@stanford.edu","""stats60ta@cs.stanford.edu""","Fri, 4 Nov 2016 20:54:57 +0000","Re: Test 2
+ RouteNo:<CAMOhTqVqqeyanub7c5NmjUuG_UVeW94jqkW6pMEyK-4-zfJ0AA@mail.gmail.com>","R
+Here's another reply!
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, November 4, 2016 1:52:23 PM
+To: stats60ta@cs.stanford.edu
+Subject: Test 2 RouteNo:<CAMOhTqVqqeyanub7c5NmjUuG_UVeW94jqkW6pMEyK-4-zfJ0A=
+A@mail.gmail.com>
+
+Testing. Reply.
+"
+"aashnagarg16@gmail.com","robota@cs.stanford.edu","Fri, 4 Nov 2016 20:07:16 -0700","Test Sig","testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 5 Nov 2016 03:08:12 +0000","Re: Test Sig
+ RouteNo:<CAMOhTqWX3z5PVFu4tdS-7CGCo_2C9-7vq2_qFSh8_ugg6uzXvQ@mail.gmail.com>","H
+
+RoboTA replies
+
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, November 4, 2016 8:07:48 PM
+To: stats60ta@cs.stanford.edu
+Subject: Test Sig RouteNo:<CAMOhTqWX3z5PVFu4tdS-7CGCo_2C9-7vq2_qFSh8_ugg6uz=
+XvQ@mail.gmail.com>
+
+testing
+-Aashna Garg
+"
+"aashnagarg16@gmail.com","stats60ta@cs.stanford.edu","Fri, 4 Nov 2016 20:08:53 -0700","Testing Sig","testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 5 Nov 2016 03:09:43 +0000","Re: Testing Sig
+ RouteNo:<CAMOhTqXhzjjRN6E3L3SfsCZbrTyyEAnZmchqMZfi3LN3GhSx1A@mail.gmail.com>","TA replies
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, November 4, 2016 8:09:28 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing Sig RouteNo:<CAMOhTqXhzjjRN6E3L3SfsCZbrTyyEAnZmchqMZfi3LN3=
+GhSx1A@mail.gmail.com>
+
+testing
+-Aashna Garg
+"
+"aashna94@stanford.edu","""stats60ta@cs.stanford.edu""","Sat, 5 Nov 2016 03:10:15 +0000","Re: Testing Sig
+ RouteNo:<CAMOhTqXhzjjRN6E3L3SfsCZbrTyyEAnZmchqMZfi3LN3GhSx1A@mail.gmail.com>","H
+
+TA replies
+
+
+Aashna Garg | Masters
+Stanford Department of Computer Science
+________________________________
+From: stats60ta@cs.stanford.edu <stats60ta@cs.stanford.edu>
+Sent: Friday, November 4, 2016 8:09:28 PM
+To: stats60ta@cs.stanford.edu
+Subject: Testing Sig RouteNo:<CAMOhTqXhzjjRN6E3L3SfsCZbrTyyEAnZmchqMZfi3LN3=
+GhSx1A@mail.gmail.com>
+
+testing
+-Aashna Garg
+"
+"arochat@stanford.edu","stats60TA@cs.stanford.edu","Mon, 7 Nov 2016 14:48:16 -0800","Stats 60 Clarification","Dear Lukas,
+
+Hope you're doing well. I had a question regarding the 0.5 rule when using
+normal approximation. I was aware that during the homework, many questions
+didn't use the 0.5 rule when approximating the area between two percentages
+(for example, a 19-21% interval becomes an 18.5-21.5% interval). Are we
+supposed to use it (because I thought we were supposed to in all
+circumstances)?
+
+Thanks,
+
+Alexis
+
+-- 
+*Alexis Rochat*
+B.A. Candidate History
+B.A. Candidate International Relations
+Class of 2019
+Stanford University
+"
+"abalogun@stanford.edu","""roboTA@cs.stanford.edu""","Tue, 8 Nov 2016 04:26:35 +0000","average of draws vs. sum of draws ","SGksDQoNCknigJlkIGp1c3QgbGlrZSBzb21lIHRpcHMgb24gaG93IHRvIGtub3cgd2hlbiB0byBm
+aW5kIHRoZSBhdmVyYWdlIG9mIHRoZSBkcmF3cyBpbnN0ZWFkIG9mIHRoZSBzdW0gb2YgZHJhd3Mu
+IFdoYXQgd29yZGluZy9zaXR1YXRpb25zIGFyZSB1c3VhbGx5IGFzc29jaWF0ZWQgd2l0aCBlYWNo
+IG9uZT8NCg0KVGhhbmtzLA0KQWlzaGEg
+
+"
+"paepcke2000@gmail.com","roboTA@cs.stanford.edu","Tue, 8 Nov 2016 17:18:54 -0800","An In-Between Test","Hi Lucas,
+
+just testing routinely.
+Could you answer (with guess is fine.).
+
+THanks!
+Andreas
+"

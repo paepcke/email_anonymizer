@@ -19,14 +19,13 @@ Module for relaying messages between students and robot/TA.
 
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
-USERNAME = 'stats60' #Mailbox username
+USERNAME = 'networksta' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
-HEAD_TA = 'ljanson@stanford.edu'
-#HEAD_TA = 'aashna94@stanford.edu'
-#HEAD_TA = 'paepcke@stanford.edu'
-HEAD_TA_NAME = 'Lucas'
-HEAD_TA_NAME_ALT = 'Lukas'
-TA_SIG = 'Best, Lucas'
+#HEAD_TA = 'eorbay@stanford.edu'
+HEAD_TA = 'paepcke2000@gmail.com'
+HEAD_TA_NAME = 'Emre'
+HEAD_TA_NAME_ALT = 'Emre'
+TA_SIG = 'Best, Emre'
 ROBO_TA_SIG = 'Greetings, RoboTA.'
 
 # Will be placed in same dir as this script:
@@ -42,14 +41,14 @@ DO_RETURN_ORIGINAL = True
 DONT_RETURN_ORIGINAL = False
 
 robo_ta_alias = 'roboTA@cs.stanford.edu'
-stats60_ta_alias = 'stats60TA@cs.stanford.edu' #stats60TA@cs.stanford.edu
+human_ta_alias = 'networksTA@cs.stanford.edu' #stats60TA@cs.stanford.edu
 admin_alias = 'paepcke@cs.stanford.edu'
 
 ssl = False
 
 TEST = None
 
-destination_addrs = [robo_ta_alias.lower(), stats60_ta_alias.lower()]
+destination_addrs = [robo_ta_alias.lower(), human_ta_alias.lower()]
                          
 
 class EmailChecker(object):
@@ -369,7 +368,7 @@ class EmailChecker(object):
         
         # true_origin is the email of the roboTA or the stats TA.
         # Normalize that into: 'robot' and 'human'
-        if true_origin == stats60_ta_alias:
+        if true_origin == human_ta_alias:
             true_origin = 'human'
         else:
             true_origin = 'robot'
@@ -493,9 +492,7 @@ class EmailChecker(object):
             i+=1
 
         self.student_ta = {'1':robo_ta_alias,
-                           '2':robo_ta_alias,
-                           '3':stats60_ta_alias,
-                           '4':stats60_ta_alias}
+                           '2':human_ta_alias}
 
     def admin_msg_to_ta(self, errorStr, body):
         '''

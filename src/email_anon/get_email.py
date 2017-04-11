@@ -1,14 +1,40 @@
 #!/usr/bin/env python
 
+import signal
 from threading import Lock
 import threading
+import sys
 
 from util import EmailChecker
 
 
 lock = Lock()
 
+# Used for non-blocking synch lock acquisition:
 DONT_BLOCK = False
+
+# Flag for thread to stop checking for emails:
+STOP_CHECKING_EMAIL = False
+
+# Thread timer to schedule next email box check:
+check_timer = None
+
+def signal_handler(signal, frame):
+    '''
+    Catching cnt-c to stop checking email
+    '''
+    # Set flag that tells timer-controlled thread
+    # to stop if it wakes up before we cancel
+    # it in the next statement:
+
+    STOP_CHECKING_EMAIL = True
+    check_timer.cancel()
+    email_checker.log_program_stop()
+    print('Stopped email checks on user request.')
+    sys.exit()
+
+# Register the cnt-c handler:
+signal.signal(signal.SIGINT, signal_handler)
 
 def main(num_server_contacts, email_checker):
     '''
@@ -24,6 +50,12 @@ def main(num_server_contacts, email_checker):
     :type email_checker: EmailChecker
     '''
 
+    # Did a cnt-c SIGINT ask us to stop?
+    if STOP_CHECKING_EMAIL:
+        email_checker.log_program_stop()
+        print('Stopped email checks on user request.')
+        sys.exit()
+
     # Called one more time:
     num_server_contacts += 1
 
@@ -32,7 +64,7 @@ def main(num_server_contacts, email_checker):
     # try again:
     
     #threading.Timer(30.0, main, [num_server_contacts]).start()
-    threading.Timer(15.0, main, [num_server_contacts, email_checker]).start()
+    check_timer = threading.Timer(15.0, main, [num_server_contacts, email_checker]).start()
     
     if not lock.acquire(DONT_BLOCK):
         return

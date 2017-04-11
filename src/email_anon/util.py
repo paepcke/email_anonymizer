@@ -19,7 +19,7 @@ Module for relaying messages between students and robot/TA.
 
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
-USERNAME = 'networksta' #Mailbox username
+USERNAME = 'stats60' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
 #HEAD_TA = 'eorbay@stanford.edu'
 HEAD_TA = 'paepcke2000@gmail.com'
@@ -193,7 +193,7 @@ class EmailChecker(object):
         a re-do.
         
         Else: forwards the TA's response to the student, originating from the
-        actor to which the original msg was directed: stats60TA or roboTA.
+        actor to which the original msg was directed: networksTA or roboTA.
         
         :param unread_msg_nums: messages numbers as returned from get_inbox()
         :type unread_msg_nums: [int]
@@ -238,8 +238,8 @@ class EmailChecker(object):
 
 
                     msg.attach(MIMEText(body, 'plain', 'utf-8'))
-                    msg['From'] = 'stats60ta@cs.stanford.edu'
-                    msg['To'] = 'stats60ta@cs.stanford.edu'
+                    msg['From'] = human_ta_alias
+                    msg['To'] = human_ta_alias
                     msg['Subject'] = subject + '   RouteNo:' + msg_id
                     
                     # Remember to whom student sent her msg, and her 
@@ -338,7 +338,7 @@ class EmailChecker(object):
                     self.login_sending()
                     # Use destination of student's original msg
                     # as sender in this sendmail call. That will either
-                    # be robota@cs.stanford.edu, or statst60ta@cs.stanford.edu.
+                    # be robota@cs.stanford.edu, or networksta@cs.stanford.edu.
                     # In any case: this needs to be a xxx@cs.stanford.edu address!
                     # Else CS mail server silently drops the msg: 
                     
@@ -541,6 +541,14 @@ class EmailChecker(object):
             cleanSubj = subject
             
         return cleanSubj.strip()
+
+    def log_program_stop(self, reason='Received cnt-c'):
+        '''
+        Called to enter a note in the log that
+        the program was stopped. Called from 
+        main() when SIGINT is caught.
+        '''
+        self.logInfo(reason)
 
             
     def setupLogging(self, loggingLevel, logFile):

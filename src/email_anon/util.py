@@ -291,7 +291,7 @@ class EmailChecker(object):
                     # Did TA accidentally sign his/her name?
                     if self.ta_sig_pattern.match(body) is not None:
                         new_body = "Found '%s' in message." % HEAD_TA_NAME + self.msg_subj_plus_body(date,subject,body)
-                        self.admin_msg_to_ta('lucasFound', body)
+                        self.admin_msg_to_ta('taSignatureFound', body)
                         continue
                     # Recover dest of original address from x-student-dest header field:
                     (orig_subject, orig_msg_id) = subject.split('RouteNo:')
@@ -378,8 +378,18 @@ class EmailChecker(object):
             guess = 'robot'
         else:
             guess = 'human'
+            
+        # Path to csv file where we record TA guesses
+        # of origin:
+        guess_pass = os.path.join(self.script_path, GUESS_RECORD_FILE)            
+            
+        # If TA-guess csv file doesn't exist yet,
+        # create the file with column header at the top:
+        if not os.path.exists(guess_pass):
+            with open(guess_pass, 'w') as fd:
+                fd.write('date,msg_id,true_origin,guessed_origin')
         
-        with open(os.path.join(self.script_path, GUESS_RECORD_FILE), 'a') as fd:
+        with open(guess_pass, 'a') as fd:
             fd.write('%s,%s,%s,%s\n' % (date, msg_id, true_origin, guess))
 
     def msg_subj_plus_body(self, date, subject, body):
@@ -512,7 +522,7 @@ class EmailChecker(object):
         msg['Subject'] = 'You Screwed Up, Dude: %s' % errorStr
         body += 'Problem: %s\n' % errorStr
         msg.attach(MIMEText(body, 'html','utf-8'))
-        self.logErr('Lucas screwed up: %s' % errorStr)
+        self.logErr(HEAD_TA_NAME + ' error: %s' % errorStr)
         self.login_sending()
         self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
 

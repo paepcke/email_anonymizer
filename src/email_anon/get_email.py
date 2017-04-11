@@ -1,97 +1,133 @@
 #!/usr/bin/env python
 
+import os
 import signal
+import sys
 from threading import Lock
 import threading
-import sys
 
 from util import EmailChecker
+from bundlebuilder import usage
 
 
-lock = Lock()
+class EmailAnonServer(object):
 
-# Used for non-blocking synch lock acquisition:
-DONT_BLOCK = False
-
-# Flag for thread to stop checking for emails:
-STOP_CHECKING_EMAIL = False
-
-# Thread timer to schedule next email box check:
-check_timer = None
-
-def signal_handler(signal, frame):
-    '''
-    Catching cnt-c to stop checking email
-    '''
-    # Set flag that tells timer-controlled thread
-    # to stop if it wakes up before we cancel
-    # it in the next statement:
-
-    STOP_CHECKING_EMAIL = True
-    check_timer.cancel()
-    email_checker.log_program_stop()
-    print('Stopped email checks on user request.')
-    sys.exit()
-
-# Register the cnt-c handler:
-signal.signal(signal.SIGINT, signal_handler)
-
-def main(num_server_contacts, email_checker):
-    '''
-    Called cyclically to check IMAP inbox, and
-    process any messages.
+    EMAIL_CHECK_INTERVAL = 15.0 # seconds
+    # Used for non-blocking synch lock acquisition:
+    DONT_BLOCK = False
     
-    :param num_server_contacts: number of times the IMAP server has
-        already been contacted. Incremented on each call. Used to
-        limit the number of "I read the inbox" log messages in calls
-        to get_inbox().
-    :type num_server_contacts: int
-    :param email_checker: instance of EmailChecker, which does the heavy lifting.
-    :type email_checker: EmailChecker
-    '''
-
-    # Did a cnt-c SIGINT ask us to stop?
-    if STOP_CHECKING_EMAIL:
-        email_checker.log_program_stop()
-        print('Stopped email checks on user request.')
-        sys.exit()
-
-    # Called one more time:
-    num_server_contacts += 1
-
-    # If still working on previous call,
-    # just return and let the next cycle
-    # try again:
-    
-    #threading.Timer(30.0, main, [num_server_contacts]).start()
-    check_timer = threading.Timer(15.0, main, [num_server_contacts, email_checker]).start()
-    
-    if not lock.acquire(DONT_BLOCK):
-        return
-
-    try:
-        # Request new msgs from imap server, logging
-        # the visit only every 10th time.
-        (unread_msg_nums, response) = email_checker.get_inbox((num_server_contacts % 100) == 0)
-    
-        success=-1
+    def __init__(self, pull_interval=None):
+        '''
+        Initialize the cyclical calling of the 
+        imap-inbox checker.
         
-        if response: 
-            success = email_checker.pull_msgs(unread_msg_nums, response)
+        :param pull_interval: Number of seconds between each
+                call to the imap server to check for new
+                messages.
+        :type pull_interval: float
+        '''
     
-        if success==1:
-            email_checker.mark_seen(unread_msg_nums)
-    finally:
-        email_checker.stop_logging()
-        lock.release()
+        if pull_interval is None:
+            EmailAnonServer.EMAIL_CHECK_INTERVAL = pull_interval
+    
+        # Flag for thread to stop checking for emails:
+        self.stop_checking_email  = False
+        
+        # Register the cnt-c handler:
+        signal.signal(signal.SIGINT, self.signal_handler)
+        
+        # Number of times the IMAP server has
+        # already been contacted. Incremented on each call. Used to
+        # limit the number of "I read the inbox" log messages in calls
+        # to get_inbox():
+                
+        self.num_server_contacts  = 0
+        
+        # For reentry prevention if pulling email
+        # is slow, and the timer 'check-now' timer
+        # fires before previous round is done:
+        self.lock = Lock()
+        
+        # EmailChecker instance that does dirty
+        # work of talking to the imap server:
+        self.email_checker = EmailChecker()
+    
+        # Start recurring timer. Unit is seconds:
+        self.check_timer = threading.Timer(EmailAnonServer.EMAIL_CHECK_INTERVAL, self.run_check)
+        self.check_timer.start()
+        
+    def run_check(self):
+        '''
+        Called every EmailAnonServer.EMAIL_CHECK_INTERVAL seconds.
+        Checks the imap box for new messages from students. 
+        '''
+        # Did a cnt-c SIGINT ask us to stop?
+        if self.stop_checking_email:
+            self.email_checker.log_program_stop()
+            print('Stopped email checks on user request.')
+            sys.exit()
 
-    # server1.close()
-    # server1.logout()
-    #server2.quit()
+        # If still working on previous call,
+        # just return and let the next cycle
+        # try again:
+        
+        if not self.lock.acquire(EmailAnonServer.DONT_BLOCK):
+            return
 
-# Single instance of EmailChecker stays alive though
-# all email-checking cycles:
-email_checker = EmailChecker()
+        # Called one more time:
+        self.num_server_contacts += 1
+ 
+        try:
+            # Request new msgs from imap server, logging
+            # the visit only every 10th time.
+            (unread_msg_nums, response) = self.email_checker.get_inbox((self.num_server_contacts % 100) == 0)
+        
+            success=-1
+            
+            #*************
+            print('Puller was called.')
+            return
+            #*************
+            
+            if response: 
+                success = self.email_checker.pull_msgs(unread_msg_nums, response)
+        
+            if success==1:
+                self.email_checker.mark_seen(unread_msg_nums)
+        finally:
+            self.lock.release()
+    
+    def signal_handler(self, signal, frame):
+        '''
+        Catching cnt-c to stop checking email
+        '''
+        # Set flag that tells timer-controlled thread
+        # to stop if it wakes up before we cancel
+        # it in the next statement:
+    
+        self.stop_checking_email = True
+        self.check_timer.cancel()
+        self.email_checker.log_program_stop()
+        self.email_checker.stop_logging()
+        print('Stopped email checks on user request.')
+        sys.exit(0)
 
-# Start main with zero-counter:
-main(0, email_checker)
+if __name__ == '__main__':
+
+    script_name = os.path.basename(sys.argv[0])
+    usage = 'Usage: %s [mail-check-interval-in-secs]' % script_name
+    
+    if len(sys.argv) > 2:
+        print(usage)
+        sys.exit(0)
+    
+    check_interval = None
+    if len(sys.argv) == 2:
+        # Ensure that the given parameter is a number:
+        try:
+            check_interval = float(sys.argv[1])
+        except ValueError:
+            print(usage)
+            sys.exit(1)
+        
+    EmailAnonServer(check_interval)

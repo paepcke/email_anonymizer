@@ -305,25 +305,25 @@ class EmailChecker(object):
                     else:
                         try:
                             # Done dealing with this request:
-                          #  del self.traffic_record[orig_msg_id]
+                            #  del self.traffic_record[orig_msg_id]
                             self.traffic_record.sync()
                         except:
                             pass
                      
                     # Record the original destination as the truth the TA was to guess:
                     self.record_ta_guess(date, msg_id, orig_dest, guess=ta_guess)
-                   # print body
+                    # print body
 
 
                     # Sign the return:
                     if orig_dest == robo_ta_alias.lower():
                         if '________________________________' in body:
-                          body = body.split('________________________________')[0] + '\n%s' % ROBO_TA_SIG +'\n________________________________'+ body.split('________________________________')[1] 
+                            body = body.split('________________________________')[0] + '\n%s' % ROBO_TA_SIG +'\n________________________________'+ body.split('________________________________')[1] 
                         else: body += '\n\n%s' % ROBO_TA_SIG
 
                     else:
                         if '________________________________' in body:
-                          body = body.split('________________________________')[0] + '\n%s' % TA_SIG + '\n________________________________'+ body.split('________________________________')[1] 
+                            body = body.split('________________________________')[0] + '\n%s' % TA_SIG + '\n________________________________'+ body.split('________________________________')[1] 
                         else: body += '\n\n%s' % TA_SIG
 
                     msg = MIMEMultipart('alternative')

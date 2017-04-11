@@ -542,7 +542,7 @@ class EmailChecker(object):
             
         return cleanSubj.strip()
 
-    def log_program_stop(self, reason='Received cnt-c'):
+    def log_program_stop(self, reason='Received cnt-c; stopping mail check server.'):
         '''
         Called to enter a note in the log that
         the program was stopped. Called from 

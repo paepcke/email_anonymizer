@@ -6,8 +6,6 @@ import sys
 import threading
 
 from util import EmailChecker
-from bundlebuilder import usage
-
 
 class EmailAnonServer(threading.Thread):
 

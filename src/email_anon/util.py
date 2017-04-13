@@ -21,11 +21,17 @@ HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
-#HEAD_TA = 'eorbay@stanford.edu'
-HEAD_TA = 'paepcke2000@gmail.com'
-HEAD_TA_NAME = 'Emre'
-HEAD_TA_NAME_ALT = 'Emre'
-TA_SIG = 'Best, Emre'
+#TRUE_TA_EMAIL = 'eorbay@stanford.edu'
+TRUE_TA_EMAIL = 'paepcke2000@gmail.com'
+
+TA_NAME_MALE = 'Frank'
+TA_EMAIL_MALE = '%s@cs.stanford.edu' % TA_NAME_MALE
+TA_SIG_MALE = 'Best, ' + TA_NAME_MALE
+
+TA_NAME_FEMALE = 'Diane'
+TA_EMAIL_FEMALE = '%s@cs.stanford.edu' % TA_NAME_FEMALE
+TA_SIG_FEMALE = 'Best, ' + TA_NAME_FEMALE
+
 ROBO_TA_SIG = 'Greetings, RoboTA.'
 
 # Will be placed in same dir as this script:
@@ -50,6 +56,17 @@ TEST = None
 
 destination_addrs = [robo_ta_alias.lower(), human_ta_alias.lower()]
                          
+# Regex pattern to find the "On <date>, <email-add> wrote:" 
+# original quote pattern of a return message. Example:
+#
+#    On Tue, Apr 11, 2017 at 9:45 AM, <networksTA@cs.stanford.edu> wrote:
+#
+# Always starts with 'On'. Find first string-group up to 
+# the email address' "<", then a second string-group 
+# from after the ">" to the end of the line: 
+
+EMAIL_QUOTE_FIND_PATTERN = re.compile(r'(^On[^<]*)[^>]*>(.*)', re.MULTILINE)
+
 
 class EmailChecker(object):
 
@@ -63,7 +80,8 @@ class EmailChecker(object):
         self.log_file = logFile
         self.setupLogging(logging.INFO, self.log_file)
 
-        # Regex for start of line being H, R, human, Human, Robot, robot, followed by \n or \r.
+        # Regex for start of first line being H, R, human, Human, Robot, or robot, 
+        # followed by \n or \r:
         # This expression is valid for non-HTML text messages:
         self.guess_pattern = re.compile(r'(H)[\n\r]|(R)[\n\r]|(h)[\n\r]|(r)[\n\r]|([hH]uman)[\n\r]|([rR]obot)[\n\r]')
         
@@ -76,13 +94,21 @@ class EmailChecker(object):
         # Regex for removing [SPAM:####] at start of subject:
         self.sharpSpamPattern = re.compile(r'([^#]*)(\[SPAM:[#]+\])(.*)')
         
-        # Regex to find 'Best, TA_SIG':
-        self.ta_sig_pattern = re.compile(r'\n\n' + TA_SIG + r'$')
+        # Regex to find 'Best, TA name' or 'Regards TA name' for 
+        # male or female TA:
+        self.ta_sig_pattern = re.compile(r'^[\s]*(Best|Regards){0,1}[,\s]*(%s|%s)[.]{0,1}[\s]*$' % (TA_SIG_MALE, TA_SIG_FEMALE), 
+                                         re.IGNORECASE|re.MULTILINE)
+
         self.robo_sig_pattern = re.compile(r'\n\n' + ROBO_TA_SIG + r'$')
 
-        # Regex to match TA greeting
-        self.robo_greeting = re.compile(r'([rR]obo)[\n\r]{0,1}',flags=re.IGNORECASE)
-        self.lucas_greeting = re.compile(r'([lL]u[ck]as)[\n\r]{0,1}',flags=re.IGNORECASE)
+        # Regex to match RoboTA greeting:
+        # Find variations of "Dear RoboTA,..." and "Hi RoboTA..." with
+        # or without trailing comma:
+        self.robo_greeting = re.compile(r'^[\s]*(Dear|Hi)( RoboTA]{0,1}[,]{0,1})',flags=re.MULTILINE|re.IGNORECASE)
+
+        # Same with TA greeting: "Dear <taName>", "Hi <taName>", ...
+        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi) (%s|%s)[,]{0,1})' (TA_SIG_MALE, TA_SIG_FEMALE),
+                                      flags=re.MULTILINE|re.IGNORECASE) 
         
         # For remembering which student sent
         # original msg to robot/human, and to
@@ -95,7 +121,7 @@ class EmailChecker(object):
         self.parse_student_info()
 
         # Log into the IMAP server. Since we keep 
-        # querying it every 15 seconds, it seems to
+        # querying it regularly, it seems to
         # stay connected, and we only login once:
 
         self.login_receiving()
@@ -214,7 +240,7 @@ class EmailChecker(object):
                 msg_id =  msgStringParsed['Message-ID']
 
                 ## Email received from student?
-                if sender != HEAD_TA:
+                if sender != TRUE_TA_EMAIL:
                     # Yes, from student:
                     if sender not in self.student_db:
                         self.logErr('Student not found in database!: %s' % sender)
@@ -229,11 +255,11 @@ class EmailChecker(object):
                         body = msgStringParsed.get_payload().decode('base64')
                     else:                    
                         body,_ = self.get_body2(msgStringParsed)                  
-                    body = self.lucas_greeting.sub('',body)
+                    body = self.ta_greeting.sub('',body)
                     body = self.robo_greeting.sub('',body)
                     #body = self.robo_sig_pattern.sub('',body)
                     subject = self.cleanSubjectOfSpamNotice(msgStringParsed['Subject'])
-                    subject = self.lucas_greeting.sub(' ',subject)
+                    subject = self.ta_greeting.sub(' ',subject)
                     subject = self.robo_greeting.sub(' ',subject)
 
 
@@ -249,7 +275,7 @@ class EmailChecker(object):
                     
                     # Send this email:
                     self.login_sending()
-                    self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
+                    self.serverSending.sendmail(sender, [TRUE_TA_EMAIL], msg.as_string())
 
                 # Email received from HEAD-TA (a reply):
                 else:
@@ -290,7 +316,7 @@ class EmailChecker(object):
    
                     # Did TA accidentally sign his/her name?
                     if self.ta_sig_pattern.match(body) is not None:
-                        new_body = "Found '%s' in message." % HEAD_TA_NAME + self.msg_subj_plus_body(date,subject,body)
+                        new_body = "Found '%s' in message." % TA_NAME_MALE + self.msg_subj_plus_body(date,subject,body)
                         self.admin_msg_to_ta('taSignatureFound', body)
                         continue
                     # Recover dest of original address from x-student-dest header field:
@@ -323,14 +349,33 @@ class EmailChecker(object):
 
                     else:
                         if '________________________________' in body:
-                            body = body.split('________________________________')[0] + '\n%s' % TA_SIG + '\n________________________________'+ body.split('________________________________')[1] 
-                        else: body += '\n\n%s' % TA_SIG
+                            body = body.split('________________________________')[0] + '\n%s' % TA_SIG_MALE + '\n________________________________'+ body.split('________________________________')[1] 
+                        else: body += '\n\n%s' % TA_SIG_MALE
 
                     msg = MIMEMultipart('alternative')
 
                     msg['From'] = orig_dest
                     msg['Subject'] = subject
                     msg['To'] = ''
+                    
+                    # Body will contain the quoted original message;
+                    # something like:
+                    #          <text of reply>
+                    #    On Tue, Apr 11, 2017 at 9:45 AM, <networksTA@cs.stanford.edu> wrote:
+                    # where the email address is human_ta_alias. 
+                    # Replace that with the original student sender:
+                    
+                    match = EMAIL_QUOTE_FIND_PATTERN.search(body)
+                    if match is not None:
+                        # Get tuple (begin,end) of first group.
+                        # The end index points to just before the
+                        # opening '<' of the email msgs. Match.span(group#)
+                        # returns that tuple:
+                        
+                        up_to        = match.span(1)[1] # pt to "<networksTA@..."
+                        then_to_end  = match.span(2)[0] # pt to after the closing ">"
+                        
+                        body = body[:up_to] + '<' + student_sender + '>' + body[then_to_end:]
                     
                     msg.attach(MIMEText(body, 'plain', 'utf-8'))
                     self.logInfo('%s replying to: %s' % (msg['From'], student_sender))
@@ -381,15 +426,15 @@ class EmailChecker(object):
             
         # Path to csv file where we record TA guesses
         # of origin:
-        guess_pass = os.path.join(self.script_path, GUESS_RECORD_FILE)            
+        guess_path = os.path.join(self.script_path, GUESS_RECORD_FILE)            
             
         # If TA-guess csv file doesn't exist yet,
         # create the file with column header at the top:
-        if not os.path.exists(guess_pass):
-            with open(guess_pass, 'w') as fd:
-                fd.write('date,msg_id,true_origin,guessed_origin')
+        if not os.path.exists(guess_path):
+            with open(guess_path, 'w') as fd:
+                fd.write('date,msg_id,true_origin,guessed_origin\n')
         
-        with open(guess_pass, 'a') as fd:
+        with open(guess_path, 'a') as fd:
             fd.write('%s,%s,%s,%s\n' % (date, msg_id, true_origin, guess))
 
     def msg_subj_plus_body(self, date, subject, body):
@@ -517,14 +562,14 @@ class EmailChecker(object):
         sender = admin_alias
         msg = MIMEMultipart('alternative')
         msg['From'] = admin_alias
-        msg['To'] = HEAD_TA
+        msg['To'] = TRUE_TA_EMAIL
         # Stick student ID into msg header:
         msg['Subject'] = 'You Screwed Up, Dude: %s' % errorStr
         body += 'Problem: %s\n' % errorStr
         msg.attach(MIMEText(body, 'html','utf-8'))
-        self.logErr(HEAD_TA_NAME + ' error: %s' % errorStr)
+        self.logErr(TA_NAME_MALE + ' error: %s' % errorStr)
         self.login_sending()
-        self.serverSending.sendmail(sender, [HEAD_TA], msg.as_string())
+        self.serverSending.sendmail(sender, [TRUE_TA_EMAIL], msg.as_string())
 
         
     def cleanSubjectOfSpamNotice(self, subject):

@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# TODO:
+#   - 'Best, Emre is added to response from robota!
+
 import os
 import signal
 import sys

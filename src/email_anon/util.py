@@ -17,22 +17,31 @@ Module for relaying messages between students and robot/TA.
 
 '''
 
+# The imap box:
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
 PASSWORD = 'stats60!' #Mailbox password
-#TRUE_TA_EMAIL = 'eorbay@stanford.edu'
+MAILBOX_EMAIL = 'stats60@cs.stanford.edu'
+
+# True TA:
+
+#******TRUE_TA_NAME = 'Emre'
+TRUE_TA_NAME = 'Andreas'
+#******TRUE_TA_EMAIL = 'eorbay@stanford.edu'
 TRUE_TA_EMAIL = 'paepcke2000@gmail.com'
 
 TA_NAME_MALE = 'Frank'
-TA_EMAIL_MALE = '%s@cs.stanford.edu' % TA_NAME_MALE
+TA_EMAIL_MALE = 'netTa%s@cs.stanford.edu' % TA_NAME_MALE
 TA_SIG_MALE = 'Best, ' + TA_NAME_MALE
 
 TA_NAME_FEMALE = 'Diane'
-TA_EMAIL_FEMALE = '%s@cs.stanford.edu' % TA_NAME_FEMALE
+TA_EMAIL_FEMALE = 'netTa%s@cs.stanford.edu' % TA_NAME_FEMALE
 TA_SIG_FEMALE = 'Best, ' + TA_NAME_FEMALE
 
-ROBO_TA_SIG = 'Greetings, RoboTA.'
+ROBO_NAME  = 'RoboTA'
+ROBO_EMAIL = 'roboTA@cs.stanford.edu' 
+ROBO_SIG = 'Greetings, RoboTA.'
 
 # Will be placed in same dir as this script:
 LOG_FILE = 'roboTA.log'
@@ -46,7 +55,7 @@ GUESS_RECORD_FILE = 'taGuessRecord.csv'
 DO_RETURN_ORIGINAL = True
 DONT_RETURN_ORIGINAL = False
 
-robo_ta_alias = 'roboTA@cs.stanford.edu'
+ROBO_EMAIL = 'roboTA@cs.stanford.edu'
 human_ta_alias = 'networksTA@cs.stanford.edu' #stats60TA@cs.stanford.edu
 admin_alias = 'paepcke@cs.stanford.edu'
 
@@ -54,7 +63,7 @@ ssl = False
 
 TEST = None
 
-destination_addrs = [robo_ta_alias.lower(), human_ta_alias.lower()]
+destination_addrs = [ROBO_EMAIL.lower(), TA_EMAIL_FEMALE.lower(), TA_EMAIL_MALE.lower()]
                          
 # Regex pattern to find the "On <date>, <email-add> wrote:" 
 # original quote pattern of a return message. Example:
@@ -96,18 +105,20 @@ class EmailChecker(object):
         
         # Regex to find 'Best, TA name' or 'Regards TA name' for 
         # male or female TA:
-        self.ta_sig_pattern = re.compile(r'^[\s]*(Best|Regards){0,1}[,\s]*(%s|%s)[.]{0,1}[\s]*$' % (TA_SIG_MALE, TA_SIG_FEMALE), 
+        self.ta_sig_pattern = re.compile(r'^[\s]*(Best|Regards|Cheers|Greetings){0,1}[,.\s]*(%s|%s|%s|%s)[.]{0,1}[\s]*$' %\
+                                         (TRUE_TA_NAME, TA_NAME_MALE, TA_NAME_FEMALE, ROBO_NAME), 
                                          re.IGNORECASE|re.MULTILINE)
 
-        self.robo_sig_pattern = re.compile(r'\n\n' + ROBO_TA_SIG + r'$')
+        self.robo_sig_pattern = re.compile(r'\n\n' + ROBO_SIG + r'$')
 
         # Regex to match RoboTA greeting:
         # Find variations of "Dear RoboTA,..." and "Hi RoboTA..." with
         # or without trailing comma:
-        self.robo_greeting = re.compile(r'^[\s]*(Dear|Hi)( RoboTA]{0,1}[,]{0,1})',flags=re.MULTILINE|re.IGNORECASE)
+        self.robo_greeting = re.compile(r'^[\s]*(Dear|Hi)( RoboTA]{0,1}[,]{0,1})',
+                                        flags=re.MULTILINE|re.IGNORECASE)
 
         # Same with TA greeting: "Dear <taName>", "Hi <taName>", ...
-        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi) (%s|%s)[,]{0,1})' (TA_SIG_MALE, TA_SIG_FEMALE),
+        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi) (%s|%s)[,]{0,1}' % (TA_SIG_MALE, TA_SIG_FEMALE),
                                       flags=re.MULTILINE|re.IGNORECASE) 
         
         # For remembering which student sent
@@ -215,8 +226,7 @@ class EmailChecker(object):
         to a robot or a human.
         
         Checks whether TA accidentally signed their name. Very narrow check:
-        "Best, <taName>". If signature found, sends message to TA requesting
-        a re-do.
+        "Best, <taName>". If signature found, removes it.
         
         Else: forwards the TA's response to the student, originating from the
         actor to which the original msg was directed: networksTA or roboTA.
@@ -254,7 +264,9 @@ class EmailChecker(object):
                     if(msgStringParsed['Content-Transfer-Encoding']=='base64'):
                         body = msgStringParsed.get_payload().decode('base64')
                     else:                    
-                        body,_ = self.get_body2(msgStringParsed)                  
+                        body,_ = self.get_body2(msgStringParsed)
+                    # Canonicalize end-of-line to be '\n', not '\r\n':
+                    body = body.replace('\r', '')              
                     body = self.ta_greeting.sub('',body)
                     body = self.robo_greeting.sub('',body)
                     #body = self.robo_sig_pattern.sub('',body)
@@ -264,8 +276,8 @@ class EmailChecker(object):
 
 
                     msg.attach(MIMEText(body, 'plain', 'utf-8'))
-                    msg['From'] = human_ta_alias
-                    msg['To'] = human_ta_alias
+                    msg['From'] = MAILBOX_EMAIL
+                    msg['To'] = TRUE_TA_EMAIL
                     msg['Subject'] = subject + '   RouteNo:' + msg_id
                     
                     # Remember to whom student sent her msg, and her 
@@ -286,7 +298,8 @@ class EmailChecker(object):
                     date    = msgStringParsed['Date']
 
                     body=body1
-                    
+                    # Canonicalize end-of-line to be '\n', not '\r\n':
+                    body = body.replace('\r', '')                    
                     # First line of body is to be a line that
                     # is empty except for the human/robot guess:
 
@@ -314,11 +327,8 @@ class EmailChecker(object):
                                     break
                             body = body[:guess_start] + body[guess_end:]
    
-                    # Did TA accidentally sign his/her name?
-                    if self.ta_sig_pattern.match(body) is not None:
-                        new_body = "Found '%s' in message." % TA_NAME_MALE + self.msg_subj_plus_body(date,subject,body)
-                        self.admin_msg_to_ta('taSignatureFound', body)
-                        continue
+                    body = self.remove_sig_if_exists(body)
+                                            
                     # Recover dest of original address from x-student-dest header field:
                     (orig_subject, orig_msg_id) = subject.split('RouteNo:')
                     (student_sender, orig_dest) = self.traffic_record.get(orig_msg_id, (None, None))
@@ -342,15 +352,21 @@ class EmailChecker(object):
 
 
                     # Sign the return:
-                    if orig_dest == robo_ta_alias.lower():
+                    if orig_dest.lower() == ROBO_EMAIL.lower():
                         if '________________________________' in body:
-                            body = body.split('________________________________')[0] + '\n%s' % ROBO_TA_SIG +'\n________________________________'+ body.split('________________________________')[1] 
-                        else: body += '\n\n%s' % ROBO_TA_SIG
+                            body = body.split('________________________________')[0] + '\n%s' % ROBO_SIG +'\n________________________________'+ body.split('________________________________')[1] 
+                        else: body += '\n\n%s' % ROBO_SIG
+
+                    elif orig_dest.lower() == TA_EMAIL_FEMALE.lower():
+                        if '________________________________' in body:
+                            body = body.split('________________________________')[0] + '\n%s' % TA_SIG_FEMALE + '\n________________________________'+ body.split('________________________________')[1] 
+                        else: body += '\n\n%s' % TA_SIG_FEMALE
 
                     else:
                         if '________________________________' in body:
                             body = body.split('________________________________')[0] + '\n%s' % TA_SIG_MALE + '\n________________________________'+ body.split('________________________________')[1] 
                         else: body += '\n\n%s' % TA_SIG_MALE
+
 
                     msg = MIMEMultipart('alternative')
 
@@ -395,6 +411,60 @@ class EmailChecker(object):
                     raise
         return 1
 
+    def remove_sig_if_exists(self, body):
+        '''
+        If true-ta accidentally added a signature somewhere
+        in their message, then remove it. The regex finds
+        "Best, <name" and "Regards, <name>" and "Cheers, <name>"
+        
+        @param body: Body of email from TA, destined back to student 
+        @type body: string
+        '''
+        
+        # Did TA accidentally sign his/her name?
+        sig_match = self.ta_sig_pattern.search(body)
+        
+        # For a message body containing something like
+        #    Best, Diane
+        # the match object will contain several groups,
+        # such as ("Best", "Diane"). Delete everything
+        # from the start of the first group to the 
+        # end of the last. Some groups may be none,
+        # for the case where the sig is just:
+        #    Diane
+        # In the case the groups will be (None, 'Diane')
+        
+        if sig_match is not None:
+            
+            sig_start = 0
+            
+            # Start of what's to be removed will be 
+            # the first position of the first non-None 
+            # regex group:
+            
+            for nth, matched_str in enumerate(sig_match.groups()):
+                if matched_str is None:
+                    continue
+                sig_start = sig_match.span(nth)[0]
+                break
+            
+            sig_end = 0
+            
+            # End of what's to be removed will be 
+            # the last position of the *last* non-None 
+            # regex group:
+            for nth, matched_str in enumerate(reversed(sig_match.groups())):
+                if matched_str is None:
+                    continue
+                sig_end = sig_match.span(nth)[1]
+                break
+            
+            # Surgically remove the signature:
+            body     = body[:sig_start] + body[sig_end:]
+
+        return body
+        
+        
     def record_ta_guess(self, date, msg_id, true_origin, guess='origin'):
         '''
         Write the TA's guess as to destination intent of student message
@@ -546,7 +616,7 @@ class EmailChecker(object):
             self.student_db[str(email).strip()] = i
             i+=1
 
-        self.student_ta = {'1':robo_ta_alias,
+        self.student_ta = {'1':ROBO_EMAIL,
                            '2':human_ta_alias}
 
     def admin_msg_to_ta(self, errorStr, body):
@@ -567,7 +637,7 @@ class EmailChecker(object):
         msg['Subject'] = 'You Screwed Up, Dude: %s' % errorStr
         body += 'Problem: %s\n' % errorStr
         msg.attach(MIMEText(body, 'html','utf-8'))
-        self.logErr(TA_NAME_MALE + ' error: %s' % errorStr)
+        self.logErr(TRUE_TA_NAME + ' error: %s' % errorStr)
         self.login_sending()
         self.serverSending.sendmail(sender, [TRUE_TA_EMAIL], msg.as_string())
 

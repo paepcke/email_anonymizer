@@ -119,7 +119,7 @@ class EmailChecker(object):
         self.robo_sig_pattern = re.compile(r'\n\n' + ROBO_SIG + r'$')
 
         # Same with TA greeting: "Dear <taName>", "Hi <taName>", ...
-        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi|Greetings|Hello|Hey){0,1}[,]{0,1}(%s|%s|%s)[.,]{0,1}[\s]*' %\
+        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi|Greetings|Hello|Hey){0,1}[,]{0,1}[\s]*(%s|%s|%s)[.,]{0,1}[\s]*' %\
                                      (TA_NAME_MALE, TA_NAME_FEMALE, ROBO_NAME),
                                       flags=re.MULTILINE|re.IGNORECASE) 
 

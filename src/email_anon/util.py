@@ -8,12 +8,11 @@ import logging
 import os
 import re
 import smtplib
-import shelve
 from urllib import quote, unquote
 
 from mock.mock import self
 #from email.base64mime import body_decode
-
+from traffic_memory import TrafficMemory
 '''
 Module for relaying messages between students and robot/TA.
 
@@ -139,9 +138,10 @@ class EmailChecker(object):
         # original msg to robot/human, and to
         # remember students' email address.
         # Format:  <msgID> ==> (orig_dest, student_email)
+        # This persistent dict writes to disk on
+        # each action:
                  
-        #******self.traffic_record = shelve.open('traffic_record', writeback=True)
-        self.traffic_record = shelve.open('traffic_record', writeback=False)
+        self.traffic_record = TrafficMemory('traffic_record')
         
         # Build internal database of legitimate student senders:
         self.parse_student_info()
@@ -318,7 +318,6 @@ class EmailChecker(object):
                     # Remember to whom student sent her msg, and her 
                     # return addr:
                     self.traffic_record[msg_id] = (sender, dest)
-                    self.traffic_record.sync()
                     
                     # Send this email:
                     self.login_sending()
@@ -365,8 +364,7 @@ class EmailChecker(object):
                     else:
                         try:
                             # Done dealing with this request:
-                            #  del self.traffic_record[orig_msg_id]
-                            self.traffic_record.sync()
+                            del self.traffic_record[orig_msg_id]
                         except:
                             pass
 

@@ -29,8 +29,8 @@ MAILBOX_EMAIL = 'stats60@cs.stanford.edu'
 
 TRUE_TA_NAME = 'Emre'
 #******TRUE_TA_NAME = 'Andreas'
-#******TRUE_TA_EMAIL = 'eorbay@stanford.edu'
-TRUE_TA_EMAIL = 'paepcke2000@gmail.com'
+TRUE_TA_EMAIL = 'eorbay@stanford.edu'
+#******TRUE_TA_EMAIL = 'paepcke2000@gmail.com'
 
 TA_NAME_MALE = 'Frank'
 TA_EMAIL_MALE = 'netTa%s@cs.stanford.edu' % TA_NAME_MALE

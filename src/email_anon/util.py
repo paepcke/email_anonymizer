@@ -42,7 +42,7 @@ TA_SIG_FEMALE = 'Best, ' + TA_NAME_FEMALE
 
 ROBO_NAME  = 'RoboTA'
 ROBO_EMAIL = 'roboTA@cs.stanford.edu' 
-ROBO_SIG = 'Greetings, RoboTA.'
+ROBO_SIG = 'Greetings, ' + ROBO_NAME
 
 # Will be placed in same dir as this script:
 LOG_FILE = 'roboTA.log'
@@ -119,7 +119,7 @@ class EmailChecker(object):
         self.robo_sig_pattern = re.compile(r'\n\n' + ROBO_SIG + r'$')
 
         # Same with TA greeting: "Dear <taName>", "Hi <taName>", ...
-        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi|Greetings|Hello|Hey)[,]{0,1} (%s|%s|%s)[.,]{0,1}[\s]*' %\
+        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi|Greetings|Hello|Hey){0,1}[,]{0,1}(%s|%s|%s)[.,]{0,1}[\s]*' %\
                                      (TA_NAME_MALE, TA_NAME_FEMALE, ROBO_NAME),
                                       flags=re.MULTILINE|re.IGNORECASE) 
 
@@ -127,7 +127,14 @@ class EmailChecker(object):
         # in the headers of emails with threads. As in: 
         #     "On <date> <roboTA@cs.stanford.edu>:
         # Must lose the email address: 
-        self.obscuration = '<***email_obscured***>'
+        self.email_obscuration = '<***email_obscured***>'
+        
+        # Analogously for TA or Robot signatures 
+        # in threads:
+        self.sig_obscuration   = '<***sig_obscured***>'
+
+        # Recognize a TA- or Robo signature in text:
+        self.ta_robo_sig_pattern = re.compile(r'(%s|%s|%s)[.]{0,1}' % (TA_SIG_MALE, TA_SIG_FEMALE, ROBO_SIG))
 
         # Recognize whether a subject line has
         # a routing number included. That would
@@ -301,6 +308,11 @@ class EmailChecker(object):
                     
                     body = self.obscure_thread_headers(body)
                     
+                    # Similarly: obscure any robo or TA 
+                    # signatures in the depth of threads:
+                    
+                    body = self.obscure_thread_sigs(body)
+                    
                     subject = self.remove_greeting_if_exists(subject)
                     
                     # If this is a whole thread, need to obscure the
@@ -352,10 +364,16 @@ class EmailChecker(object):
                     
                     # Restore any thread headers we find that have
                     # been obscured: 'On <date> <****obscured_email***> wrote:...
-                    # Replace the obscuration with the email address to
+                    # Replace the email_obscuration with the email address to
                     # which the student sent their original msg:
                     
                     body = self.recover_thread_headers(body, orig_dest, student_sender)
+                    
+                    # Restore TA/Robo signatures embedded in threads that
+                    # were obfuscated to blind the TA:
+                    
+                    body = self.recover_thread_sigs(body, orig_dest)
+                    
                     subject = orig_subject
                     
                     if student_sender is None or orig_dest is None:
@@ -498,12 +516,12 @@ class EmailChecker(object):
         replace the address with something easily found again.
         That way the dual of this method: recover_thread_headers()
         has an easier job. We replace the address with
-        self.obscuration. Thread headers from students remain untouched.
+        self.email_obscuration. Thread headers from students remain untouched.
         
         @param body: entire email message body
         @type body: string
         @return: copy of body with emails in thread header replaced
-            by self.obscuration.
+            by self.email_obscuration.
         @rtype: string 
         '''
         new_body = ''
@@ -522,7 +540,7 @@ class EmailChecker(object):
             (trailer_start, trailer_end) = match.span('trailer')
 
             new_body += body[cursor:intro_end] +\
-                        self.obscuration +\
+                        self.email_obscuration +\
                         body[trailer_start:trailer_end]
             cursor = trailer_end
         new_body += body[cursor:]
@@ -555,8 +573,61 @@ class EmailChecker(object):
             in thread headers replaced with proper sender
         @rtype: string
         '''
-        new_body = body.replace(self.obscuration, '<%s>' % assigned_ta_email)
+        new_body = body.replace(self.email_obscuration, '<%s>' % assigned_ta_email)
         new_body = new_body.replace(MAILBOX_EMAIL, '%s' % student_email)
+        return new_body
+        
+    def obscure_thread_sigs(self, body):
+        '''
+        Find all TA- or Robo- signatures in 
+        quoted, multi-exchange threads and 
+        replace them with a placeholder:
+        self.sig_obscuration
+        
+        @param body: email message body
+        @type body: string
+        @return: modified email body with signatures replaced
+            by self.sig_obscuration
+        @rtype: string 
+        '''
+        
+
+
+        new_body = ''
+        cursor = 0
+        # pattern.finditer(str) gives a tuple of match
+        # objects. In our case, each match object holds
+        # one groups, a greeting by the male/female
+        # TA, or a Robo sig.
+
+        for match in self.ta_robo_sig_pattern.finditer(body):
+            (sig_start, sig_end)     = match.span(1) #@UnusedVariable
+            new_body += body[cursor:sig_start] + self.sig_obscuration
+            cursor = sig_end
+        new_body += body[cursor:]
+        return new_body    
+        
+    def recover_thread_sigs(self, body, orig_dest_email):
+        '''
+        Given an email body in which TA or robo signatures
+        were obfuscated in the thread, restore the original
+        signatures.
+        
+        @param body: the body with obscurated signatures
+        @type body: string 
+        @param orig_dest_email:
+        @type orig_dest_email:
+        @return: modified email body with signatures recovered.
+        @rtype: string 
+        '''
+        if orig_dest_email == TA_EMAIL_MALE:
+            sig = TA_SIG_MALE 
+        elif orig_dest_email == TA_EMAIL_FEMALE:
+            sig = TA_SIG_FEMALE
+        else:
+            sig = ROBO_SIG
+            
+        new_body = body.replace(self.sig_obscuration, '%s' % sig)
         return new_body
         
     def persist_ta_guess(self, date, msg_id, true_origin, guess):

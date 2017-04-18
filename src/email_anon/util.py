@@ -9,8 +9,10 @@ import os
 import re
 import smtplib
 import shelve
+from urllib import quote, unquote
 
 from mock.mock import self
+#from email.base64mime import body_decode
 
 '''
 Module for relaying messages between students and robot/TA.
@@ -26,8 +28,8 @@ MAILBOX_EMAIL = 'stats60@cs.stanford.edu'
 
 # True TA:
 
-#******TRUE_TA_NAME = 'Emre'
-TRUE_TA_NAME = 'Andreas'
+TRUE_TA_NAME = 'Emre'
+#******TRUE_TA_NAME = 'Andreas'
 #******TRUE_TA_EMAIL = 'eorbay@stanford.edu'
 TRUE_TA_EMAIL = 'paepcke2000@gmail.com'
 
@@ -57,7 +59,6 @@ DONT_RETURN_ORIGINAL = False
 
 ROBO_EMAIL = 'roboTA@cs.stanford.edu'
 human_ta_alias = 'networksTA@cs.stanford.edu' #stats60TA@cs.stanford.edu
-admin_alias = 'paepcke@cs.stanford.edu'
 
 ssl = False
 
@@ -68,13 +69,16 @@ destination_addrs = [ROBO_EMAIL.lower(), TA_EMAIL_FEMALE.lower(), TA_EMAIL_MALE.
 # Regex pattern to find the "On <date>, <email-add> wrote:" 
 # original quote pattern of a return message. Example:
 #
-#    On Tue, Apr 11, 2017 at 9:45 AM, <networksTA@cs.stanford.edu> wrote:
+#    On Tue, Apr 11, 2017 at 9:45 AM, <stats60@cs.stanford.edu> wrote:
 #
 # Always starts with 'On'. Find first string-group up to 
-# the email address' "<", then a second string-group 
-# from after the ">" to the end of the line: 
+# but excluding the email address: "<", then a second 
+# string-group that is the email address, excluding the 
+# closing ">". And a third group from after the email-closing
+# ">". The groups are named: 'intro', 'email', 'trailer'.
 
-EMAIL_QUOTE_FIND_PATTERN = re.compile(r'(^On[^<]*)[^>]*>(.*)', re.MULTILINE)
+#EMAIL_QUOTE_FIND_PATTERN = re.compile(r'(^On[^<]*)[^>]*>(.*)', re.MULTILINE)
+EMAIL_QUOTE_FIND_PATTERN = re.compile(r'(?P<intro>^[>\s]*On[^<]*)<(?P<email>[^>]*)>(?P<trailer>.*)', re.MULTILINE)
 
 
 class EmailChecker(object):
@@ -103,30 +107,41 @@ class EmailChecker(object):
         # Regex for removing [SPAM:####] at start of subject:
         self.sharpSpamPattern = re.compile(r'([^#]*)(\[SPAM:[#]+\])(.*)')
         
-        # Regex to find 'Best, TA name' or 'Regards TA name' for 
-        # male or female TA:
-        self.ta_sig_pattern = re.compile(r'^[\s]*(Best|Regards|Cheers|Greetings){0,1}[,.\s]*(%s|%s|%s|%s)[.]{0,1}[\s]*$' %\
+        # Regex to find "Best, TaName" or 'Regards TaName' for 
+        # male, female, or robo- TA. The (?P<greeing>...) and
+        # (?P<taName>...) groups are named (with names 'greeting'
+        # and 'taName') so we can refer to the captured strings
+        # by name later:
+        #****self.ta_sig_pattern = re.compile(r'^[\s]*(?P<greeting>Best|Regards|Cheers|Greetings){0,1}[,.\s]*(?P<taName>%s|%s|%s|%s)[.]{0,1}[\s]*$' %\
+        self.ta_sig_pattern = re.compile(r'^[\s]*(?P<greeting>Best|Regards|Cheers|Greetings){0,1}[,.\s]*(?P<taName>%s|%s|%s|%s)(?P<clutter>[.]{0,1}[\s]*)$' %\
                                          (TRUE_TA_NAME, TA_NAME_MALE, TA_NAME_FEMALE, ROBO_NAME), 
                                          re.IGNORECASE|re.MULTILINE)
 
         self.robo_sig_pattern = re.compile(r'\n\n' + ROBO_SIG + r'$')
 
-        # Regex to match RoboTA greeting:
-        # Find variations of "Dear RoboTA,..." and "Hi RoboTA..." with
-        # or without trailing comma:
-        self.robo_greeting = re.compile(r'^[\s]*(Dear|Hi)( RoboTA]{0,1}[,]{0,1})',
-                                        flags=re.MULTILINE|re.IGNORECASE)
-
         # Same with TA greeting: "Dear <taName>", "Hi <taName>", ...
-        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi) (%s|%s)[,]{0,1}' % (TA_SIG_MALE, TA_SIG_FEMALE),
+        self.ta_greeting = re.compile(r'^[\s]*(Dear|Hi|Greetings|Hello|Hey)[,]{0,1} (%s|%s|%s)[.,]{0,1}[\s]*' %\
+                                     (TA_NAME_MALE, TA_NAME_FEMALE, ROBO_NAME),
                                       flags=re.MULTILINE|re.IGNORECASE) 
+
+        # Placeholder to use when hiding the email address
+        # in the headers of emails with threads. As in: 
+        #     "On <date> <roboTA@cs.stanford.edu>:
+        # Must lose the email address: 
+        self.obscuration = '<***email_obscured***>'
+
+        # Recognize whether a subject line has
+        # a routing number included. That would
+        # show that the msg is a reply from the TA:
+        self.subject_routeNo_pattern = re.compile(r'RouteNo:<[^@]*@[^>]*>$')
         
         # For remembering which student sent
         # original msg to robot/human, and to
         # remember students' email address.
         # Format:  <msgID> ==> (orig_dest, student_email)
                  
-        self.traffic_record = shelve.open('traffic_record')
+        #******self.traffic_record = shelve.open('traffic_record', writeback=True)
+        self.traffic_record = shelve.open('traffic_record', writeback=False)
         
         # Build internal database of legitimate student senders:
         self.parse_student_info()
@@ -247,11 +262,22 @@ class EmailChecker(object):
 
                 sender =  msgStringParsed['From'].split('<')[1][:-1]
                 dest   =  msgStringParsed['To']
+                subject = self.cleanSubjectOfSpamNotice(msgStringParsed['Subject'])
                 msg_id =  msgStringParsed['Message-ID']
 
                 ## Email received from student?
-                if sender != TRUE_TA_EMAIL:
-                    # Yes, from student:
+                # We recognize messages from the TA
+                # by the subject line containing the
+                # original student msg's routing number.
+                # Using the criterion "if not from TA email
+                # address it's a student won't work
+                # when TA re-sends a response after adding
+                # the guess. Also: TA might have a default
+                # REPLY-TO that is not the same as TRUE_TA_EMAIL:
+                
+                
+                if self.subject_routeNo_pattern.search(unquote(subject)) is None:
+                    # Yes, from student, since no routing no in subject.
                     if sender not in self.student_db:
                         self.logErr('Student not found in database!: %s' % sender)
                         continue
@@ -267,18 +293,27 @@ class EmailChecker(object):
                         body,_ = self.get_body2(msgStringParsed)
                     # Canonicalize end-of-line to be '\n', not '\r\n':
                     body = body.replace('\r', '')              
-                    body = self.ta_greeting.sub('',body)
-                    body = self.robo_greeting.sub('',body)
-                    #body = self.robo_sig_pattern.sub('',body)
-                    subject = self.cleanSubjectOfSpamNotice(msgStringParsed['Subject'])
-                    subject = self.ta_greeting.sub(' ',subject)
-                    subject = self.robo_greeting.sub(' ',subject)
-
+                    
+                    body = self.remove_greeting_if_exists(body)
+                    # Replace emails in thread headers:
+                    #   On <date> <roboTA@cs....> wrote:
+                    # with ...<****obscured_email***>:
+                    
+                    body = self.obscure_thread_headers(body)
+                    
+                    subject = self.remove_greeting_if_exists(subject)
+                    
+                    # If this is a whole thread, need to obscure the
+                    # turn-headers before sending this student email
+                    # to the TA. Example:
+                    #
+                    #    On Mon, Apr 17, 2017 at 10:29 AM, <roboTA@cs.stanford.edu> wrote:
+                    body = self.obscure_thread_headers(body)
 
                     msg.attach(MIMEText(body, 'plain', 'utf-8'))
                     msg['From'] = MAILBOX_EMAIL
                     msg['To'] = TRUE_TA_EMAIL
-                    msg['Subject'] = subject + '   RouteNo:' + msg_id
+                    msg['Subject'] = self.join_subject_and_routing_number(subject, msg_id)
                     
                     # Remember to whom student sent her msg, and her 
                     # return addr:
@@ -300,39 +335,28 @@ class EmailChecker(object):
                     body=body1
                     # Canonicalize end-of-line to be '\n', not '\r\n':
                     body = body.replace('\r', '')                    
-                    # First line of body is to be a line that
-                    # is empty except for the human/robot guess:
 
-                    match_non_html = self.guess_pattern.match(body)
-                    match_html     = self.guess_html_pattern.match(body)
-                    if match_non_html is None and match_html is None:
-                        # Could not find the expected guess:
-                        new_body = 'NO H or R IN FIRST LINE!\n' + self.msg_subj_plus_body(date,subject,body)
-                        self.admin_msg_to_ta('noGuess', new_body)
-                        continue
-                    else:
-                        if match_non_html is not None:
-                            ta_guess = match_non_html.group().strip()
-                            # Remove the guess from the body before sending
-                            # on to the student:
-                            body = body[len(ta_guess):]   
-                            
-                        else:
-                            # The gues was embedded in damn MS Outlook mess:
-                            for (grp, i) in enumerate(match_html.groups()):
-                                if grp is not None:
-                                    guess_start = match_html.start(i)
-                                    guess_end   = match_html.end(i)
-                                    ta_guess = grp
-                                    break
-                            body = body[:guess_start] + body[guess_end:]
-   
                     body = self.remove_sig_if_exists(body)
                                             
                     # Recover dest of original address from x-student-dest header field:
-                    (orig_subject, orig_msg_id) = subject.split('RouteNo:')
+                    (orig_subject, orig_msg_id) = self.recover_route_number(subject)
                     (student_sender, orig_dest) = self.traffic_record.get(orig_msg_id, (None, None))
                     
+                    # Record the original destination as the truth the TA was to guess.
+                    # This method also digs out the TAs guess and sends a
+                    # msg to them if no guess is found:  
+                    
+                    body = self.register_ta_guess(orig_subject, body, date, orig_msg_id, orig_dest)
+                    if body is None:
+                        # TA forgot to guess:
+                        continue   
+                    
+                    # Restore any thread headers we find that have
+                    # been obscured: 'On <date> <****obscured_email***> wrote:...
+                    # Replace the obscuration with the email address to
+                    # which the student sent their original msg:
+                    
+                    body = self.recover_thread_headers(body, orig_dest, student_sender)
                     subject = orig_subject
                     
                     if student_sender is None or orig_dest is None:
@@ -345,9 +369,7 @@ class EmailChecker(object):
                             self.traffic_record.sync()
                         except:
                             pass
-                     
-                    # Record the original destination as the truth the TA was to guess:
-                    self.record_ta_guess(date, msg_id, orig_dest, guess=ta_guess)
+
                     # print body
 
 
@@ -374,25 +396,6 @@ class EmailChecker(object):
                     msg['Subject'] = subject
                     msg['To'] = ''
                     
-                    # Body will contain the quoted original message;
-                    # something like:
-                    #          <text of reply>
-                    #    On Tue, Apr 11, 2017 at 9:45 AM, <networksTA@cs.stanford.edu> wrote:
-                    # where the email address is human_ta_alias. 
-                    # Replace that with the original student sender:
-                    
-                    match = EMAIL_QUOTE_FIND_PATTERN.search(body)
-                    if match is not None:
-                        # Get tuple (begin,end) of first group.
-                        # The end index points to just before the
-                        # opening '<' of the email msgs. Match.span(group#)
-                        # returns that tuple:
-                        
-                        up_to        = match.span(1)[1] # pt to "<networksTA@..."
-                        then_to_end  = match.span(2)[0] # pt to after the closing ">"
-                        
-                        body = body[:up_to] + '<' + student_sender + '>' + body[then_to_end:]
-                    
                     msg.attach(MIMEText(body, 'plain', 'utf-8'))
                     self.logInfo('%s replying to: %s' % (msg['From'], student_sender))
 
@@ -408,7 +411,6 @@ class EmailChecker(object):
             except Exception as e:
                     self.logErr('This error in runScript() loop: %s' % `e`)
                     continue
-                    raise
         return 1
 
     def remove_sig_if_exists(self, body):
@@ -419,6 +421,8 @@ class EmailChecker(object):
         
         @param body: Body of email from TA, destined back to student 
         @type body: string
+        @return: new body string without the signature.
+        @rtype: string
         '''
         
         # Did TA accidentally sign his/her name?
@@ -426,6 +430,8 @@ class EmailChecker(object):
         
         # For a message body containing something like
         #    Best, Diane
+        # or
+        #    Cheers, Frank.
         # the match object will contain several groups,
         # such as ("Best", "Diane"). Delete everything
         # from the start of the first group to the 
@@ -437,35 +443,125 @@ class EmailChecker(object):
         if sig_match is not None:
             
             sig_start = 0
+            sig_end   = 0
+            greeting_span = sig_match.span('greeting')
+            ta_name_span  = sig_match.span('taName')
+            # punctuation and/or whitespace after the name
+            clutter_span  = sig_match.span('clutter')
+              
+            if greeting_span == (-1,-1):
+                # Sig was just something like 'Diane',
+                # rather than 'Regards, Diane'. Get
+                # the start/end tuple of the name
+                # (e.g. (15,20) if 'Diane' started
+                # at pos 15 in the body):
+                sig_start = ta_name_span[0]
+            else:
+                # There is a greeting; start of sig
+                # is the start of that greeting:
+                sig_start = greeting_span[0]
             
-            # Start of what's to be removed will be 
-            # the first position of the first non-None 
-            # regex group:
-            
-            for nth, matched_str in enumerate(sig_match.groups()):
-                if matched_str is None:
-                    continue
-                sig_start = sig_match.span(nth)[0]
-                break
-            
-            sig_end = 0
-            
-            # End of what's to be removed will be 
-            # the last position of the *last* non-None 
-            # regex group:
-            for nth, matched_str in enumerate(reversed(sig_match.groups())):
-                if matched_str is None:
-                    continue
-                sig_end = sig_match.span(nth)[1]
-                break
-            
+            if clutter_span == (-1,-1):  
+                # End of sig is the end of the TA-name group:
+                sig_end = ta_name_span[1]
+            else:
+                sig_end = clutter_span[1]
+
             # Surgically remove the signature:
             body     = body[:sig_start] + body[sig_end:]
 
         return body
+    
+    def remove_greeting_if_exists(self, the_text):
+        '''
+        Remove any greeting at the start of a student's
+        request. Handles greetings like:
+          - Hi, RoboTA
+          - Hello Frank,
+          - Hey, Diane.
+
+        @param the_text: email message the_text
+        @type the_text: string
+        @return: new the_text string without the greeting.
+        @rtype: string
+        '''
+
+        the_text = self.ta_greeting.sub('',the_text)
+        return the_text
+    
+    def obscure_thread_headers(self, body):
+        '''
+        Given a body that contains one or more lines like:
         
+          On Mon, Apr 17, 2017 at 10:29 AM, <roboTA@cs.stanford.edu> wrote:
+        or
+          On Mon, Apr 17, 2017 at 10:29 AM, <netTaDiane@cs.stanford.edu> wrote:
         
-    def record_ta_guess(self, date, msg_id, true_origin, guess='origin'):
+        replace the address with something easily found again.
+        That way the dual of this method: recover_thread_headers()
+        has an easier job. We replace the address with
+        self.obscuration. Thread headers from students remain untouched.
+        
+        @param body: entire email message body
+        @type body: string
+        @return: copy of body with emails in thread header replaced
+            by self.obscuration.
+        @rtype: string 
+        '''
+        new_body = ''
+        cursor = 0
+        # pattern.finditer(str) gives a tuple of match
+        # objects. In our case, each match object holds
+        # three named groups: intro, email, and trailer.
+        # Go through them and copy all but the emails to
+        # new_body
+        for match in EMAIL_QUOTE_FIND_PATTERN.finditer(body):
+            # Is this thread header from a TA or the Robot?
+            if match.group('email') not in [ROBO_EMAIL, TA_EMAIL_FEMALE, TA_EMAIL_MALE]:
+                continue
+            # Yes, need to obscurate:
+            (intro_start, intro_end)     = match.span('intro') #@UnusedVariable
+            (trailer_start, trailer_end) = match.span('trailer')
+
+            new_body += body[cursor:intro_end] +\
+                        self.obscuration +\
+                        body[trailer_start:trailer_end]
+            cursor = trailer_end
+        new_body += body[cursor:]
+        return new_body    
+
+    def recover_thread_headers(self, body, assigned_ta_email, student_email):
+        '''
+        Given an email from the TA that is part of 
+        a multi-msg thread, restore the thread headers
+        for the student to see. Ex.: all thread headers
+        that were obfuscated by obscure_thread_headers()
+        are turned from the obfuscated form:
+        
+            On Mon, Apr 17, 2017 at 10:29 AM, <***obscured***> wrote:
+            
+        To their original:
+            On Mon, Apr 17, 2017 at 10:29 AM, <roboTA@cs.stanford.edu> wrote:
+        Also: the emails in thread headers with email address 
+        'stats60@cs.stanford.edu' are replaced with the inquiring 
+        student's address.
+        
+        @param body: email message the_text
+        @type body: string
+        @param assigned_ta_email: email address of TA to which
+            the student was assigned. Ex.: roboTA@cs.stanford.edu
+        @type assigned_ta_email: string
+        @param student_email: email address of inquiring student
+        @type student_email: string 
+        @return: new body string with the origin addresses
+            in thread headers replaced with proper sender
+        @rtype: string
+        '''
+        new_body = body.replace(self.obscuration, '<%s>' % assigned_ta_email)
+        new_body = new_body.replace(MAILBOX_EMAIL, '%s' % student_email)
+        return new_body
+        
+    def persist_ta_guess(self, date, msg_id, true_origin, guess):
         '''
         Write the TA's guess as to destination intent of student message
         to a log. Normalizes the flexible first-line guesses (r,R,human,Robot, etc.)
@@ -475,21 +571,24 @@ class EmailChecker(object):
         :type date: string
         :param msg_id: message header msg-id
         :type msg_id: string
-        :param true_origin: student's email address TO field.
+        :param true_origin: student's email address TO field. I.e.
+            the email that indicates the student's experiment
+            group membership.
         :type true_origin: string
         :param guess: the TA guess as recorded on first line of return.
         :type guess: string
         '''
         
-        # true_origin is the email of the roboTA or the stats TA.
+        # true_origin is the email of the roboTA or 
+        # the male or female fake TA:
         # Normalize that into: 'robot' and 'human'
-        if true_origin == human_ta_alias:
+        if true_origin == TA_EMAIL_FEMALE or true_origin == TA_EMAIL_MALE: 
             true_origin = 'human'
         else:
             true_origin = 'robot'
             
-        # Same for the guess: could the h, H, Human, human, R, r, Robot, or robot:
-        if guess[0] in ['R','r']:
+        # Same for the guess: could be h, H, Human, human, R, r, Robot, or robot:
+        if guess in ['R','r', 'Robot', 'robot']:
             guess = 'robot'
         else:
             guess = 'human'
@@ -500,6 +599,7 @@ class EmailChecker(object):
             
         # If TA-guess csv file doesn't exist yet,
         # create the file with column header at the top:
+        
         if not os.path.exists(guess_path):
             with open(guess_path, 'w') as fd:
                 fd.write('date,msg_id,true_origin,guessed_origin\n')
@@ -616,31 +716,179 @@ class EmailChecker(object):
             self.student_db[str(email).strip()] = i
             i+=1
 
-        self.student_ta = {'1':ROBO_EMAIL,
-                           '2':human_ta_alias}
+    def register_ta_guess(self, orig_subject, body, date, orig_msg_id, true_origin, testing=False):
+        '''
+        Given an email body from the true TA, 
+        destined for the student who asked the
+        respective question, find the TA's 
+        participant group guess in the first 
+        line of the message. The guess is any
+        of 'R', 'H', 'Robot', or 'Human' in
+        upper or lower case. 
+        
+        If the guess not there, send a 
+        fix-it message to the TA, and return 
+        None. Else return the TA's message body 
+        with the guess removed.
+        
+        Handles messages from both, normal mail clients
+        and from outlook.
+         
+        @param orig_subject: the orig_subject line of the msg
+            that came in from the student.
+        @type suject: string
+        @param body: text of the message from the TA 
+        @type body:
+        @param date: message date
+        @type date: string
+        @param orig_msg_id: original message id of question by student
+        @type orig_msg_id: string
+        @param true_origin: the actual experiment group
+            that the sending student is in.
+        @type true_origin: string
+        @param testing: if True then method won't call
+            persist_ta_guess(), nor will the TA correction
+            request message be created and sent. 
+            Used for unit testing this method.
+        @type testing: boolean     
+        @return: {None | body with guess removed}
+        @rtype: {None | string}
+        '''
+        
+        # First line of body is to be a line that
+        # is empty except for the human/robot guess:
 
-    def admin_msg_to_ta(self, errorStr, body):
+        match_non_html = self.guess_pattern.match(body)
+        match_html     = self.guess_html_pattern.match(body)
+        
+        if match_non_html is None and match_html is None:
+            
+            # Could not find the expected guess. 
+            # Explain to TA how to resend the message,
+            # making it easy: just copy/paste. The 
+            # '\r' chars are needed (at least) for 
+            # gmail on Firefox and Chrome:
+            if not testing:
+                subject_with_msg_id = self.join_subject_and_routing_number(orig_subject, orig_msg_id)
+                self.admin_msg_to_ta_with_return(subject_with_msg_id, body, msg_to_ta='You forgot to guess message origin (human/robot). ')
+            return None
+        else:
+            if match_non_html is not None:
+                ta_guess = match_non_html.group()
+                # Remove the guess from the body before sending
+                # on to the student:
+                body = body[len(ta_guess):]
+                ta_guess = ta_guess.strip()
+                
+            else:
+                # The gues was embedded in damn MS Outlook mess:
+                for (grp, i) in enumerate(match_html.groups()):
+                    if grp is not None:
+                        guess_start = match_html.start(i)
+                        guess_end   = match_html.end(i)
+                        ta_guess = grp
+                        break
+                # Remove the guess from the body before sending
+                # on to the student:
+                body = body[:guess_start] + body[guess_end:]
+
+            # Remember the true student membership and the TA's guess:
+            if not testing:                
+                self.persist_ta_guess(date, orig_msg_id, true_origin, ta_guess)
+        return body        
+
+    def admin_msg_to_ta_with_return(self, 
+                                    orig_subject, 
+                                    body, 
+                                    msg_to_ta=None,
+                                    testing=False):
+        '''
+        Sends message to TA, providing them with 
+        a message that includes a mail-to link that
+        contains the template for an email back a
+        student who asked a question. If msg_to_ta
+        is non-None, it will be prepended to the 
+        mail-to link. 
+        
+        Used, for instance, when TA responds to a student, 
+        but forgets the guess at the top of the msg.
+        Then a msg_to_ta might say: "Forgot the guess."
+        The ta would receive an email with the given
+        orig_subject line, and:
+           Forget the guess. <mailToLink>Click here to fix and resend</mailToLink>
+        where the mailToLink, when clicked, starts an
+        email that allows TA simply to add the guess, 
+        and send again.
+        
+        @param orig_subject: orig_subject line as it should appear
+            on TA's resend.
+        @type orig_subject: string
+        @param body: text as it appeared in the msg from the TA
+        @type body: string
+        @param testing: if true, message won't actually be
+            sent, but its would-be body is returned.
+        @type testing: bool
+        @return: body as it was sent
+        @rtype: string
+        '''
+        
+        if msg_to_ta is None:
+            msg_to_ta = ''
+        # Make the body url-legal:
+        body = quote(body)
+        
+        mailto_link = '<a href="mailto:%s?subject=%s&body=%s">Click here to fix and resend.</a>' %\
+            (MAILBOX_EMAIL, orig_subject, body)
+        
+        # The message that the TA will see:
+        #    Message from relay: <errorMsg>
+        #    Click here to fix and resend.
+        # Where the second line below will be 
+        # a mail-to that generates the proper
+        # return email to the relay:
+        
+        msg = "Message from relay: %s<br>%s" % (msg_to_ta, mailto_link)
+        if not testing:
+            self.admin_msg_to_ta(msg, orig_subject)
+        return msg
+
+    def admin_msg_to_ta_error(self, body, errorStr):
+        '''
+        Send an error msg to TA, logging the error.
+        Ensures that TA replying does not go to students.
+        
+        :param body: body of msg to send
+        :type body: string
+        :param errorStr: very short keyword that indicates error condition;
+            the string is appended to the 'This is an error' subject
+            line, and used in the error log.
+        :type errorStr: string
+        '''
+        subject = 'You Screwed Up, Dude: %s' % errorStr
+        self.logErr(TRUE_TA_NAME + ' error: %s' % errorStr)
+        self.admin_msg_to_ta(body, subject)
+
+    def admin_msg_to_ta(self, body, subject):
         '''
         Send a msg to TA with out-of-band information.
         Ensures that TA replying does not go to students.
         
-        :param errorStr: very short keyword that indicates error condition
-        :type errorStr: stringt
         :param body: body of msg to send
         :type body: string
+        :param subject: subject line
+        :type subject: string
         '''
-        sender = admin_alias
+        
+        sender = TRUE_TA_EMAIL
         msg = MIMEMultipart('alternative')
-        msg['From'] = admin_alias
-        msg['To'] = TRUE_TA_EMAIL
-        # Stick student ID into msg header:
-        msg['Subject'] = 'You Screwed Up, Dude: %s' % errorStr
-        body += 'Problem: %s\n' % errorStr
+        msg['From'] = MAILBOX_EMAIL
+        msg['To'] = MAILBOX_EMAIL
+        msg['Subject'] = subject
         msg.attach(MIMEText(body, 'html','utf-8'))
-        self.logErr(TRUE_TA_NAME + ' error: %s' % errorStr)
+        #msg.attach(MIMEText(body, 'plain','utf-8'))
         self.login_sending()
         self.serverSending.sendmail(sender, [TRUE_TA_EMAIL], msg.as_string())
-
+    
         
     def cleanSubjectOfSpamNotice(self, subject):
         '''
@@ -666,6 +914,47 @@ class EmailChecker(object):
             cleanSubj = subject
             
         return cleanSubj.strip()
+
+    def join_subject_and_routing_number(self, subject, routing_number):
+        '''
+        Given an email subject line and an email
+        message ID, append "RouteNo:<message_id>"
+        to the subject line. The message_id will
+        be URL encoded. So plus signs are replaced
+        with a code that can be recovered by
+        recover_route_number().
+        
+        @param subject: subject line without routing number
+        @type subject: string
+        @param routing_number: the routing number, such as
+            <CAFK+knh...@mail.gmail.com>
+        @type routing_number: string
+        '''
+        
+        return subject + ' RouteNo:' + quote(routing_number)
+
+    def recover_route_number(self, subject_with_route_number):
+        '''
+        Given a subject line to which the message
+        ID of an initial student question's email
+        was added, return a tuple: the original
+        subject string without the routing number,
+        and the clear-text un-URL-encoded routing
+        number
+        
+        @param subject_with_route_number: the original subject
+            line string with the urlencoded routing number
+            appended.
+        @type subject_with_route_number: string
+        @return: tuple with original subject text, and 
+            the clear-text routing number
+        @rtype: (string, string)
+        '''
+        
+        # Recover dest of original address from x-student-dest header field:
+        (orig_subject, orig_msg_id) = subject_with_route_number.split('RouteNo:')
+        return (orig_subject, unquote(orig_msg_id))
+        
 
     def log_program_stop(self, reason='Received cnt-c; stopping mail check server.'):
         '''

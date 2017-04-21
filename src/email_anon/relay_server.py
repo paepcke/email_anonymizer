@@ -55,8 +55,6 @@ class EmailAnonServer(threading.Thread):
         # handler:
         
         self.wait_condition = threading.Condition()
-        
-        self.start()
             
     def run(self):
         '''
@@ -148,8 +146,8 @@ if __name__ == '__main__':
         
     # Start recurring timer. Unit is seconds:
     email_checker = EmailAnonServer(check_interval)
-    
+    email_checker.start()
     while not email_checker.stop_checking_email:
         # Main thread: sleep till any signal arrives
-        signal.pause()
+        email_checker.join()
     

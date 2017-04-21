@@ -23,10 +23,11 @@ MAILBOX_EMAIL = 'stats60@cs.stanford.edu'
 
 FROM_ADDR = 'Phil Levis <pal@cs.stanford.edu>'  # Phil Levis
 FROM_NAME = 'Phil Levis'
+REPLY_TO  = 'Emre Orbay <emre_research@cs.stanford.edu>'
 
 # In verbose mode, print progress every nth sent email:
-#*****REPORTING_INTERVAL = 50
-REPORTING_INTERVAL = 1
+REPORTING_INTERVAL = 50
+#REPORTING_INTERVAL = 1
 
 class BulkMailer(threading.Thread):
     '''
@@ -150,6 +151,7 @@ class BulkMailer(threading.Thread):
             with open(self.resume_place_file, 'r') as fd:
                 last_sent_and_num_sent = fd.readline().strip() 
                 (most_recently_sent, self.num_sent) = last_sent_and_num_sent.split(',')
+                self.num_sent = int(self.num_sent)
                 if not self.query_yes_no("Start not at beginning, but after email #%s '%s'?" %\
                                          (self.num_sent, most_recently_sent)):
                     most_recently_sent = None
@@ -291,7 +293,7 @@ class BulkMailer(threading.Thread):
         msg['From'] = FROM_ADDR
         msg['To'] = addr
         msg['Subject'] = 'Invitation to MOOC Enhancement Experiment (Phil Levis)'
-        
+        msg.add_header('reply-to', REPLY_TO)
         self.serverSending.sendmail(FROM_ADDR, [addr], msg.as_string())
         
          
@@ -421,9 +423,7 @@ if __name__ == '__main__':
     email_sender = BulkMailer(email_body_file, email_addr_file)
     email_sender.start()
         
-    while not email_sender.end_bulk_mailer:
-        # Main thread: sleep till any signal arrives
-        email_sender.join()
+    email_sender.join()
     print('Sent %s emails.' % email_sender.num_sent)
         
 

@@ -11,7 +11,7 @@ import os
 import time
 import unittest
 
-from src.bulk_mailer.bulk_mailer import BulkMailer
+from bulk_mailer.bulk_mailer import BulkMailer
 
 
 TEST_ALL = True
@@ -107,16 +107,20 @@ class TestBulkMailer(unittest.TestCase):
     #*****@unittest.skipIf(not TEST_ALL, "Temporarily disabled")
     def testSendingAll(self):
         
-        start_time = time.time()
-        self.mailer.start()
-        self.mailer.join()
-        elapsed_time   = time.time() - start_time
         num_msgs    = len(self.all_email_addrs)
         num_batches = num_msgs / 2  # Each batch has 2 msgs
+        
         # Elapsed time should be (comes to ~11 sec for 12
         # email addrs in the test file:
         expected_time = self.inter_msg_delay * (num_msgs - num_batches) +\
                         60 * self.inter_batch_delay * (num_batches - 1)
+        print("Test sending %s emails with pauses; takes about %s seconds" %
+              (num_msgs, expected_time))
+        
+        start_time = time.time()
+        self.mailer.start()
+        self.mailer.join()
+        elapsed_time   = time.time() - start_time
 
         # Correct number of messages should have been sent:
         self.assertEqual(self.all_email_addrs, self.email_addrs_sent)

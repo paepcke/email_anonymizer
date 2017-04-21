@@ -6,12 +6,12 @@ Created on Apr 13, 2017
 import os
 import unittest
 
-from src.email_anon.relay_server import EmailAnonServer
+from email_anon.relay_server import EmailAnonServer
 from ..util import TA_NAME_MALE, TA_EMAIL_MALE, TA_SIG_MALE, \
                    TA_NAME_FEMALE, TA_EMAIL_FEMALE, TA_SIG_FEMALE, \
                    ROBO_NAME, ROBO_EMAIL, ROBO_SIG, \
                    MAILBOX_EMAIL
-from src.email_anon import util
+from email_anon import util
 
 
 # from src.email_anon.util import TRUE_TA_EMAIL
@@ -30,6 +30,8 @@ class TestEmailAnonymizer(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
+        
+        print("MAKE SURE you are on a Stanford IP, or VPN; else you'll hang.")
         
         # Get one instance of the EmailAnonServer 
         # class to get access to its instance
@@ -122,7 +124,7 @@ class TestEmailAnonymizer(unittest.TestCase):
         
         email_body = 'First line\nsecond line.\n%s' %\
             'On 2017-09-30 %s wrote:\nOld msg.' % self.email_obscuration
-        new_body   = self.checker.recover_thread_headers(email_body, ROBO_EMAIL)
+        new_body   = self.checker.recover_thread_headers(email_body, ROBO_EMAIL,'student@theircompany.com')
         expected   = 'First line\nsecond line.\n%s' %\
             'On 2017-09-30 <%s> wrote:\nOld msg.' % ROBO_EMAIL
         self.assertEqual(new_body, expected, "Failed to replace thread email in '%s'" % email_body)
@@ -132,7 +134,7 @@ class TestEmailAnonymizer(unittest.TestCase):
             'On 2017-09-30 %s wrote:\nOld msg.' % self.email_obscuration +\
             'Third line\n%s' %\
             '>> On 2017-09-30 %s wrote:\nEven older msg.' % self.email_obscuration  
-        new_body   = self.checker.recover_thread_headers(second_email_body, ROBO_EMAIL)
+        new_body   = self.checker.recover_thread_headers(second_email_body, ROBO_EMAIL,'student@theircompany.com')
         expected   = 'First line\nsecond line.\n%s' %\
             'On 2017-09-30 <roboTA@cs.stanford.edu> wrote:\nOld msg.' +\
             'Third line\n%s' %\
@@ -192,9 +194,9 @@ class TestEmailAnonymizer(unittest.TestCase):
         # keeping than the true ops file:
         guess_file = 'guess_test.csv'
         util.GUESS_RECORD_FILE = guess_file
-        guess_file_path = os.path.join('..', guess_file)
-        if not os.path.exists(guess_file_path):
-            os.remove('../%s' % guess_file_path)
+        guess_file_path = os.path.join(os.path.dirname(__file__), '..', guess_file)
+        if os.path.exists(guess_file_path):
+            os.remove('%s' % guess_file_path)
         
         date = '2017-10-4'
         msg_id = 'TstMsgId'

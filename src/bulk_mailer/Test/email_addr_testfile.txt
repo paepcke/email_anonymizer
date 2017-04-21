@@ -1,0 +1,19 @@
+# Temporary: to be replaced by the real list:
+
+fritz@fake.com
+susie@fake.com
+
+fritz@fake.com
+susie@fake.com
+
+fritz@fake.com
+susie@fake.com
+
+fritz@fake.com
+susie@fake.com
+
+fritz@fake.com
+susie@fake.com
+
+fritz@fake.com
+susie@fake.com

@@ -3,6 +3,10 @@
 Created on Apr 18, 2017
 
 @author: paepcke
+
+TODO:
+  -  catch   raise SMTPServerDisconnected('please run connect() first')
+       SMTPServerDisconnected: please run connect() first
 '''
 import datetime
 from email.mime.multipart import MIMEMultipart
@@ -10,9 +14,11 @@ from email.mime.text import MIMEText
 import os
 import re
 import signal
+from smtplib import SMTPServerDisconnected
 import smtplib
 import sys
 import threading
+
 
 # The imap box:
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
@@ -294,8 +300,13 @@ class BulkMailer(threading.Thread):
         msg['To'] = addr
         msg['Subject'] = 'Invitation to MOOC Enhancement Experiment (Phil Levis)'
         msg.add_header('reply-to', REPLY_TO)
-        self.serverSending.sendmail(FROM_ADDR, [addr], msg.as_string())
-        
+        try:
+            self.serverSending.sendmail(FROM_ADDR, [addr], msg.as_string())
+        except SMTPServerDisconnected:
+            print('Login back into SMTP server...')
+            self.login_sending()
+            self.serverSending.sendmail(FROM_ADDR, [addr], msg.as_string())
+            print('...succeeded to send after login.')
          
     def login_sending(self):
         '''

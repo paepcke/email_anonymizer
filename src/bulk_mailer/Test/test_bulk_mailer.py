@@ -72,7 +72,15 @@ class TestBulkMailer(unittest.TestCase):
         
         line = '%s and garbage' % test_addr
         addr = self.mailer.isolate_email_addr(line)
-        self.assertEqual(addr, test_addr, 'Email-only line failed.')
+        self.assertEqual(addr, test_addr, 'Email plus space plus garbage failed.')
+        
+        line = '%s,and garbage' % test_addr
+        addr = self.mailer.isolate_email_addr(line)
+        self.assertEqual(addr, test_addr, 'Email plus comma plus garbage failed.')
+
+        line = '%s,    and garbage' % test_addr
+        addr = self.mailer.isolate_email_addr(line)
+        self.assertEqual(addr, test_addr, 'Email plus comma plus space plus garbage failed.')
         
         line = '# %s and garbage' % test_addr
         addr = self.mailer.isolate_email_addr(line)
@@ -104,8 +112,12 @@ class TestBulkMailer(unittest.TestCase):
 
         self.assertEqual(emails_read, len(self.all_email_addrs), 'Independent num-of-emails count mismatch.')
 
-    #*****@unittest.skipIf(not TEST_ALL, "Temporarily disabled")
+    @unittest.skipIf(not TEST_ALL, "Temporarily disabled")
     def testSendingAll(self):
+        '''
+        Mailer is exercised, including delays. But
+        no mail is actually sent.
+        '''
         
         num_msgs    = len(self.all_email_addrs)
         num_batches = num_msgs / 2  # Each batch has 2 msgs

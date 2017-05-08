@@ -104,7 +104,7 @@ class BulkMailer(threading.Thread):
         # Recognize an email address as the first
         # not-whitespace substring in a string:
         self.email_addr_pattern = re.compile(r'''^[\s]*          # Leading white space OK
-                                                 ([^\s#]+){1,1}  # Capture One series of chars that are not whitespace or a comment char
+                                                 ([^\s#,]+){1,1}  # Capture One series of chars that are not whitespace, comma, or a comment char
                                                  .*$             # Arbitrary stuff afterwards.
                                               ''', re.VERBOSE) 
 
@@ -114,7 +114,7 @@ class BulkMailer(threading.Thread):
     	                                      .*$       # Followed by anything.
                         	               ''', re.VERBOSE)       
         
-        self.email_addr_pattern = re.compile(r'^[\s]*([^\s#]+){1,1}.*$')        
+        #self.email_addr_pattern = re.compile(r'^[\s]*([^\s#,]+){1,1}.*$')        
                 
         self.resume_place_file = os.path.join(os.path.dirname(__file__), 'resume_place_file.txt')
         
@@ -358,6 +358,8 @@ class BulkMailer(threading.Thread):
             foo@bar.com
             foo@bar.com some other information
                   foo@bar.com some other information
+            foo@bar.com,some other information
+            foo@bar.com,    some other information
             # This is a comment
                     # This is a comment
         

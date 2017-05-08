@@ -3,14 +3,14 @@
 fritz@fake.com
 susie@fake.com
 
-fritz@fake.com
-susie@fake.com
+fritz@fake.com, group1
+susie@fake.com,group2
 
 fritz@fake.com
 susie@fake.com
 
-fritz@fake.com
-susie@fake.com
+fritz@fake.com group3
+susie@fake.com group 5
 
 fritz@fake.com
 susie@fake.com

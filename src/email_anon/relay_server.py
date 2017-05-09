@@ -132,9 +132,10 @@ if __name__ == '__main__':
         print(usage)
         sys.exit(0)
         
-    if len(sys.argv) > 1 and sys.argv[1] == '-h' or sys.argv[1] == '--help':
-        print(usage)
-        sys.exit(0)
+    if len(sys.argv) > 1:
+        if sys.argv[1] == '-h' or sys.argv[1] == '--help':
+            print(usage)
+            sys.exit(0)
     
     check_interval = None
     if len(sys.argv) == 2:

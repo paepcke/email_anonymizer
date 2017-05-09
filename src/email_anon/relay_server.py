@@ -132,7 +132,7 @@ if __name__ == '__main__':
         print(usage)
         sys.exit(0)
         
-    if sys.argv[1] == '-h' or sys.argv[1] == '--help':
+    if len(sys.argv) > 1 and sys.argv[1] == '-h' or sys.argv[1] == '--help':
         print(usage)
         sys.exit(0)
     

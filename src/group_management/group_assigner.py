@@ -9,19 +9,15 @@ import math
 import os
 import random
 import sys
-from collections import OrderedDict
-
 
 class GroupAssigner(object):
     '''
-    Multipurpose manager for administering experimental groups.
+    Administering experimental groups.
     Functionality:
     
        - Assign a list of participants to a given set of groups
          Assignment can by choice be randomized or follow the
          order of the given list
-       - Given a list of participant-groupName pairs, and a group
-         ID, output the participation IDs of only the given group
          
     Group assignments spread participants across the groups of roughly
     equal sizes. Groups and participants are designated by arbitrary
@@ -44,55 +40,39 @@ class GroupAssigner(object):
 		 p17 and 18 were left over after assigning equal
 		 numbers. So groups 1 and 2 each have one more member. 
 		 
-	   - The dictionary returned from assignment can be printed to
-	     stdout via the print method, which also allows output of only
-	     a given group.
+	   - Use separate script group_printer.py to print assignments
+	     to one or all groups after this script's work is done.
+
     '''
 
-    def __init__(self, participant_source, group_ids, randomize, only_group='All'):
+    def __init__(self, participant_source, group_ids, randomize):
         '''
         Initializes the group assigner, but does not
         execute the grouping. Call assign() on the 
         resulting object to do the actual work.
         
         @param participant_source: Either a file with participant ids, one per line,
-            or a Python list of participant ids, or a list of participant/group lists. 
-            If only_group contains a group name then participant_source is expected 
-            to be a file containing pairs of 
-            participant_id/group_id separated by commas, or a list of tuples, 
-            each containing a participant ID and group id.
-        @type participant_source: {string|[string]|[(string,string)]}
+            or a Python list of participant ids.
+        @type participant_source: {string|[string]}
         @param group_ids: list of group identifiers that will serve as keys in result dict
-        @type group_ids: {[string] | None]
+        @type group_ids: [string]
         @param randomize: whether or not to randomize the participants. If
-            False, participants are assigned in order. If only_group is specified
-            this parameter has no effect
+            False, participants are assigned in the order provided by
+            participant_source.
         @type type randomize: boolean
-        @param only_group: simply output the participant ids of the given group
-        @type only_group: string 
         '''
 
         self.assignments = None
 
         if type(participant_source) == list:
-            # If list is participant_id/group_id couple-tuples,
-            # build the assignment dict from it:
-            if type(participant_source[0]) == tuple:
-                # And initialize the flat list of participants...
-                # The following magic turns [['p1','group1'], ['p5', 'group3']] into 
-                # a flat ['p1','p5']:
-                self.participant_ids = [participant_group_pair[0] for participant_group_pair in participant_source]
-                # Similarly: initialize the group_ids:
-                group_ids = [participant_group_pair[1] for participant_group_pair in participant_source]
-                # Remove duplicates: 
-                group_ids = list(OrderedDict.fromkeys(group_ids))
-            else:
-                # List of just participant ids:
-                self.participant_ids = participant_source
+            # List of just participant ids:
+            self.participant_ids = participant_source
         else:
             # Must be file with participant ids:
             with open(participant_source, 'r') as fd:
                 all_participant_ids = fd.read().split('\n')
+                # Strip \r or \ns:
+                all_participant_ids = [part_id.strip() for part_id in all_participant_ids]
                 # Trailing or leading newlines lead to empty 
                 # elements in the list; remove those:
                 try:
@@ -106,29 +86,19 @@ class GroupAssigner(object):
         if len(self.participant_ids) == 0:
             raise ValueError("Participant list is empty")
         
-        # group_ids may be a list of groups, or None
-        
-        
-        # Any other action needs group ids:
         if len(group_ids) == 0:
             raise ValueError("Group list is empty")
         
         self.group_ids = group_ids
         self.randomize  = randomize
-        self.only_group = only_group        
 
     def run(self):
-
+        '''
+        Used when running from command line.
+        Make assignments, and print pairs to stdout
+        '''
         self.assignments = self.assign()
-        if self.only_group != 'All':
-            # Wants to print the assignments of one
-            # particular group:
-            if self.only_group not in self.assignments.keys():
-                raise ValueError('Group %s is not one of the provided groups' % self.only_group)
-            self.print_assignments(self.only_group)
-            return
-
-        self.print_assignments()
+        self.print_to_stdout(self.assignments)
             
     def assign(self):
         '''
@@ -179,61 +149,17 @@ class GroupAssigner(object):
             
         return assignments
     
-    def print_assignments(self, group='All'):
-        '''
-        Print assignments to stdout as a comma-separated list.
-        If self.only_group contains the name of a group, only
-        members of that group are printed, without the group.
-        Thus, output is either:
-           p1,g1
-           p2,g1
-           p3,g2
-           ...
-           
-        Or
-           p1
-           p2
-           p3
-         where p_n are all members of the given group.
-        '''
-        for group in self.group_ids:
-            if self.only_group != 'All' and group != self.only_group:
-                continue
-            for participant in self.assignments[group]:
-                print('%s,%s' % (participant, group))
-                
-    def build_dict_from_tuples(self, tuples):
-        '''
-        Given a list of tuples (participant_id, group_id), construct
-        a dictionary in which groups are keys, and lists of 
-        participants are values. return the dict.
-        
-        @param tuples: participant_id/group_id pairs
-        @type tuples: (string, string)
-        @return: dictionary class-->participants
-        @rtype: {string : [string]
-        '''
-        
-        assignments = {}
-        for (participant, group) in tuples:
-            try:
-                assignments[group].append(participant)
-            except KeyError:
-                assignments[group] = [participant]
-                
-        return assignments
-        
+    def print_to_stdout(self, assignments):
+        for group in assignments.keys():
+            for participant in assignments[group]:
+                print('%s,%s' % (participant,group))
+    
 if __name__ == '__main__':
     
     parser = argparse.ArgumentParser(prog=os.path.basename(sys.argv[0]), formatter_class=argparse.RawTextHelpFormatter)
-    parser.add_argument(['-g', '--group'],
-                        dest='only_group',
-                        default='All',
-                        help='Only output the given group'
-                        )
-    parser.add_argument(['-r', '--randomize'],
+    parser.add_argument('-r', '--randomize',
                         dest='randomize',
-                        require=True,
+                        required=True,
                         choices=['yes', 'no'],
                         help='Randomize the input'
                         )
@@ -263,5 +189,6 @@ if __name__ == '__main__':
         sys.exit(1)
  
     randomize = True if args.randomize == 'yes' else False       
-    GroupAssigner(participant_source, group_ids, randomize, only_group=args.only_group)
+    GroupAssigner(participant_source, group_ids, randomize).run()
+    
     

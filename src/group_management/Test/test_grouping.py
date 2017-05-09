@@ -10,7 +10,7 @@ import tempfile
 import unittest
 from unittest.case import skipIf
 
-from group_assigner.group_assigner import GroupAssigner
+from group_management.group_assigner import GroupAssigner
 
 
 #*****testAll = True
@@ -107,7 +107,7 @@ class TestGroupAssigner(unittest.TestCase):
                       }
         self.assertDictEquivalent(expected, assignments, self.participant_ids)
 
-    #******@skipIf(not testAll, 'Temporarily disabled')
+    @skipIf(not testAll, 'Temporarily disabled')
     def testPrintOnlyOneGroup(self):
         
         input_assignments = [('p1', 'group1'), ('p2', 'group1'),('p7', 'group1'),
@@ -158,16 +158,6 @@ class TestGroupAssigner(unittest.TestCase):
 
         # The lists turned to sets should be set-equal:
         self.assertSetEqual(set(list_union_dict1), set(list_union_dict2), "Dict1 values: %s, Dict2 values: %s" % (list_union_dict1, list_union_dict2))
-        
-    @contextmanager
-    def captured_output(self):
-        new_out, new_err = StringIO(), StringIO()
-        old_out, old_err = sys.stdout, sys.stderr
-        try:
-            sys.stdout, sys.stderr = new_out, new_err
-            yield sys.stdout, sys.stderr
-        finally:
-            sys.stdout, sys.stderr = old_out, old_err
 
 
 if __name__ == "__main__":

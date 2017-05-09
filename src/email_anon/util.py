@@ -286,7 +286,7 @@ class EmailChecker(object):
                 if self.subject_routeNo_pattern.search(unquote(subject)) is None:
                     # Yes, from student, since no routing no in subject.
                     if sender not in self.student_db:
-                        self.logErr('Student not found in database!: %s' % sender)
+                        self.logErr("Student not found in database!: '%s'" % sender)
                         continue
                     self.logInfo('Msg from student: %s to %s' % (sender, dest))
                     

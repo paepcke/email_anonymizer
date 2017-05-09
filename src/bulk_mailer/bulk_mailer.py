@@ -14,7 +14,7 @@ from email.mime.text import MIMEText
 import os
 import re
 import signal
-from smtplib import SMTPServerDisconnected
+from smtplib import SMTPServerDisconnected, SMTPRecipientsRefused
 import smtplib
 import sys
 import threading
@@ -63,7 +63,7 @@ class BulkMailer(threading.Thread):
                  email_body_file,
                  email_addr_file, 
                  batch_size=200,
-                 inter_msg_delay=2,     # seconds
+                 inter_msg_delay=1,     # seconds
                  inter_batch_delay=10,  # minutes
                  verbose = True,
                  unit_test_case_obj=None
@@ -153,7 +153,7 @@ class BulkMailer(threading.Thread):
         self.delete_history = False
         
         # Check whether a 'resume' file exists:
-        if os.access(self.resume_place_file, os.R_OK):
+        if os.access(self.resume_place_file, os.R_OK) and os.path.getsize(self.resume_place_file) > 0:
             with open(self.resume_place_file, 'r') as fd:
                 last_sent_and_num_sent = fd.readline().strip() 
                 (most_recently_sent, self.num_sent) = last_sent_and_num_sent.split(',')
@@ -183,9 +183,13 @@ class BulkMailer(threading.Thread):
                     # Find the most recently sent email
                     # in the mail file, and then continue
                     # from there:
-                    for email_addr in self.next_addr(fd):
-                        if email_addr != most_recently_sent:
-                            continue
+                    while True:
+                        email_addr = self.next_addr(fd)
+                        if email_addr is None:
+                            # All emails have been sent:
+                            return True
+                        if email_addr == most_recently_sent:
+                            break
 
                 # Get the first address to send:
                 addr = self.next_addr(fd)
@@ -206,7 +210,15 @@ class BulkMailer(threading.Thread):
                         if self.end_bulk_mailer:
                             print("Stop sending after '%s'" % addr)
                             
-                        self.send_one(addr)
+                        res = self.send_one(addr) # @UnusedVariable
+                        
+                        # We count even msgs that caused an
+                        # error as 'sent', b/c this number is
+                        # used to restart the relay service
+                        # at the right spot in the email list
+                        # after stopping. Error counts can be
+                        # recovered from the log.
+                        
                         self.num_sent += 1
                         if self.verbose and self.num_sent % REPORTING_INTERVAL == 0:
                             sys.stdout.write('Sent %s emails\r' % self.num_sent)
@@ -302,11 +314,30 @@ class BulkMailer(threading.Thread):
         msg.add_header('reply-to', REPLY_TO)
         try:
             self.serverSending.sendmail(FROM_ADDR, [addr], msg.as_string())
+            return True
         except SMTPServerDisconnected:
-            print('Login back into SMTP server...')
-            self.login_sending()
+            pass
+        except SMTPRecipientsRefused as e:
+            print('Recipient refused: %s' % `e`)
+            return False
+        except Exception as e:
+            print('Unexpected exception during send: %s' % `e`)
+            return False
+            
+        # If we get here, SMTP server was disconnected.
+        # Try again:
+        print('Login back into SMTP server...')
+        self.login_sending()
+        try:
             self.serverSending.sendmail(FROM_ADDR, [addr], msg.as_string())
-            print('...succeeded to send after login.')
+        except SMTPRecipientsRefused as e:
+            print('Recipient refused: %s' % `e`)
+            return False
+        except Exception as e:
+            print('Unexpected exception during send: %s' % `e`)
+            return False
+        print('...succeeded to send after login.')
+        return True
          
     def login_sending(self):
         '''

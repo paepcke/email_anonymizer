@@ -1,11 +1,44 @@
-from util import *
-import csv
+#!/usr/bin/env python
 
-dump = open('email_dump.csv', 'wb')
+import csv
+import email
+import imaplib
+import os
+import socket
+import sys
+
+
+# The imap box:
+HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
+HOST2 = 'cs.stanford.edu'
+USERNAME = 'stats60' #Mailbox username
+MAILBOX_EMAIL = 'stats60@cs.stanford.edu'
+IMAP_PWD_FILE = 'imap_password.txt'          # File containing imap password in ~/.ssh
+
+def get_password_from_file():
+    # Get mailbox password from ~/.ssh/imap_pwd.txt
+    try:
+        with open(os.path.join(os.getenv('HOME'), '.ssh', IMAP_PWD_FILE)) as fd:
+            return fd.read().strip()
+    except IOError:
+        print('Cannot read pwd from ~/%s. Nothing sent.' % IMAP_PWD_FILE)
+        sys.exit(1)
+
+PASSWORD = get_password_from_file()
+OUTPUT_DUMP_FILE = 'email_dump.csv'
+dump = open(OUTPUT_DUMP_FILE, 'wb')
 wr = csv.writer(dump, quoting=csv.QUOTE_ALL)
 wr.writerow(['From','To','Date','Subject','Body'])
-server = imaplib.IMAP4_SSL(HOST, 993)
+print('Creating server instance...')
+try:
+    server = imaplib.IMAP4_SSL(HOST, 993)
+except socket.error:
+    print('Could not connect to imap server; make sure you are inside Stanford or on VPN.')
+    sys.exit(1)
+print('Done creating server instance...')
+print('Loging into IMAP server...')
 server.login(USERNAME, PASSWORD)
+print('Done loging into IMAP server...')
 
 def get_body(email_msg):
         '''
@@ -29,12 +62,12 @@ def get_body(email_msg):
                     text = unicode(payload.get_payload(decode=True), str(charset), "ignore").encode('utf8', 'replace')
                 
             if text is not None:
-              if '________________________________' in text: text = text.split('________________________________')[0]
-              return text.strip() 
+                if '________________________________' in text: text = text.split('________________________________')[0]
+                return text.strip() 
 
         else:
             if email_msg.get_content_charset() is not None:
-              text = unicode(email_msg.get_payload(decode=True), email_msg.get_content_charset(), 'ignore').encode('utf8', 'replace')
+                text = unicode(email_msg.get_payload(decode=True), email_msg.get_content_charset(), 'ignore').encode('utf8', 'replace')
             else: text = email_msg.get_payload(decode=True)
             if '________________________________' in text: text = text.split('________________________________')[0]
             return text.strip()
@@ -85,5 +118,9 @@ def parse_emails(response):
                 #print msg.as_string().encode('ascii')
                 wr.writerow([frm,to,date,subject,body])
 
+print('Getting raw email structures...')
 data = get_inbox()
+print('Done getting raw email structures...')
+print('Parsing emails...')
 parse_emails(data)
+print("Result in %s" % os.path.join(os.path.dirname(__file__), OUTPUT_DUMP_FILE))

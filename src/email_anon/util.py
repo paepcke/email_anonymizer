@@ -273,7 +273,17 @@ class EmailChecker(object):
             try:
                 msgStringParsed = email.message_from_string(data)
 
-                sender =  msgStringParsed['From'].split('<')[1][:-1]
+                sender = msgStringParsed['From']
+                # Sender may be true-name+email, or just email, such as:
+                #    'John Doe <doe@gmail.com>'
+                # vs  'doe@gmail.com'
+                # Handle both:
+                sender = sender.split('<')
+                if len(sender) > 1:
+                    sender = sender[1][:-1]
+                else:
+                    sender = sender[0]
+                
                 dest   =  msgStringParsed['To']
                 subject = self.cleanSubjectOfSpamNotice(msgStringParsed['Subject'])
                 msg_id =  msgStringParsed['Message-ID']

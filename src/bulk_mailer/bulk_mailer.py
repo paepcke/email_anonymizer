@@ -102,10 +102,6 @@ class BulkMailer(threading.Thread):
         self.unit_test_case_obj = unit_test_case_obj
         
         self.imap_pwd = self.get_password_from_file()
-        # ***********
-        print('Pwd: %s' % self.imap_pwd)
-        sys.exit()
-        # ***********
 
         # Recognize an email address as the first
         # not-whitespace substring in a string:

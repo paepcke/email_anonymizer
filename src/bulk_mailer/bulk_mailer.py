@@ -24,8 +24,8 @@ import threading
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
-PASSWORD = 'stats60!' #Mailbox password
 MAILBOX_EMAIL = 'stats60@cs.stanford.edu'
+IMAP_PWD_FILE = 'imap_password.txt'          # File containing imap password in ~/.ssh
 
 FROM_ADDR = 'Phil Levis <pal@cs.stanford.edu>'  # Phil Levis
 FROM_NAME = 'Phil Levis'
@@ -100,6 +100,12 @@ class BulkMailer(threading.Thread):
         self.inter_batch_delay = inter_batch_delay * 60 # Convert to minutes
         self.verbose = verbose
         self.unit_test_case_obj = unit_test_case_obj
+        
+        self.imap_pwd = self.get_password_from_file()
+        # ***********
+        print('Pwd: %s' % self.imap_pwd)
+        sys.exit()
+        # ***********
 
         # Recognize an email address as the first
         # not-whitespace substring in a string:
@@ -142,6 +148,14 @@ class BulkMailer(threading.Thread):
         
         self.wait_condition = threading.Condition()
         
+    def get_password_from_file(self):
+        # Get mailbox password from ~/.ssh/imap_pwd.txt
+        try:
+            with open(os.path.join(os.getenv('HOME'), '.ssh', IMAP_PWD_FILE)) as fd:
+                return fd.read().strip()
+        except IOError:
+            print('Cannot read pwd from ~/%s. Nothing sent.' % IMAP_PWD_FILE)
+            sys.exit(1)
         
     def run(self):
         
@@ -351,7 +365,7 @@ class BulkMailer(threading.Thread):
         #self.serverSending.set_debuglevel(True)
         #*********
         self.serverSending.starttls()
-        self.serverSending.login(USERNAME, PASSWORD)
+        self.serverSending.login(USERNAME, self.imap_pwd)
 
     
     def logout_sending(self):

@@ -1,4 +1,11 @@
 
+#from email.base64mime import body_decode
+'''
+Module for relaying messages between students and robot/TA.
+
+'''
+# The imap box:
+
 import csv
 import email
 from email.mime.multipart import MIMEMultipart
@@ -8,21 +15,18 @@ import logging
 import os
 import re
 import smtplib
+import sys
 from urllib import quote, unquote
 
 from mock.mock import self
-#from email.base64mime import body_decode
+
 from traffic_memory import TrafficMemory
-'''
-Module for relaying messages between students and robot/TA.
 
-'''
 
-# The imap box:
 HOST = 'cs-imap-x.stanford.edu' #MAIL Server hostname
 HOST2 = 'cs.stanford.edu'
 USERNAME = 'stats60' #Mailbox username
-PASSWORD = 'stats60!' #Mailbox password
+IMAP_PWD_FILE = 'imap_password.txt'          # File containing imap password in ~/.ssh
 MAILBOX_EMAIL = 'stats60@cs.stanford.edu'
 
 # True TA:
@@ -83,6 +87,8 @@ EMAIL_QUOTE_FIND_PATTERN = re.compile(r'(?P<intro>^[>\s]*On[^<]*)<(?P<email>[^>]
 class EmailChecker(object):
 
     def __init__(self, logFile=LOG_FILE):
+        
+        self.imap_pwd = self.get_password_from_file()
         
         # Path to this script:
         self.script_path = os.path.dirname(__file__)
@@ -168,7 +174,7 @@ class EmailChecker(object):
         #self.serverSending.set_debuglevel(True)
         #*********
         self.serverSending.starttls()
-        self.serverSending.login(USERNAME, PASSWORD)
+        self.serverSending.login(USERNAME, self.imap_pwd)
         
     def logout_sending(self):
         self.serverSending.quit()
@@ -178,7 +184,7 @@ class EmailChecker(object):
         Log into the IMAP server.
         '''
         self.serverReceiving = imaplib.IMAP4_SSL(HOST, 993)
-        self.serverReceiving.login(USERNAME, PASSWORD)
+        self.serverReceiving.login(USERNAME, self.imap_pwd)
 
     def logout_receiving(self):
         self.serverReceiving.close()
@@ -1024,6 +1030,14 @@ class EmailChecker(object):
         (orig_subject, orig_msg_id) = subject_with_route_number.split('RouteNo:')
         return (orig_subject, unquote(orig_msg_id))
         
+    def get_password_from_file(self):
+        # Get mailbox password from ~/.ssh/imap_pwd.txt
+        try:
+            with open(os.path.join(os.getenv('HOME'), '.ssh', IMAP_PWD_FILE)) as fd:
+                return fd.read().strip()
+        except IOError:
+            print('Cannot read pwd from ~/%s. Nothing sent.' % IMAP_PWD_FILE)
+            sys.exit(1)
 
     def log_program_stop(self, reason='Received cnt-c; stopping mail check server.'):
         '''

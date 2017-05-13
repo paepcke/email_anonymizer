@@ -30,6 +30,7 @@ IMAP_PWD_FILE = 'imap_password.txt'          # File containing imap password in 
 FROM_ADDR = 'Phil Levis <pal@cs.stanford.edu>'  # Phil Levis
 FROM_NAME = 'Phil Levis'
 REPLY_TO  = 'Emre Orbay <emre_research@cs.stanford.edu>'
+SUBJECT   = 'Follow-up: Invitation to MOOC Enhancement Experiment (Phil Levis)'
 
 # In verbose mode, print progress every nth sent email:
 REPORTING_INTERVAL = 50
@@ -56,6 +57,10 @@ class BulkMailer(threading.Thread):
     was sent in a file. If that file is found on startup,
     the mailer checks on the command line whether 
     to resume after that email.
+
+    To change the REPLY_TO, change the REPLY_TO variable
+    above. To change the subject line, change the 
+    SUBJECT variable above.
     
     '''
     
@@ -320,7 +325,7 @@ class BulkMailer(threading.Thread):
         msg.attach(MIMEText(self.body, 'plain', 'utf-8'))
         msg['From'] = FROM_ADDR
         msg['To'] = addr
-        msg['Subject'] = 'Invitation to MOOC Enhancement Experiment (Phil Levis)'
+        msg['Subject'] = SUBJECT
         msg.add_header('reply-to', REPLY_TO)
         try:
             self.serverSending.sendmail(FROM_ADDR, [addr], msg.as_string())
